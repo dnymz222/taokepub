@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+{% import ".macros.html" as macros %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    name="viewport">
+    <title>杭州欧拉公式科技有限公司</title>
+    <meta name="description" content=""/>
+
+<style>
+
+
+.n-footer {
+
+    height: 80px;
+    text-align: center;
+    margin-top: -80px;
+    background-color: #eeeeee;
+    width: 100%;
+    position:absolute;
+    bottom:0
+
+}
+
+.n-footer a{
+    color: #0088cc;
+}
+
+.n-footer .nf-intro {
+
+    margin-top: 15px;
+}
+
+.n-footer .about {
+
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+}
+
+.n-footer .about a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+      body {
+            background-color: #fff;
+            font-size: medium;
+            margin: 0px;
+
+        }
+
+        .header{
+            background-color: #111111;
+            height: 44px;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .header span{
+            color: #fff;
+            font-size: 24px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+
+        ul{
+            color: #666666;
+        }
+        .info {
+
+            background-color: #fff;
+            color: white;
+            text-indent: 2em;
+            width: 100%;
+        }
+
+
+        .app {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app .appinfo {
+
+            display: flex;
+            flex-direction: column;
+
+            align-self: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .app .appinfo a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .appinfo img {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .content {
+            display: flex;
+            margin-top: 10px;
+
+        }
+
+        .weatherpocket {
+            display: inline;
+            margin: 20px;
+        }
+
+        .lunartide {
+            display: inline;
+            margin: 20px;
+        }
+        .solunar {
+            display: inline;
+            margin: 20px;
+        }
+
+         .clock {
+            display: inline;
+            margin: 20px;
+        }
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<div class="header">
+    <span>杭州欧拉公式科技有限公司-我们的app</span>
+
+</div>
+
+<div class="content">
+
+    <div class="weatherpocket">
+
+        <a href="astronomy">
+            <img src="{{ url_for('static', filename='icon0843.png') }}">
+
+            <p>天文观星指南</p>
+        </a>
+
+
+    </div>
+
+
+       <div class="solunar">
+        <a href="solunar">
+            <img src="{{ url_for('static', filename='icon1153.png') }}">
+
+
+            <p>日出日落月相</p>
+        </a>
+
+
+    </div>
+
+
+    <div class="solunar">
+
+        <a href="meteocalc">
+            <img src="{{ url_for('static', filename='icon1342_a.png') }}">
+
+            <p>气象计算</p>
+        </a>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="content">
+     <div class="clock">
+
+        <a href="fishing">
+            <img src="{{ url_for('static', filename='diaoyu-4.png') }}">
+
+            <p>钓鱼天气</p>
+        </a>
+
+
+    </div>
+
+    <div class="clock">
+
+        <a href="tide">
+            <img src="{{ url_for('static', filename='icon1600-3.png') }}">
+
+            <p>月相潮汐表</p>
+        </a>
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div  class="n-footer">
+
+
+    <p class="nf-intro">杭州欧拉公式科技有限公司-<a href="https://beian.miit.gov.cn">浙ICP备18014684号-2</a></p>
+
+    <div class="about">
+
+
+        <a href="contact">联系我们</a>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

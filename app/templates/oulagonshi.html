@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    name="viewport">
+    <title>杭州欧拉公式科技有限公司</title>
+
+    <style>
+
+
+.n-footer {
+
+    height: 80px;
+    text-align: center;
+    margin-top: -80px;
+    background-color: #eeeeee;
+    width: 100%;
+    position:absolute;
+    bottom:0
+
+}
+
+.n-footer a{
+    color: #0088cc;
+}
+
+.n-footer .nf-intro {
+
+    margin-top: 15px;
+}
+
+.n-footer .about {
+
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+}
+
+.n-footer .about a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+      body {
+            background-color: #fff;
+            font-size: medium;
+            margin: 0px;
+
+        }
+
+        .header{
+            background-color: #111111;
+            height: 44px;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .header span{
+            color: #fff;
+            font-size: 24px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+
+        ul{
+            color: #666666;
+        }
+        .info {
+
+            background-color: #fff;
+            color: white;
+            text-indent: 2em;
+            width: 100%;
+        }
+
+
+        .app {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app .appinfo {
+
+            display: flex;
+            flex-direction: column;
+
+            align-self: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .app .appinfo a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .appinfo img {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .content {
+            display: flex;
+            margin-top: 10px;
+
+        }
+
+        .weatherpocket {
+            display: inline;
+            margin: 20px;
+        }
+
+        .lunartide {
+            display: inline;
+            margin: 20px;
+        }
+        .solunar {
+            display: inline;
+            margin: 20px;
+        }
+
+         .clock {
+            display: inline;
+            margin: 20px;
+        }
+
+        .image {
+            float: left
+            width: 100px
+            height: auto
+
+        }
+
+        .text {
+            color: #458def;
+            font-size: 22px;
+            line-height: 24px;
+            margin-left: 10px;
+
+        }
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <span>杭州欧拉公式科技有限公司</span>
+
+</div>
+
+<div class="content">
+
+    <div class="clock">
+        <p class="text">关于我们</p>
+        <img src="{{ url_for('static', filename='oula.png') }}">
+
+
+    </div>
+
+     <div class="clock">
+
+
+         <div>
+             <ul>欧拉公式：e^(iπ) + 1 = 0,这个数学中的唯美公式,将自然界的两个最重要的自然数巧妙结合在一起。</ul>
+             <ul>杭州欧拉公式科技有限公司取名于欧拉公式，希望运用公式计算让生活更唯美。</ul>
+             <ul>我们主要致力于气象，天文，地理领域, 已经掌握比较成熟的天文算法，潮汐计算算法，气象计算公式。</ul>
+             <ul>我们目前主要的方向是在手机上结合气象计算，天文计算，海拔计算为用户提供应用市场上比较缺少的小众专业需求。</ul>
+             <ul>下面部分是我们已经完成的app介绍，可以点击下面左侧的icon和标题进入app介绍网页。</ul>
+
+
+         </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+<div class="content">
+    <div class="clock">
+
+        <a href="app">
+            <p class="text">我们的App</p>
+            <img src="{{ url_for('static', filename='app.png') }}" >
+
+
+        </a>
+
+
+    </div>
+
+    <div class="clock">
+
+
+         <div>
+             <ul>目前主要完成了5款App,分别为日出日落月相，天文观星指南，钓鱼天气,气象计算，月相潮汐表。</ul>
+             <ul>主要为用户在赶海，钓鱼，天文观察，自然摄影，气象生活中提供帮助。</ul>
+             <ul>未来还计划为冲浪运动，登山运动上提供帮助，敬请期待。</ul>
+
+             <ul>详细的app介绍和更新在我们的app介绍网页，可以点击左侧的icon和标题进入app介绍网页。</ul>
+
+
+         </div>
+
+
+
+    </div>
+</div>
+
+
+<div  class="n-footer">
+
+
+    <p class="nf-intro">Copyright 杭州欧拉公式科技有限公司-<a href="https://beian.miit.gov.cn">浙ICP备18014684号-2</a></p>
+
+    <div class="about">
+
+        <a href="contact">联系我们</a>
+        <span >    </span>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

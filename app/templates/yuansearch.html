@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单查询</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        .search {
+            display: block;
+            width: 100%;
+            height: 240px;
+
+        }
+
+        .search .i_search {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            align-content: center;
+            align-items: center;
+        }
+
+        .search .i_search div  {
+            width: 50%;
+            align-content: center;
+            height: 80px;
+
+
+        }
+
+        .search  .i_search div input {
+            width: 100%;
+            height: 70px;
+            margin-top: 5px;
+            text-align: left;
+            color: #666666;
+            font-size: x-large;
+            line-height: 60px;
+            text-indent: 1em;
+            border-color: #dddddd;
+
+
+
+        }
+
+        .search .i_search .is_button button {
+
+            width: 30%;
+            height: 50px;
+            align-content: center;
+            text-align: center;
+            font-size: x-large;
+            line-height: 44px;
+            margin-top: 16px;
+            color: #eeeeee;
+            background-color: #999999;
+
+        }
+
+        table {
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        table thead ,table tbody{
+            width: 100%;
+        }
+
+        table thead tr,table tbody tr{
+            display: flex;
+            flex-direction: row;
+
+            width: 100%;
+            border:1px solid #98bf21;
+
+
+        }
+
+        table thead tr th {
+
+            width: 100px;
+            text-align: center;
+            border:1px solid #98bf21;
+            font-size:1.1em;
+            padding-top:5px;
+            padding-bottom:4px;
+            background-color:#A7C942;
+            color:#ffffff;
+            text-wrap: none;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+<form action="search" method="get" class="search">
+		<input type="hidden" value="1" name="page">
+	    <div class="i_search">
+	    	<div class="is_keyword">
+	    		<input name="q" type="text" placeholder="请输入姓名">
+	    	</div>
+            <div class="is_code">
+	    		<input name="code" type="text" placeholder="请输入检验码">
+	    	</div>
+
+	    	<div class="is_button"><button type="submit">搜索</button></div>
+	    </div>
+
+    </form>
+
+<table class="table" lay-even="" lay-skin="nob">
+                          <thead>
+                              <tr>
+                                  <th>表名</th>
+                                  <th>日期</th>
+                                  <th>姓名</th>
+                                  <th>编号</th>
+                                  <th>价格</th>
+                                  <th>到货</th>
+                                  <th>旺旺号</th>
+                                  <th>宝贝</th>
+                                  <th>备注</th>
+                                  <th>操作</th>
+
+                              </tr>
+                          </thead>
+
+                          <tbody>
+                          {% for order in orderlist %}
+                              <tr>
+                                <td>{{order.sheet}}</td>
+                                <td>{{order.date}}</td>
+                                <td>{{order.name}}</td>
+                                <td>{{order.num}}</td>
+                                <td>{{order.price}}</td>
+                                <td>{{order.status}}</td>
+                                <td>{{order.chatnum}}</td>
+                                <td>{{order.goodsname}}</td>
+                                <td>{{order.note}}</td>
+                              </tr>
+                          {% endfor %}
+
+                          </tbody>
+                     </table>
+
+
+</body>
+</html>

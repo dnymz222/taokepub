@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solunar Calculator</title>
+    <style type="text/css">
+
+
+
+
+        body {
+            background-color: #fff;
+            font-size: medium;
+            margin: 0px;
+
+        }
+
+        .header{
+            background-color: #111111;
+            height: 44px;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .header span{
+            color: #fff;
+            font-size: 24px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+
+        ul{
+            color: #666666;
+        }
+        .info {
+
+            background-color: #fff;
+            color: white;
+            text-indent: 2em;
+            width: 100%;
+        }
+
+
+        .app {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app .appinfo {
+
+            display: flex;
+            flex-direction: column;
+
+            align-self: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .app .appinfo a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .appinfo img {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <span>日出日落月相</span>
+
+</div>
+
+<div class="info" >
+    <ul>
+        该app为用户提供以下功能
+    </ul>
+    <ul>
+        基本:
+
+    </ul>
+
+     <ul>
+             1、 日出日落，太阳位置，暮曙光，摄影时刻
+     </ul>
+     <ul>
+            2、月出月落月相，银河可见时间
+      </ul>
+      <ul>
+            3、ar显示日月位置
+      </ul>
+    <ul>
+         4、地图显示日月位置
+
+      </ul>
+    <ul>
+          5、晴天钟
+      </ul>
+
+    <ul>
+        高级:
+
+    </ul>
+    <ul>
+         1、日月食
+    </ul>
+    <ul>
+        2、星轨ar，光污染
+    </ul>
+    <ul>
+         3、星空摄影计算
+    </ul>
+
+
+</div>
+
+<div class="app">
+
+
+     <div class="appinfo">
+
+         <a href='https://a.app.qq.com/o/simple.jsp?pkgname=com.xueping.solunar'>应用宝链接 </a>
+          <a href="contact">联系我们 </a>
+
+
+
+
+    </div>
+
+
+    <img src="{{ url_for('static', filename='st22.png') }}">
+
+
+
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>

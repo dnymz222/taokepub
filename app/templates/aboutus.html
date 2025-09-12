@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <style type="text/css">
+
+        body {
+            background-color: #fc4b36;
+        }
+        .info {
+
+            background-color: #fc4b36;
+            color: white;
+            text-indent: 2em;
+            width: 40%;
+        }
+
+        .app {
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .app .appinfo {
+
+            display: flex;
+            flex-direction: column;
+
+            align-self: center;
+            margin-left: 20px;
+            color: white;
+        }
+
+        .appinfo img {
+            margin-top: 20px;
+            width: 148px;
+            height: 148px;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="info">
+寻券，是杭州欧拉公式科技有限公司旗下网站，专注于为提供优质优惠券。每天上午10点准时上新，专注打造超方便超省钱的购物神器应用，是你的购物省钱小帮手
+</div>
+
+<div class="app">
+
+
+    
+    <img src="{{ url_for('static', filename='first2.png') }}">
+
+    <div class="appinfo">
+
+        <div>
+            寻券APP,是杭州欧拉公式科技有限公司旗下APP,欢迎大家下载使用
+        </div>
+
+        <img src="{{ url_for('static', filename='qr.php.png') }}">
+
+
+    </div>
+    
+    
+</div>
+
+
+
+</div>
+
+</body>
+</html>

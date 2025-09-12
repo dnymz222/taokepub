@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>众里寻券千百度</title>
+    
+
+
+    <script type="text/javascript" charset="UTF-8"  src="{{ url_for('static', filename='ua-device.js') }}"></script>
+    <script type="text/javascript" charset="UTF-8"  src="{{ url_for('static', filename='useragent-base.js') }}"></script>
+
+
+ 
+
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+    window.onload = function () {
+
+        var u = navigator.userAgent;
+
+        var  result =   uaDevice(u);
+        // alert('model:' +result.device.model+"\nmanufacturer:"+result.device.manufacturer);
+        var manufacturer = result.device.manufacturer;
+        if (!manufacturer) {
+               window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=com.xueping.xunquan';
+        } else if(manufacturer == 'Apple'){
+            window.location.href = 'https://itunes.apple.com/cn/app/id1067866013?mt=8';
+        }
+        // else if(manufacturer == 'Xiaomi' ) {
+        //
+        //     window.location.href ='http://app.mi.com/details?id=com.xueping.xunquan';
+        // }
+
+        else if (manufacturer=='Vivo') {
+
+            window.location.href = 'http://appdetailh5.vivo.com.cn/detail/2081857?source=2';
+        }
+        else if (manufacturer == 'Huawei') {
+             window.location.href = 'https://appgallery.cloud.huawei.com/uowap/index.html#/detailApp/C100192825?source=appshare&subsource=C100192825&shareTo=com.tencent.mobileqq&locale=zh_CN';
+        }
+        else  {
+
+             // window.location.href = 'https://xunquan.oss-cn-hangzhou.aliyuncs.com/apk/xunquan.apk';
+              window.location.href = 'https://a.app.qq.com/o/simple.jsp?pkgname=com.xueping.xunquan';
+        //
+
+        }
+
+
+
+
+        // var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        // var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        //
+        // if (isiOS){
+        //     window.location.href = 'https://itunes.apple.com/cn/app/id1067866013?mt=8';
+        //
+        // }else {
+        //
+        //
+        //     window.location.href = 'https://cdn.xunquan.shop/apk/xunquan.apk';
+        //
+        // }
+
+
+
+
+    }
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

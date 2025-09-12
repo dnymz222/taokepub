@@ -1,0 +1,40 @@
+<ul class="c_list cf" id="contain">
+    {% for coupon in coupons %}
+    <li>
+      <div class="c_img"><a class="j_target" href={{coupon.couponPromotUrl}}><img src={{coupon.image}}_250x250></a></div>
+
+      <div class="c_desc">
+        <div class="cf">
+          <div class="cp_lastPrice"><span>￥</span><strong>{{coupon.finalPrice}}</strong><span>券后价</span></div>
+        </div>
+        <div class="cf c_saleCount"><del>￥{{coupon.price}}</del><span>销量：<em>{{coupon.sellCount}}</em></span></div>
+        <div class="c_title"><a href={{coupon.couponPromotUrl}} class="j_target">{{coupon.goodsName}}</a></div>
+        <div class="c_receive">
+          <strong class="cp_coupon">券￥{{coupon.couponDenomination}}</strong>
+            <em class="j_getcoupon"><a href={{coupon.couponPromotUrl}}><span>领取优惠券</span></a>></em>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+
+    <div class="paging fr">
+
+        <div class="pageMob"><span class="p_noblock">当前第<em class="nowPage">{{page}}</em>页</span></div>
+        <div class="pageMob">
+
+            <span class="toPage" data-page=1 data-cat={{cat}}>首页</span>
+            {% if  pagination.has_prev %}
+            <span class="toPage" data-page={{page-1}} data-cat={{cat}}>上一页</span>
+            {% endif %}
+            {% if  pagination.has_next %}
+            <span data-page={{page+1}} class="toPage" data-cat={{cat}}>下一页</span>
+            {% endif %}
+        </div>
+        <!--<div class="pageMob">-->
+        <!--<span class="p_noblock">到第</span><input type="text" class="p_input" id="pageNum" value="2" data-cat={{cat}}><span class="p_noblock">页</span><button id="goPageBtn" class="p_button" data-cat={{cat}}>确定</button>-->
+        <!--</div>-->
+    </div>
+
+
+
+</ul>

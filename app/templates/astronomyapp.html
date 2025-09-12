@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astronomy Observer</title>
+    <style type="text/css">
+        body {
+            background-color: #fff;
+            font-size: medium;
+            margin: 0px;
+        }
+        .header{
+            background-color: #111111;
+            height: 44px;
+            width: 100%;
+            margin: 0px;
+        }
+        .header span{
+            color: #fff;
+            font-size: 24px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+        ul{
+            color: #666666;
+        }
+        .info {
+            background-color: #fff;
+            color: white;
+            text-indent: 2em;
+            width: 100%;
+        }
+        .app {
+            display: flex;
+            flex-direction: column;
+        }
+        .app .appinfo {
+            display: flex;
+            flex-direction: column;
+            align-self: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .app .appinfo a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .appinfo img {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <span>天文观星指南</span>
+
+</div>
+
+<div class="info" >
+    <ul>
+         天文观星指南app是一款帮助天文观测者合理安排观测计划的软件。
+得益于手机计算能力的提升和新技术的应用，在手机上计算天体位置，天体年历和呈现天体位置成为可能。
+
+
+
+    </ul>
+    <ul>
+        天文观星指南不仅计算每日日月运行情况，行星升落，每日可见星座，可见重要恒星，可见messier天体。另外还整理收集了各类天体，重要星表，并且计算了每个天体位置，升落情况，最后计算了天体一年的星历表。展示了星座划分，星座位置，恒星位置，重要恒星显示，太阳系天体位置。
+    </ul>
+
+    <ul>
+
+        天文观星指南收集整理了八十八个星座，一万多个恒星和七百多个深空天体的资料和介绍，另外还导入了主流的几个星表。基本上能满足绝大部分天文爱好者的观测需求，不失为一份功能完善的天文观星指南。
+
+    </ul>
+
+
+</div>
+
+<div class="app">
+
+
+     <div class="appinfo">
+
+
+
+          <a href='https://a.app.qq.com/o/simple.jsp?pkgname=com.xueping.astroguide'>应用宝链接 </a>
+
+
+          <a href="contact">联系我们 </a>
+
+
+
+
+    </div>
+
+
+    <img src="{{ url_for('static', filename='as22.png') }}">
+
+
+
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>

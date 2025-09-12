@@ -1,0 +1,12 @@
+namespace Example;
+
+table IntegerList {
+  values: [int];
+}
+
+table Data {
+  lists: [IntegerList];
+}
+
+root_type Data;
+

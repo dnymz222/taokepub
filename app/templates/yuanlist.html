@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单列表</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+ <form action="upload" enctype='multipart/form-data' method='POST'>
+           <input type="file" name="file">
+           <input type="submit" value="上传">
+         </form>
+
+<form action="search" method="get">
+		<input type="hidden" value="1" name="page">
+	    <div class="i_search">
+	    	<div class="is_keyword">
+	    		<input name="q" type="text" placeholder="请输入姓名">
+	    	</div>
+	    	<div class="is_button"><button type="submit">搜索</button></div>
+	    </div>
+    </form>
+
+<table class="layui-table" lay-even="" lay-skin="nob">
+                          <thead>
+                              <tr>
+                                  <th>表名</th>
+                                  <th>日期</th>
+                                  <th>姓名</th>
+                                  <th>编号</th>
+                                  <th>价格</th>
+                                  <th>到货</th>
+                                  <th>旺旺号</th>
+                                  <th>宝贝</th>
+                                  <th>备注</th>
+                                  <th>操作</th>
+
+                              </tr>
+                          </thead>
+
+                          <tbody>
+                          {% for order in orderlist %}
+                              <tr>
+                                <td>{{order.sheet}}</td>
+                                <td>{{order.date}}</td>
+                                <td>{{order.name}}</td>
+                                <td>{{order.num}}</td>
+                                <td>{{order.price}}</td>
+                                <td>{{order.status}}</td>
+                                <td>{{order.chatnum}}</td>
+                                <td>{{order.goodsname}}</td>
+                                <td>{{order.note}}</td>
+                              </tr>
+                          {% endfor %}
+
+                          </tbody>
+                     </table>
+
+<div class="larry-table-page clearfix">
+    <div id="page" class="page"><div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-0"><span class="layui-laypage-curr"><em class="layui-laypage-em"></em><em>1</em></span><a href="javascript:;" data-page="2">2</a><a href="javascript:;" data-page="3">3</a><a href="javascript:;" data-page="4">4</a><a href="javascript:;" data-page="5">5</a><span>…</span><a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">末页</a><a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a></div></div>
+</div>
+
+</body>
+</html>

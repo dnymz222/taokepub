@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>气象计算</title>
+    <style type="text/css">
+
+
+
+
+        body {
+            background-color: #fff;
+            font-size: medium;
+            margin: 0px;
+
+        }
+
+        .header{
+            background-color: #458def;
+            height: 44px;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .header span{
+            color: #fff;
+            font-size: 24px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+
+        ul{
+            color: #666666;
+        }
+        .info {
+
+            background-color: #fff;
+            color: white;
+            text-indent: 2em;
+            width: 100%;
+        }
+
+
+        .app {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app .appinfo {
+
+            display: flex;
+            flex-direction: column;
+
+            align-self: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .app .appinfo a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .appinfo img {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <span>气象计算</span>
+
+</div>
+
+<div class="info" >
+    <ul>
+         气象计算是一款分析当前天气状态，量化天气因素和通过天气计算分析预测天气对人的影响。。
+    </ul>
+    <ul>
+        通过温度湿度和气压分析大气状态，得出露点，湿球温度，空气密度，蒸汽压，焓等数据。结合温度，湿度或露点温度计算舒适度或者用来科学调节室内温度湿度，是湿度计温度计的使用助手。使用气压传感器，温度和海平面气压来计算当地海拔。
+    </ul>
+    <ul>
+        APP主要分为以下五个部分：
+
+          </ul>
+
+    <ul>
+        一、实时：实时获取本地当前天气，并结合天气计算相关数据
+    </ul>
+        <ul>
+   二、干湿表计算器：主要计算露点，湿球温度，相对湿度，绝对湿度，焓，密度，混合率，蒸气压，虚温，位温
+    </ul>
+
+        <ul>
+  三、舒适度计算：计算酷热指数，湿热指数，不适指数三个指数。可查看某个条件下的舒适程度或者用来调节室内的温度湿度
+
+    </ul>
+
+        <ul>
+  四、工具：主要有单位转换，体感温度，风寒，气压与海拔，声音速度，密度高度，马力
+
+    </ul>
+
+        <ul>
+五、我的
+    </ul>
+</div>
+
+<div class="app">
+
+
+     <div class="appinfo">
+
+
+
+         <a href='https://a.app.qq.com/o/simple.jsp?pkgname=com.xueping.wenduji'>气象计算 </a>
+
+          <a href="contact">联系我们 </a>
+
+
+
+
+    </div>
+
+
+    <img src="{{ url_for('static', filename='ms22.png') }}">
+
+
+
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>

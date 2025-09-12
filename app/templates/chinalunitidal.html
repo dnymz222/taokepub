@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    name="viewport">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <title>中国各港口差比数和潮信表</title>
+    <script type="text/javascript" charset="UTF-8"  src="{{ url_for('static', filename='clipboard.min.js') }}"></script>
+    <script type="text/javascript">
+
+        window.onload = function(){
+              var img = document.getElementById("image");
+                img.ondblclick = function(){
+                    if(this.width == this.attributes['default_width'].value && this.height == this.attributes['default_height'].value){
+                        this.width *=3;
+                        this.height *= 3;
+                    }else{
+                        this.width = this.attributes['default_width'].value ;
+                        this.height = this.attributes['default_height'].value;
+                    }
+                }
+        };
+
+
+    </script>
+    <style type="text/css">
+
+        body{
+            background-color: #fc4b36;
+            /*display: flex;*/
+
+        }
+
+        h3 {
+            color: #f2f2f2;
+            font-size: 20px;
+        }
+
+        .main {
+            margin-top: 40px;
+            width: 100%;
+            height: 100%;
+            top:0;
+            /*z-index: 0;*/
+            position: absolute;
+            background-color: #fc4b36;
+        }
+        .bannerlist {
+            background-color: #fc4b36;
+            width: 100%;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .banneritem {
+          display: block;
+
+          width: 100%;
+          height: fit-content;
+        }
+        .banneritem .bannertitle {
+            color: #f2f2f2;
+            font-size: 14px;
+            text-indent: 8px;
+        }
+        .banneritem .bannerimage {
+            width: 100%;
+
+
+        }
+        .banneritem .bannerimage img {
+
+            width: 96%;
+
+        }
+
+        .download {
+            width: 96%;
+            height: 44px;
+            margin-top: 0px;
+            padding-top: 0px;
+            background-color: #4cae4c;
+
+            z-index: 1;
+            float: top;
+
+            position: fixed;
+
+            border-radius: 2px;
+
+        }
+        .download .link {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+
+
+
+        }
+        .download .link .appicon{
+            margin-top: 2px;
+            margin-left: 2px;
+            margin-bottom: 2px;
+            width: 40px;
+            height: 40px;
+            border-radius: 2px;
+        }
+        .download .link .appdesc {
+            color: #f2f2f2;
+            font-size: 13px;
+            width: fit-content;
+            line-height: 44px;
+            margin-left: 4px;
+
+
+
+        }
+        .download .link .downloaddiv {
+            display: block;
+            margin-right: 2px;
+            flex: 1;
+            height: 100%;
+            /*background-color: #999999;*/
+        }
+
+        .download .link .downloaddiv .downloadbtn {
+
+            margin-right: 2px;
+            width: fit-content;
+            background-color: white;
+            color: #666666;
+            height: 28px;
+            margin-top: 7px;
+            line-height: 30px;
+            font-size: 13px;
+
+            padding-left: 4px;
+            padding-right: 4px;
+
+            border-radius: 2px;
+            float: right;
+
+        }
+
+        #weixin-tip{display:none; position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;}
+       #weixin-tip p{text-align: center; margin-top: 0%; padding:0%; position: relative;}
+       #weixin-tip p img {
+           width: 100%;
+           height: fit-content;
+       }
+        #weixin-tip .close{
+        color: #fff;
+
+        font: bold 50px/50px simsun;
+        text-shadow: 0 1px 0 #ddd;
+        position: absolute;
+        top: 5%; left: 5%;
+    }
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+<div class="main">
+
+    <ul class="bannerlist">
+
+        {% for banner in banners %}
+        <li class="banneritem">
+            <div>
+                <h4 class="bannertitle">{{banner.name}}</h4>
+                <div class="bannerimage">
+
+                    <a class="bannerimage"  ><img id="image" src={{banner.url}}></a>
+                </div>
+            </div>
+
+        </li>
+
+        {% endfor %}
+
+    </ul>
+
+
+</div>
+
+
+</body>
+
+
+</html>

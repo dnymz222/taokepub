@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>钓鱼天气</title>
+    <style type="text/css">
+
+
+
+
+        body {
+            background-color: #fff;
+            font-size: medium;
+            margin: 0px;
+
+        }
+
+        .header{
+            background-color: #346ec0;
+            height: 44px;
+            width: 100%;
+            margin: 0px;
+        }
+
+        .header span{
+            color: #fff;
+            font-size: 24px;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+
+        ul{
+            color: #666666;
+        }
+        .info {
+
+            background-color: #fff;
+            color: white;
+            text-indent: 2em;
+            width: 100%;
+        }
+
+
+        .app {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app .appinfo {
+
+            display: flex;
+            flex-direction: column;
+
+            align-self: left;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .app .appinfo a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .appinfo img {
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <span>钓鱼天气</span>
+
+</div>
+
+<div class="info" >
+    <ul>
+         钓鱼天气app是一款帮助钓鱼人合理科学钓鱼的软件。
+    </ul>
+    <ul>
+鱼类活动跟很多天气情况有关，水温和大气压的影响情况最为明显，但是气温对水温的影响比较滞后和缓慢，大气压的变化则比较直观。大气压越高水中溶氧度越高，鱼类活动越活跃。风速风向也是一个重要的因素，微风吹佛水面增加水的溶氧度，天冷吹南风天热吹北风都非常有利钓鱼。最后降雨和湿度对钓鱼也有一定的影响。
+
+
+          </ul>
+
+    <ul>
+        另外，有资料指出鱼类在日出日落月出月落的前后45分钟内活动比较活跃，在月相为满月和新月的特别活跃
+    </ul>
+</div>
+
+<div class="app">
+
+
+     <div class="appinfo">
+
+
+
+         <a href='https://a.app.qq.com/o/simple.jsp?pkgname=com.xueping.fishingweather'>应用宝链接 </a>
+
+          <a href="contact">联系我们 </a>
+
+
+
+
+    </div>
+
+
+    <img src="{{ url_for('static', filename='fs22.png') }}">
+
+
+
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
