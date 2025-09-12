@@ -2,7 +2,7 @@
 import os.path
 
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,hefengfishingapikey,hefengusername,acuuappkey,zhongkexingtu_token
+from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,zhongkexingtu_token
 import json
 from flask import request,session,url_for,redirect
 from app import db

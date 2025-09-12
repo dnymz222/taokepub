@@ -1,6 +1,6 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,worlrtide_secret,hefengfishingapikey
+from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,worlrtide_secret
 from flask import request,session,url_for,redirect
 from app import db
 import urllib

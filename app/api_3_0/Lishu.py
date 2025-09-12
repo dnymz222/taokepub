@@ -1,6 +1,6 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,hefengfishingapikey,hefengusername,holiday_key,workingday_api_key
+from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,holiday_key,workingday_api_key
 import json
 from flask import request,session,url_for,redirect
 from app import db
