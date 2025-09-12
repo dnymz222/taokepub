@@ -28,10 +28,6 @@ login_manager.login_view = 'auth.login'
 
 
 
-
-
-
-
 def create_app(config_name):
 #     app = Flask(__name__,static_folder = "./dist/static",
 # template_folder = "./dist")
@@ -42,20 +38,21 @@ def create_app(config_name):
     bootstrap.init_app(app)
     mail.init_app(app)
     moment.init_app(app)
+
+
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/www/flask/taoke/static/DB/data.db'
     
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:222222@localhost/xunquan'
-
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/www/flask/taoke/static/DB/data.db'
-
-
-    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/xuepingwang/Workspace/flask_tencent/taoke/static/DB/data.db'
     #
-    #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://luwan:Hyh671002@rm-bp1b6qz754yv0743fo.mysql.rds.aliyuncs.com/xunquan'
+
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/xuepingwang/Workspace/flask/taoke/static/DB/eclipse1.db'
+
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://luwan:Hyh671002@rm-bp1b6qz754yv0743fo.mysql.rds.aliyuncs.com/xunquan'
     # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://luwan:Hyh671002@rm-bp1b6qz754yv0743f.mysql.rds.aliyuncs.com/xunquan'
     # # app.config['APNS_CERTIFICATE'] = './static/apns-dis.pem'
     db.init_app(app)
     login_manager.init_app(app)
-
+    pagedown.init_app(app)
     
 
     if not app.debug and not app.testing and not app.config['SSL_DISABLE']:
@@ -88,19 +85,44 @@ def create_app(config_name):
     from .solunar import solunar as solunar_blueprint
     app.register_blueprint(solunar_blueprint,url_prefix = "/api/v3.0/solunar")
 
-    from .alipay import alipay as alipay_blueprint
-    app.register_blueprint(alipay_blueprint,url_prefix='/api/v3.0/alipay')
+
+
+
+    from .tide import tide as tide_blueprint
+
+    app.register_blueprint(tide_blueprint, url_prefix='/tide')
+
+
+    from .gfs import gfs as gfs_blueprint
+
+    app.register_blueprint(gfs_blueprint, url_prefix='/gfs')
 
 
 
 
-    from .index import main as main_blueprint
+    from app.index import main as main_blueprint
 
     app.register_blueprint(main_blueprint, url_prefix="/")
 
 
+    from .yuan import yxx as yxx_blueprint
+
+    app.register_blueprint(yxx_blueprint, url_prefix='/yxx')
+
+
+    from .jiliang import jiliang as jiliang_blueprint
+
+    app.register_blueprint(jiliang_blueprint,url_prefix='/jiliang')
+
+
+    from  .supabase import supabaseB as supabase_blueprint
+    app.register_blueprint(supabase_blueprint, url_prefix='/api/v3.0/supabase')
+
+
 
     return app
+
+
 
 
 class User(db.Model, UserMixin):
@@ -117,5 +139,3 @@ class User(db.Model, UserMixin):
 @login_manager.user_loader
 def load_user(user):
     return User.query.get(int(user))
-
-

@@ -32,10 +32,30 @@ SAMPLES = 3601  # Change this to 3601 for SRTM1
 HGTDIR = 'hgt'  # All 'hgt' files will be kept here uncompressed
 
 
-from gmalthgtparser import HgtParser
 
 @api3.route("/hgt/elevation")
 def hgtelevation():
+    lat = request.args.get('lat', '30.2870')
+    lng = request.args.get('lng', '119.9872')
+    t = request.args.get("t","100")
+    s = request.args.get("s","11122")
+    url = "http://www.astronomyobserver.net/api/v3.0/elevation?s=" + s + "&lat=" + lat + "&lng=" + lng + "&t="+ t +""
+
+    try:
+        req = urllib.request.Request(url)
+        response = urllib.request.urlopen(req)
+        content = response.read()
+        return content
+    except Exception as e:
+
+        dict = {}
+        dict[x_code] =201
+        dict[x_meesage] = "%s"%e
+        return  json.dumps(dict)
+
+
+@api3.route("/elevation")
+def tifelevationfromastronomy():
     lat = request.args.get('lat', '30.2870')
     lng = request.args.get('lng', '119.9872')
     t = request.args.get("t","100")
@@ -416,32 +436,35 @@ def checkhgtsize():
 
     return  "done"
 
+@api3.route("/vnl10/move")
+def vnl10move():
+    download_path = os.path.join(basedir, 'static/vnl2014')
+    wepb_path = os.path.join(basedir, 'static/vnl201410')
+    emptydict = {}
+    for z in range(10, 11):
+        for x in range(0, int(pow(2, z) + 0.1)):
+            for y in range(0, int(pow(2, z) + 0.1)):
+                try:
+
+
+                    wname = str(z) + "_" + str(x) + "_" + str(y) + ".webp"
+
+                    fPath = os.path.join(download_path, wname)
+
+                    wPath = os.path.join(wepb_path, wname)
+
+                    if os.path.exists(fPath):
+                        shutil.move(fPath,wPath)
+
+
+
+                except Exception as e:
+                    print(e)
+
+    return "done"
+
+
 def checkhgt(hgt_file):
 
     with open(hgt_file, 'rb') as hgt_data:
-        # HGT is 16bit signed integer(i2) - big endian(>)
-        elevations = np.fromfile(hgt_data, np.dtype('>i2'), SAMPLES * SAMPLES) \
-            .reshape((SAMPLES, SAMPLES))
-        for elevation in elevations:
-            for elevation_item in elevation:
-                if elevation_item > 0:
-                    return 1
-
-    hgt_data.close()
-
-
-    return  0
-
-@api3.route("/bolingpoint/<pressure>")
-def calculate_boiling_point(pressure):
-    p1 = float(pressure)
-    ln = math.log(1013.25/p1, 2.718281828459045)
-    deltaH = 40.66
-    R = 0.008314
-    k =  deltaH / R
-    m = ln / k
-    n = m + 1 / 373.15
-
-    t = 1 / n - 273.15
-
-    return "%.2f"% t
+        pass

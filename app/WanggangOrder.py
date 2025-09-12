@@ -92,7 +92,7 @@ class WanggangOrder(db.Model):
         dict[AnalysisProgressKey] = self.AnalysisProgress
         dict[RemarkKey] = self.Remark
         dict[MonthKey] = self.Month
-        dict["Sheet"]  = self.Sheet
+        dict["Sheet"]  =self.Sheet
         return dict
 
     def updatevalue(self,newobject):

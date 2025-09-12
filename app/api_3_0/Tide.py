@@ -21,7 +21,9 @@ import os
 import  xarray as xr
 import  selenium
 import requests
+
 from app.utils.constvalue import xinzhi_public_key,xinzhi_prinvate_key
+
 
 
 
@@ -158,7 +160,7 @@ def chiantideforecast():
         datadict = contentdict['results'][0]
         for dict in datadict["data"]:
             # print dict
-            if "range" in dict:
+            if "range" in dict and  len(dict["range"]) >0:
                 list.append(dict)
         resultdict = {}
         if len(list) > 0:
@@ -381,14 +383,12 @@ def tideconstant(lat,lng):
     # lat = request.args.get('lat', '21.57')
     # lng = request.args.get('lng', '109.56')
     language = request.args.get('language', 'en-us')
-    chao = request.args.get("chao","0")
 
     try:
         response = requests.get(
             'https://www.astronomyobserver.net/api/v3.0/tide/constant/all/'+ lat +"/" +lng,
             params={
                 "language": language,
-                "chao":chao
 
             },
 
@@ -634,11 +634,137 @@ def tideconstantcheck(lat,lng):
     except Exception as e:
         print(e)
         result[x_code] = 201
-        result[x_meesage] = "%s"%e
+        result[x_meesage] = e.message
     return json.dumps(result)
 
 
 
+@api3.route("/chao/changshu/<lat>/<lng>")
+def chaoconstantall(lat,lng):
+    latindex = latIndex(float(lat))
+    lngindex = lngIndex(float(lng))
+
+    result = {}
+    try:
+        result[x_code] = 200
+        tidedict = chaotpxoconstantsingleLocation(latindex,lngindex)
+        result[x_data] = tidedict
+    except Exception as e:
+        result[x_code]  = 201
+        result[x_meesage] = "%s" % e
+
+    return json.dumps(result)
+
+
+def chaotpxoconstantsingleLocation(lat,lng):
+    tpxoPath = os.path.join(basedir, 'static/TPXO')
+
+    dict = {}
+    dict["jing"] = lng
+    dict["wei"] = lat
+    hlist = []
+    ulist =[]
+    gridlist = []
+
+
+    constants = ["M2", "S2", "K1", "O1", "N2", "P1", "K2", "Q1", "2N2", "M4", "MF", "MM", "MN4", "MS4","S1"]
+
+    #h
+    for cons in constants:
+        c = cons.lower()
+        try:
+            filename =  "h_"+ c +"_tpxo9_atlas_30_v5.nc"
+            filepath = os.path.join(tpxoPath, filename)
+            ds = xr.open_dataset(filepath)
+            # print(ds)
+            him = ds["hIm"][lng].values
+            hre = ds["hRe"][lng].values
+
+            himvalue = him[lat]
+            hrevalue = hre[lat]
+
+
+            if c == "m2":
+                if abs(float(himvalue)) < 0.0001 and abs(float(hrevalue)) < 0.0001:
+                    dict["zhi"] = False
+                else:
+                    dict["zhi"] = True
+            hlist.append(int(himvalue))
+            hlist.append(int(hrevalue))
+            ds.close()
+        except Exception as e:
+            print(e)
 
 
 
+    dict["chao"] = hlist
+
+
+
+
+    return dict
+
+
+
+@api3.route("/tide/fish/constant/all/<lat>/<lng>")
+def tidefishconstantall(lat,lng):
+    latindex = latIndex(float(lat))
+    lngindex = lngIndex(float(lng))
+
+    result = {}
+
+    try:
+        has, newlat, newlng = checkdataAvaliable(latindex, lngindex)
+        tidedict = fishtidetpxoconstantsingleLocation(newlat,newlng)
+        tidedict["have"] = has
+        result[x_data] = tidedict
+        result[x_code] = 200
+    except Exception as e:
+        result[x_meesage] = "%s"%e
+        result[x_code] = 201
+
+    return json.dumps(result)
+
+
+def fishtidetpxoconstantsingleLocation(lat,lng):
+    tpxoPath = os.path.join(basedir, 'static/TPXO')
+
+    dict = {}
+    dict["lng"] = lng
+    dict["lat"] = lat
+    hlist = []
+
+
+
+    constants = ["M2", "S2", "K1", "O1", "N2", "P1", "K2", "Q1", "2N2", "M4", "MF", "MM", "MN4", "MS4","S1"]
+
+    #h
+    for cons in constants:
+        c = cons.lower()
+        try:
+            filename =  "h_"+ c +"_tpxo9_atlas_30_v5.nc"
+            filepath = os.path.join(tpxoPath, filename)
+            ds = xr.open_dataset(filepath)
+            # print(ds)
+            him = ds["hIm"][lng].values
+            hre = ds["hRe"][lng].values
+
+            himvalue = him[lat]
+            hrevalue = hre[lat]
+
+
+            if c == "m2":
+                if abs(float(himvalue)) < 0.0001 and abs(float(hrevalue)) < 0.0001:
+                    dict["value"] = False
+                else:
+                    dict["value"] = True
+            hlist.append(int(himvalue))
+            hlist.append(int(hrevalue))
+            ds.close()
+        except Exception as e:
+            print(e)
+
+    dict["h"] = hlist
+
+
+    return dict

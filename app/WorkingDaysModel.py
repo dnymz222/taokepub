@@ -34,47 +34,47 @@ class WorkingDaysModel(db.Model):
 
 
 
-    # def __init__(self,dict):
-    #     self.day = dict["day"]
-    #     self.year = dict["year"]
-    #     self.month = dict["month"]
-    #     self.code = dict["code"]
-    #     self.configuration = dict["configuration"]
-    #     self.work_hours = dict["work_hours"]
-    #     self.working_day = dict["working_day"]
-    #     self.public_holiday = dict["public_holiday"]
-    #     self.public_holiday_description = dict["public_holiday_description"]
-    #     self.weekend_day = dict["weekend_day"]
+    def __init__(self,dict):
+        self.day = dict["day"]
+        self.year = dict["year"]
+        self.month = dict["month"]
+        self.code = dict["code"]
+        self.configuration = dict["configuration"]
+        self.work_hours = dict["work_hours"]
+        self.working_day = dict["working_day"]
+        self.public_holiday = dict["public_holiday"]
+        self.public_holiday_description = dict["public_holiday_description"]
+        self.weekend_day = dict["weekend_day"]
+
+        self.morning_start = dict["morning_start"]
+        self.morning_end = dict["morning_end"]
+        self.afternoon_start = dict["afternoon_start"]
+        self.afternoon_end = dict["afternoon_end"]
+
+        self.date = self.year+"-"+self.month+"-"+self.day
+
+        self.recordId  = self.code+"_"+self.date+"_"+self.configuration
+
+    # def __init__(self, year,month,day,code,config,working_day,weekend):
+    #     self.day = day
+    #     self.year = year
+    #     self.month = month
+    #     self.code = code
+    #     self.configuration = config
+    #     self.work_hours = "8"
+    #     self.working_day = working_day
+    #     self.public_holiday = "0"
+    #     self.public_holiday_description = ""
+    #     self.weekend_day =weekend
     #
-    #     self.morning_start = dict["morning_start"]
-    #     self.morning_end = dict["morning_end"]
-    #     self.afternoon_start = dict["afternoon_start"]
-    #     self.afternoon_end = dict["afternoon_end"]
+    #     self.morning_start = ""
+    #     self.morning_end = ""
+    #     self.afternoon_start = ""
+    #     self.afternoon_end = ""
     #
-    #     self.date = self.year+"-"+self.month+"-"+self.day
+    #     self.date = self.year + "-" + self.month + "-" + self.day
     #
-    #     self.recordId  = self.code+"_"+self.date+"_"+self.configuration
-
-    def __init__(self, year,month,day,code,config,working_day,weekend):
-        self.day = day
-        self.year = year
-        self.month = month
-        self.code = code
-        self.configuration = config
-        self.work_hours = "8"
-        self.working_day = working_day
-        self.public_holiday = "0"
-        self.public_holiday_description = ""
-        self.weekend_day =weekend
-
-        self.morning_start = ""
-        self.morning_end = ""
-        self.afternoon_start = ""
-        self.afternoon_end = ""
-
-        self.date = self.year + "-" + self.month + "-" + self.day
-
-        self.recordId = self.code + "_" + self.date + "_" + self.configuration
+    #     self.recordId = self.code + "_" + self.date + "_" + self.configuration
 
     def  woringdaysdict(self):
         dict = {}

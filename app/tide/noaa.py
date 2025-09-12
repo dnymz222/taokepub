@@ -1,0 +1,57 @@
+import os.path
+
+from . import tide
+import requests
+from config import basedir
+import numpy as np
+import pygrib
+import xarray as xr
+import cfgrib
+from flask import request,session,url_for,redirect
+import json
+from app.utils.constvalue import x_code, x_meesage, x_data, x_hasnext
+from  app import db
+import sqlalchemy
+import numpy as np
+import bisect
+import math
+import gzip
+import zipfile
+from  mpmath import sec
+import urllib
+
+
+
+@tide.route("/chao/op")
+def chaoop():
+    OMEGA_d = [1.405189e-04, 1.454441e-04, 7.292117e-05, 6.759774e-05,
+               1.378797e-04, 7.252295e-05, 1.458423e-04, 6.495854e-05,
+               1.352405e-04, 1.355937e-04, 1.382329e-04, 1.431581e-04,
+               1.452450e-04, 7.556036e-05, 7.028195e-05, 7.824458e-05,
+               6.531174e-05, 0.053234e-04, 0.026392e-04, 0.003982e-04,
+               2.810377e-04, 2.859630e-04, 2.783984e-04, 4.215566e-04,
+               5.620755e-04, 2.134402e-04, 4.363323e-04, 1.503693e-04,
+               2.081166e-04, 7.2722e-05]
+
+    PHASE_mkB = [1.731557546, 0.000000000, 0.173003674, 1.558553872,
+                 6.050721243, 6.110181633, 3.487600001, 5.877717569,
+                 4.086699633, 3.463115091, 5.427136701, 0.553986502,
+                 0.052841931, 2.137025284, 2.436575100, 1.929046130,
+                 5.254133027, 1.756042456, 1.964021610, 3.487600001,
+                 3.463115091, 1.731557546, 1.499093481, 5.194672637,
+                 6.926230184, 1.904561220, 0.000000000, 4.551627762,
+                 3.809122439, 0]
+
+    index =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 20, 17, 18, 22, 21, 29]
+
+    list = []
+
+    for i in index:
+        list.append(OMEGA_d[i] - 0.22222222)
+        list.append(PHASE_mkB[i] - 0.22222222)
+
+
+    print(list)
+
+    return json.dumps(list)
+

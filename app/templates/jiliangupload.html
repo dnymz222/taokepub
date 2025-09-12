@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>上传Excel</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        .container { width: 600px; margin: auto; }
+        .form { margin-top: 20px; }
+        .message { color: green; margin-top: 20px; }
+        .nav { margin-bottom: 20px; }
+        .nav a { margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>上传Excel文件</h2>
+        <div class="nav">
+            <a href="{{ url_for('jiliang.index') }}">查询</a>
+        </div>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".xlsx,.xls">
+            <button type="submit">上传</button>
+        </form>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="message">{{ messages[0] }}</div>
+          {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>

@@ -42,7 +42,6 @@ class ProtoplanetaryNebulae(db.Model):
 
     def protoplanetarynebulaeDict(self):
         dict = {}
-        dict["Id"] = self.Id
         dict["Image"] = self.Image
         dict["EnglishLink"] = self.EnglishLink
         dict["ChineseLink"] = self.ChineseLink

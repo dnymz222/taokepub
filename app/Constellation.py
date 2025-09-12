@@ -72,7 +72,7 @@ class Constellation(db.Model):
             self.japaneseLink = ""
 
 
-        if  "nasashortname" in dict:
+        if "nasashortname" in dict:
             self.nasashortname = dict["nasashortname"]
         else:
             self.nasashortname = ""
@@ -96,8 +96,8 @@ class Constellation(db.Model):
          dict = {}
          dict["shortname"] = self.shortname
          dict["englishname"] = self.englishname
-         dict["chinesename"] = self.chinesename
-         dict["japanesename"] = self.japanesename
+         # dict["chinesename"] = self.chinesename
+         # dict["japanesename"] = self.japanesename
          dict["latinname"] = self.latinname
          dict["nasashortname"] = self.nasashortname
          dict["RightAscension"] = self.RightAscension
@@ -106,22 +106,11 @@ class Constellation(db.Model):
          dict["quadrant"] = self.quadrant
          dict["family"] = self.family
          dict["englishLink"]  =self.englishLink
-         dict["chineselink"] = self.chineseLink
-         dict["japaneselink"] = self.japaneseLink
-
-         dict["brightest_ch"] = self.brightest_ch
-         dict["brightest_en"] = self.brightest_en
-         dict["brightest_jp"] = self.brightest_jp
-         dict["boundary"] = self.boundary.decode()
+         # dict["brightest_ch"] = self.brightest_ch
+         dict["brightest_en"] = self.brightest_en.strip("\n")
+         # dict["brightest_jp"] = self.brightest_jp
+         dict["boundary"] = self.boundary
          dict["lines"] = self.lines
-
-         dict["genitive"] = self.genitive
-         dict["oringin_en"] = self.oringin_en
-         dict["meaning_en"] = self.meaning_en
-         dict["oringin_jp"] = self.oringin_jp
-         dict["meaning_jp"] = self.meaning_jp
-
-
 
 
          return dict

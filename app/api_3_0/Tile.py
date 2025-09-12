@@ -24,8 +24,8 @@ import shutil
 
 @api3.route("/lpm/<z>/<x>/<y>")
 def lpmwepbimage(z, x, y):
-   path =  os.path.join(basedir,"static/lpmwepb")
-   filename = z +"_" + x + "_"  + y + ".wepb"
+   path =  os.path.join(basedir,"static/lpmwebp")
+   filename = z +"_" + x + "_"  + y + ".webp"
    try:
        fpath = os.path.join(path, filename)
        return send_file(fpath,as_attachment=True)
@@ -33,12 +33,41 @@ def lpmwepbimage(z, x, y):
    except Exception as e:
        return "%s"%e
 
+@api3.route("/tide/world/<t>/<z>/<x>/<y>")
+def tideworldwepbimage(t,z, x, y):
+   path =  os.path.join(basedir,"static/tide/world",t)
+   filename = z +"_" + x + "_"  + y + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       if os.path.exists(fpath):
+            return send_file(fpath,as_attachment=True)
+       else:
+           return ""
 
 
-@api3.route("/cams/cloudmap/<type>/<time>")
-def cloudmapcams(type,time):
-   path =  os.path.join(basedir,"static/CAMS/cloud_china")
-   filename = type + "_"  + time + ".webp"
+   except Exception as e:
+       return "%s"%e
+
+
+@api3.route("/lpm/altas/year/<year>/<z>/<x>/<y>")
+def lpmaltasyearwepbimage(year,z, x, y):
+
+   path = os.path.join(basedir, "static/altas" + year)
+   filename = z +"_" + x + "_"  + y + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+@api3.route("/lpm/year/<year>/<z>/<x>/<y>")
+def lpmyearwepbimage(year,z, x, y):
+
+   if year == "2015":
+       path =  os.path.join(basedir,"static/world2015")
+   else:
+       path = os.path.join(basedir, "static/vnl" + year)
+   filename = z +"_" + x + "_"  + y + ".webp"
    try:
        fpath = os.path.join(path, filename)
        return send_file(fpath,as_attachment=True)
@@ -46,148 +75,28 @@ def cloudmapcams(type,time):
    except Exception as e:
        return "%s"%e
 
-@api3.route("/cams/cloudrgbmap/<type>/<time>")
-def cloudrgbmapcams(type,time):
-   path =  os.path.join(basedir,"static/CAMS/cloud_world")
-   filename = type + "_"  + time + ".webp"
-   try:
-       fpath = os.path.join(path, filename)
-       return send_file(fpath,as_attachment=True)
-
-   except Exception as e:
-       return "%s"%e
+@api3.route("/lpm/year/move/<year>")
+def lpmyearmovewepbimage(year):
 
 
-@api3.route("/cams/cloudrgbmap/clear")
-def cloudrgbclear():
-    now = datetime.datetime.utcnow()
-    zero_today = now - datetime.timedelta(hours=now.hour, minutes=now.minute, seconds=now.second,
-                                          microseconds=now.microsecond)
-    zertimestmap = int(zero_today.timestamp()) - 48 * 3600
-    path = os.path.join(basedir, "static/CAMS/cloud_world")
-    list = ["hcc", "lcc", "mcc", "tcc", "aod550", "vis", "cbh"]
-    for i in range(0,1000):
-        time = zertimestmap - i * 3600
-        for type in list:
-            filename = type + "_" + str(time) + ".webp"
-            filepath = os.path.join(path,filename)
-            if os.path.exists(filepath):
-                os.remove(filepath)
+   if year == "2023" or year == "2020":
+       return "done"
 
-    return "done"
+   if year == "2015":
+       path =  os.path.join(basedir,"static/world2015")
+   else:
+       path = os.path.join(basedir, "static/vnl" + year)
+
+   for z in range(10, 11):
+       for x in range(0, int(pow(2, z) + 0.1)):
+           for y in range(0, int(pow(2, z) + 0.1)):
+               filename = str(z) +"_" + str(x) + "_"  + str(y) + ".webp"
+               filepath = os.path.join(path,filename)
+               if os.path.exists(filepath):
+                   os.remove(filepath)
 
 
-
-
-
-@api3.route("/ecmwf/rgbmap/<type>/<time>")
-def ecmwfrgbmap(type,time):
-   path =  os.path.join(basedir,"static/ECMWF/red")
-   filename = type + "_"  + time + ".webp"
-   try:
-       fpath = os.path.join(path, filename)
-       return send_file(fpath,as_attachment=True)
-
-   except Exception as e:
-       return "%s"%e
-
-
-@api3.route("/gfs/rgbmap/<type>/<time>")
-def gfsrgbmap(type,time):
-   path =  os.path.join(basedir,"static/GFS/red")
-   filename = type + "_"  + time + ".webp"
-   try:
-       fpath = os.path.join(path, filename)
-       return send_file(fpath,as_attachment=True)
-
-   except Exception as e:
-       return "%s"%e
-
-@api3.route("/copernicus/rgbmap/<type>/<time>")
-def copernicusrgbmap(type,time):
-   path =  os.path.join(basedir,"static/copernicus/red")
-   filename = type + "_"  + time + ".webp"
-   try:
-       fpath = os.path.join(path, filename)
-       return send_file(fpath,as_attachment=True)
-
-   except Exception as e:
-       return "%s"%e
-
-@api3.route("/tide/rgbmap/<time>")
-def tidergbmap(time):
-   path =  os.path.join(basedir,"static/TIDE/red")
-   filename =  "tide_" + time + ".webp"
-   try:
-       fpath = os.path.join(path, filename)
-       return send_file(fpath,as_attachment=True)
-
-   except Exception as e:
-       return "%s"%e
-
-
-@api3.route("/ecmwf/rgbmap/clear")
-def ecmwfrgbclear():
-    now = datetime.datetime.utcnow()
-    zero_today = now - datetime.timedelta(hours=now.hour, minutes=now.minute, seconds=now.second,
-                                          microseconds=now.microsecond)
-    zertimestmap = int(zero_today.timestamp()) - 48 * 3600
-    path = os.path.join(basedir, "static/ECMWF/red")
-    list = ["precipitation", "temperature", "temperaturechange", "wave", "wind","tide"]
-    for i in range(0, 1000):
-        time = zertimestmap - i * 3600
-        for type in list:
-            filename = type + "_" + str(time) + ".webp"
-            filepath = os.path.join(path, filename)
-            if os.path.exists(filepath):
-                os.remove(filepath)
-
-    return "done"
-
-@api3.route("/gfs/rgbmap/clear")
-def gfsrgbclear():
-    now = datetime.datetime.utcnow()
-    zero_today = now - datetime.timedelta(hours=now.hour, minutes=now.minute, seconds=now.second,
-                                          microseconds=now.microsecond)
-    zertimestmap = int(zero_today.timestamp()) - 48 * 3600
-    path = os.path.join(basedir, "static/GFS/red")
-    list = ["significant", "swell1", "swell2", "swell3", "wind","windwave"]
-    for i in range(0, 1000):
-        time = zertimestmap - i * 3600
-        for type in list:
-            filename = type + "_" + str(time) + ".webp"
-            filepath = os.path.join(path, filename)
-            if os.path.exists(filepath):
-                os.remove(filepath)
-
-    return "done"
-
-@api3.route("/copernicus/rgbmap/clear")
-def copernicusrgbclear():
-    now = datetime.datetime.utcnow()
-    zero_today = now - datetime.timedelta(hours=now.hour, minutes=now.minute, seconds=now.second,
-                                          microseconds=now.microsecond)
-    zertimestmap = int(zero_today.timestamp()) - 48 * 3600
-    path = os.path.join(basedir, "static/copernicus/red")
-    list = [ "swell1p", "swell2p", "sealevel", "wavep","windwavep","swell1h", "swell2h", "waveh","windwaveh"]
-    depthmeteolist = ["chlorophylla","ph","oxyge","watercurrent","watersalinity","watertemperature"]
-    depthlist = ["0","22","56","110"]
-    for i in range(0, 1000):
-        time = zertimestmap - i * 3600
-        for type in list:
-            filename = type + "_" + str(time) + ".webp"
-            filepath = os.path.join(path, filename)
-            if os.path.exists(filepath):
-                os.remove(filepath)
-        for depthmeteo in depthmeteolist:
-            for depth in depthlist:
-                filename = depthmeteo + "_"  + depth + "_" + str(time) + ".webp"
-                filepath = os.path.join(path, filename)
-                if os.path.exists(filepath):
-                    os.remove(filepath)
-
-
-    return "done"
+   return "done"
 
 @api3.route("/lpm/move")
 def lpmmove():
@@ -216,6 +125,18 @@ def bathywepbimage(z, x, y):
 
    except Exception as e:
        return "%s"%e
+
+@api3.route("/bathy/china/<z>/<x>/<y>")
+def bathychinawepbimage(z, x, y):
+   path =  os.path.join(basedir,"static/bathychinawebp")
+   filename = z +"_" + x + "_"  + y + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
 @api3.route("/elevation/<z>/<x>/<y>")
 def elevationwepbimage(z, x, y):
 
@@ -233,14 +154,42 @@ def elevationwepbimage(z, x, y):
    if abs(supload-scheck) > 1366:
        return ""
 
-   path =  os.path.join(basedir,"static/elevationwepb")
-   filename = z +"_" + x + "_"  + y + ".wepb"
+   path =  os.path.join(basedir,"static/elevationwebp")
+   filename = z +"_" + x + "_"  + y + ".webp"
    try:
        fpath = os.path.join(path, filename)
        return send_file(fpath,as_attachment=True)
 
    except Exception as e:
        return "%s"%e
+
+
+
+@api3.route("/chao/<t>")
+def chaoimage(t):
+   path =  os.path.join(basedir,"static/downloads/tide/china")
+   filename = t + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       print(e)
+       return "none picture"
+
+@api3.route("/surge/<index>/<t>")
+def surgeimage(index,t):
+   surfPath = os.path.join(basedir, 'static/downloads/stofs')
+
+   imagedatepath = os.path.join(surfPath, "northimage/image" + index)
+   filename = t + ".webp"
+   try:
+       fpath = os.path.join(imagedatepath, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       print(e)
+       return "none picture"
 
 
 
@@ -254,17 +203,6 @@ def secrect(t,z,x,y):
     return  int(v) + i % 1366
 
 
-
-@api3.route("/astronomy/<id>")
-def astronomywepbimage(id):
-   path =  os.path.join(basedir,"static/astronomy","webp")
-   filename = id + ".webp"
-   try:
-       fpath = os.path.join(path, filename)
-       return send_file(fpath,as_attachment=True)
-
-   except Exception as e:
-       return "%s"%e
 
 
 def tileIndexCount(z,x,y):

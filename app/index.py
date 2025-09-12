@@ -10,7 +10,7 @@ from app.utils.constvalue import mapdict
 import sys
 from app.banner import banner
 import urllib
-
+from app.welfare import welfare
 
 main = Blueprint('main', __name__)
 
@@ -27,7 +27,7 @@ main = Blueprint('main', __name__)
 def index():
 
 
-    return render_template('oulagonshi.html')
+    return render_template('index.html')
 
 
 @main.route('app')
@@ -148,6 +148,37 @@ def authredirect():
 @main.route("auth/fishing/redircet")
 def authfihsingredirect():
     return ""
+
+
+
+
+
+
+@main.route('welfare')
+def welfarehtml():
+    typestr = request.args.get('type','1')
+    typeint = int(typestr)
+
+    try:
+        welfarereslut = welfare.query.filter_by(type=typeint)[0]
+        urlstr = welfarereslut.activeUrl
+
+        return render_template('welfare.html',url = urlstr)
+        
+    except  Exception as  e:
+        db.session.rollback()
+        return render_template('error.html')
+
+        
+   
+      
+
+
+
+    
+
+
+
 
 
 

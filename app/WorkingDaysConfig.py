@@ -19,7 +19,7 @@ class WorkingDaysConfig(db.Model):
     def __init__(self,dict):
         self.configId = dict["configId"]
         self.code = dict["code"]
-        self.configurations = json.dumps(dict["configurations"])
+        self.configurations = dict["configurations"]
         self.default_configuration = dict["default_configuration"]
         self.website = dict["website"]
         self.flag = ""

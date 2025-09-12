@@ -50,24 +50,6 @@ def solunaruser():
 def solunaruservip():
     return  render_template('solunarvip.html')
 
-@h5.route('/meteocalc/user/vip')
-def meteocalcuservip():
-    return  render_template('meteovip.html')
-
-
-
-@h5.route('/astronomy/user/vip')
-def astronomyuservip():
-    return  render_template('astronomyVip.html')
-
-
-@h5.route('/solunartides/user/vip')
-def solunartidesuservip():
-    return  render_template('solunartidesvip.html')
-
-
-
-
 
 
 

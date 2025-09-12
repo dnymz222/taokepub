@@ -11,23 +11,16 @@ from flask_sqlalchemy import SQLAlchemy
 import urllib, sys
 import ssl
 from app import db
+
+from app.allcoupon import allcoupon
 import urllib
 import datetime
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
-import logging
-import sys
-import random
-
-from app.appuser import appuser
 
 
 from config import basedir
-from  app.utils.constvalue import appkey,secret,xunquanAppkey,xunquanSecret,solarAppkey,solarSecret,site_id
-from app.worldTidalStation import worldTidalStation
-from app.chinaTidalStation import chinaTidalStation
-
 
 from app.SurfSpot import SurfSpot
 from app.WannaSurf import WannaSurf
@@ -283,17 +276,17 @@ def wannarsurfdetail():
                         surf.lat = dict["Latitude"]
                     if "Longitude" in dict:
                         surf.lng = dict["Longitude"]
-                    if  "Type" in dict:
+                    if "Type" in dict:
                         surf.wave_type = dict["Type"]
-                    if  "Direction" in dict:
+                    if "Direction" in dict:
                         surf.wave_direction = dict["Direction"]
                     if "Experience" in dict:
                         surf.wave_experience = dict["Experience"]
-                    if  "Wave quality" in dict:
+                    if "Wave quality" in dict:
                         surf.wave_quality = dict["Wave quality"]
-                    if  "Power" in dict:
+                    if "Power" in dict:
                         surf.wave_power =  dict["Power"]
-                    if  "Frequency" in dict:
+                    if "Frequency" in dict:
                         surf.wave_frequency  = dict["Frequency"]
                     if "Swell size" in dict:
                         surf.tideswellwind_startworking  = dict["Swell size"]
@@ -303,20 +296,20 @@ def wannarsurfdetail():
                         surf.tideswellwind_goodwinddirection  =dict["Good wind direction"]
                     if "Bottom" in dict:
                         surf.surfspot_bottom = dict["Bottom"]
-                    if  "Normal length" in dict:
+                    if "Normal length" in dict:
                         surf.surfspot_normallength = dict["Normal length"]
 
-                    if  "DANGERS" in dict:
+                    if "DANGERS" in dict:
                         surf.surfspot_danger  = dict["DANGERS"]
-                    if  "Good day length" in dict:
+                    if "Good day length" in dict:
                         surf.surfspot_gooddaylength = dict["Good day length"]
-                    if  "Best tide position" in dict:
+                    if "Best tide position" in dict:
                         surf.surfspot_besttideposition = dict["Best tide position"]
-                    if  "Best tide movement" in dict:
+                    if "Best tide movement" in dict:
                         surf.surfspot_besttidemovement = dict["Best tide movement"]
-                    if  "Week-end crowd" in dict:
+                    if "Week-end crowd" in dict:
                         surf.surfspot_weekendcrowd =  dict["Week-end crowd"]
-                    if  "Week crowd" in dict:
+                    if "Week crowd" in dict:
                         surf.surfspot_weekcrowd = dict["Week crowd"]
 
                     db.session.commit()

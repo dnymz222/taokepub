@@ -309,7 +309,7 @@ def readtycho2supplement():
 
 
             try:
-                tycho2 = TychoSuppl(Line=line,Catalog="2")
+                tycho2 = TychoSuppl(Line=line,Catalog="1")
 
                 # print tycho2.HIP+"\n"
                 # print tycho2.RAdeg+"\n"
@@ -354,8 +354,7 @@ def readtycho():
             # print lines
             line = lines.strip('\n')
             i = i +1
-            if i < 478823:
-                continue
+
 
 
             try:
@@ -849,29 +848,31 @@ def readEvent():
         file_test = open(xlspath, 'r')
         list = []
         i = 0
-        month = ""
+        filename = session['filename']
+        index = filename.find(".")
+        month = filename[:index]
+        print(month)
 
 
         for lines in file_test.readlines():
             # print  lines[0:9]
 
-
             line = lines.strip('\n')
             i = i +1
 
-            month_new = line[0:3].replace(" ", "")
+            # month_new = line[0:3].replace(" ", "")
 
-            if len(month_new) > 2:
-
-                month = month_new
-                continue
-
-            if len(month) < 2:
-                 continue
-
-            line_trip = line.replace(" ","")
-            if len(line_trip) < 5:
-                continue
+            # if len(month_new) > 2:
+            #     print "month:"+ month
+            #     month = month_new
+            #     continue
+            #
+            # if len(month) < 2:
+            #      continue
+            #
+            # line_trip = line.replace(" ","")
+            # if len(line_trip) < 5:
+            #     continue
 
 
             # if i > 10:
@@ -882,7 +883,7 @@ def readEvent():
 
 
             try:
-                event= AstroEvent(Line=line,Year="2023",Month=month,Timezone = "11",Lanuage="en",RecordIndex=i)
+                event= AstroEvent(Line=line,Year="2024",Month=month,Timezone = "8",Lanuage="zh",RecordIndex=i)
 
                 # print tycho2.HIP+"\n"
                 # print tycho.RAdeg+"\n"
@@ -897,9 +898,10 @@ def readEvent():
             except Exception as e :
 
                 db.session.rollback()
-
+                print(e)
 
         return  json.dumps(list)
+
 
 @web.route("/event/en/file")
 def eventenfile():
@@ -1173,11 +1175,6 @@ def lishuread():
                 holiday_description = row_value[4]
                 holiday ="%d"%(row_value[5])
 
-                if year == 2025:
-                    pass
-                else:
-                    continue
-
                 date ="%d-%02d-%02d"%(year, month, day)
                 if "1" == holiday:
                     try:
@@ -1330,9 +1327,18 @@ def metershowerread():
                         print(e)
                     result.append(dict)
 
+
+
+
+
+
+
+
+
+
+
+
     return json.dumps(result)
-
-
 
 
 

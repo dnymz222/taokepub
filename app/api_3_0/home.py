@@ -3,6 +3,7 @@ from . import api3
 import time
 import datetime
 # from app.coupon import coupon
+from app.allcoupon import allcoupon
 from app import db
 from app.utils.constvalue import x_hasnext,x_data,x_code,mapdict,pid,token,x_meesage,itemNameList,itemMaterialList,itemTypeLsit
 import json
@@ -11,14 +12,19 @@ from app.appconfig import  appconfig
 import urllib
 import time
 from app.banner import banner
+from app.special import special
+from app.welfare import welfare
+from app.track import track
 from app.appuser import appuser
 from app.column import column
 from app.launchad import launchad
+from app.fishshop import fishshop
 import random
 from app.lunitidalsite import lunitidalsite
 from app.appitem import appitem
 from app.downloadAd import downloadAd
 from app.DownloadAdClick import downloadAdClick
+from app.saleconfig import saleconfig
 
 
 
@@ -29,77 +35,51 @@ def soluanrconfig():
     result[x_code] = 200
     dict = {}
 
-    isVip = request.args.get('isVip', '0')
-    userType = request.args.get('userType', '0')
-    appversion = request.args.get("appVersion","5.0")
+    # isVip = request.args.get('isVip', '0')
+    # userType = request.args.get('userType', '0')
+    #
+    # if isVip == "0" and userType == "1":
+    #     dict["isOpen"] = True
+    #     dict["isUpgrade"] = True
+    # else:
+    #     dict["isOpen"] = False
+    #     dict["isUpgrade"] = True
+    # dict["homeText"] = "过期会员升级终身会员原48元现28元"
+    # dict["amount"] = "28.00"
+    # dict["mineText"] = "会员过期可优惠升级终身会员"
+    # dict["buttonText"] = "过期会员升级终身会员:￥28"
+    # dict["tipText"] = "为回馈用户，原价48的终身会员,之前包年会员过期的可28元升级终身会员"
+    # dict["orderName"] = "日出日落月相升级终身会员"
+    # result[x_data] = dict
+    # return json.dumps(result)
 
-    hour = int (request.args.get("hour","480616"))
 
-    now = datetime.datetime.now()
-    nowhour = now.timestamp() / 3600
+    outtime = datetime.datetime(2024,9, 6, hour=0, minute=0, second=0, microsecond=0)
 
-    dict["isMonth"] = False
-    dict["isRed"] = True
+    nowtime = datetime.datetime.now()
 
-    if isVip == "0" and (userType == "1" or userType == "3"):
+    if outtime > nowtime:
         dict["isOpen"] = True
-        dict["isUpgrade"] = True
-        dict["homeText"] = "过期会员升级终身会员原68元现36元"
-        dict["amount"] = "68.00"
-        dict["mineText"] = "会员过期可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥36"
-        dict["tipText"] = "为回馈用户，原价68的终身会员,之前会员过期的可36元升级终身会员"
-        dict["orderName"] = "日出日落月相升级终身会员"
-
-        if appversion.startswith("5.6"):
-            pass
-        else:
-            dict["isOpen"] = False
-
-
-        result[x_data] = dict
-        return json.dumps(result)
-    elif isVip == "0" and (nowhour - hour) > 2400:
-
-            dict["isOpen"] = True
-            dict["isUpgrade"] = True
-            dict["homeText"] = "老用户升级终身会员原68元现36元"
-            dict["amount"] = "36.00"
-            dict["mineText"] = "老用户可优惠升级终身会员"
-            dict["buttonText"] = "升级终身会员:￥36"
-            dict["tipText"] = "为回馈用户，原价68的终身会员,老用户可36元升级终身会员"
-            dict["orderName"] = "日出日落月相升级终身会员"
-
-
-            result[x_data] = dict
-            return json.dumps(result)
-
-
+        dict["isUpgrade"] = False
     else:
+        dict["isOpen"] = False
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2025,9, 9, hour=0, minute=0, second=0, microsecond=0)
+    # isVip = request.args.get('isVip', '0')
+    # userType = request.args.get('userType', '0')
+    # if isVip == "0" and userType != "0":
+    #     dict["isOpen"] = True
+    # else:
+    #     dict["isOpen"] = False
 
-        nowtime = datetime.datetime.now()
-
-        if outtime > nowtime:
-            dict["isOpen"] = True
-        else:
-            dict["isOpen"] = False
-
-
-
-        dict["homeText"] = "月全食特惠终身会员原68元现36元"
-        dict["amount"] = "36.00"
-        dict["mineText"] = "月全食特惠"
-        dict["buttonText"] = "月全食特惠(终身会员:原价￥68):￥36"
-        dict["tipText"] = "9月7日月全食，我国全境可见，特在此期间推出特惠"
-        dict["orderName"] = "日出日落月相月全食特惠(终身会员)"
-
-
-
-        result[x_data] = dict
-        return json.dumps(result)
+    dict["homeText"] = "五周年特惠终身会员原48元现28元"
+    dict["amount"] = "28.00"
+    dict["mineText"] = "五周年特惠"
+    dict["buttonText"] = "五周年特惠(终身会员:原￥48):￥28"
+    dict["tipText"] = "为回馈用户，日出日落月相安卓版五周年推出特惠"
+    dict["orderName"] = "日出日落月相五周年特惠(终身会员)"
+    result[x_data] = dict
+    return json.dumps(result)
 
 @api3.route('/meteo/config')
 def meteoconfig():
@@ -131,141 +111,7 @@ def fishconfig():
     result[x_code] = 200
     dict = {}
 
-    dict["mapsolunartides"] = False
-
-    isVip = request.args.get('isVip', '0')
-    userType = request.args.get('userType', '0')
-
-    hour = int (request.args.get("hour","480458"))
-
-    now = datetime.datetime.now()
-    nowhour = now.timestamp() / 3600
-
-    if isVip == "0" and (userType == "1" or userType == "3"):
-        dict["isOpen"] = True
-        dict["isUpgrade"] = True
-        dict["homeText"] = "过期会员升级终身会员原98元现58元"
-        dict["amount"] = "58.00"
-        dict["mineText"] = "会员过期可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥58"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可58元升级终身会员"
-        dict["orderName"] = "钓鱼天气升级终身会员"
-        result[x_data] = dict
-        return json.dumps(result)
-    elif isVip == "0" and (nowhour - hour) > 2400:
-        dict["isOpen"] = True
-        dict["isUpgrade"] = True
-        dict["homeText"] = "老用户升级终身会员原98元现58元"
-        dict["amount"] = "58.00"
-        dict["mineText"] = "老用户可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥58"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可58元升级终身会员"
-        dict["orderName"] = "钓鱼天气升级终身会员"
-        result[x_data] = dict
-        return json.dumps(result)
-
-    else:
-        dict["isUpgrade"] = False
-        outtime = datetime.datetime(2025,8, 1, hour=0, minute=0, second=0, microsecond=0)
-
-        nowtime = datetime.datetime.now()
-
-        if outtime > nowtime:
-            dict["isOpen"] = True
-        else:
-            dict["isOpen"] = False
-
-
-        dict["homeText"] = "暑假特惠终身会员原98元现58元"
-        dict["amount"] = "58.00"
-        dict["mineText"] = "暑假特惠"
-        dict["buttonText"] = "暑假特惠(终身会员:原价￥98):￥58"
-        dict["tipText"] = "为回馈用户，暑假推出特惠。"
-        dict["orderName"] = "钓鱼天气暑假特惠(终身会员)"
-        result[x_data] = dict
-        return json.dumps(result)
-
-
-@api3.route('/solunartides/config')
-def solunartidesconfig():
-
-    result = {}
-    result[x_code] = 200
-    dict = {}
-
-    isVip = request.args.get('isVip', '0')
-    userType = request.args.get('userType', '0')
-
-    hour = int (request.args.get("hour","480760"))
-
-    now = datetime.datetime.now()
-    nowhour = now.timestamp() / 3600
-
-    appversion = request.args.get("appVersion", "5.0")
-
-    dict["isUpgrade"] = False
-    outtime = datetime.datetime(2025, 6, 1, hour=0, minute=0, second=0, microsecond=0)
-
-    nowtime = datetime.datetime.now()
-
-    if outtime > nowtime:
-        dict["isOpen"] = True
-    else:
-        dict["isOpen"] = False
-
-    if appversion.startswith("5.0"):
-        pass
-    else:
-        dict["isOpen"] = False
-
-    dict["homeText"] = "暑假特惠终身会员原198元现98元"
-    dict["amount"] = "98.00"
-    dict["mineText"] = "暑假特惠"
-    dict["freeDays"] = 3
-    dict["harbourDays"] = 30  # 港口的天数
-    dict["buttonText"] = "暑假特惠(终身会员:原价￥198):￥98"
-    dict["tipText"] = "为回馈用户，暑假赶海推出特惠。"
-    dict["orderName"] = "月相潮汐表暑假特惠(终身会员)"
-    result[x_data] = dict
-    return json.dumps(result)
-
-    # if isVip == "0" and (userType == "1" or userType == "3"):
-    #     dict["isOpen"] = True
-    #     dict["isUpgrade"] = True
-    #     dict["homeText"] = "过期会员升级终身会员原98元现58元"
-    #     dict["amount"] = "58.00"
-    #     dict["freeDays"] = 2
-    #     dict["harbourDays"] = 30 # 港口的天数
-    #     dict["mineText"] = "会员过期可优惠升级终身会员"
-    #     dict["buttonText"] = "升级终身会员:￥58"
-    #     dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可58元升级终身会员"
-    #     dict["orderName"] = "月相潮汐表升级终身会员"
-    #     result[x_data] = dict
-    #     return json.dumps(result)
-    # elif isVip == "0" and (nowhour - hour) > 2400:
-    #
-    #     dict["isOpen"] = True
-    #     dict["isUpgrade"] = True
-    #     dict["homeText"] = "老用户升级终身会员原98元现58元"
-    #     dict["amount"] = "58.00"
-    #     dict["freeDays"] = 2
-    #     dict["harbourDays"] = 30 # 港口的天数
-    #     dict["mineText"] = "老用户可优惠升级终身会员"
-    #     dict["buttonText"] = "升级终身会员:￥58"
-    #     dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可58元升级终身会员"
-    #     dict["orderName"] = "月相潮汐表升级终身会员"
-    #     result[x_data] = dict
-    #     return json.dumps(result)
-    # else:
-
-
-@api3.route('/astro/config')
-def astroconfig():
-    result = {}
-    result[x_code] = 200
-    dict = {}
-
-    outtime = datetime.datetime(2025,6, 1, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2024,8, 10, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -281,12 +127,45 @@ def astroconfig():
     # else:
     #     dict["isOpen"] = False
 
-    dict["homeText"] = "暑假特惠终身会员原98元现58元"
-    dict["amount"] = "58.00"
-    dict["mineText"] = "暑假特惠"
-    dict["buttonText"] = "端午特惠(终身会员:原价￥98):￥58"
-    dict["tipText"] = "为回馈用户，暑假推出特惠。"
-    dict["orderName"] = "天文观星指南暑假特惠(终身会员)"
+    dict["homeText"] = "钓鱼天气五周年特惠终身会员原98元现48元"
+    dict["amount"] = "48.00"
+    dict["mineText"] = "五周年特惠"
+    dict["buttonText"] = "五周年特惠(终身会员:原价￥98):￥48"
+    dict["tipText"] = "为回馈用户，钓鱼天气安卓版五周年推出特惠"
+    dict["orderName"] = "钓鱼天气五周年特惠(终身会员)"
+    result[x_data] = dict
+    return json.dumps(result)
+
+
+
+@api3.route('/astro/config')
+def astroconfig():
+    result = {}
+    result[x_code] = 200
+    dict = {}
+
+    outtime = datetime.datetime(2024,11, 1, hour=0, minute=0, second=0, microsecond=0)
+
+    nowtime = datetime.datetime.now()
+
+    if outtime > nowtime:
+        dict["isOpen"] = True
+    else:
+        dict["isOpen"] = False
+
+    # isVip = request.args.get('isVip', '0')
+    # userType = request.args.get('userType', '0')
+    # if isVip == "0" and userType != "0":
+    #     dict["isOpen"] = True
+    # else:
+    #     dict["isOpen"] = False
+
+    dict["homeText"] = "追寻彗星特惠终身会员原98元现48元"
+    dict["amount"] = "48.00"
+    dict["mineText"] = "追寻彗星特惠"
+    dict["buttonText"] = "追寻彗星特惠(终身会员:原价￥98):￥48"
+    dict["tipText"] = "C2023 A3 紫金山-阿特拉斯,可能是数十年来最亮的彗星，特提供终身会员特惠持续关注"
+    dict["orderName"] = "天文观星指南追寻彗星(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
 
@@ -577,16 +456,21 @@ def helpownload():
 
     platvalue = request.args.get("plat","1")
     channelvalue =  request.args.get("channel","0")
+    appversion = request.args.get("appversion","3.0")
+    source = request.args.get("source","fish")
+
+
 
     try:
-        download_ads= db.session.query(downloadAd).filter_by(plat=platvalue,status=1,channel =channelvalue).order_by(
-            downloadAd.index).all()
+        # download_ads= db.session.query(downloadAd).filter_by(plat=platvalue,status=1,channel =channelvalue).order_by(
+        #     downloadAd.index).all()
 
-        size = len(download_ads)
-        if size > 0:
-            index = random.randint(0, size - 1)
-            downloadaditem = download_ads[index]
-            result[x_data] = downloadaditem.downloaddict()
+        # size = len(download_ads)
+        if source == "solunar"  and (appversion.startswith("2") or appversion.startswith("1")):
+            dict = {}
+            dict["haha"] = "hh"
+
+            result[x_data] =  dict
             result[x_code] = 200
         else:
             result[x_code] = 201
@@ -735,9 +619,55 @@ def xunquancolumn():
     return json.dumps(result)
 
 
+@api3.route('/xunquan/fishshop')
+def xunquanfishshop():
+    result = {}
+    list = []
+    try:
+        shopresult = db.session.query(fishshop).filter_by(status=1).order_by(
+            fishshop.index).all()
+        for shop_item in shopresult:
+            shop_dict = shop_item.fishshop_dict()
+            list.append(shop_dict)
+        result[x_data] = list
+        result[x_code] =200
+    except Exception as e:
+        db.session.rollback()
+        result[x_meesage] = "%s"%e
+        result[x_code] = 203
+
+    finally:
+        db.session.close()
+
+    return json.dumps(result)
 
 
 
+
+@api3.route('/xunquan/welfare')
+def xunquanwelfareget():
+    result = {}
+    list = []
+    try:
+        welfarereslut = db.session.query(welfare).filter_by(status=1).all()
+        for welfareitem in welfarereslut:
+            welfaredict = welfareitem.welfareDict()
+            list.append(welfaredict)
+        if(len(list)):
+            result[x_data] = list
+            result[x_code] = 200
+        else:
+            result[x_code] =201
+            result[x_meesage]= 'no message'
+
+    except  Exception as e:
+        db.session.rollback()
+        result[x_meesage] = "%s"%e
+        result[x_code] = 203
+
+    finally:
+        db.session.close()
+    return json.dumps(result)
 
 @api3.route('/lunitidalsite')
 def getlunitidalsite():
@@ -766,6 +696,38 @@ def getlunitidalsite():
 
 
 
+@api3.route('/setwelfare', methods=['POST'])
+def setwelfare():
+    result = {}
+
+    status = request.form.get('status', '0')
+    url = request.form.get('url')
+    typestr = request.form.get('type', '1')
+    typeint = int(typestr)
+    nowTimeSting = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+    welfareUrlStr = 'https://www.xunquan.shop/welfare?day=' + nowTimeSting + '&type=' + typestr
+
+    try:
+        welfarereslut = welfare.query.filter_by(type=typeint)[0]
+        try:
+            welfarereslut.welfareUrl = welfareUrlStr
+            welfarereslut.activeUrl = url
+            welfarereslut.status = int(status)
+            db.session.commit()
+            result[x_code] = 200
+
+        except Exception as e:
+            db.session.rollback()
+            result[x_code] = 201
+    except  Exception as e:
+        db.session.rollback()
+        result[x_meesage] = "%s"%e
+        result[x_code] = 203
+
+    finally:
+        db.session.close()
+    return json.dumps(result)
+
 
 @api3.route("/app/items")
 def appitems():
@@ -776,8 +738,6 @@ def appitems():
     source = request.args.get("source", "xunquan")
     if source == "solunar":
         plat = 4
-    elif source == "solunartide":
-        plat = 3
     # result[x_code] = 201
     # result[x_meesage] = "no way"
     # return json.dumps(result)
@@ -802,6 +762,40 @@ def appitems():
 
 
 
+@api3.route("/sale/config")
+def getsaleconfig():
+    result = {}
+
+
+    nowTimeSting = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+    nowTime = datetime.datetime.strptime(nowTimeSting, "%Y-%m-%d")
+
+    is_vip =  request.args.get("isvip","1")
+
+    source = request.args.get("source", "fishing")
+
+    if is_vip == 1:
+        result[x_code] = 201
+        result[x_meesage] = "nodata"
+        return json.dumps(result)
+
+    try:
+        saleresult = db.session.query(saleconfig).filter(saleconfig.endTime > nowTime,saleconfig.status >0).filter_by(source=source).all()
+        if len(saleresult)>0:
+            saleconfig0 = saleresult[0]
+            result[x_code] = 200
+            result[x_data] = saleconfig0.saleconfigdict()
+        else:
+            result[x_code] = 201
+            result[x_meesage] = "nodata"
+
+
+    except Exception as e:
+        result[x_meesage] = "%s" % e
+        result[x_code] = 201
+        db.session.rollback()
+
+    return json.dumps(result)
 
 
 @api3.route("/7timerinfo/image")
@@ -823,9 +817,6 @@ def timerinfoimage():
     result[x_data] = url
 
     return json.dumps(result)
-
-
-
 
 
 

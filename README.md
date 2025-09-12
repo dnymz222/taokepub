@@ -10,4 +10,3 @@ python manage.py shell
 
 
 
-

@@ -16,16 +16,16 @@ class AstroEvent(db.Model):
 
 
 #en
-    def __init__(self,Line,Year,Month,Timezone,Lanuage ,RecordIndex):
-        self.year = Year
-        self.month = Month
-        self.timezone  = Timezone
-        self.language = Lanuage
-        self.recordIndex = RecordIndex
-        self.day = Line[4:6]
-        self.time = Line[8:13].strip()
-        self.event= Line[15:]
-        self.timelanguage = self.year+"-"+self.month+"-"+self.day+"-"+self.time+"-"+self.language+"-"+self.timezone
+    # def __init__(self,Line,Year,Month,Timezone,Lanuage ,RecordIndex):
+    #     self.year = Year
+    #     self.month = Month
+    #     self.timezone  = Timezone
+    #     self.language = Lanuage
+    #     self.recordIndex = RecordIndex
+    #     self.day = Line[4:6]
+    #     self.time = Line[8:13]
+    #     self.event= Line[15:]
+    #     self.timelanguage = self.year+"-"+self.month+"-"+self.day+"-"+self.time+"-"+self.language+"-"+self.timezone
 
 #日语
 #     def __init__(self,year,month,day,time,RecodIndex,Event):
@@ -44,18 +44,19 @@ class AstroEvent(db.Model):
 #         self.timelanguage = self.year + "-" + self.month + "-" + self.day + "-" + self.time + "-" + self.language + "-" + self.timezone
 
 #中文
-    # def __init__(self,Line,Year,Month,Timezone,Lanuage ,RecordIndex):
-    #     self.year = Year
-    #     self.month = Month
-    #     self.timezone  = Timezone
-    #     self.language = Lanuage
-    #     self.recordIndex = RecordIndex
-    #     self.day = Line[8:10]
-    #     self.time = Line[11:19].strip()
-    #
-    #     self.event = Line[19:].strip()
-    #
-    #     self.timelanguage = self.year+"-"+self.month+"-"+self.day+"-"+str(RecordIndex)+"-"+self.language+"-"+self.timezone
+    def __init__(self,Line,Year,Month,Timezone,Lanuage ,RecordIndex):
+        self.year = Year
+        self.month = Month
+        self.timezone  = Timezone
+        self.language = Lanuage
+        self.recordIndex = RecordIndex
+        self.day = Line[8:10]
+        self.time = Line[11:16]
+        if self.time.find("分") > -1:
+            self.event= Line[16:].strip()
+        else:
+            self.event = Line[17:].strip()
+        self.timelanguage = self.year+"-"+self.month+"-"+self.day+"-"+str(RecordIndex)+"-"+self.language+"-"+self.timezone
 
     def  astroeventdict(self):
         dict = {}

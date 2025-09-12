@@ -44,7 +44,6 @@ class PlanetaryNebulae(db.Model):
         self.Declination = ""
     def planetarynebulaeDict(self):
         dict  = {}
-        dict["Id"] = self.Id
         dict["ZONE"] = self.ZONE
         dict["Image"] = self.Image
         dict["EnglishLink"] = self.EnglishLink

@@ -17,18 +17,22 @@ if os.path.exists('.env'):
 
 from app import create_app,db
 
-from app.appconfig import appconfig
+from app.allcoupon import allcoupon
 
+from app.yuanorder import yuanorder
+from app.appconfig import appconfig
+from app.sharecoupon import sharecoupon
 from app.appuser import appuser
 from app.banner import banner
-
+from app.special import special
 from app.wxuser import wxuser
-
+from app.qianggou import qianggou
+from app.welfare import welfare
 from app.column import column
 from app.worldTidalStation import worldTidalStation
 from app.chinaTidalStation import chinaTidalStation
 from app.launchad import launchad
-
+from app.fishshop import fishshop
 from app.lunitidalsite import lunitidalsite
 from app.chinaLunitidal import chinaLunitidal
 from app.appitem import appitem
@@ -63,14 +67,15 @@ from app.CometDetail import CometDetail
 from app.StormStation import StormStation
 from app.Asteroid import Asteroid
 from app.Camera import Camera
-
+from app.Xuanpin import Xuanpin
 from app.WanggangOrder import WanggangOrder
 from app.Holiday import Holiday
 from app.DownloadAdClick import downloadAdClick
-
+from app.XuanpinCate import XuanpinCate
+from app.YuanCustomer import YuanCustomer
 from app.Hefengtide import Hefengtide
 from app.TyphoonModel import TyphoonModel
-from app.SMSCode import SMSCode
+from app.JiliangCert import JiliangCert
 
 
 #from app.models import User, Follow, Role, Permission, Post, Comment
@@ -90,9 +95,11 @@ from app.Comet import Comet
 from app.ChinaCounty import ChinaCounty
 from app.WorkingDaysConfig import WorkingDaysConfig
 from app.WorkingDaysModel import WorkingDaysModel
-
+from app.XuannpinShop import XuanpinShop
+from app.XuanpinCoupon import XuanpinCoupon
+from app.XuanpinHistory import XuanpinHistory
 from app.GoodsDetailImage import GoodsDetailImage
-
+from app.saleconfig import saleconfig
 from app.SurfSpot import SurfSpot
 from app.WannaSurf import WannaSurf
 

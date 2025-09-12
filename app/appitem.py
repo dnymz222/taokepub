@@ -16,17 +16,6 @@ class appitem(db.Model):
     packagename = db.Column(db.String(64), unique=False)
 
 
-    def __init__(self,dict):
-        self.appId = dict["appId"]
-        self.title = dict["title"]
-        self.plat = dict["plat"]
-        self.image = dict["image"]
-        self.description = dict["description"]
-        self.url = dict["url"]
-        self.index = dict["index"]
-        self.packagename = dict["packagename"]
-
-
 
     def appitemDict(self):
         dict ={}

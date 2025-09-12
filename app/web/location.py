@@ -12,6 +12,7 @@ import urllib, sys
 import ssl
 from app import db
 
+from app.allcoupon import allcoupon
 
 import datetime
 from selenium import webdriver
@@ -21,6 +22,7 @@ import logging
 import sys
 import random
 
+from app.pintuan import pintuan
 
 from app.appuser import appuser
 

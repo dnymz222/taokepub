@@ -45,15 +45,11 @@ class VipUser(db.Model):
         dict["type"]  =self.type
         dict["startdate"] = self.startdate.strftime('%Y-%m-%d')
         dict["app"] = self.app
-        if self.password is not None:
-            if len(self.password) > 1:
-                dict["haspassword"] = True
-            else:
-                dict["haspassword"] = False
+        if len(self.password) > 6:
+            dict["haspassword"] = True
         else:
             dict["haspassword"] = False
         dict["trade_no"] = self.trade_no
-
 
         return dict
 

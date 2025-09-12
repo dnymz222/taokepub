@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>证书查询</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    .container { max-width: 600px; margin: auto; }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    button {
+              background: #3388CB;
+              color:white;
+    }
+    .result {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 20px;
+      overflow: hidden;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #eee;
+    }
+    .row:last-child { border-bottom: none; }
+    .label {
+      flex: 0 0 40%;
+      background: #9FD5F4;
+      padding: 10px;
+      text-indent: 15px;
+      box-sizing: border-box;
+    }
+    .value {
+      flex: 1;
+      padding: 10px;
+      box-sizing: border-box;
+      text-indent: 15px;
+    }
+    h3,h4{
+      text-align:center;
+    }
+    @media (max-width: 500px) {
+      .label, .value { flex: 100%; }
+      .label { font-weight: bold; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>请输入计量证书编号或证书条码</h3>
+
+      <form method="POST">
+            <div class="search-box">
+                <input type="text" name="cert_id" placeholder="请输入证书编号">
+                <button type="submit">查询</button>
+            </div>
+        </form>
+
+      {% if result %}
+        <div class="result" >
+            {% for key, value in result.items() %}
+            <div class="row">
+                <div class="label">{{ key }}</div>
+                <div class="value">{{ value }}</div>
+            </div>
+            {% endfor %}
+        </div>
+      {% else %}
+
+           <div class="result" id="resultBox">
+          <div class="row"><div class="label">证书编号</div><div class="value" ></div></div>
+          <div class="row"><div class="label">送检单位</div><div class="value"></div></div>
+          <div class="row"><div class="label">计量器具名称</div><div class="value"></div></div>
+          <div class="row"><div class="label">型号/规格</div><div class="value" ></div></div>
+          <div class="row"><div class="label">出厂编号</div><div class="value" ></div></div>
+          <div class="row"><div class="label">管理编号</div><div class="value" ></div></div>
+          <div class="row"><div class="label">制造单位</div><div class="value" ></div></div>
+          <div class="row"><div class="label">批准人</div><div class="value" ></div></div>
+          <div class="row"><div class="label">核验员</div><div class="value" ></div></div>
+          <div class="row"><div class="label">检定员</div><div class="value" ></div></div>
+          <div class="row"><div class="label">检校日期</div><div class="value" ></div></div>
+        </div>
+
+      {% endif %}
+
+          <h4>计算校准检测系统</h4>
+
+  </div>
+
+
+
+</body>
+</html>

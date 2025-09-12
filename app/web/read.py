@@ -11,6 +11,7 @@ from flask_sqlalchemy import SQLAlchemy
 import urllib, sys
 import ssl
 from app import db
+from app.allcoupon import allcoupon
 import urllib
 import datetime
 from selenium import webdriver
@@ -19,6 +20,8 @@ import time
 import logging
 import sys
 import random
+
+from app.pintuan import pintuan
 
 from app.appuser import appuser
 

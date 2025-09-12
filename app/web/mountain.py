@@ -230,7 +230,7 @@ def mountaintimezone():
     for mdict in mlist:
         try:
 
-            if "timezone" in mdict:
+            if "timezone"  in mdict:
                 height = int(mdict["height"])
                 if height > 499:
                     n =  n + 1
@@ -355,7 +355,7 @@ def mountainchinabase():
 
 
 
-                if "base" in mdict:
+                if "base" in dict:
                     height = int(mdict["height"])
                     base =  int(mdict["base"])
                     mdict.pop("base")
@@ -454,7 +454,7 @@ def mountainworldbase():
 
             lat  = mdict["latitude"]
             lng = mdict["latitude"]
-            if "base" in mdict:
+            if "base" in dict:
                 m = m + 1
                 continue
             else:

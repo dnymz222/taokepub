@@ -88,17 +88,17 @@ def stormwave():
         total = request.args.get('total', '1599918717')
         result = {}
 
-        code = stormchecklatandlon(lat=lat, lng=lng, timestamp=timestamp, total=total)
-        if 200 == code:
-            pass
-        elif 201 == code:
-            result[x_code] = 201
-            result[x_meesage] = "time out ,no data"
-            return json.dumps(result)
-        elif 202 == code:
-            result[x_code] = 202
-            result[x_meesage] = "error,no data!"
-            return json.dumps(result)
+        # code = stormchecklatandlon(lat=lat, lng=lng, timestamp=timestamp, total=total)
+        # if 200 == code:
+        #     pass
+        # elif 201 == code:
+        #     result[x_code] = 201
+        #     result[x_meesage] = "time out ,no data"
+        #     return json.dumps(result)
+        # elif 202 == code:
+        #     result[x_code] = 202
+        #     result[x_meesage] = "error,no data!"
+        #     return json.dumps(result)
 
 
 
@@ -154,8 +154,6 @@ def stormsurgewave():
         total = request.args.get('total', '1599918717')
         result = {}
 
-
-
         try:
 
             response = requests.get(
@@ -165,7 +163,7 @@ def stormsurgewave():
                     'lng': lng,
                     'params': ','.join(
                         [
-                         "waterTemperature", 'waveHeight', "waveDirection", "wavePeriod", 'swellDirection', "swellHeight",
+                         "waterTemperature", 'waveHeight', "waveDirection", "wavePeriod", 'swellDirection', "swellHeight","currentDirection","currentSpeed",
                          "swellPeriod", "windWaveHeight", "windWavePeriod", "windWaveDirection","iceCover","secondarySwellPeriod","secondarySwellDirection","secondarySwellHeight"]),
                     'start': starttime,  # Convert to UTC timestamp
                     'end': int(starttime) + 7 * 86400  # Convert to UTC timestamp
@@ -288,17 +286,17 @@ def stormbio():
     total = request.args.get('total', '1599918717')
     result = {}
 
-    code = stormchecklatandlon(lat=lat, lng=lng, timestamp=timestamp, total=total)
-    if 200 == code:
-        pass
-    elif 201 == code:
-        result[x_code] = 201
-        result[x_meesage] = "time out ,no data"
-        return json.dumps(result)
-    elif 202 == code:
-        result[x_code] = 202
-        result[x_meesage] = "error,no data!"
-        return json.dumps(result)
+    # code = stormchecklatandlon(lat=lat, lng=lng, timestamp=timestamp, total=total)
+    # if 200 == code:
+    #     pass
+    # elif 201 == code:
+    #     result[x_code] = 201
+    #     result[x_meesage] = "time out ,no data"
+    #     return json.dumps(result)
+    # elif 202 == code:
+    #     result[x_code] = 202
+    #     result[x_meesage] = "error,no data!"
+    #     return json.dumps(result)
 
     try:
         response = requests.get(
@@ -317,8 +315,30 @@ def stormbio():
 
         # Do something with response data.
         json_data = response.json()
+
+        list = json_data["hours"]
+
+        vlist = []
+        for dict in list:
+            ndict = {}
+            for key, value in dict.items():
+                try:
+                    if key == "time":
+                        date_object = datetime.datetime.strptime(value, "%Y-%m-%dT%H:%M:%S%z")
+                        ndict["time"] =  int(date_object.timestamp() + 0.1)
+
+                    else:
+                        if "sg" in value:
+                            ndict[key] = value["sg"]
+                        elif "meto" in value:
+                            ndict[key] = value["meto"]
+                except :
+                    pass
+            vlist.append(ndict)
         result[x_code] = 200
-        result[x_data] = json_data["hours"]
+        result[x_data] = vlist
+
+
     except Exception as e:
         result[x_meesage] = "%s"%e
         result[x_code] = 201
@@ -456,5 +476,10 @@ def stormsurgemapdict(dict):
     ndict["ciyongxiang"] = dict["secondarySwellDirection"]
     ndict["ciyongshi"] = dict["secondarySwellPeriod"]
     ndict["ciyonggao"] = dict["secondarySwellHeight"]
-    ndict["time"] = dict["time"]
+    ndict["yangliusudu"]= dict["currentSpeed"]
+    ndict["yangliufangxiang"] = dict["currentDirection"]
+
+    timev = dict["time"]
+    date_object = datetime.datetime.strptime(timev, "%Y-%m-%dT%H:%M:%S%z")
+    ndict["time"] = int(date_object.timestamp() + 0.1)
     return  ndict

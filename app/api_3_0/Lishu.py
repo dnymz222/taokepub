@@ -149,16 +149,16 @@ def workingdayday():
     except Exception as e:
         db.session.rollback()
         dict[x_code]=201
-        dict[x_meesage] = "%s"%e
+        dict[x_meesage] = e.message
 
     return json.dumps(dict)
 
 @api3.route("/workingday/year")
 def workingdayyear():
-    year= request.args.get("year","2025")
+    year= request.args.get("year","2022")
     code = request.args.get("code","HK")
 
-    fixcode = request.args.get("fixcode","MO")
+    fixcode = request.args.get("fixcode","VI")
 
     configuration = request.args.get("configuration","")
     dict= {}
@@ -179,10 +179,7 @@ def workingdayyear():
                 db.session.add(workingmodel)
 
                 db.session.commit()
-                print(holidayobject.day)
             except Exception as  e:
-
-                print(e)
 
                 db.session.rollback()
 
@@ -320,80 +317,21 @@ def holidaycountries():
 
 @api3.route("/workingday/add/config")
 def addworkingconfig():
-    list = [
-             {"configId":"Belarus",
-              "code":"BY",
-              "flag":"",
-              "website":"https://belarus.workingdays.org/setup",
-              "default_configuration":"",
-              "configurations":[]
-              },
-        {"configId": "Croatia",
-         "code": "HR",
-         "flag": "",
-         "website": "https://croatia.workingdays.org/setup",
-         "default_configuration": "",
-         "configurations": []
-         },
+    dict ={}
+    list=[]
+    dict["code"] ="VI"
+    dict["configId"] = "Vietnam"
+    dict["configurations"] = json.dumps(list)
+    dict["default_configuration"] = ""
+    dict["website"] = ""
 
-        {"configId": "Ecuador",
-         "code": "EC",
-         "flag": "",
-         "website": "https://ecuador.workingdays.org/setup",
-         "default_configuration": "",
-         "configurations": []
-         },
+    try:
+        config  =WorkingDaysConfig(dict=dict)
+        db.session.add(config)
+        db.session.commit()
+    except Exception as e:
 
-        {"configId": "Estonia",
-         "code": "EE",
-         "flag": "",
-         "website": "https://estonia.workingdays.org/setup",
-         "default_configuration": "",
-         "configurations": []
-         },
-
-        {"configId": "Guatemala",
-         "code": "GT",
-         "flag": "",
-         "website": "https://guatemala.workingdays.org/setup",
-         "default_configuration": "Días festivos nacionales",
-         "configurations": ["Días festivos nacionales","Ciudad de Guatemala"]
-         },
-
-        {"configId": "República Dominicana",
-         "code": "DO",
-         "flag": "",
-         "website": "https://dominican-republic.workingdays.org/setup",
-         "default_configuration": "",
-         "configurations": []
-         },
-
-        {"configId": "Serbia",
-         "code": "RS",
-         "flag": "",
-         "website": "https://serbia.workingdays.org/setup",
-         "default_configuration": "",
-         "configurations": []
-         },
-
-        {"configId": "Slovenia",
-         "code": "SI",
-         "flag": "",
-         "website": "https://slovenia.workingdays.org/setup",
-         "default_configuration": "",
-         "configurations": []
-         },
-
-    ]
-
-    for  dict in list:
-        try:
-            config  =WorkingDaysConfig(dict=dict)
-            db.session.add(config)
-            db.session.commit()
-        except Exception as e:
-            print(e)
-            db.session.rollback()
+        db.session.rollback()
 
     return "done"
 
@@ -402,9 +340,6 @@ def addworkingconfig():
 def workingdayconfig():
     dict = {}
     list = []
-
-
-
 
     try:
         # db.session.query(WorkingDaysConfig).filter_by(code="HK").update({"configId": "Hong-Kong(China)"})
@@ -464,87 +399,15 @@ def workingdaygetdayinfo(code,day):
 def workingdaygyeartotalinfo(year):
 
     try:
-        # workingdays = db.session.query(WorkingDaysConfig).all()
+        workingdays = db.session.query(WorkingDaysConfig).all()
+        hasbr = False
+        for wcobject in workingdays:
+            if hasbr:
 
-        list = [
-            {"configId": "Belarus",
-             "code": "BY",
-             "flag": "",
-             "website": "https://belarus.workingdays.org/setup",
-             "default_configuration": "",
-             "configurations": []
-             },
-            {"configId": "Croatia",
-             "code": "HR",
-             "flag": "",
-             "website": "https://croatia.workingdays.org/setup",
-             "default_configuration": "",
-             "configurations": []
-             },
-
-            {"configId": "Ecuador",
-             "code": "EC",
-             "flag": "",
-             "website": "https://ecuador.workingdays.org/setup",
-             "default_configuration": "",
-             "configurations": []
-             },
-
-            {"configId": "Estonia",
-             "code": "EE",
-             "flag": "",
-             "website": "https://estonia.workingdays.org/setup",
-             "default_configuration": "",
-             "configurations": []
-             },
-
-            {"configId": "Guatemala",
-             "code": "GT",
-             "flag": "",
-             "website": "https://guatemala.workingdays.org/setup",
-             "default_configuration": "Días festivos nacionales",
-             "configurations": ["Días festivos nacionales", "Ciudad de Guatemala"]
-             },
-
-            {"configId": "República Dominicana",
-             "code": "DO",
-             "flag": "",
-             "website": "https://dominican-republic.workingdays.org/setup",
-             "default_configuration": "",
-             "configurations": []
-             },
-
-            {"configId": "Serbia",
-             "code": "RS",
-             "flag": "",
-             "website": "https://serbia.workingdays.org/setup",
-             "default_configuration": "",
-             "configurations": []
-             },
-
-            {"configId": "Slovenia",
-             "code": "SI",
-             "flag": "",
-             "website": "https://slovenia.workingdays.org/setup",
-             "default_configuration": "",
-             "configurations": []
-             },
-
-        ]
-        hasbr = True
-        for wcobject in list:
-            code = wcobject["code"]
-            configurations = wcobject["configurations"]
-            if len(configurations) > 0:
-                # if len(wcobject.website) > 0:
-                #     if wcobject.code == "CN":
-                #         pass
-                #     else:
-                configuration = configurations[1]
-                workingdaygconfigyearinfo(year,code,configuration)
+                workingdaygyearinfo(year,wcobject.code)
                 time.sleep(0.2)
             else:
-                hasbr = (code == "EC")
+                hasbr = (wcobject.code == "PL")
 
     except Exception as e:
 
@@ -574,12 +437,12 @@ def workingdaygyearconfigtotalinfo(year):
                         pass
 
 
+
                     else:
                         if has_ls:
-                            print(config)
                             workingdaygconfigyearinfo(year,wcobject.code,config)
                         else:
-                            has_ls = (config == "New Hampshire")
+                            has_ls = (config == "Florida")
             else:
                 has_ca = (wcobject.code == "AU")
 
@@ -600,7 +463,7 @@ def workingdaygyearconfigcheckinfo(year):
 
             count = db.session.query(WorkingDaysModel).filter_by(year=year, code=wcobject.code,
                                                                  configuration="").count()
-            if count < 366:
+            if count < 365:
                 print (count)
                 print (wcobject.code)
                 print ("defalult")
@@ -652,19 +515,19 @@ def addfixworkingday():
 
     return "done"
 
-@api3.route("/workingday/year/<year>/<code>")
+
 def workingdaygyearinfo(year,code):
-    newyear = year + "-01-01"
+    newyear = year + "-03-18"
     dayTime = datetime.datetime.strptime(newyear, "%Y-%m-%d")
 
     offset = datetime.timedelta(days = 1)
 
-    for i in  range(0,366):
+    for i in  range(0,365):
         date = dayTime.strftime('%Y-%m-%d')
 
         print (date+"_"+code)
 
-        if date == "2026-01-01":
+        if date == "2024-01-01":
             return "done"
 
         url = 'https://api.workingdays.org/1.2/api.php?key=' + workingday_api_key + "&country_code=" + code + "&command=get_info_day&date=" + date
@@ -725,7 +588,7 @@ def workingdaygconfigyearinfo(year,code,config):
     for i in  range(0,365):
         date = dayTime.strftime('%Y-%m-%d')
 
-        if date == "2026-01-01":
+        if date == "2024-01-01":
             return "done"
 
         print (date + "_" + code + "_" + config)
@@ -782,10 +645,10 @@ def workingdaygconfigcheckyearinfo(year,code,config):
 
     offset = datetime.timedelta(days = 1)
 
-    for i in  range(0,366):
+    for i in  range(0,365):
         date = dayTime.strftime('%Y-%m-%d')
 
-        if date == "2025-01-01":
+        if date == "2024-01-01":
             return "done"
 
 

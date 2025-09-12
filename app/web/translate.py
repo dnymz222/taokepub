@@ -11,6 +11,8 @@ from flask_sqlalchemy import SQLAlchemy
 import urllib, sys
 import ssl
 from app import db
+
+from app.allcoupon import allcoupon
 import urllib
 import datetime
 from selenium import webdriver
@@ -20,12 +22,12 @@ import logging
 import sys
 import random
 
+from app.pintuan import pintuan
+
 from app.appuser import appuser
 
 from config import basedir
-from  app.utils.constvalue import appkey,secret,xunquanAppkey,xunquanSecret,solarAppkey,solarSecret,site_id
-from app.worldTidalStation import worldTidalStation
-from app.chinaTidalStation import chinaTidalStation
+
 
 from app.Star import Star
 from app.NGCC import NGCC
@@ -2278,7 +2280,7 @@ def excutetext(string):
 @web.route("/android/localized/<app>")
 def  androidlocalized(app):
 
-    list = ["en","de","es","fr","id","ja","ko","pt-PT","ru","zh-Hans","zh-HK","ms","th","vi","it"]
+    list = ["en","de","es","fr","id","ja","ko","pt-PT","ru","zh-Hans","zh-HK","ms","th","vi"]
 
     n = len(list)
 
@@ -2315,7 +2317,6 @@ def  androidlocalized(app):
 
                     left = excutetext(line[:dengindex])
                     right =  excutetext(line[dengindex + 1:])
-                    right = right.replace("'","\'")
                     left_str = left.replace(" ","_")
                 else:
                     index = line.find('";')
@@ -2323,12 +2324,15 @@ def  androidlocalized(app):
                         right = right + "\n" + line[:index]
                     else:
                         right = right +"\n" + line
-                    right = right.replace("'", "\'")
                 if line.endswith('";'):
 
                     androidstring = '<string name="'+left_str+'">'+right+'</string>'
                     f1.write(androidstring)
                     f1.write("\n")
+
+
+
+
 
 
 
