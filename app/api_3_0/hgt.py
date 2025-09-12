@@ -32,7 +32,6 @@ SAMPLES = 3601  # Change this to 3601 for SRTM1
 HGTDIR = 'hgt'  # All 'hgt' files will be kept here uncompressed
 
 
-from gmalthgtparser import HgtParser
 
 @api3.route("/hgt/elevation")
 def hgtelevation():

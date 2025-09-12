@@ -4,7 +4,7 @@ import time
 import datetime
 # from app.coupon import coupon
 from app import db
-from app.utils.constvalue import x_hasnext,x_data,x_code,mapdict,pid,token,x_meesage,itemNameList,itemMaterialList,itemTypeLsit
+from app.utils.constvalue import x_hasnext,x_data,x_code,x_meesage
 import json
 from flask import request,redirect,session,url_for
 from app.appconfig import  appconfig

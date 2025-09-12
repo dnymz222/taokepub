@@ -2,8 +2,7 @@
 from . import api3
 
 
-import pandas as pd
-from app.utils.constvalue import x_code,x_data,x_hasnext,mapdict,pid,x_meesage,appkey,secret,qianggoumap,qianggouList,pinpa_adzone_id,adzone_id,milk_cateList,bottle_catelist,laundry_cateList,pregnancy_catelist,diaper_cateList,supplement_cateList,bath_catelist,wet_catelist,pinpaiIdList,pinpaiNameList,muyinIdlist,clothes_catelist,shoes_cateList,muyinNameList,lamaids,lamanames,lamaurls,daeIdList,daeNameList
+from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
 import json
 from flask import request,session,url_for,redirect,make_response
 

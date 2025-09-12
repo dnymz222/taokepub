@@ -22,10 +22,7 @@ import random
 
 from app.appuser import appuser
 
-from config import basedir
-from  app.utils.constvalue import appkey,secret,xunquanAppkey,xunquanSecret,solarAppkey,solarSecret,site_id
-from app.worldTidalStation import worldTidalStation
-from app.chinaTidalStation import chinaTidalStation
+
 
 from app.Star import Star
 from app.NGCC import NGCC

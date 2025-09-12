@@ -6,7 +6,7 @@ from flask import request,session
 from app import db
 
 from app.appconfig import appconfig
-from app.utils.constvalue import mapdict
+
 import sys
 from app.banner import banner
 import urllib

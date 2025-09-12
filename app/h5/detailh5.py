@@ -3,7 +3,7 @@ import urllib
 import json
 from . import h5
 from bs4 import BeautifulSoup
-from app.utils.constvalue import iplist
+
 from app.chinaLunitidal import chinaLunitidal
 from app import db
 

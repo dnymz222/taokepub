@@ -9,7 +9,7 @@ from flask import request,render_template
 import datetime
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from app.utils.constvalue import allcatelist,taokezhushouAppkey
+
 import random
 
 

@@ -1,6 +1,6 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,mapdict,x_meesage,appkey,secret
+from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
 import json
 from flask import request,session,url_for,redirect,make_response
 from app import db
