@@ -2,14 +2,14 @@
 from . import web
 
 import json
-from app.allcoupon import allcoupon
+
 from app import db
 import time
 from flask import request,render_template
 import datetime
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from app.utils.constvalue import allcatelist,taokezhushouAppkey
+
 import random
 
 

@@ -1,39 +1,20 @@
 #coding=utf8
 from . import web
-from flask import Flask,redirect,render_template,request,url_for,session,escape
-import xlrd
+
 import os
 import json
-from  config import basedir
-# from coupon import coupon
-import  MySQLdb
-from flask_sqlalchemy import SQLAlchemy
-import urllib, sys
-import ssl
+
 from app import db
 
-from app.allcoupon import allcoupon
-import datetime
+
 from selenium import webdriver
 from bs4 import BeautifulSoup
-import time
-import logging
-import sys
-import random
 
-from app.pintuan import pintuan
 
-from app.appuser import appuser
-
-from config import basedir
-from  app.utils.constvalue import appkey,secret,xunquanAppkey,xunquanSecret,solarAppkey,solarSecret,site_id
-from app.worldTidalStation import worldTidalStation
-from app.chinaTidalStation import chinaTidalStation
 
 from config import basedir
 import requests
-import zipfile
-import shutil
+
 from app.WorkingDaysConfig import WorkingDaysConfig
 
 

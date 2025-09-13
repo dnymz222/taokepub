@@ -1,30 +1,22 @@
 #codeing=utf8
 # -*- coding: utf-8 -*-
 from . import web
-import datetime
+
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
-import logging
-import sys
+
 from flask import Flask,redirect,render_template,request,url_for,session,escape
 import xlrd
 import os
 import json
 from  config import basedir
-# from coupon import coupon
-import  MySQLdb
-from flask_sqlalchemy import SQLAlchemy
-import urllib,  sys
-import ssl
-from app import db
-import re
+
+import urllib
+
 from timezonefinder import TimezoneFinder
-from app.utils.constvalue import acuuappkey,xinzhi_prinvate_key,xinzhi_public_key,openweather_key,accu_minutecastkey
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.chrome.options import Options
+from app.utils.constvalue import acuuappkey
+
 import  requests
 import  math
 import pandas as pd

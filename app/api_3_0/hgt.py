@@ -1,30 +1,22 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,hefengfishingapikey,hefengusername
-import json
-from flask import request,session,url_for,redirect
-from app import db
+from app.utils.constvalue import x_code,x_data,x_meesage
+
+from flask import request
+
 import urllib
-import hashlib
-import time
-import datetime
-import urllib, sys
-import ssl
+
 
 import json
-import base64
-import math
-import requests
+
 from config import basedir
 import os
-import numpy as np
 import shutil
 from flask import send_file
 import rasterio
-import  tifffile
+
 import zipfile
-# from matplotlib import pyplot as plt
-from selenium import webdriver
+
 from requests.auth import HTTPBasicAuth
 import requests
 

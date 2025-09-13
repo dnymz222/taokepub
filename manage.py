@@ -17,7 +17,6 @@ if os.path.exists('.env'):
 
 from app import create_app,db
 
-from app.allcoupon import allcoupon
 
 from app.yuanorder import yuanorder
 from app.appconfig import appconfig
@@ -32,9 +31,6 @@ from app.column import column
 from app.worldTidalStation import worldTidalStation
 from app.chinaTidalStation import chinaTidalStation
 from app.launchad import launchad
-from app.fishshop import fishshop
-from app.lunitidalsite import lunitidalsite
-from app.chinaLunitidal import chinaLunitidal
 from app.appitem import appitem
 from app.downloadAd import downloadAd
 from app.Star import Star

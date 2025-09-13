@@ -4,30 +4,23 @@ from flask import Flask, redirect, render_template, request, url_for, session, e
 import xlrd
 import os
 import json
-from config import basedir
-# from coupon import coupon
-import MySQLdb
-from flask_sqlalchemy import SQLAlchemy
+
 from app import db
 from app.yuanorder import yuanorder
-import urllib
+
 import datetime
 import time
-import logging
-import sys
-import random
 
 
 from werkzeug.utils import secure_filename
 from config import basedir
-import base64
-from app.utils.constvalue import yxx_appkey, yxx_secret,yxx_siteid, x_code, x_meesage, x_data, appkey, secret, site_id, adzone_id, \
-    yxx_adzonid
 
-import re
+from app.utils.constvalue import yxx_appkey, yxx_secret,yxx_siteid, x_code, x_meesage, x_data
+
+
 from app.YuanCustomer import YuanCustomer
 import hashlib
-from hashlib import md5
+
 import base64
 
 

@@ -1,20 +1,18 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,hefengfishingapikey,hefengusername,holiday_key,workingday_api_key
+from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,holiday_key,workingday_api_key
 import json
-from flask import request,session,url_for,redirect
+from flask import request
 from app import db
-import urllib
-import hashlib
+
 
 import time
 import datetime
 import urllib, sys
 from urllib.parse import quote
-import ssl
+
 import json
-import base64
-import math
+
 import requests
 from app.Holiday import Holiday
 from app.WorkingDaysConfig import WorkingDaysConfig

@@ -82,9 +82,6 @@ def create_app(config_name):
 
 
 
-    from .solunar import solunar as solunar_blueprint
-    app.register_blueprint(solunar_blueprint,url_prefix = "/api/v3.0/solunar")
-
 
 
 
@@ -93,9 +90,7 @@ def create_app(config_name):
     app.register_blueprint(tide_blueprint, url_prefix='/tide')
 
 
-    from .gfs import gfs as gfs_blueprint
 
-    app.register_blueprint(gfs_blueprint, url_prefix='/gfs')
 
 
 
@@ -113,10 +108,6 @@ def create_app(config_name):
     from .jiliang import jiliang as jiliang_blueprint
 
     app.register_blueprint(jiliang_blueprint,url_prefix='/jiliang')
-
-
-    from  .supabase import supabaseB as supabase_blueprint
-    app.register_blueprint(supabase_blueprint, url_prefix='/api/v3.0/supabase')
 
 
 

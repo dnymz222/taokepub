@@ -18,22 +18,14 @@ from app.SAOStar import SAOStar
 from app.GCVSStar import GCVSStar
 from app.NGCCStar import NGCCStar
 from app.Hefengtide import Hefengtide
-import re
+
 from app import db
 from app.AstroEvent import AstroEvent
 import xlrd
-import time
-import datetime
-import base64
+
 import math
 from app.Camera import Camera
-from app.WanggangOrder import OrderIdkey ,OrderDayKey,OrderTeamkey,ClientManagerKey,ClientNameKey,ApplyAmountKey,LoanTypeKey,MarkKey,StatusKey,ResultDescriptionKey,StatusTypeKey ,FallbackTimesKey,FallbackReasonKey,FallbackTypeKey ,AnalysisProgressKey ,RemarkKey ,MonthKey
 
-from app.WanggangOrder import OrderIdTitle,OrderDayTitle,OrderTeamTitle ,ClientManagerTitle ,ClientNameTitle ,ApplyAmountTitle ,LoanTypeTitle ,MarkTitle,StatusTitle ,ResultDescriptionTitle ,StatusTypeTitle ,FallbackTimesTitle ,FallbackReasonTitle ,FallbackTypeTitle ,AnalysisProgressTitle ,RemarkTitle ,MonthTitle
-
-
-from app.WanggangOrder import WanggangOrder
-from app.WorkingDaysConfig import WorkingDaysConfig
 from app.WorkingDaysModel import WorkingDaysModel
 from app.MeteorShowers import MeteorShowers
 from app.Comet import Comet

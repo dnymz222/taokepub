@@ -12,9 +12,7 @@ import urllib, sys
 import ssl
 from app import db
 
-from app.allcoupon import allcoupon
-import urllib
-import datetime
+
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time

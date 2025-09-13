@@ -2,19 +2,9 @@
 import os.path
 
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,hefengfishingapikey,hefengusername,acuuappkey
-import json
-from flask import request,session,url_for,redirect
-from app import db
-import hashlib
-import time
-import datetime
-import ssl
 
-import json
-import base64
-import math
-import requests
+from flask import request
+
 
 from config import basedir
 from flask import send_file

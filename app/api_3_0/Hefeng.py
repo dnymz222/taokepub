@@ -1,25 +1,23 @@
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,hefengfishingapikey,hefengusername,acuuappkey,xinzhi_prinvate_key
-import json
-from flask import request,session,url_for,redirect
-from app import db
+from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,hefengtyphoonkey,hefengusername,acuuappkey,xinzhi_prinvate_key
 
-import hashlib
+from flask import request,session,url_for,redirect
+
+
+
 
 import time
 import datetime
-import urllib, sys
+
 import ssl
 
 import json
-import base64
+
 import math
 import requests
 from .hgt import  get_elavation
 from config import basedir
-from app.Hefengtide import Hefengtide
-import xlrd
-from app.TyphoonModel import TyphoonModel
+
 import  pytz
 import os
 
@@ -41,7 +39,7 @@ def hefengcid_location():
             'https://geoapi.heweather.net/v2/city/lookup',
             params={
                 "location":lng+","+lat,
-                "key":hefengfishingapikey,
+                "key":hefengtyphoonkey,
                 "lang":lang
             },
 
@@ -79,7 +77,7 @@ def hefengtid_seach():
             'https://geoapi.qweather.com/v2/poi/lookup',
             params={
                 "location":location,
-                "key":hefengfishingapikey,
+                "key":hefengtyphoonkey,
                 "lang":lang,
                 "type":"TSTA"
             },
@@ -112,7 +110,7 @@ def hefengcid_seach():
             'https://geoapi.heweather.net/v2/city/lookup',
             params={
                 "location":key,
-                "key":hefengfishingapikey,
+                "key":hefengtyphoonkey,
                 "lang":lang
             },
 
@@ -156,7 +154,7 @@ def hefengrain():
             'https://api.qweather.com/v7/minutely/5m',
             params={
                 "location": lng+","+lat,
-                "key": hefengfishingapikey,
+                "key": hefengtyphoonkey,
 
             },
 
@@ -232,7 +230,7 @@ def hefengtidegroup():
                         'https://api.qweather.com/v7/ocean/tide',
                         params={
                             "location": location,
-                            "key": hefengfishingapikey,
+                            "key": hefengtyphoonkey,
                             "date":dateitem
                         },
                     )
@@ -329,7 +327,7 @@ def hefengtide():
                     'https://api.qweather.com/v7/ocean/tide',
                     params={
                         "location": location,
-                        "key": hefengfishingapikey,
+                        "key": hefengtyphoonkey,
                         "date":date
 
                     },
@@ -470,7 +468,7 @@ def hefengtidelocations():
                         'https://api.qweather.com/v7/ocean/tide',
                         params={
                             "location": location,
-                            "key": hefengfishingapikey,
+                            "key": hefengtyphoonkey,
                             "date":date
 
                         },
@@ -563,7 +561,7 @@ def hefengstormlist():
             'https://api.qweather.com/v7/tropical/storm-list',
             params={
 
-                "key":hefengfishingapikey,
+                "key":hefengtyphoonkey,
                 "lang":lang,
                 "basin":basin,
                 "year": year
@@ -659,7 +657,7 @@ def hefengstormforecast():
             'https://api.qweather.com/v7/tropical/storm-forecast',
             params={
 
-                "key":hefengfishingapikey,
+                "key":hefengtyphoonkey,
                 "lang":lang,
                 "stormid": stormid,
 
@@ -752,7 +750,7 @@ def hefengstormtrack():
             'https://api.qweather.com/v7/tropical/storm-track',
             params={
 
-                "key":hefengfishingapikey,
+                "key":hefengtyphoonkey,
                 "lang":lang,
                 "stormid": stormid,
 
@@ -809,7 +807,7 @@ def hefeingminute():
             'https://api.qweather.com/v7/minutely/5m',
             params={
 
-                "key":hefengfishingapikey,
+                "key":hefengtyphoonkey,
                 "lang":lang,
                 "location":location,
 
@@ -848,7 +846,7 @@ def hefeingnow():
             'https://api.qweather.com/v7/weather/now',
             params={
 
-                "key":hefengfishingapikey,
+                "key":hefengtyphoonkey,
                 "lang":lang,
                 "location":location,
                 "unit":"i"

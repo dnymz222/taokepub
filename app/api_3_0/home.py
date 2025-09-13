@@ -3,24 +3,21 @@ from . import api3
 import time
 import datetime
 # from app.coupon import coupon
-from app.allcoupon import allcoupon
+
 from app import db
-from app.utils.constvalue import x_hasnext,x_data,x_code,mapdict,pid,token,x_meesage,itemNameList,itemMaterialList,itemTypeLsit
+from app.utils.constvalue import x_data,x_code,x_meesage
 import json
-from flask import request,redirect,session,url_for
-from app.appconfig import  appconfig
-import urllib
+from flask import request
+
 import time
 from app.banner import banner
-from app.special import special
+
 from app.welfare import welfare
-from app.track import track
-from app.appuser import appuser
+
 from app.column import column
 from app.launchad import launchad
-from app.fishshop import fishshop
 import random
-from app.lunitidalsite import lunitidalsite
+
 from app.appitem import appitem
 from app.downloadAd import downloadAd
 from app.DownloadAdClick import downloadAdClick
@@ -619,27 +616,6 @@ def xunquancolumn():
     return json.dumps(result)
 
 
-@api3.route('/xunquan/fishshop')
-def xunquanfishshop():
-    result = {}
-    list = []
-    try:
-        shopresult = db.session.query(fishshop).filter_by(status=1).order_by(
-            fishshop.index).all()
-        for shop_item in shopresult:
-            shop_dict = shop_item.fishshop_dict()
-            list.append(shop_dict)
-        result[x_data] = list
-        result[x_code] =200
-    except Exception as e:
-        db.session.rollback()
-        result[x_meesage] = "%s"%e
-        result[x_code] = 203
-
-    finally:
-        db.session.close()
-
-    return json.dumps(result)
 
 
 

@@ -1,29 +1,20 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
-import json
-from flask import request,session,url_for,redirect,make_response
-from app import db
-import hashlib
-import time
+from app.utils.constvalue import x_code,x_data,x_meesage
+
+from flask import request
+
 import datetime
 import urllib, sys
-import ssl
 import json
-import base64
-import math
-import gzip
-from app.utils.constvalue import acuuappkey,meteobule_apikey
-import gzip
-from io import StringIO
+from app.utils.constvalue import meteobule_apikey
+
 import requests
 import os
 from  config import  basedir
 from PIL import Image
 import  pytz
 from astral import LocationInfo
-from astral.sun import sun
-from astral import moon
 from astral.location import Location
 
 @api3.route("/meteoblue/icon")

@@ -4,57 +4,34 @@ from flask import Flask,redirect,render_template,request,url_for,session,escape
 import xlrd
 import os
 import json
-from  config import basedir
-# from coupon import coupon
-import  MySQLdb
-from flask_sqlalchemy import SQLAlchemy
-import urllib, sys
-import ssl
+
 from app import db
 
-from app.allcoupon import allcoupon
-import urllib
-import datetime
+
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
-import logging
-import sys
-import random
-
-from app.pintuan import pintuan
-
-from app.appuser import appuser
-
-from config import basedir
 
 
 from app.Star import Star
-from app.NGCC import NGCC
+
 from app.Messier import Messier
 from app.Constellation import Constellation
-from app.Tycho import Tycho
-from app.stardetail import stardetail
-from app.ConstellationDetail import ConstellationDetail
+
 from app.Caldwell import Caldwell
 import re
-from app.MeteorShowers import MeteorShowers
-from app.AstroEvent import AstroEvent
-from app.Comet import Comet
+
 from app.Galaxy import Galaxy
 from app.GlobularClusters import GlobularClusters
 from app.OpenClusters import OpenClusters
 from app.ProtoplanetaryNebulae import ProtoplanetaryNebulae
 from app.PlanetaryNebulae import PlanetaryNebulae
 from app.DiffuseNebulae import DiffuseNebulae
-from app.DeepskyDetail import DeepskyDetail
-from app.CometDetail import CometDetail
+
 from app.HRStar import HRStar
-from app.HDStar import HDStar
+
 from config import basedir
-import requests
-import zipfile
-import shutil
+
 
 
 

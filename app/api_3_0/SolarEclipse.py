@@ -2,58 +2,33 @@
 import os.path
 
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
-import json
-from flask import request,session,url_for,redirect,make_response
+
 from app import db
-import urllib
-import hashlib
 
-import time
 import datetime as date_time_m
-import urllib, sys
-import ssl
 
-import json
-import base64
 import math
 
-import gzip
-from app.utils.constvalue import acuuappkey,meteobule_apikey
-import metpy.calc as mpcalc
-from metpy.units import units
-import gzip
-from io import StringIO
-import requests
-import pytz
-from pymeeus.Epoch import Epoch
-from pymeeus.Sun import Sun
-from pymeeus.Moon import Moon
-from pymeeus.Earth import Earth
-import pymeeus.Coordinates
 
-from datetime import  datetime,timezone
-import time
+from datetime import  datetime
 from config import basedir
 from PIL import Image as PILImage
 
-from urllib.request import urlopen
+
 
 from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.pyplot as plt
 import numpy as np
 
 import cartopy.crs as ccrs
-import cartopy.feature as cfeature
+
 from cartopy.feature.nightshade import Nightshade
-import matplotlib.image  as mpimage
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
-from flask import send_file
+
 
 from cartopy.io.shapereader import Reader
-import paramiko
+
 import matplotlib.gridspec as gridspec
-from shapely.geometry import GeometryCollection,Point,shape
+
 
 from app.SolarEclipse import SolarEclipse
 from app.SolarEclipseCalculate import SolarEclipseCalculate

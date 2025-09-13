@@ -2,7 +2,6 @@
 from app import create_app
 import os
 from app import db
-from app.utils.constvalue import couponUrl
 import sys
 import logging
 

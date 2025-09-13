@@ -3,11 +3,8 @@ from flask import request,render_template
 import urllib
 import json
 from . import jiliang
-from bs4 import BeautifulSoup
-from app.utils.constvalue import iplist
 from app import db
 import pandas as pd
-import sqlite3
 from flask import Flask, render_template, request, redirect, url_for, flash
 import os
 from config import basedir
