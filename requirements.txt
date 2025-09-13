@@ -80,7 +80,6 @@ selenium==2.53.6
 
 
 astral==3.2
-Cartopy
 paramiko==3.5.0
 geopandas
 pygrib==2.1.5
