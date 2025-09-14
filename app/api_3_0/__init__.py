@@ -9,11 +9,8 @@ from . import photo
 
 from . import meteoblue
 from  . import Tile
-from . import Aurora
 from . import Tide
 
-from . import SolarEclipse
-from . import LunarEclipse
 
 
 
