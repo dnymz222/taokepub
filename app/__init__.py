@@ -45,7 +45,7 @@ def create_app(config_name):
     
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:222222@localhost/xunquan'
 
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/www/flask/taoke/static/DB/data.db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/www/flask/taokepub/static/DB/data.db'
 
 
     # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/xuepingwang/Workspace/flask_tencent/taoke/static/DB/data.db'
