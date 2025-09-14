@@ -243,6 +243,33 @@ def elevationwepbimage(z, x, y):
        return "%s"%e
 
 
+@api3.route("/lpm/altas/year/<year>/<z>/<x>/<y>")
+def lpmaltasyearwepbimage(year,z, x, y):
+
+   path = os.path.join(basedir, "static/altas" + year)
+   filename = z +"_" + x + "_"  + y + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+@api3.route("/lpm/year/<year>/<z>/<x>/<y>")
+def lpmyearwepbimage(year,z, x, y):
+
+   if year == "2015":
+       path =  os.path.join(basedir,"static/world2015")
+   else:
+       path = os.path.join(basedir, "static/vnl" + year)
+   filename = z +"_" + x + "_"  + y + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
+
 
 def secrect(t,z,x,y):
 
