@@ -40,7 +40,7 @@ def acuugetloctionkey():
 
     url = 'https://dataservice.accuweather.com/locations/v1/geoposition/search?q='+lat+','+lng +'&language='+language
 
-    print(url)
+    # print(url)
     try:
 
         headers = {"Authorization": "Bearer " + acuuappkey}

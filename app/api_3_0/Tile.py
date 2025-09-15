@@ -114,6 +114,28 @@ def copernicusrgbmap(type,time):
    except Exception as e:
        return "%s"%e
 
+@api3.route("/copernicus/china/<type>/<time>")
+def copernicuschinamap(type,time):
+   path =  os.path.join(basedir,"static/copernicus/china")
+   filename = type + "_"  + time + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
+@api3.route("/tide/china/<type>/<time>")
+def tidechinamap(type,time):
+   path =  os.path.join(basedir,"static/TIDE/china")
+   filename = type + "_"  + time + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
 @api3.route("/tide/rgbmap/<time>")
 def tidergbmap(time):
    path =  os.path.join(basedir,"static/TIDE/red")
