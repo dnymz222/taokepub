@@ -10,7 +10,7 @@ from . import photo
 from . import meteoblue
 from  . import Tile
 from . import Tide
-
+from . import Aurora
 
 
 
