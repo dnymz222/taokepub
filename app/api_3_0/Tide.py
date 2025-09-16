@@ -1,25 +1,24 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,worlrtide_secret
-from flask import request,session,url_for,redirect
+from app.utils.constvalue import x_code,x_data,x_meesage,worlrtide_secret
+from flask import request
 from app import db
-import urllib
-import hashlib
+
 
 import time
-import datetime
-import urllib, sys
-import ssl
+
+import urllib
+
 
 import json
-import base64
+
 import math
 from app.worldTidalStation import worldTidalStation
 from app.chinaTidalStation import chinaTidalStation
 from config import basedir
 import os
 import  xarray as xr
-import  selenium
+
 import requests
 from app.utils.constvalue import xinzhi_public_key,xinzhi_prinvate_key
 

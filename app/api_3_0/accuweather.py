@@ -1,27 +1,20 @@
 #coding=utf8
 from . import api3
 from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
-import json
+
 from flask import request,session,url_for,redirect,make_response
-from app import db
-import urllib
-import hashlib
-import time
-import datetime
+
 import urllib, sys
-import ssl
+
 import json
-import base64
+
 import math
 
-import gzip
-from app.utils.constvalue import acuuappkey,accu_minutecastkey
-import metpy.calc as mpcalc
-from metpy.units import units
-import gzip
+
+from app.utils.constvalue import accu_meteocalc_key,accu_minutecastkey
+
 import requests
-from io import StringIO
-# from suncalc import get_position,get_times
+
 import pytz
 
 
@@ -43,7 +36,7 @@ def acuugetloctionkey():
     # print(url)
     try:
 
-        headers = {"Authorization": "Bearer " + acuuappkey}
+        headers = {"Authorization": "Bearer " + accu_meteocalc_key}
 
         # req = urllib.request.Request(url)
         response = requests.get(url,headers=headers)
@@ -82,7 +75,7 @@ def acculocationges():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -103,7 +96,7 @@ def acculocationregions():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -126,7 +119,7 @@ def acculocationtopcity(code):
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -147,7 +140,7 @@ def acculocationadminareas(code):
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -164,12 +157,12 @@ def acculocationcountries(code):
 
     language = request.args.get('language', 'zh-cn')
 
-    url = 'https://dataservice.accuweather.com/locations/v1/countries/'+code+ '?apikey=' + acuuappkey + '&details=true&language=' + language
+    url = 'https://dataservice.accuweather.com/locations/v1/countries/'+code+ '?details=true&language=' + language
 
     try:
         # req = urllib.request.Request(url)
 
-        headers = {"Authorization": "Bearer " + acuuappkey}
+        headers = {"Authorization": "Bearer " + accu_meteocalc_key}
         response = requests.get(url,headers=headers)
         content = response.text
         result[x_code] = 200
@@ -200,7 +193,7 @@ def acculocationcity():
 
 
     try:
-        headers = {"Authorization": "Bearer " + acuuappkey}
+        headers = {"Authorization": "Bearer " + accu_meteocalc_key}
         response = requests.get(url,headers=headers)
         content = response.text
         result[x_code] = 200
@@ -229,7 +222,7 @@ def accucitysearch():
 
 
     try:
-        headers = {"Authorization": "Bearer " + acuuappkey}
+        headers = {"Authorization": "Bearer " + accu_meteocalc_key}
         response = requests.get(
             'https://dataservice.accuweather.com/locations/v1/cities/search',
             params={
@@ -271,7 +264,7 @@ def acculocationtext():
 
 
     try:
-        headers = {"Authorization": "Bearer " + acuuappkey}
+        headers = {"Authorization": "Bearer " + accu_meteocalc_key}
         response = requests.get(
             'https://dataservice.accuweather.com/locations/v1/search',
             params={
@@ -322,7 +315,7 @@ def accuuweather():
     url = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/'+locationkey+'?'+'&details=true&metric='+ismetric+'&language='+language
 
     try:
-        headers = {"Authorization": "Bearer " + acuuappkey}
+        headers = {"Authorization": "Bearer " + accu_meteocalc_key}
         response = requests.get(url,headers=headers)
         content = response.text
         result[x_code] = 200
@@ -351,7 +344,7 @@ def accuu1hourl():
     url = 'https://dataservice.accuweather.com/forecasts/v1/hourly/1hour/' + locationkey + '?details=true&metric=' + ismetric + '&language=' + language
 
     try:
-        headers = {"Authorization": "Bearer " + acuuappkey}
+        headers = {"Authorization": "Bearer " + accu_meteocalc_key}
 
         response = requests.get(url,headers=headers)
         content = response.text
@@ -384,7 +377,7 @@ def accuuindex():
     try:
         req = urllib.request.Request(url)
         req.add_header('Accept-Encoding', 'gzip')
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         return content
@@ -415,7 +408,7 @@ def accuuspotindex():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
 
         content = response.read()
@@ -472,7 +465,7 @@ def accuhealthindex():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
 
         response = urllib.request.urlopen(req)
 
@@ -537,11 +530,11 @@ def accuucurrent():
     result = {}
 
 
-    url = 'https://dataservice.accuweather.com/currentconditions/v1/'+locationkey+'?apikey=' +acuuappkey+'&details=true&language='+language
+    url = 'https://dataservice.accuweather.com/currentconditions/v1/'+locationkey+'?details=true&language='+language
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -581,11 +574,11 @@ def accuuhistory():
     result = {}
 
 
-    url = 'https://dataservice.accuweather.com/currentconditions/v1/' + locationkey + '/historical/24?apikey=' + acuuappkey + '&details=true&language=' + language
+    url = 'https://dataservice.accuweather.com/currentconditions/v1/' + locationkey + '/historical/24?details=true&language=' + language
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -616,7 +609,7 @@ def accuuhourly():
 
         try:
             req = urllib.request.Request(url)
-            req.add_header("Authorization", "Bearer " + acuuappkey)
+            req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
             response = urllib.request.urlopen(req)
             content = response.read()
             result[x_code] = 200
@@ -656,7 +649,7 @@ def accuuradar():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -684,7 +677,7 @@ def accuregion():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -713,7 +706,7 @@ def accucountry():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -741,7 +734,7 @@ def accuarea():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -770,7 +763,7 @@ def accucity():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200
@@ -801,7 +794,7 @@ def accuualarms():
 
     try:
         req = urllib.request.Request(url)
-        req.add_header("Authorization", "Bearer " + acuuappkey)
+        req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
         content = response.read()
         result[x_code] = 200

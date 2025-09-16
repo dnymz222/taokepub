@@ -1,19 +1,17 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,worlrtide_secret
-from flask import request,session,url_for,redirect
+from app.utils.constvalue import x_code,x_data,x_meesage
+from flask import request
 from app import db
-import urllib
-import hashlib
+
 
 import time
 import datetime
-import urllib, sys
-import ssl
+
 import json
-import base64
+
 import math
-from app.utils.constvalue import aliyun_accesskey,aliyun_secret,aliyun_euler_accesskey,aliyun_euler_secret
+from app.utils.constvalue import aliyun_euler_accesskey,aliyun_euler_secret
 from aliyunsdkcore.client import AcsClient
 from aliyunsdkcore.request import CommonRequest
 from app.VipUser import VipUser
@@ -21,9 +19,7 @@ import random
 
 from alibabacloud_dysmsapi20170525.client import Client as Dysmsapi20170525Client
 from alibabacloud_tea_openapi import models as open_api_models
-from alibabacloud_dysmsapi20170525 import models as dysmsapi_20170525_models
-from alibabacloud_tea_util import models as util_models
-from alibabacloud_tea_util.client import Client as UtilClient
+
 from app.SMSCode import SMSCode
 
 

@@ -2,28 +2,14 @@
 import os.path
 
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,zhongkexingtu_token
-import json
-from flask import request,session,url_for,redirect
-from app import db
-import urllib
-import hashlib
-
-import time
+from app.utils.constvalue import x_code,x_data,x_meesage,zhongkexingtu_token
+from flask import request
 import datetime
-import urllib, sys
-import ssl
-
+import urllib
 import json
-import base64
-import math
+
 import requests
-from .hgt import  get_elavation
 from config import basedir
-from app.Hefengtide import Hefengtide
-import xlrd
-from app.TyphoonModel import TyphoonModel
-import pytz
 import shutil
 from PIL import Image
 import math

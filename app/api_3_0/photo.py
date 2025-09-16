@@ -1,24 +1,8 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
-import json
-from flask import request,session,url_for,redirect
+from app.utils.constvalue import x_code,x_data,x_meesage
 from app import db
-import urllib
-import hashlib
-
-import time
-import datetime
-import urllib, sys
-import ssl
-
 import json
-import base64
-import math
-import requests
-from config import basedir
-import os
-import numpy as np
 from  app.Camera import Camera
 
 

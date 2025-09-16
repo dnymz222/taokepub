@@ -3,29 +3,10 @@ import os.path
 
 from . import api3
 from app.utils.constvalue import x_code,x_data,x_meesage,tianmap_key
-import json
-from flask import request,session,url_for,redirect,make_response
-from app import db
-import urllib
-import hashlib
-
-import time
-import datetime
-import urllib, sys
-import ssl
+from flask import request
 
 import json
-import base64
-import math
-from app.water import water
-from app.worldTidalStation import worldTidalStation
-from app.chinaTidalStation import chinaTidalStation
-import gzip
-from app.utils.constvalue import acuuappkey,xinzhi_prinvate_key,xinzhi_public_key,openweather_key,accu_minutecastkey
-import metpy.calc as mpcalc
-from metpy.units import units
-import gzip
-from io import StringIO
+
 import requests
 from  xml.etree import ElementTree
 import xmltodict

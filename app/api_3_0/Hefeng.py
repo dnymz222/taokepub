@@ -2,20 +2,14 @@
 import os.path
 
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,hefengtyphoonkey,hefengusername,xinzhi_prinvate_key
-import json
+from app.utils.constvalue import x_code,x_data,x_meesage,hefengtyphoonkey,xinzhi_prinvate_key
 from flask import request,session,url_for,redirect
-from app import db
-import urllib
-import hashlib
-
 import time
 import datetime
-import urllib, sys
-import ssl
+
 
 import json
-import base64
+
 import math
 import requests
 from .hgt import  get_elavation

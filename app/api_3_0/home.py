@@ -1,17 +1,14 @@
 #coding=utf8
 from . import api3
-import time
 import datetime
-# from app.coupon import coupon
 from app import db
 from app.utils.constvalue import x_hasnext,x_data,x_code,x_meesage
 import json
 from flask import request,redirect,session,url_for
-from app.appconfig import  appconfig
-import urllib
+
 import time
 from app.banner import banner
-from app.appuser import appuser
+
 from app.column import column
 from app.launchad import launchad
 import random

@@ -2,20 +2,8 @@
 import os.path
 
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
-import json
-from flask import request,session,url_for,redirect
-from app import db
-import hashlib
-import time
+from flask import request
 import datetime
-import ssl
-
-import json
-import base64
-import math
-import requests
-
 from config import basedir
 from flask import send_file
 import shutil

@@ -1,24 +1,18 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
+from app.utils.constvalue import x_code,x_data,x_meesage
 import json
-from flask import request,session,url_for,redirect,make_response
+from flask import request
 from app import db
-import urllib
-import hashlib
+
 
 import time
-import datetime
-import urllib, sys
-import ssl
+
 import json
-import base64
+
 import math
 from app.water import water
-from app.worldTidalStation import worldTidalStation
-from app.chinaTidalStation import chinaTidalStation
-import gzip
-from app.utils.constvalue import acuuappkey,xinzhi_prinvate_key,xinzhi_public_key,openweather_key
+
 import metpy.calc as mpcalc
 from metpy.units import units
 import gzip

@@ -1,23 +1,12 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
-import json
-from flask import request,session,url_for,redirect
-from app import db
-import urllib
-import hashlib
-
+from app.utils.constvalue import x_code,x_data,x_meesage
+from flask import request
 import time
-import datetime
-import urllib, sys
-import ssl
-
+import urllib
 import json
-import base64
 import math
-import requests
-from .hgt import  get_elavation
-from app.utils.constvalue import acuuappkey,xinzhi_prinvate_key,xinzhi_public_key
+from app.utils.constvalue import xinzhi_prinvate_key
 
 
 @api3.route('/xinzhi/location/search')

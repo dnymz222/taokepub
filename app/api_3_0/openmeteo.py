@@ -10,14 +10,11 @@ from flask import request,session,url_for,redirect,make_response
 import time
 from datetime import  datetime
 import urllib, sys
-import ssl
+
 
 import json
-import base64
-import math
 
-import gzip
-from app.utils.constvalue import acuuappkey,xinzhi_prinvate_key,xinzhi_public_key,openweather_key,meteobule_apikey
+from app.utils.constvalue import meteoblue_allapi_key
 
 from metpy.units import units
 import gzip
@@ -119,7 +116,7 @@ def openmeteoair():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/airquality-1h?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/airquality-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)

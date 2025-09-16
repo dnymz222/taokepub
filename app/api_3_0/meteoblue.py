@@ -1,29 +1,16 @@
 #coding=utf8
 from . import api3
 from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
-import json
-from flask import request,session,url_for,redirect,make_response
-from app import db
+
+from flask import request
+
 import urllib
-import hashlib
 
-import time
-import datetime
-import urllib, sys
-import ssl
 
 import json
-import base64
-import math
-from app.water import water
-from app.worldTidalStation import worldTidalStation
-from app.chinaTidalStation import chinaTidalStation
-import gzip
-from app.utils.constvalue import acuuappkey,xinzhi_prinvate_key,xinzhi_public_key,openweather_key,meteobule_apikey
-import metpy.calc as mpcalc
-from metpy.units import units
-import gzip
-from io import StringIO
+
+from app.utils.constvalue import meteoblue_allapi_key
+
 import requests
 
 
@@ -176,7 +163,7 @@ def meteoblueair():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/air-1h_air-day?apikey="+meteobule_apikey+"&lat="+lat+"&lon="+lng+"&asl="+asl+"&format=json&tz="+tz
+    url = "https://my.meteoblue.com/packages/air-1h_air-day?apikey="+meteoblue_allapi_key+"&lat="+lat+"&lon="+lng+"&asl="+asl+"&format=json&tz="+tz
 
     try:
         req = urllib.request.Request(url)
@@ -204,7 +191,7 @@ def meteoblueclound():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/clouds-1h_clouds-day?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/clouds-1h_clouds-day?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -232,7 +219,7 @@ def meteobluecloudhour():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/clouds-1h?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/clouds-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -261,7 +248,7 @@ def meteobluesea():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/sea-1h_sea-day?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/sea-1h_sea-day?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
 
     try:
@@ -289,7 +276,7 @@ def meteoblueairquality():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/airquality-1h_airquality-day?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/airquality-1h_airquality-day?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -317,7 +304,7 @@ def meteobluesolar():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/solar-1h_solar-day?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/solar-1h_solar-day?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -344,7 +331,7 @@ def meteobluewind():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/wind-1h_wind-day?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/wind-1h_wind-day?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -371,7 +358,7 @@ def meteobluesunqualityhour():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/clouds-1h_airquality-1h?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/clouds-1h_airquality-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -399,7 +386,7 @@ def meteoblueargo():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/agro-1h_agro-day?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/agro-1h_agro-day?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -427,7 +414,7 @@ def meteoblueargomodel():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/agromodelleafwetness-1h_agromodelspray-1h?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/agromodelleafwetness-1h_agromodelspray-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -455,7 +442,7 @@ def meteobseamodel():
 
     result = {}
 
-    url = "https://my.meteoblue.com/packages/sea-1h_sea-day?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "https://my.meteoblue.com/packages/sea-1h_sea-day?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -482,7 +469,7 @@ def meteoblueprotemprature():
 
     result = {}
 
-    url = "http://my.meteoblue.com/packages/profiletemp-1h?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "http://my.meteoblue.com/packages/profiletemp-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -509,7 +496,7 @@ def meteoblueprowind():
 
     result = {}
 
-    url = "http://my.meteoblue.com/packages/profilewind-1h?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "http://my.meteoblue.com/packages/profilewind-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -537,7 +524,7 @@ def meteoblueprocloud():
 
     result = {}
 
-    url = "http://my.meteoblue.com/packages/profilecloud-1h?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "http://my.meteoblue.com/packages/profilecloud-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -564,7 +551,7 @@ def meteoblueprorh():
 
     result = {}
 
-    url = "http://my.meteoblue.com/packages/profilerh-1h?apikey=" + meteobule_apikey + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+    url = "http://my.meteoblue.com/packages/profilerh-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
 
     try:
         req = urllib.request.Request(url)
@@ -596,7 +583,7 @@ def meteoblueproheight():
             params={
                 "lat":lat,
                 "lon":lng,
-                "apikey":meteobule_apikey,
+                "apikey":meteoblue_allapi_key,
                 "asl":asl,
                 "tz":tz,
                 "format":"json"
