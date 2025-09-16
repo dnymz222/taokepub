@@ -288,7 +288,7 @@ def fish_app_pay_v3():
             model.total_amount =amount
         model.subject = '钓鱼天气包年会员'
     elif type == "3":
-        model.total_amount = "24.00"
+        model.total_amount = "20.00"
         if amount:
             model.total_amount =amount
         model.subject = '钓鱼天气包季会员'
