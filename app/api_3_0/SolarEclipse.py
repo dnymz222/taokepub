@@ -144,7 +144,7 @@ def solareclipsecalct():
 def solareclipsetimeoval():
 
 
-    solareclipse = db.session.query(SolarEclipse).filter(SolarEclipse.year> 2024).filter(SolarEclipse.year < 2031).all()
+    solareclipse = db.session.query(SolarEclipse).filter(SolarEclipse.year> 2026).filter(SolarEclipse.year < 2031).all()
 
 
     for solareclipse in solareclipse:
