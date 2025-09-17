@@ -36,7 +36,11 @@ class SolarEclipseTime:
                 longitude = i / 10.0
                 if longitude > 180:
                     longitude = longitude - 360
-                self.vlist.append(self.calculateEclipse(latitude=latitude,longitude=longitude))
+                try:
+                    self.vlist.append(self.calculateEclipse(latitude=latitude,longitude=longitude))
+                except:
+                    self.vlist.append(0)
+                    
 
 
 
