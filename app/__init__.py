@@ -40,12 +40,12 @@ def create_app(config_name):
     moment.init_app(app)
 
 
-    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/www/flask/taoke/static/DB/data.db'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/www/flask/taokepub/static/DB/eclipse1.db'
     
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:222222@localhost/xunquan'
     #
 
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/xuepingwang/Workspace/flask/taoke/static/DB/eclipse1.db'
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/xuepingwang/Workspace/flask/taoke/static/DB/eclipse1.db'
 
     # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://luwan:Hyh671002@rm-bp1b6qz754yv0743fo.mysql.rds.aliyuncs.com/xunquan'
     # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://luwan:Hyh671002@rm-bp1b6qz754yv0743f.mysql.rds.aliyuncs.com/xunquan'
