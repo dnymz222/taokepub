@@ -6,7 +6,7 @@ cachetools==5.2.0
 certifi==2022.9.14
 cffi==1.15.1
 cfgrib==0.9.10.1
-cftime==1.6.2
+cftime==1.6.4
 charset-normalizer==2.1.1
 click==8.1.3
 contourpy==1.0.5
@@ -38,7 +38,7 @@ mysqlclient==2.1.1
 Naked==0.1.31
 
 packaging==21.3
-pandas==1.5.0
+pandas==2.2.2
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.21
@@ -69,7 +69,7 @@ metpy==1.4.1
 pyjwt==2.6.0
 cryptography==40.0.2
 numpy==2.2.2
-rasterio==1.3.9
+rasterio==1.4.0
 tifffile==2022.8.12
 xlrd==1.1.0
 xmltodict==0.12.0
@@ -81,7 +81,7 @@ selenium==2.53.6
 
 astral==3.2
 paramiko==3.5.0
-geopandas
+geopandas==1.1.1
 pygrib==2.1.5
 mpmath==1.3.0
 netCDF4==1.6.1

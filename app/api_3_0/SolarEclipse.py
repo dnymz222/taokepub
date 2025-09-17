@@ -732,7 +732,7 @@ def add_MNG_county(ax, **kwargs):
 def add_america_county(ax, **kwargs):
 
     path = os.path.join(basedir,"static/SolarEclipse","america.geojson")
-    tracks = gpd.read_file(path)
+    tracks = gpd.read_file(path,driver='GeoJSON')
     proj = ccrs.PlateCarree()
     # grab x and y of the first geometry object
     ax.add_geometries(tracks.geometry, proj, **kwargs)
@@ -741,7 +741,7 @@ def add_america_county(ax, **kwargs):
 def add_africa_county(ax, **kwargs):
 
     path = os.path.join(basedir,"static/SolarEclipse","africa.geojson")
-    tracks = gpd.read_file(path)
+    tracks = gpd.read_file(path,driver='GeoJSON')
     proj = ccrs.PlateCarree()
     # grab x and y of the first geometry object
     ax.add_geometries(tracks.geometry, proj, **kwargs)
@@ -749,7 +749,7 @@ def add_africa_county(ax, **kwargs):
 def add_asia_county(ax, **kwargs):
 
     path = os.path.join(basedir,"static/SolarEclipse","asia.geojson")
-    tracks = gpd.read_file(path)
+    tracks = gpd.read_file(path,driver='GeoJSON')
     proj = ccrs.PlateCarree()
     # grab x and y of the first geometry object
     ax.add_geometries(tracks.geometry, proj, **kwargs)
@@ -757,7 +757,7 @@ def add_asia_county(ax, **kwargs):
 def add_china_province(ax,**kwargs):
 
     path = os.path.join(basedir,"static/SolarEclipse","china_province.geojson")
-    tracks = gpd.read_file(path)
+    tracks = gpd.read_file(path,driver='GeoJSON')
     proj = ccrs.PlateCarree()
     # grab x and y of the first geometry object
     ax.add_geometries(tracks.geometry, proj, **kwargs)
