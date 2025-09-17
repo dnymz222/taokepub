@@ -36,6 +36,8 @@ import  geopandas as  gpd
 import cv2
 from app.SolarEclipseTime import SolarEclipseTime
 
+from geopandas import GeoDataFrame
+
 @api3.route("/solareclipse/ten/check")
 def solareclipsetencheck():
     for i in range(0,300):
@@ -731,8 +733,8 @@ def add_MNG_county(ax, **kwargs):
 
 def add_america_county(ax, **kwargs):
 
-    path = os.path.join(basedir,"static/SolarEclipse","america.geojson")
-    tracks = gpd.read_file(path,driver='GeoJSON')
+    path = os.path.join(basedir,"static/Solareclipse","america.geojson")
+    tracks = gpd.read_file(path)
     proj = ccrs.PlateCarree()
     # grab x and y of the first geometry object
     ax.add_geometries(tracks.geometry, proj, **kwargs)
@@ -740,24 +742,24 @@ def add_america_county(ax, **kwargs):
 
 def add_africa_county(ax, **kwargs):
 
-    path = os.path.join(basedir,"static/SolarEclipse","africa.geojson")
-    tracks = gpd.read_file(path,driver='GeoJSON')
+    path = os.path.join(basedir,"static/Solareclipse","africa.geojson")
+    tracks = gpd.read_file(path)
     proj = ccrs.PlateCarree()
     # grab x and y of the first geometry object
     ax.add_geometries(tracks.geometry, proj, **kwargs)
 
 def add_asia_county(ax, **kwargs):
 
-    path = os.path.join(basedir,"static/SolarEclipse","asia.geojson")
-    tracks = gpd.read_file(path,driver='GeoJSON')
+    path = os.path.join(basedir,"static/Solareclipse","asia.geojson")
+    tracks = gpd.read_file(path)
     proj = ccrs.PlateCarree()
     # grab x and y of the first geometry object
     ax.add_geometries(tracks.geometry, proj, **kwargs)
 
 def add_china_province(ax,**kwargs):
 
-    path = os.path.join(basedir,"static/SolarEclipse","china_province.geojson")
-    tracks = gpd.read_file(path,driver='GeoJSON')
+    path = os.path.join(basedir,"static/Solareclipse","china_province.geojson")
+    tracks = gpd.read_file(path)
     proj = ccrs.PlateCarree()
     # grab x and y of the first geometry object
     ax.add_geometries(tracks.geometry, proj, **kwargs)
