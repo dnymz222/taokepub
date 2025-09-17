@@ -164,6 +164,7 @@ def solareclipsetimeoval():
             t = start_t + i / 60.0
             imagename = str(i)
             imagepath = os.path.join(dirpath, imagename + ".png")
+            print(imagepath)
             if os.path.exists(imagepath):
                 imagelist.append(imagepath)
                 continue
