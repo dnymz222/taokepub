@@ -181,7 +181,7 @@ def requsetzcodev2():
         dict["sms_code"] = sms_code
         result[x_data] = dict
     except Exception as e:
-        # writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+        writesmscode(phone=phone, code=str(sms_code), app=timestamp)
         result[x_code] = 201
         result[x_meesage] = "%s"%e
 
