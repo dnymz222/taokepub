@@ -291,6 +291,18 @@ def secrect(t,z,x,y):
     return  int(v) + i % 1366
 
 
+@api3.route("/solareclipse/video/<date>")
+def solareclipsevideo(date):
+   path =  os.path.join(basedir,"static/Solareclipse/Video")
+   filename = date + ".mp4"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
+
 
 @api3.route("/astronomy/<id>")
 def astronomywepbimage(id):
