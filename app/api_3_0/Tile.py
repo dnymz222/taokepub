@@ -1,4 +1,5 @@
 #coding=utf8
+import json
 import os.path
 
 from . import api3
@@ -53,10 +54,10 @@ def lpmaltasyearwepbimage(year,z, x, y):
 @api3.route("/lpm/year/<year>/<z>/<x>/<y>")
 def lpmyearwepbimage(year,z, x, y):
 
-   if year == "2015":
-       path =  os.path.join(basedir,"static/world2015")
-   else:
-       path = os.path.join(basedir, "static/vnl" + year)
+   # if year == "2015":
+   #     path =  os.path.join(basedir,"static/world2015")
+   # else:
+   path = os.path.join(basedir, "static/vnl2024" + year)
    filename = z +"_" + x + "_"  + y + ".webp"
    try:
        fpath = os.path.join(path, filename)
@@ -126,6 +127,38 @@ def bathychinawepbimage(z, x, y):
 
    except Exception as e:
        return "%s"%e
+
+@api3.route("/mountain/<mountain_id>/<z>/<x>/<y>")
+def mountainwepbimage(mountain_id,z, x, y):
+   path =  os.path.join(basedir,"static/mountain")
+   mountainpath = os.path.join(path,mountain_id)
+   filename = z +"_" + x + "_"  + y + ".webp"
+   try:
+       fpath = os.path.join(mountainpath, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return ""
+
+@api3.route("/mountain/file")
+def mountainfile():
+   path =  os.path.join(basedir,"static/mountain")
+   mountainpath = os.path.join(path,"mountainchina7.json")
+   jf = open(mountainpath,"r")
+   jlist = json.loads(jf.read())
+   for fdict in jlist:
+       spot_id = fdict["mountainId"]
+       fPath = os.path.join(mountainpath, spot_id)
+       if os.path.exists(fPath):
+           pass
+       else:
+           os.mkdir(fPath)
+
+   jf.close()
+   return "done"
+
+
+
 
 @api3.route("/elevation/<z>/<x>/<y>")
 def elevationwepbimage(z, x, y):
