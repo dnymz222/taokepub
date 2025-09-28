@@ -148,7 +148,7 @@ def mountainfile():
    jlist = json.loads(jf.read())
    for fdict in jlist:
        spot_id = fdict["mountainId"]
-       fPath = os.path.join(mountainpath, spot_id)
+       fPath = os.path.join(path, spot_id)
        if os.path.exists(fPath):
            pass
        else:
