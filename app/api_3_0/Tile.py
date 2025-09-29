@@ -280,6 +280,19 @@ def lpmyearwepbimage(year,z, x, y):
        return "%s"%e
 
 
+@api3.route("/mountain/<mountain_id>/<z>/<x>/<y>")
+def  mountainwepbimage(mountain_id,z, x, y):
+   path =  os.path.join(basedir,"static/mountain")
+   mountainpath = os.path.join(path,mountain_id)
+   filename = z +"_" + x + "_"  + y + ".webp"
+   try:
+       fpath = os.path.join(mountainpath, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return ""
+
+
 
 def secrect(t,z,x,y):
 
