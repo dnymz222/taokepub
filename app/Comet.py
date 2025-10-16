@@ -40,37 +40,50 @@ class Comet(db.Model):
     NEC = db.Column(db.Boolean,unique = False)
     Ref = db.Column(db.String(128), unique=False)
 
-
-    def __init__(self,dict):
-        self.number = dict["number"]
-        self.Englishname = dict["number"]
+    def __init__(self,number):
+        self.number = number
+        self.Englishname = number
         self.Chinesename = self.Englishname
         self.Japanesename = self.Englishname
         self.EnglishLink = ""
         self.ChineseLink = ""
         self.JapaneseLink =""
-
-        self.OrbitalPeriod = str(dict["OrbitalPeriod"])
-        self.SemeMajorAxis = str(dict["SemeMajorAxis"])
-        self.Inclination = str(dict["Inclination"])
-        self.Ecc = str( dict["Ecc"])
-        self.Epoch = str(dict["Epoch"])
-        self.PerihelionDistance =str( dict["PerihelionDistance"])
-        self.LongitudeAscendingNode = str( dict["LongitudeAscendingNode"])
-        self.PerihelionArgument = str(dict["PerihelionArgument"])
-        self.MeanAnomaly = str(dict["MeanAnomaly"])
-        self.PerihelionPassageTime = str(dict["PerihelionPassageTime"])
-        self.MeanMotion = str(dict["MeanMotion"])
-        self.AphelionDistance =str( dict["AphelionDistance"])
-        self.TotalMagnitude = str(dict["TotalMagnitude"])
-        self.TotalMagnitudeSlope =str(dict["TotalMagnitudeSlope"])
-        self.MotionType  = dict["MotionType"]
-
-
         self.Magnitude  = ""
         self.Classname = ""
         self.NEC = False
         self.Ref = ""
+
+
+    # def __init__(self,dict):
+    #     self.number = dict["number"]
+    #     self.Englishname = dict["number"]
+    #     self.Chinesename = self.Englishname
+    #     self.Japanesename = self.Englishname
+    #     self.EnglishLink = ""
+    #     self.ChineseLink = ""
+    #     self.JapaneseLink =""
+    #
+    #     self.OrbitalPeriod = str(dict["OrbitalPeriod"])
+    #     self.SemeMajorAxis = str(dict["SemeMajorAxis"])
+    #     self.Inclination = str(dict["Inclination"])
+    #     self.Ecc = str( dict["Ecc"])
+    #     self.Epoch = str(dict["Epoch"])
+    #     self.PerihelionDistance =str( dict["PerihelionDistance"])
+    #     self.LongitudeAscendingNode = str( dict["LongitudeAscendingNode"])
+    #     self.PerihelionArgument = str(dict["PerihelionArgument"])
+    #     self.MeanAnomaly = str(dict["MeanAnomaly"])
+    #     self.PerihelionPassageTime = str(dict["PerihelionPassageTime"])
+    #     self.MeanMotion = str(dict["MeanMotion"])
+    #     self.AphelionDistance =str( dict["AphelionDistance"])
+    #     self.TotalMagnitude = str(dict["TotalMagnitude"])
+    #     self.TotalMagnitudeSlope =str(dict["TotalMagnitudeSlope"])
+    #     self.MotionType  = dict["MotionType"]
+    #
+    #
+    #     self.Magnitude  = ""
+    #     self.Classname = ""
+    #     self.NEC = False
+    #     self.Ref = ""
 
 
 
