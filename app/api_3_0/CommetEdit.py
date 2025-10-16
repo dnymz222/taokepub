@@ -1,4 +1,4 @@
-from app import Comet
+from app.Comet import Comet
 from . import api3
 from app.utils.constvalue import x_code,x_data,x_meesage
 from flask import request
@@ -40,6 +40,9 @@ def commetpload():
         db.session.commit()
     except Exception as e:
         db.session.rollback()
+        print(e)
+
+    return "done"
 
 
 

@@ -48,8 +48,8 @@ def create_app(config_name):
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////home/www/flask/taokepub/static/DB/data.db'
 
 
-    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/xuepingwang/Workspace/flask_tencent/taoke/static/DB/data.db'
-    #
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/xuepingwang/Workspace/flask/taokepub/static/DB/data.db'
+
     #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://luwan:Hyh671002@rm-bp1b6qz754yv0743fo.mysql.rds.aliyuncs.com/xunquan'
     # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://luwan:Hyh671002@rm-bp1b6qz754yv0743f.mysql.rds.aliyuncs.com/xunquan'
     # # app.config['APNS_CERTIFICATE'] = './static/apns-dis.pem'
