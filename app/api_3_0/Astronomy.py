@@ -45,6 +45,7 @@ def astroeventchina():
     path = os.path.join(basedir,"static/astronomy",year)
     i = 0
     list = []
+
     for month in months:
         monthpath = os.path.join(path,month + ".txt")
         file_test = open(monthpath, 'r')
@@ -53,6 +54,8 @@ def astroeventchina():
             line = line.replace("&nbsp;", "")
             i = i + 1
             astro = AstroEvent(line,year,month,"8","zh",i + 1)
+
+            print(astro)
             try:
                 db.session.add(astro)
                 db.session.commit()

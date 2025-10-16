@@ -980,7 +980,7 @@ def uploadEvent_zh():
 @web.route("/delete/zh")
 def deletezh():
     try:
-        events = db.session.query(AstroEvent).filter(AstroEvent.language == "zh", AstroEvent.year == "2023").all()
+        events = db.session.query(AstroEvent).filter(AstroEvent.language == "zh", AstroEvent.year == "2025").all()
         for event in events:
             db.session.delete(event)
             db.session.commit()
