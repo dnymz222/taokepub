@@ -13,7 +13,7 @@ import json
 import math
 
 
-@api3.route("/commet/upload")
+@api3.route("/comet/upload")
 def commetpload():
 
     commet = Comet(number = "C/2025 A6 (Lemmon)")
@@ -41,6 +41,6 @@ def commetpload():
     except Exception as e:
         db.session.rollback()
 
-    
+
 
 
