@@ -261,7 +261,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2025,10, 12, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2025,11, 12, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
