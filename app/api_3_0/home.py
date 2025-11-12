@@ -41,11 +41,11 @@ def soluanrconfig():
     if isVip == "0" and (userType == "1" or userType == "3" or userType == "9"):
         dict["isOpen"] = True
         dict["isUpgrade"] = True
-        dict["homeText"] = "过期会员双十一升级终身会员原68元现18元"
-        dict["amount"] = "18.00"
+        dict["homeText"] = "过期会员双升级终身会员原68元现36元"
+        dict["amount"] = "36.00"
         dict["mineText"] = "会员过期可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥18"
-        dict["tipText"] = "为回馈用户，原价68的终身会员,之前会员过期的可18元升级终身会员"
+        dict["buttonText"] = "升级终身会员:￥36"
+        dict["tipText"] = "为回馈用户，原价68的终身会员,之前会员过期的可36元升级终身会员"
         dict["orderName"] = "日出日落月相升级终身会员"
 
         # if appversion.startswith("5.6"):
@@ -60,11 +60,11 @@ def soluanrconfig():
 
             dict["isOpen"] = True
             dict["isUpgrade"] = True
-            dict["homeText"] = "老用户双十一升级终身会员原68元现18元"
-            dict["amount"] = "18.00"
+            dict["homeText"] = "老用户双十一升级终身会员原68元现36元"
+            dict["amount"] = "36.00"
             dict["mineText"] = "老用户可优惠升级终身会员"
-            dict["buttonText"] = "升级终身会员:￥18"
-            dict["tipText"] = "为回馈用户，原价68的终身会员,老用户可18元升级终身会员"
+            dict["buttonText"] = "升级终身会员:￥36"
+            dict["tipText"] = "为回馈用户，原价68的终身会员,老用户可36元升级终身会员"
             dict["orderName"] = "日出日落月相升级终身会员"
 
 
@@ -86,11 +86,11 @@ def soluanrconfig():
 
 
 
-        dict["homeText"] = "双十一折上折特惠终身会员原68元现18元"
-        dict["amount"] = "18.00"
+        dict["homeText"] = "双十一特惠终身会员原68元现36元"
+        dict["amount"] = "36.00"
         dict["mineText"] = "双十一特惠"
-        dict["buttonText"] = "双十一特惠(终身会员:原价￥68):￥18"
-        dict["tipText"] = "为回馈用户，特在双十一期间推出折上折特惠，力度空前。"
+        dict["buttonText"] = "双十一特惠(终身会员:原价￥68):￥36"
+        dict["tipText"] = "为回馈用户，特在双十一期间推出特惠。"
         dict["orderName"] = "日出日落月相双十一特惠(终身会员)"
 
 
@@ -140,22 +140,22 @@ def fishconfig():
     if isVip == "0" and (userType == "1" or userType == "3"):
         dict["isOpen"] = True
         dict["isUpgrade"] = True
-        dict["homeText"] = "过期会员双十一升级终身会员原98元现28元"
-        dict["amount"] = "28.00"
+        dict["homeText"] = "过期会员升级终身会员原98元现58元"
+        dict["amount"] = "58.00"
         dict["mineText"] = "会员过期可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥28"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可28元升级终身会员"
+        dict["buttonText"] = "升级终身会员:￥58"
+        dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可58元升级终身会员"
         dict["orderName"] = "钓鱼天气升级终身会员"
         result[x_data] = dict
         return json.dumps(result)
     elif isVip == "0" and (nowhour - hour) > 2400:
         dict["isOpen"] = True
         dict["isUpgrade"] = True
-        dict["homeText"] = "老用户双十一升级终身会员原98元现28元"
-        dict["amount"] = "28.00"
+        dict["homeText"] = "老用户升级终身会员原98元现58元"
+        dict["amount"] = "58.00"
         dict["mineText"] = "老用户可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥28"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可28元升级终身会员"
+        dict["buttonText"] = "升级终身会员:￥58"
+        dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可58元升级终身会员"
         dict["orderName"] = "钓鱼天气升级终身会员"
         result[x_data] = dict
         return json.dumps(result)
@@ -172,11 +172,11 @@ def fishconfig():
             dict["isOpen"] = False
 
 
-        dict["homeText"] = "双十一折上折特惠终身会员原98元现28元"
-        dict["amount"] = "28.00"
+        dict["homeText"] = "双十一特惠终身会员原98元现58元"
+        dict["amount"] = "58.00"
         dict["mineText"] = "双十一特惠"
-        dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥28"
-        dict["tipText"] = "为回馈用户，双十一期间推出折上折特惠，力度空前。"
+        dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥58"
+        dict["tipText"] = "为回馈用户，双十一期间推出特惠。"
         dict["orderName"] = "钓鱼天气双十一特惠(终身会员)"
         result[x_data] = dict
         return json.dumps(result)
@@ -214,13 +214,13 @@ def solunartidesconfig():
     else:
         dict["isOpen"] = False
 
-    dict["homeText"] = "双十一折上折特惠终身会员原198元现48元"
-    dict["amount"] = "48.00"
-    dict["mineText"] = "双十一折上折特惠"
+    dict["homeText"] = "双十一特惠终身会员原198元现98元"
+    dict["amount"] = "98.00"
+    dict["mineText"] = "双十一特惠"
     dict["freeDays"] = 3
     dict["harbourDays"] = 30  # 港口的天数
-    dict["buttonText"] = "双十一特惠(终身会员:原价￥198):￥48"
-    dict["tipText"] = "为回馈用户，双十一期间推出折上折特惠，力度空前。"
+    dict["buttonText"] = "双十一特惠(终身会员:原价￥198):￥98"
+    dict["tipText"] = "为回馈用户，双十一期间推出特惠。"
     dict["orderName"] = "月相潮汐表双十一特惠(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
@@ -277,11 +277,11 @@ def astroconfig():
     # else:
     #     dict["isOpen"] = False
 
-    dict["homeText"] = "双十一折上折特惠终身会员原98元现28元"
-    dict["amount"] = "28.00"
+    dict["homeText"] = "双十一特惠终身会员原98元现48元"
+    dict["amount"] = "48.00"
     dict["mineText"] = "双十一特惠"
-    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥28"
-    dict["tipText"] = "为回馈用户，双十一推出折上折特惠，力度空前。"
+    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥48"
+    dict["tipText"] = "为回馈用户，双十一推出特惠。"
     dict["orderName"] = "天文观星指南双十一特惠(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
