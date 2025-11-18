@@ -258,47 +258,6 @@ def tiangeocodever():
     return json.dumps(result)
 
 
-@api3.route("/tian/location/search")
-def tianlocationsearch():
-    keyword = request.args.get('keyword', '仓溢lv')
-
-    result = {}
-    parma = {}
-    parma["keyWord"] = keyword
-    parma["level"] = 12
-    parma["mapBound"] = "72,54,135,17"
-    parma["queryType"] = 7
-    parma["start"] = 0
-    parma["cont"]  = 10
-
-    try:
-        response = requests.get(
-            'http://api.tianditu.gov.cn/v2/search',
-            params={
-                "postStr": json.dumps(parma),
-                "tk": tianmap_key,
-                "type": "query"
-            },
-
-        )
-
-        # print  response
-
-        # Do something with response data.
-        json_data = response.json()
-
-        return json.dumps(json_data)
-
-        print(json_data)
-
-        result[x_code] = 200
-        result[x_data] = json_data["pois"]
-
-    except Exception as e:
-
-        result[x_meesage] = "%s"%e
-        result[x_code] = 201
-    return json.dumps(result)
 
 @api3.route("/tian/boundry")
 def tianboundry():
