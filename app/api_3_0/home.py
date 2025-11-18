@@ -140,29 +140,29 @@ def fishconfig():
     if isVip == "0" and (userType == "1" or userType == "3"):
         dict["isOpen"] = True
         dict["isUpgrade"] = True
-        dict["homeText"] = "过期会员升级终身会员原98元现58元"
+        dict["homeText"] = "过期会员升级终身会员原98元现48元"
         dict["amount"] = "58.00"
         dict["mineText"] = "会员过期可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥58"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可58元升级终身会员"
+        dict["buttonText"] = "升级终身会员:￥48"
+        dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可48元升级终身会员"
         dict["orderName"] = "钓鱼天气升级终身会员"
         result[x_data] = dict
         return json.dumps(result)
     elif isVip == "0" and (nowhour - hour) > 2400:
         dict["isOpen"] = True
         dict["isUpgrade"] = True
-        dict["homeText"] = "老用户升级终身会员原98元现58元"
-        dict["amount"] = "58.00"
+        dict["homeText"] = "老用户升级终身会员原98元现48元"
+        dict["amount"] = "48.00"
         dict["mineText"] = "老用户可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥58"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可58元升级终身会员"
+        dict["buttonText"] = "升级终身会员:￥48"
+        dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可48元升级终身会员"
         dict["orderName"] = "钓鱼天气升级终身会员"
         result[x_data] = dict
         return json.dumps(result)
 
     else:
         dict["isUpgrade"] = False
-        outtime = datetime.datetime(2025,11, 12, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2025,12, 12, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -172,12 +172,12 @@ def fishconfig():
             dict["isOpen"] = False
 
 
-        dict["homeText"] = "双十一特惠终身会员原98元现58元"
-        dict["amount"] = "58.00"
-        dict["mineText"] = "双十一特惠"
-        dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥58"
-        dict["tipText"] = "为回馈用户，双十一期间推出特惠。"
-        dict["orderName"] = "钓鱼天气双十一特惠(终身会员)"
+        dict["homeText"] = "冬季特惠终身会员原98元现48元"
+        dict["amount"] = "48.00"
+        dict["mineText"] = "冬季特惠"
+        dict["buttonText"] = "冬季特惠(终身会员:原价￥98):￥48"
+        dict["tipText"] = "为回馈用户，冬季推出特惠。"
+        dict["orderName"] = "钓鱼天气冬季特惠(终身会员)"
         result[x_data] = dict
         return json.dumps(result)
 

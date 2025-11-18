@@ -417,3 +417,51 @@ def tiancoperni():
         result[x_meesage] = "%s"%e
         result[x_code] = 201
     return json.dumps(result)
+
+@api3.route("/tian/location/search")
+def tianlocationsearch():
+    keyword = request.args.get('keyword', '高安市')
+
+    result = {}
+    parma = {}
+    parma["keyWord"] = keyword
+    parma["level"] = 12
+    parma["mapBound"] = "72,54,135,17"
+    parma["queryType"] = 7
+    parma["start"] = 0
+    parma["count"]  = 20
+
+    try:
+        response = requests.get(
+            'http://api.tianditu.gov.cn/v2/search',
+            params={
+                "postStr": json.dumps(parma),
+                "tk": tianmap_key,
+                "type": "query"
+            },
+
+        )
+
+        # print  response
+
+        # Do something with response data.
+        json_data = response.json()
+
+        result_type = json_data["resultType"]
+        if result_type == 2:
+            result[x_code] = 201
+            result[x_meesage] = "结果太多，请输入详细地名"
+        else:
+            try:
+
+                result[x_code] = 200
+                result[x_data] = json_data["pois"]
+            except:
+                result[x_code] = 201
+                result[x_meesage] = "没有搜索结果"
+
+    except Exception as e:
+
+        result[x_meesage] = "%s"%e
+        result[x_code] = 201
+    return json.dumps(result)
