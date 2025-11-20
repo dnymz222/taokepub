@@ -158,7 +158,7 @@ def requsetzcodev2():
         s_request.add_query_param('SignName', "月相潮汐表")
     elif app == "solunar":
         s_request.add_query_param('SignName', "日出日落月相")
-        writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+        # writesmscode(phone=phone, code=str(sms_code), app=timestamp)
 
     s_request.add_query_param('TemplateCode', "SMS_232161590")
 
@@ -324,7 +324,7 @@ def eluerrequsetzcode():
         s_request.add_query_param('SignName', "日出日落月相")
     elif app == "astronomy":
         s_request.add_query_param('SignName', "天文观星指南")
-        writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+
     elif app == "meteo":
         s_request.add_query_param('SignName', "气象计算")
     # else:
@@ -347,7 +347,7 @@ def eluerrequsetzcode():
         dict["sms_code"] = sms_code
         result[x_data] = dict
     except Exception as e:
-        # writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+        writesmscode(phone=phone, code=str(sms_code), app=timestamp)
         result[x_code] = 201
         result[x_meesage] = "%s"%e
 
