@@ -156,8 +156,8 @@ def requsetzcodev2():
         s_request.add_query_param('SignName', "钓鱼天气")
     elif app == "tide":
         s_request.add_query_param('SignName', "月相潮汐表")
-    elif app == "solunar":
-        s_request.add_query_param('SignName', "日出日落月相")
+    # elif app == "solunar":
+    #     s_request.add_query_param('SignName', "日出日落月相")
         # writesmscode(phone=phone, code=str(sms_code), app=timestamp)
 
     s_request.add_query_param('TemplateCode', "SMS_232161590")
@@ -320,13 +320,13 @@ def eluerrequsetzcode():
         s_request.add_query_param('SignName', "钓鱼天气")
     elif app == "tide":
         s_request.add_query_param('SignName', "月相潮汐表")
-    elif app == "solunar":
-        s_request.add_query_param('SignName', "日出日落月相")
-    elif app == "astronomy":
-        s_request.add_query_param('SignName', "天文观星指南")
-
-    elif app == "meteo":
-        s_request.add_query_param('SignName', "气象计算")
+    # elif app == "solunar":
+    #     s_request.add_query_param('SignName', "日出日落月相")
+    # elif app == "astronomy":
+    #     s_request.add_query_param('SignName', "天文观星指南")
+    #
+    # elif app == "meteo":
+    #     s_request.add_query_param('SignName', "气象计算")
     # else:
     #      s_request.add_query_param('SignName', "杭州欧拉公式科技")
 
