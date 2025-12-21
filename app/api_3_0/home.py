@@ -75,7 +75,7 @@ def soluanrconfig():
     else:
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2025,12, 18, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,1, 8, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -86,12 +86,12 @@ def soluanrconfig():
 
 
 
-        dict["homeText"] = "流星雨特惠终身会员原68元现36元"
+        dict["homeText"] = "2026年新年特惠终身会员原68元现36元"
         dict["amount"] = "36.00"
-        dict["mineText"] = "双子座流星雨特惠"
-        dict["buttonText"] = "流星雨特惠(终身会员:原价￥68):￥36"
-        dict["tipText"] = "12月13-14日双子座流星雨达到峰值，ZHR为150.为年度最大流星雨，特在此之间推出特惠。"
-        dict["orderName"] = "日出日落月相流星雨特惠(终身会员)"
+        dict["mineText"] = "新年特惠"
+        dict["buttonText"] = "新年特惠(终身会员:原价￥68):￥36"
+        dict["tipText"] = "2026年来临之际，特推出特惠"
+        dict["orderName"] = "日出日落月相新年特惠(终身会员)"
 
 
         result[x_data] = dict
@@ -162,7 +162,7 @@ def fishconfig():
 
     else:
         dict["isUpgrade"] = False
-        outtime = datetime.datetime(2025,12, 16, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,1, 8, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -172,12 +172,12 @@ def fishconfig():
             dict["isOpen"] = False
 
 
-        dict["homeText"] = "冬季特惠终身会员原98元现48元"
+        dict["homeText"] = "2026新年终身会员原98元现48元"
         dict["amount"] = "48.00"
-        dict["mineText"] = "冬季特惠"
-        dict["buttonText"] = "冬季特惠(终身会员:原价￥98):￥48"
-        dict["tipText"] = "为回馈用户，冬季推出特惠。"
-        dict["orderName"] = "钓鱼天气冬季特惠(终身会员)"
+        dict["mineText"] = "2026年新年特惠"
+        dict["buttonText"] = "新年特惠(终身会员:原价￥98):￥48"
+        dict["tipText"] = "2026年来临之际，特推出特惠。"
+        dict["orderName"] = "钓鱼天气新年特惠(终身会员)"
         result[x_data] = dict
         return json.dumps(result)
 
@@ -200,7 +200,7 @@ def solunartidesconfig():
     appversion = request.args.get("appVersion", "5.0")
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2025, 11, 12, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 1, 8, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -214,14 +214,14 @@ def solunartidesconfig():
     else:
         dict["isOpen"] = False
 
-    dict["homeText"] = "双十一特惠终身会员原198元现98元"
+    dict["homeText"] = "2026年新年特惠终身会员原198元现98元"
     dict["amount"] = "98.00"
-    dict["mineText"] = "双十一特惠"
+    dict["mineText"] = "新年特惠"
     dict["freeDays"] = 3
     dict["harbourDays"] = 30  # 港口的天数
-    dict["buttonText"] = "双十一特惠(终身会员:原价￥198):￥98"
-    dict["tipText"] = "为回馈用户，双十一期间推出特惠。"
-    dict["orderName"] = "月相潮汐表双十一特惠(终身会员)"
+    dict["buttonText"] = "新年特惠(终身会员:原价￥198):￥98"
+    dict["tipText"] = "2026年来临之际，特推出特惠。"
+    dict["orderName"] = "月相潮汐表新年特惠(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
 
@@ -261,7 +261,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2025,11, 12, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,1, 8, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -277,12 +277,12 @@ def astroconfig():
     # else:
     #     dict["isOpen"] = False
 
-    dict["homeText"] = "双十一特惠终身会员原98元现48元"
+    dict["homeText"] = "2026年新年特惠终身会员原98元现48元"
     dict["amount"] = "48.00"
-    dict["mineText"] = "双十一特惠"
-    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥48"
-    dict["tipText"] = "为回馈用户，双十一推出特惠。"
-    dict["orderName"] = "天文观星指南双十一特惠(终身会员)"
+    dict["mineText"] = "新年特惠"
+    dict["buttonText"] = "新年特惠(终身会员:原价￥98):￥48"
+    dict["tipText"] = "2026年来临之际，特推出特惠"
+    dict["orderName"] = "天文观星指南新年特惠(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
 

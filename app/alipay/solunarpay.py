@@ -390,7 +390,7 @@ def solunar_app_pay_v5():
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "日出日落月相流星雨特惠终身会员"
+            model.subject = "日出日落月相新年特惠终身会员"
         else:
             model.subject = "日出日落月相升级终身会员"
     else:
