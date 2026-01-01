@@ -1032,7 +1032,7 @@ def readEvent_zh():
 
 
             try:
-                event= AstroEvent(Line=line,Year="2023",Month=month,Timezone = "8",Lanuage="zh",RecordIndex=i)
+                event= AstroEvent(Line=line,Year="2026",Month=month,Timezone = "8",Lanuage="zh",RecordIndex=i)
 
                 # print tycho2.HIP+"\n"
                 # print tycho.RAdeg+"\n"

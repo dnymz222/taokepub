@@ -412,7 +412,7 @@ def astroevent():
     result = {}
     list = []
     try:
-        events = db.session.query(AstroEvent).filter(AstroEvent.language == language,AstroEvent.year == year,AstroEvent.timezone == time).order_by(AstroEvent.recordIndex).all()
+        events = db.session.query(AstroEvent).filter(AstroEvent.language == language,AstroEvent.year == year).order_by(AstroEvent.recordIndex).all()
         for event in  events:
             dict = event.astroeventdict()
             list.append(dict)

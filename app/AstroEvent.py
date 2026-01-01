@@ -44,17 +44,20 @@ class AstroEvent(db.Model):
 #         self.timelanguage = self.year + "-" + self.month + "-" + self.day + "-" + self.time + "-" + self.language + "-" + self.timezone
 
 #中文
-    def __init__(self,Line,Year,Month,Timezone,Lanuage ,RecordIndex):
-        self.year = Year
-        self.month = Month
-        self.timezone  = Timezone
-        self.language = Lanuage
-        self.recordIndex = RecordIndex
+    def __init__(self,Line ,RecordIndex):
+        self.year = Line[0:4]
+        self.month = Line[5:7]
         self.day = Line[8:10]
-        self.time = Line[11:19].strip()
-
-        self.event = Line[19:].strip()
-
+        self.timezone  = "8"
+        self.language = "zh"
+        self.recordIndex = RecordIndex
+        self.time = Line[11:16].strip()
+        if len(self.time) < 2:
+            self.time = ""
+            self.event = Line[15:].strip()
+        else:
+            self.event = Line[16:].strip()
+        # print ("event" + self.event)
         self.timelanguage = self.year+"-"+self.month+"-"+self.day+"-"+str(RecordIndex)+"-"+self.language+"-"+self.timezone
 
     def  astroeventdict(self):

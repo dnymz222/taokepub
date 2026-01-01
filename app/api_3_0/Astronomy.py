@@ -38,34 +38,65 @@ from app.AstroEvent import AstroEvent
 from config import  basedir
 
 
+# @api3.route("/astroevent/china")
+# def astroeventchina():
+#     months = ["01","02","03","04","05","06","07","08","09","10","11","12"]
+#     year = "2025"
+#     path = os.path.join(basedir,"static/astronomy",year)
+#     i = 0
+#     list = []
+#
+#     for month in months:
+#         monthpath = os.path.join(path,month + ".txt")
+#         file_test = open(monthpath, 'r')
+#         for lines in file_test.readlines():
+#             line = lines.strip('\n')
+#             line = line.replace("&nbsp;", "")
+#             i = i + 1
+#             astro = AstroEvent(line,year,month,"8","zh",i + 1)
+#
+#             print(astro)
+#             try:
+#                 db.session.add(astro)
+#                 db.session.commit()
+#                 list.append(astro.astroeventdict())
+#             except Exception as e:
+#                 db.session.rollback()
+#                 print(e)
+#
+#
+#     return json.dumps(list)
+
 @api3.route("/astroevent/china")
 def astroeventchina():
     months = ["01","02","03","04","05","06","07","08","09","10","11","12"]
-    year = "2025"
-    path = os.path.join(basedir,"static/astronomy",year)
-    i = 0
-    list = []
 
     for month in months:
-        monthpath = os.path.join(path,month + ".txt")
-        file_test = open(monthpath, 'r')
-        for lines in file_test.readlines():
-            line = lines.strip('\n')
-            line = line.replace("&nbsp;", "")
-            i = i + 1
-            astro = AstroEvent(line,year,month,"8","zh",i + 1)
+        year_str = "2026"
+        yearpath = os.path.join(basedir,"static/astronomy",year_str)
 
-            print(astro)
-            try:
-                db.session.add(astro)
-                db.session.commit()
-                list.append(astro.astroeventdict())
-            except Exception as e:
-                db.session.rollback()
-                print(e)
+        txtpath = os.path.join(yearpath,month +".txt")
+        if os.path.exists(txtpath):
+               tf = open(txtpath,"r")
+               i = 0
+               for lines in tf.readlines():
+                   line = lines.strip('\n')
+                   if len(line) > 0:
+                       pass
+                   else:
+                       continue
+                   i  = i + 1
+                   astro = AstroEvent(line,i)
+                   try:
+                       db.session.add(astro)
+                       db.session.commit()
+                       print(line)
+                   except Exception as e:
+                       print(e)
+                       db.session.rollback()
 
 
-    return json.dumps(list)
+    return "done"
 
 
 
