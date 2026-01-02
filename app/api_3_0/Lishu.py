@@ -548,14 +548,23 @@ def workingdaygyeartotalinfo(year):
 
 
             try:
-                count = db.session.query(WorkingDaysModel).filter_by(year=year, code=wcobject.code).count()
-                if count < 30:
-                    workingdaygconfigyearinfo(year, code ,wcobject.default_configuration)
-                    print(code)
-                    print("less")
-                else:
-                    if count < 365:
-                        workingdaygconfigcheckyearinfo(year,code,wcobject.default_configuration)
+                workingdayslist = db.session.query(WorkingDaysModel).filter_by(year=year, code=wcobject.code,configuration=wcobject.default_configuration).all()
+                for workingday in workingdayslist:
+                    try:
+                        workingday.configuration = ""
+                        db.session.commit()
+                    except Exception as e:
+                        print(e)
+                        db.session.rollback()
+
+
+                # if count < 30:
+                #     workingdaygconfigyearinfo(year, code ,wcobject.default_configuration)
+                #     print(code)
+                #     print("less")
+                # else:
+                #     if count < 365:
+                #         workingdaygconfigcheckyearinfo(year,code,wcobject.default_configuration)
 
             except Exception as e:
                 print(e)
@@ -780,7 +789,7 @@ def workingdaygconfigyearinfo(year,code,config):
         print (url)
         try:
             try:
-                req = requests.get(url)
+                req = requests.get(url,timeout=10)
                 content = req.text
                 result = json.loads(content)
                 print (result)
@@ -853,7 +862,7 @@ def workingdaygconfigcheckyearinfo(year,code,config):
                 print (url)
 
                 try:
-                    req = requests.get(url)
+                    req = requests.get(url,timeout=10)
                     content = req.text
                     result = json.loads(content)
                     resultdict = result["result"]

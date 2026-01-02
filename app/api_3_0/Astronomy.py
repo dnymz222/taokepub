@@ -36,6 +36,10 @@ from datetime import  datetime,timezone
 import time
 from app.AstroEvent import AstroEvent
 from config import  basedir
+from app.MeteorShowers import MeteorShowers
+from openpyxl import Workbook
+from openpyxl import load_workbook
+import pandas as pd
 
 
 # @api3.route("/astroevent/china")
@@ -66,6 +70,36 @@ from config import  basedir
 #
 #
 #     return json.dumps(list)
+
+@api3.route("/meteorshower/read")
+def meteoshowerread():
+    filepath = os.path.join(basedir, "static/astronomy", "meteorshower2026.xlsx")
+    # file.save(filepath)
+
+    wb = load_workbook(filepath, data_only=True)
+    sheet = wb.active
+
+    data = []
+    for row in sheet.iter_rows(values_only=True):
+        data.append(row)
+
+    df = pd.DataFrame(data[2:], columns=data[0])
+
+    # 插入新数据
+    for _, row in df.iterrows():
+        try:
+            print(row[0])
+            cert = MeteorShowers(
+                dict=row
+            )
+
+            db.session.add(cert)
+            db.session.commit()
+        except Exception as e:
+            print(e)
+            db.session.rollback()
+
+    return "done"
 
 @api3.route("/astroevent/china")
 def astroeventchina():
