@@ -12,7 +12,7 @@ import json
 
 import math
 import requests
-from .hgt import  get_elavation
+from .Hgt import  get_elavation
 from config import basedir
 from app.Hefengtide import Hefengtide
 import xlrd

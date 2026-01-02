@@ -4,29 +4,29 @@ api3 = Blueprint('api3', __name__)
 
 
 from . import Weather
-from . import home
+from . import Home
 from . import Tide
-from . import user
+from . import User
 from . import Storm
 
 from . import Hefeng
 
-from . import hgt
-from . import photo
-from . import xinzhi
+from . import Hgt
+from . import Photo
+from . import Xinzhi
 
-from . import openweathermap
+from . import Openweathermap
 
 from . import Lishu
 
-from . import accuweather
-from . import meteoblue
+from . import Accuweather
+from . import Meteoblue
 
-from . import appleweather
-from . import  tianmap
+from . import Appleweather
+from . import  Tianmap
 from  . import Tile
-from . import openmeteo
-from . import noaa
+from . import Openmeteo
+from . import Noaa
 from . import Aurora
 from . import Astronomy
 from . import Zhongkexingtu
