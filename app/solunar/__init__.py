@@ -3,6 +3,6 @@ from flask import Blueprint
 solunar = Blueprint('solunar', __name__)
 
 
-from . import  search
-from . import  web
-from . import nearby
+from . import  Search
+from . import  Web
+from . import Nearby

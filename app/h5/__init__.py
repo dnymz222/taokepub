@@ -2,7 +2,7 @@ from flask import Blueprint
 
 h5= Blueprint('h5', __name__)
 
-from . import detailh5
+from . import Detailh5
 
 
 @h5.route('/')
