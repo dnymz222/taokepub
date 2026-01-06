@@ -12,6 +12,7 @@ from  . import Tile
 from . import Tide
 from . import Aurora
 from . import SolarEclipse
+from . import Storm
 
 
 

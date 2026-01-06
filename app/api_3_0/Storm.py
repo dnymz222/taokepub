@@ -172,9 +172,12 @@ def stormsurgewave():
 
             json_data = response.json()
 
+            # return json.dumps(json_data)
+
             result[x_code] = 200
             list = json_data["hours"]
             nlist = []
+            dict2  ={}
             for dict1 in list:
 
                 for key in dict1.keys():
@@ -190,6 +193,8 @@ def stormsurgewave():
             result[x_data] = nlist
 
         except Exception as e:
+
+            print(e)
 
             result[x_meesage] = "%s"%e
             result[x_code] = 201
@@ -431,7 +436,9 @@ def  stormweatherhistrory():
 def valuefromdict(dict):
     # print jsonstring
     # dict = json.loads(jsonstring)
-    if "noaa" in dict:
+    if "ecmwf" in dict:
+        value = dict["ecmwf"]
+    elif "noaa" in dict:
         value = dict["noaa"]
 
     else:
@@ -459,6 +466,8 @@ def biovaluefromdict(dict):
 
 def stormsurgemapdict(dict):
     ndict = {}
+    print(dict)
+    # print(dict["currentSpeed"])
     ndict["langshi"] = dict["wavePeriod"]
     ndict["langgao"] = dict["waveHeight"]
     ndict["langxiang"] = dict["waveDirection"]
@@ -473,8 +482,8 @@ def stormsurgemapdict(dict):
     ndict["ciyongxiang"] = dict["secondarySwellDirection"]
     ndict["ciyongshi"] = dict["secondarySwellPeriod"]
     ndict["ciyonggao"] = dict["secondarySwellHeight"]
-    ndict["yangliusudu"]= dict["currentSpeed"]
-    ndict["yangliufangxiang"] = dict["currentDirection"]
+    # ndict["yangliusudu"]= dict["currentSpeed"]
+    # ndict["yangliufangxiang"] = dict["currentDirection"]
 
     timev = dict["time"]
     date_object = datetime.datetime.strptime(timev, "%Y-%m-%dT%H:%M:%S%z")
