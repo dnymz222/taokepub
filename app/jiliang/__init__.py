@@ -2,5 +2,5 @@ from flask import Blueprint
 
 jiliang = Blueprint('jiliang',__name__)
 
-from . import jindex
+from . import Jindex
 

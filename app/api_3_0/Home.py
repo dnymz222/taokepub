@@ -645,30 +645,30 @@ def xunquanwelfareget():
         db.session.close()
     return json.dumps(result)
 
-@api3.route('/lunitidalsite')
-def getlunitidalsite():
-    result = {}
-    list = []
-    try:
-        sitereslut = db.session.query(lunitidalsite).filter_by(status=1).order_by(lunitidalsite.index).all()
-        for siteitem in sitereslut:
-            sitedict = siteitem.lunitidalsiteDict()
-            list.append(sitedict)
-        if (len(list)):
-            result[x_data] = list
-            result[x_code] = 200
-        else:
-            result[x_code] = 201
-            result[x_meesage] = 'no message'
-
-    except  Exception as e:
-        db.session.rollback()
-        result[x_meesage] = "%s"%e
-        result[x_code] = 203
-
-    finally:
-        db.session.close()
-    return json.dumps(result)
+# @api3.route('/lunitidalsite')
+# def getlunitidalsite():
+#     result = {}
+#     list = []
+#     try:
+#         sitereslut = db.session.query(lunitidalsite).filter_by(status=1).order_by(lunitidalsite.index).all()
+#         for siteitem in sitereslut:
+#             sitedict = siteitem.lunitidalsiteDict()
+#             list.append(sitedict)
+#         if (len(list)):
+#             result[x_data] = list
+#             result[x_code] = 200
+#         else:
+#             result[x_code] = 201
+#             result[x_meesage] = 'no message'
+#
+#     except  Exception as e:
+#         db.session.rollback()
+#         result[x_meesage] = "%s"%e
+#         result[x_code] = 203
+#
+#     finally:
+#         db.session.close()
+#     return json.dumps(result)
 
 
 

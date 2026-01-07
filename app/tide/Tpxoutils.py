@@ -4,7 +4,7 @@ import math
 import numpy as np
 
 
-from .tidal_constituents import CONST_ID
+from .Tidal_constituents import CONST_ID
 
 __all__ = [
     'astrol',

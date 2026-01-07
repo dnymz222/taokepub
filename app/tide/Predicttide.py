@@ -12,8 +12,8 @@ from app.utils.constvalue import x_code, x_data
 import math
 import gzip
 from pymeeus.Epoch import Epoch
-from .tpxoutils import  nodal,astrol
-from .tidal_constituents import PHASE_mkB,AMP_d,OMEGA_d
+from .Tpxoutils import  nodal,astrol
+from .Tidal_constituents import PHASE_mkB,AMP_d,OMEGA_d
 from PIL import Image
 import  datetime
 import pytz
