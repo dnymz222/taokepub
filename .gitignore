@@ -22,4 +22,4 @@ static
 .idea
 app/utils
 *.p8
-
+*.pem
