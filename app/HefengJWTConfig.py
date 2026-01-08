@@ -12,7 +12,7 @@ class HefengJWTConfig:
         self.token = ""
         self.kid = "KCGX3DMADG"
         self.team_id = "4FKRT36W2R"
-        path = os.path.join(basedir, "AuthKey_GQBTQVVQZT.p8")
+        path = os.path.join(basedir, "ed25519-private.pem")
         f = open(path, "r")
         self.private_key = f.read()
         self.cur_time = int(time.time())

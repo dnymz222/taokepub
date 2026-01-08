@@ -2,7 +2,7 @@
 import os.path
 
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_meesage,hefengtyphoonkey,xinzhi_prinvate_key
+from app.utils.constvalue import x_code,x_data,x_meesage,hefengtyphoonkey,xinzhi_prinvate_key,hefeng_apihost
 from flask import request,session,url_for,redirect
 import time
 import datetime
@@ -19,6 +19,12 @@ import xlrd
 from app.TyphoonModel import TyphoonModel
 import pytz
 
+from app.HefengJWTConfig import HefengJWTConfig
+
+
+hefengjwtconfig = HefengJWTConfig()
+
+
 @api3.route("/hefeng/cid/location")
 def hefengcid_location():
     lat = request.args.get('lat', '30.287')
@@ -32,10 +38,10 @@ def hefengcid_location():
 
     try:
         response = requests.get(
-            'https://geoapi.heweather.net/v2/city/lookup',
+            "https://"+hefeng_apihost+"/v2/city/lookup",
+            headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
             params={
                 "location":lng+","+lat,
-                "key":hefengtyphoonkey,
                 "lang":lang
             },
 
@@ -70,10 +76,9 @@ def hefengtid_seach():
     lang = request.args.get("lang", "zh")
     try:
         response = requests.get(
-            'https://geoapi.qweather.com/v2/poi/lookup',
+            'https://'+hefeng_apihost+'/v2/poi/lookup',
             params={
                 "location":location,
-                "key":hefengtyphoonkey,
                 "lang":lang,
                 "type":"TSTA"
             },
@@ -103,10 +108,11 @@ def hefengcid_seach():
 
     try:
         response = requests.get(
-            'https://geoapi.heweather.net/v2/city/lookup',
+            'https://'+hefeng_apihost+'/v2/city/lookup',
+            headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
             params={
                 "location":key,
-                "key":hefengtyphoonkey,
+
                 "lang":lang
             },
 
@@ -147,7 +153,8 @@ def hefengrain():
 
     try:
         response = requests.get(
-            'https://api.qweather.com/v7/minutely/5m',
+            'https://'+hefeng_apihost+'/v7/minutely/5m',
+            headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
             params={
                 "location": lng+","+lat,
                 "key": hefengtyphoonkey,
@@ -223,10 +230,11 @@ def hefengtidegroup():
                 else:
                     subresult = {}
                     response = requests.get(
-                        'https://api.qweather.com/v7/ocean/tide',
+                        'https://'+hefeng_apihost+'/v7/ocean/tide',
+                        headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
                         params={
                             "location": location,
-                            "key": hefengtyphoonkey,
+
                             "date":dateitem
                         },
                     )
@@ -320,10 +328,11 @@ def hefengtide():
             else:
 
                 response = requests.get(
-                    'https://api.qweather.com/v7/ocean/tide',
+                    'https://'+hefeng_apihost+'/v7/ocean/tide',
+                    headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
                     params={
                         "location": location,
-                        "key": hefengtyphoonkey,
+
                         "date":date
 
                     },
@@ -461,10 +470,11 @@ def hefengtidelocations():
                     shantouencrypt
                 else:
                     response = requests.get(
-                        'https://api.qweather.com/v7/ocean/tide',
+                        'https://'+hefeng_apihost+'/v7/ocean/tide',
+                        headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
                         params={
                             "location": location,
-                            "key": hefengtyphoonkey,
+
                             "date":date
 
                         },
@@ -527,7 +537,7 @@ def hefengstormlist():
     basin = request.args.get("basin","NP")
 
     lang = request.args.get("lang", "zh")
-    year = request.args.get("year","2024")
+    year = request.args.get("year","2025")
     time = request.args.get("time","0")
 
     listpath = os.path.join(basedir, "static/typhoon/list", time)
@@ -554,10 +564,10 @@ def hefengstormlist():
 
     try:
         response = requests.get(
-            'https://api.qweather.com/v7/tropical/storm-list',
+            'https://'+hefeng_apihost+'/v7/tropical/storm-list',
+            headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
             params={
 
-                "key":hefengtyphoonkey,
                 "lang":lang,
                 "basin":basin,
                 "year": year
@@ -650,10 +660,10 @@ def hefengstormforecast():
 
     try:
         response = requests.get(
-            'https://api.qweather.com/v7/tropical/storm-forecast',
+            'https://'+hefeng_apihost+'/v7/tropical/storm-forecast',
+            headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
             params={
 
-                "key":hefengtyphoonkey,
                 "lang":lang,
                 "stormid": stormid,
 
@@ -743,10 +753,10 @@ def hefengstormtrack():
 
     try:
         response = requests.get(
-            'https://api.qweather.com/v7/tropical/storm-track',
+            'https://'+hefeng_apihost+'/v7/tropical/storm-track',
+            headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
             params={
 
-                "key":hefengtyphoonkey,
                 "lang":lang,
                 "stormid": stormid,
 
@@ -800,14 +810,15 @@ def hefeingminute():
 
     try:
         response = requests.get(
-            'https://api.qweather.com/v7/minutely/5m',
+             "https://"+hefeng_apihost +'/v7/minutely/5m',
+            headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
             params={
 
-                "key":hefengtyphoonkey,
                 "lang":lang,
                 "location":location,
 
             },
+
 
         )
 
@@ -839,10 +850,10 @@ def hefeingnow():
 
     try:
         response = requests.get(
-            'https://api.qweather.com/v7/weather/now',
+            "https://" + hefeng_apihost +"/v7/weather/now",
+            headers={"Authorization": ("Bearer " + hefengjwtconfig.genToken())},
             params={
 
-                "key":hefengtyphoonkey,
                 "lang":lang,
                 "location":location,
                 "unit":"i"
