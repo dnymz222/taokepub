@@ -589,7 +589,7 @@ def resetvip():
             phoneuser.isvip  = True
             db.session.commit()
         elif phoneuser.type == 1 :
-            oldstardate = phoneapp.startdate
+            oldstardate = phoneuser.startdate
             newstardate = oldstardate + datetime.timedelta(days=366)
             phoneuser.startdate = newstardate
             phoneuser.type = viptype
