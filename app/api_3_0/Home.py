@@ -75,7 +75,7 @@ def soluanrconfig():
     else:
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,1, 11, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,1, 16, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -162,7 +162,7 @@ def fishconfig():
 
     else:
         dict["isUpgrade"] = False
-        outtime = datetime.datetime(2026,1, 11, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,1, 16, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -200,7 +200,7 @@ def solunartidesconfig():
     appversion = request.args.get("appVersion", "5.0")
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026, 1, 11, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 1, 16, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -261,7 +261,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2026,1, 11, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,1, 16, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
