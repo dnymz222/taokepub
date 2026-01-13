@@ -2,7 +2,7 @@
 import os.path
 
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_meesage,zhongkexingtu_token
+from app.utils.constvalue import x_code,x_data,x_meesage,zhongkexingtu_token,xingtuyun_token
 from flask import request
 import datetime
 import urllib
@@ -13,6 +13,9 @@ from config import basedir
 import shutil
 from PIL import Image
 import math
+import pytz
+
+shanghai_tz = pytz.timezone("Asia/Shanghai")
 
 
 
@@ -45,15 +48,18 @@ def huoshaoyunpoint():
         return json.dumps(result)
 
 
-@api3.route("/zhongkexingtu/huoshaoyun")
-def huoshaoyun():
+@api3.route("/zhongkexingtu/huoshaoyun/old")
+def huoshaoyunold():
     result = {}
+
 
     lat = request.args.get('lat', '30')
     lng = request.args.get('lng', '120')
     start = request.args.get("start","2025050400")
     end = request.args.get("end","2025050700")
     location = lat + "," + lng
+
+
 
     huoshaoyunpath = os.path.join(basedir,"static/huoshaoyun")
 
@@ -220,6 +226,69 @@ def huoshaoyun():
         result[x_meesage] = "%s" % e
         return json.dumps(result)
 
+
+@api3.route("/zhongkexingtu/huoshaoyun")
+def huoshaoyun():
+    result = {}
+
+
+    datenow = datetime.datetime.now(tz=shanghai_tz)
+    nextday = datenow + datetime.timedelta(days=4)
+
+
+    start = "%d%02d%02d00" % (datenow.year, datenow.month, datenow.day)
+    end = "%d%02d%02d00" % (nextday.year, nextday.month, nextday.day)
+    lat = request.args.get('lat', '30')
+    lng = request.args.get('lng', '120')
+
+    location = lng + "," + lat
+
+    utc_now = datetime.datetime.utcnow()
+    timestamp = utc_now.timestamp()
+
+    timespan = "&start=" + start + "&end=" + end
+
+
+    url = "https://api.open.geovisearth.com/v2/grid/glow/day?meteCodes=aod,glow&level=true&token=" + xingtuyun_token + "&location=" + location + timespan
+
+    print(url)
+    try:
+
+        req = urllib.request.Request(url)
+        response = urllib.request.urlopen(req)
+        content = response.read()
+
+        datadict = json.loads(content)
+
+        datalist = datadict["result"]["datas"]
+        resultlist = []
+        for datadict1 in datalist:
+            dict = {}
+            startViewTime = datadict1["startViewTime"]
+            dict["month"] = startViewTime[5:7]
+            dict["day"] = startViewTime[8:10]
+            dict["hour"] = startViewTime[11:13]
+            hour = int(dict["hour"])
+            if hour < 12:
+                dict["type"] = 0  # 朝霞
+            else:
+                dict["type"] = 1  # 晚霞
+            dict["value"] = datadict1["values"][0]
+            dict["aod_value"] = datadict1["values"][1]
+            dict["level"] = datadict1["levels"][0]
+            dict["aod_level"] = datadict1["levels"][1]
+            resultlist.append(dict)
+
+
+        result[x_code] = 200
+        result[x_data] = resultlist
+
+        return json.dumps(result)
+    except Exception as e:
+        result[x_code] = 201
+        result[x_meesage] = "%s" % e
+        return json.dumps(result)
+
 def tile_to_latitude(y, pz):
         n = float(math.pi - 2 * math.pi * y / pz)
         latitude = float(180 / math.pi * math.atan(0.5 * (math.exp(n) - math.exp(-n))))
@@ -230,324 +299,6 @@ def tile_to_longitude(x, pz):
     longitude = float(x / pz * 360 - 180)
     return longitude
 
-@api3.route("/zhongkexingtu/cloud/map")
-def zhongkexingtucloudmap():
-    result = {}
-
-    meteCode = request.args.get("meteCode", "tcdc")
-
-    start = request.args.get("start","2025050800")
-    end = request.args.get("end","2025051200")
-
-    huoshaoyunpath = os.path.join(basedir,"static/cloud_map")
-
-    clouimagepath = os.path.join(basedir, "static/cloud_image")
-
-    url = "https://tiles.geovisearth.com/meteorology/v1/view/module/sevg/gfs/"+meteCode+"/range?start="+start+"&end=" + end +"&token=" + zhongkexingtu_token
-
-    try:
-        req = urllib.request.Request(url)
-        response = urllib.request.urlopen(req)
-        content = response.read()
-
-        datadict = json.loads(content)
-
-        urls = datadict["result"]["urls"]
-        datalist = []
-        for key in urls.keys():
-
-            urllist = urls[key]
-            dicturl = urllist[0]
-            ulrslips = dicturl.split("/")
-            pngname = ulrslips[len(ulrslips) -1]
-
-            pngpath = os.path.join(huoshaoyunpath,pngname)
-
-            if os.path.exists(pngpath):
-                continue
-            else:
-                try:
-                    r = requests.get(dicturl, stream=True)
-                    if r.status_code != 200:
-                        print("faile:" + dict["url"])
-                    else:
-                        f = open(str(pngpath), "wb")
-                        shutil.copyfileobj(r.raw, f, length=16 * 1024 * 1024)
-                except Exception as e:
-                    print(e)
-
-
-
-
-            if os.path.exists(pngpath):
-
-                min_v = 0
-                max_v = 100
-                pngwidth = 1440
-                pngheight = 721
-
-                lat_min = -90
-                lat_max = 90
-                lon_min = -180
-                lon_max = 180
-
-                image = Image.open(pngpath).convert('RGB')
-
-
-
-                for z in range(0,8):
-                    pz = math.pow(2, z)
-                    for x in range(0,int(pz)):
-                        for y in range(0,int(pz)):
-
-                            try:
-                                webimage_name = meteCode + "_" + key + "_" + str(z) + "_" + str(x) + "_" + str(y) + ".webp"
-                                print(webimage_name)
-                                webimagepath = os.path.join(clouimagepath,webimage_name)
-                                wimg = Image.new("RGBA", (128, 128), (0, 0, 0, 0))
-
-
-
-                                colors = []
-
-                                for row in range(0,128):
-                                    for col in range(0,128):
-                                        tile_x = x + col / 128.0
-                                        tile_y = y + row / 128.0
-
-                                        try:
-
-                                            lat = tile_to_latitude(tile_y,pz)
-                                            lng = tile_to_longitude(tile_x,pz)
-
-                                            lon_width = (float(lng) - lon_min) / (lon_max - lon_min) * (pngwidth - 1)
-                                            lat_height = (lat_max - float(lat)) / (lat_max - lat_min) * (pngheight - 1)
-
-                                            if lon_width < 0 or lon_width > pngwidth - 1 - 0.0001:
-                                                print("lon_max")
-                                                colors.append((0, 0, 0, 0))
-                                                continue
-                                            if lat_height < 0 or lat_height > pngheight - 1 - 0.0001:
-                                                print("lax_max")
-                                                colors.append((0, 0, 0, 0))
-                                                continue
-
-
-
-                                            r1, g1, b1 = image.getpixel((math.floor(lon_width), math.floor(lat_height)))
-                                            r2, g2, b2 = image.getpixel((math.ceil(lon_width), math.floor(lat_height)))
-                                            r3, g3, b3 = image.getpixel((math.ceil(lon_width), math.ceil(lat_height)))
-                                            r4, g4, b4 = image.getpixel((math.floor(lon_width), math.ceil(lat_height)))
-
-
-
-                                            vx = lon_width - math.floor(lon_width)
-                                            vy = lat_height - math.floor(lat_height)
-
-
-                                            T_D = min_v + r1 / 255.0 * (max_v - min_v)
-                                            T_C = min_v + r2 / 255.0 * (max_v - min_v)
-                                            T_B = min_v + r3 / 255.0 * (max_v - min_v)
-                                            T_A = min_v + r4 / 255.0 * (max_v - min_v)
-
-
-                                            T = (1 - vx) * (1 - vy) * T_D + \
-                                                vx * (1 - vy) * T_C + \
-                                                (1 - vx) * vy * T_A + \
-                                                vx * vy * T_B
-
-
-                                            value = T
-                                            alpha = int(math.floor(value * 2.55 + 0.49))
-                                            if alpha > 255:
-                                                alpha = 255
-                                            colors.append((255,255,255,alpha))
-                                        except Exception as e:
-                                            colors.append((0,0,0,0))
-
-                                wimg.putdata(colors)
-
-                                wimg.save(webimagepath, "WEBP")
-                                wimg.close()
-
-
-                            except Exception as e:
-                                print(e)
-
-
-
-
-
-
-
-
-
-                image.close()
-
-
-
-
-        result[x_code] = 200
-        result[x_data] = datalist
-
-        return json.dumps(result)
-    except Exception as e:
-        result[x_code] = 201
-        result[x_meesage] = "%s" % e
-        return json.dumps(result)
-
-@api3.route("/zhongkexingtu/cloud/map/china")
-def zhongkexingtucloudmapchina():
-    result = {}
-
-    meteCode = request.args.get("meteCode", "hcdc")
-
-    start = request.args.get("start","2025050800")
-    end = request.args.get("end","2025051200")
-
-    huoshaoyunpath = os.path.join(basedir,"static/cloud_map")
-
-    clouimagepath = os.path.join(basedir, "static/cloud_image_china")
-
-    url = "https://tiles.geovisearth.com/meteorology/v1/view/module/sevg/gfs/"+meteCode+"/range?start="+start+"&end=" + end +"&token=" + zhongkexingtu_token
-
-    try:
-        req = urllib.request.Request(url)
-        response = urllib.request.urlopen(req)
-        content = response.read()
-
-        datadict = json.loads(content)
-
-        urls = datadict["result"]["urls"]
-        datalist = []
-        for key in urls.keys():
-
-            urllist = urls[key]
-            dicturl = urllist[0]
-            ulrslips = dicturl.split("/")
-            pngname = ulrslips[len(ulrslips) -1]
-
-            pngpath = os.path.join(huoshaoyunpath,pngname)
-
-            if os.path.exists(pngpath):
-                continue
-            else:
-                try:
-                    r = requests.get(dicturl, stream=True)
-                    if r.status_code != 200:
-                        print("faile:" + dict["url"])
-                    else:
-                        f = open(str(pngpath), "wb")
-                        shutil.copyfileobj(r.raw, f, length=16 * 1024 * 1024)
-                except Exception as e:
-                    print(e)
-
-
-
-
-            if os.path.exists(pngpath):
-
-                min_v = 0
-                max_v = 100
-                pngwidth = 1440
-                pngheight = 721
-
-                lat_min = -90
-                lat_max = 90
-                lon_min = -180
-                lon_max = 180
-
-                image = Image.open(pngpath).convert('RGB')
-
-                webimage_name = meteCode + "_" + key + ".webp"
-                print(webimage_name)
-                webimagepath = os.path.join(clouimagepath, webimage_name)
-                wimg = Image.new("RGBA", (2560, 1600), (0, 0, 0, 0))
-                colors = []
-
-                for x in range(0,1600):
-                    for y in range(0,2560):
-
-
-
-
-                                        try:
-
-                                            lat = 55 - x * 0.025
-                                            lng = 72 + y * 0.025
-
-                                            lon_width = (float(lng) - lon_min) / (lon_max - lon_min) * (pngwidth - 1)
-                                            lat_height = (lat_max - float(lat)) / (lat_max - lat_min) * (pngheight - 1)
-
-                                            if lon_width < 0 or lon_width > pngwidth - 1 - 0.0001:
-                                                print("lon_max")
-                                                colors.append((0, 0, 0, 0))
-                                                continue
-                                            if lat_height < 0 or lat_height > pngheight - 1 - 0.0001:
-                                                print("lax_max")
-                                                colors.append((0, 0, 0, 0))
-                                                continue
-
-
-
-                                            r1, g1, b1 = image.getpixel((math.floor(lon_width), math.floor(lat_height)))
-                                            r2, g2, b2 = image.getpixel((math.ceil(lon_width), math.floor(lat_height)))
-                                            r3, g3, b3 = image.getpixel((math.ceil(lon_width), math.ceil(lat_height)))
-                                            r4, g4, b4 = image.getpixel((math.floor(lon_width), math.ceil(lat_height)))
-
-
-
-                                            vx = lon_width - math.floor(lon_width)
-                                            vy = lat_height - math.floor(lat_height)
-
-
-                                            T_D = min_v + r1 / 255.0 * (max_v - min_v)
-                                            T_C = min_v + r2 / 255.0 * (max_v - min_v)
-                                            T_B = min_v + r3 / 255.0 * (max_v - min_v)
-                                            T_A = min_v + r4 / 255.0 * (max_v - min_v)
-
-
-                                            T = (1 - vx) * (1 - vy) * T_D + \
-                                                vx * (1 - vy) * T_C + \
-                                                (1 - vx) * vy * T_A + \
-                                                vx * vy * T_B
-
-
-                                            value = T
-                                            alpha = int(math.floor(value * 2.55 + 0.49))
-                                            if alpha > 255:
-                                                alpha = 255
-                                            colors.append((255,255,255,alpha))
-                                        except Exception as e:
-                                            colors.append((0,0,0,0))
-
-                wimg.putdata(colors)
-
-                wimg.save(webimagepath, "WEBP")
-                wimg.close()
-
-
-
-
-
-
-
-
-
-
-                image.close()
-
-
-
-
-        result[x_code] = 200
-        result[x_data] = datalist
-
-        return json.dumps(result)
-    except Exception as e:
-        result[x_code] = 201
-        result[x_meesage] = "%s" % e
-        return json.dumps(result)
 
 
 @api3.route("/zhongkexingtu/huoshaoyun/map")
