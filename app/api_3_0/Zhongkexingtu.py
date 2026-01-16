@@ -231,9 +231,22 @@ def huoshaoyunold():
 def huoshaoyun():
     result = {}
 
+    osplat = request.args.get("os","iOS")
+    if osplat == "android":
+        isVip = request.args.get("isVip","0")
+        if isVip =="0":
+            result[x_code] = 201
+            result[x_meesage] = "no result"
+            return json.dumps(result)
+        else:
+            pass
+    else:
+        pass
 
     datenow = datetime.datetime.now(tz=shanghai_tz)
     nextday = datenow + datetime.timedelta(days=4)
+
+
 
 
     start = "%d%02d%02d00" % (datenow.year, datenow.month, datenow.day)
