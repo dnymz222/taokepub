@@ -1,6 +1,6 @@
 #coding=utf8
 from . import api3
-from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage,meteoblue_allapi_key
+from app.utils.constvalue import x_code,x_data,x_hasnext,x_meesage
 
 from flask import request
 
