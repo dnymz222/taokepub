@@ -227,7 +227,7 @@ def fish_app_pay_v2():
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "钓鱼天气新年特惠(终身会员)"
+            model.subject = "钓鱼天气年终特惠(终身会员)"
         else:
             model.subject = "钓鱼天气升级终身会员"
     else:

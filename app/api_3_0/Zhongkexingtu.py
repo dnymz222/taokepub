@@ -248,7 +248,6 @@ def huoshaoyun():
 
 
 
-
     start = "%d%02d%02d00" % (datenow.year, datenow.month, datenow.day)
     end = "%d%02d%02d00" % (nextday.year, nextday.month, nextday.day)
     lat = request.args.get('lat', '30')
