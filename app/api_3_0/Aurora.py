@@ -33,6 +33,9 @@ import pymeeus.Coordinates
 from datetime import  datetime,timezone
 import time
 import shutil
+import os
+from flask import send_file
+from config import  basedir
 
 
 
@@ -1060,4 +1063,21 @@ def pymeeusastrodict(timestamp):
 
 
     return dict
+
+@api3.route("/aurora/oval/<imagename>")
+def auroraOvalImage(imagename):
+
+    filename = imagename
+    try:
+
+        path = os.path.join(basedir, "static/Aurora/oval")
+        fpath = os.path.join(path, filename)
+        if os.path.exists(fpath):
+            return send_file(fpath, as_attachment=True)
+        else:
+            return redirect("https://services.swpc.noaa.gov/images/animations/ovation/north/"+imagename[:-5]+".jpg")
+
+    except Exception as e:
+        return ""
+
 

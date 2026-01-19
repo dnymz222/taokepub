@@ -148,7 +148,17 @@ def fishconfig():
         dict["orderName"] = "钓鱼天气升级终身会员"
         result[x_data] = dict
         return json.dumps(result)
-
+    elif isVip == "0" and (nowhour - hour) > 2400:
+        dict["isOpen"] = True
+        dict["isUpgrade"] = True
+        dict["homeText"] = "老用户升级终身会员原98元现48元"
+        dict["amount"] = "48.00"
+        dict["mineText"] = "老用户可优惠升级终身会员"
+        dict["buttonText"] = "升级终身会员:￥48"
+        dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可48元升级终身会员"
+        dict["orderName"] = "钓鱼天气升级终身会员"
+        result[x_data] = dict
+        return json.dumps(result)
 
     else:
         dict["isUpgrade"] = False
