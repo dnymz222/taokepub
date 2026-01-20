@@ -1075,7 +1075,11 @@ def auroraOvalImage(imagename):
         if os.path.exists(fpath):
             return send_file(fpath, as_attachment=True)
         else:
-            return redirect("https://services.swpc.noaa.gov/images/animations/ovation/north/"+imagename[:-5]+".jpg")
+            if imagename.find("N") > -1 :
+                return redirect("https://services.swpc.noaa.gov/images/animations/ovation/north/"+imagename[:-5]+".jpg")
+            else:
+                return redirect(
+                    "https://services.swpc.noaa.gov/images/animations/ovation/south/" + imagename[:-5] + ".jpg")
 
     except Exception as e:
         return ""
