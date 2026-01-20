@@ -1081,3 +1081,23 @@ def auroraOvalImage(imagename):
         return ""
 
 
+@api3.route("/aurora/map/<hemi>")
+def auroramaphemi(hemi):
+    time =  int(datetime.now().timestamp())
+    timezero = int(time / 600) * 600
+    list = []
+
+    for i in range(0, 145):
+        timestamp = timezero - (144-i) * 600
+        odate = datetime.fromtimestamp(timestamp,tz = tz)
+        otime_str = odate.strftime("%Y-%m-%d_%H%M")
+        dict = {}
+        filename = "aurora_" + hemi +"_"+ otime_str + ".webp"
+        dict["url"] = "https://www.oulagongshi.com/api/v3.0/aurora/oval/" + filename
+
+        # north_file = os.path.join(basedir, "static/Aurora/oval", filename)
+        # if os.path.exists(north_file):
+        list.append(dict)
+
+
+    return  json.dumps(list)
