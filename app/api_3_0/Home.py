@@ -75,7 +75,7 @@ def soluanrconfig():
     else:
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,1, 16, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,2, 17, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -86,12 +86,12 @@ def soluanrconfig():
 
 
 
-        dict["homeText"] = "2026年新年特惠终身会员原68元现36元"
+        dict["homeText"] = "乙巳年年终特惠终身会员原68元现36元"
         dict["amount"] = "36.00"
-        dict["mineText"] = "新年特惠"
-        dict["buttonText"] = "新年特惠(终身会员:原价￥68):￥36"
-        dict["tipText"] = "2026年来临之际，特推出特惠"
-        dict["orderName"] = "日出日落月相新年特惠(终身会员)"
+        dict["mineText"] = "乙巳年年终特惠"
+        dict["buttonText"] = "年终特惠特惠(终身会员:原价￥68):￥36"
+        dict["tipText"] = "乙巳年进入最后一个月之际，特推出特惠"
+        dict["orderName"] = "日出日落月相年终特惠(终身会员)"
 
 
         result[x_data] = dict
