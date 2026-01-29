@@ -14,6 +14,7 @@ import shutil
 from PIL import Image
 import math
 import pytz
+from PIL.ImageFile import ImageFile as ImageReadFile
 
 shanghai_tz = pytz.timezone("Asia/Shanghai")
 
@@ -48,7 +49,7 @@ def huoshaoyunpoint():
         return json.dumps(result)
 
 
-@api3.route("/zhongkexingtu/huoshaoyun/old")
+@api3.route("/zhongkexingtu/huoshaoyun")
 def huoshaoyunold():
     result = {}
 
@@ -59,175 +60,143 @@ def huoshaoyunold():
     end = request.args.get("end","2025050700")
     location = lat + "," + lng
 
+    latf = float(lat)
+    lngf = float(lng)
+
+    if latf > 55 or latf < 15:
+        result[x_code] = 201
+        result[x_meesage] = "out boundry"
+        return json.dumps(result)
+    if lngf > 136 or lngf < 72:
+        result[x_code] = 201
+        result[x_meesage] = "out boundry"
+        return json.dumps(result)
 
 
-    huoshaoyunpath = os.path.join(basedir,"static/huoshaoyun")
 
-    utc_now = datetime.datetime.utcnow()
-    timestamp = utc_now.timestamp()
 
-    hour = int(timestamp / 600)
+    huoshaoyunpath = os.path.join(basedir,"static/CAMS","glow")
 
-    url = "https://tiles.geovisearth.com/meteorology/v1/view/glow/sev/Astronomical_ph/fc_idx/range?token=" + zhongkexingtu_token
+    localdaynow = datetime.datetime.now(tz=shanghai_tz)
 
-    try:
-        file = "huoshaoyun_red_" + str(hour) + ".json"
-        jsonpath = os.path.join(huoshaoyunpath,file)
-        if os.path.exists(jsonpath):
-            rf = open(jsonpath,"r")
-            datadict = json.loads(rf.read())
-            rf.close()
+
+    datalist = []
+
+    vlongitude = (lngf - 72) * 12
+    vlatitude = (55 - latf) * 12
+
+    for i in range(0,3):
+        daytome = localdaynow + datetime.timedelta(days=i)
+        utcyear = daytome.year
+        utcmonth = daytome.month
+        utcday = daytome.day
+
+        daystr = "%d%02d%02d" % (utcyear, utcmonth, utcday)
+
+
+        risepath = os.path.join(huoshaoyunpath, daystr + "_rise.webp")
+
+        setpath = os.path.join(huoshaoyunpath, daystr + "_set.webp")
+
+
+        if os.path.exists(risepath):
+            dict = {}
+            riseimage = Image.open(risepath)
+            Tsunrise = getGlowValue(riseimage, vlongitude, vlatitude)
+            dict["month"] = "%02d"%utcmonth
+            dict["day"] = "%02d"%utcday
+            dict["hour"] = "06"
+            dict["value"] = Tsunrise
+            dict["level"] = getGlowType(Tsunrise)
+            dict["type"] = 0
+
+            datalist.append(dict)
+            riseimage.close()
+
 
         else:
-            req = urllib.request.Request(url)
-            response = urllib.request.urlopen(req)
-            content = response.read()
-            datadict = json.loads(content)
-            wf = open(jsonpath,"w")
-            wf.write(json.dumps(datadict))
-            wf.close()
+            pass
 
-        urls = datadict["result"]["urls"]
-        datalist = []
-        for key in urls.keys():
+
+        if os.path.exists(setpath):
             dict = {}
-            urllist = urls[key]
-            dicturl = urllist[0]
+            setimage = Image.open(setpath)
+            Tsunset = getGlowValue(setimage, vlongitude, vlatitude)
+            dict["month"] = "%02d" % utcmonth
+            dict["day"] = "%02d" % utcday
+            dict["hour"] = "18"
+            dict["value"] = Tsunset
+            dict["level"] = getGlowType(Tsunset)
+            dict["type"] = 1
 
-            ulrslips = dicturl.split("/")
+            datalist.append(dict)
+            setimage.close()
+        else:
+            pass
 
-            pngname = ulrslips[len(ulrslips) -1]
-            dictjson = urllist[1]
-            jsonslips = dictjson.split("/")
-            jsonname = jsonslips[len(jsonslips) - 1]
-
-            pngpath = os.path.join(huoshaoyunpath,pngname)
-            jsonpath = os.path.join(huoshaoyunpath,jsonname)
-            if os.path.exists(pngpath):
-                pass
-            else:
-                try:
-                    r = requests.get(dicturl, stream=True)
-                    if r.status_code != 200:
-                        print("faile:" + dict["url"])
-                    else:
-                        f = open(str(pngpath), "wb")
-                        shutil.copyfileobj(r.raw, f, length=16 * 1024 * 1024)
-                except Exception as e:
-                    print(e)
-
-            if os.path.exists(jsonpath):
-                pass
-            else:
-                try:
-                    jreq = urllib.request.Request(dictjson)
-                    jresponse = urllib.request.urlopen(jreq)
-                    jcontent = json.loads(jresponse.read())
-                    wf = open(jsonpath,"w")
-                    wf.write(json.dumps(jcontent))
-                    wf.close()
-                except Exception as e:
-                    print(e)
-
-
-            dict["month"] = key[4:6]
-            dict["day"] = key[6:8]
-            dict["hour"] = key[8:10]
-            if dict["hour"] == "08":
-                dict["type"] = 0 #朝霞
-            else:
-                dict["type"] = 1 #晚霞
-
-            if os.path.exists(jsonpath) and os.path.exists(pngpath):
-                jf = open(jsonpath,"r")
-                configdict = json.loads(jf.read())
-                jf.close()
-                min_v = configdict["min"]
-                max_v = configdict["max"]
-                pngwidth = configdict["width"]
-                pngheight = configdict["height"]
-                lat_min = configdict["latmin"]
-                lat_max = configdict["latmax"]
-                lon_min = configdict["lonmin"]
-                lon_max = configdict["lonmax"]
-
-                lon_width = (float(lng) - lon_min) / (lon_max - lon_min) * (pngwidth - 1)
-                lat_height = (lat_max - float(lat)) / (lat_max - lat_min) * (pngheight - 1)
-
-                if lon_width < 0 or lon_width > pngwidth - 1 - 0.0001:
-                    continue
-                if lat_height < 0 or lat_height > pngheight - 1 - 0.0001:
-                    continue
-
-                image = Image.open(pngpath).convert('RGB')
-
-                r1, g1, b1 = image.getpixel((math.floor(lon_width), math.floor(lat_height)))
-                r2, g2, b2 = image.getpixel((math.ceil(lon_width), math.floor(lat_height)))
-                r3, g3, b3 = image.getpixel((math.ceil(lon_width), math.ceil(lat_height)))
-                r4, g4, b4 = image.getpixel((math.floor(lon_width), math.ceil(lat_height)))
-
-
-
-                x = lon_width - math.floor(lon_width)
-                y = lat_height - math.floor(lat_height)
-
-
-                T_D = min_v + r1 / 255.0 * (max_v - min_v)
-                T_C = min_v + r2 / 255.0 * (max_v - min_v)
-                T_B = min_v + r3 / 255.0 * (max_v - min_v)
-                T_A = min_v + r4 / 255.0 * (max_v - min_v)
-
-                # print(T_A)
-                # print(T_B)
-                # print(T_C)
-                # print(T_D)
-
-                T = (1 - x) * (1 - y) * T_D + \
-                    x * (1 - y) * T_C + \
-                    (1 - x) * y * T_A + \
-                    x * y * T_B
-
-                # print(T)
-
-                dict["value"] = T
-
-                level  = 0
-                fix  = 0.00001
-                if T < 0.018  + fix:
-                    level = 0
-                elif T < 0.075 + fix:
-                    level = 1
-                elif T < 0.151 + fix:
-                    level =  2
-                elif T < 0.438 + fix:
-                    level =  3
-                elif T < 0.711 + fix:
-                    level = 4
-                else:
-                    level = 5
-                dict["level"] = level
-
-
-
-
-
-                datalist.append(dict)
-                image.close()
-
-
-
-
+    if len(datalist) > 0:
         result[x_code] = 200
         result[x_data] = datalist
-
-        return json.dumps(result)
-    except Exception as e:
+    else:
         result[x_code] = 201
-        result[x_meesage] = "%s" % e
-        return json.dumps(result)
+        result[x_meesage] = "nodata"
+    return json.dumps(result)
+
+def getGlowType(value):
+    if value < 0.1:
+        return 0
+    elif value < 0.2:
+        return 1
+    elif value < 0.3:
+        return 2
+    elif value < 0.4:
+        return 3
+    elif value < 0.5:
+        return 4
+    else:
+        return 5
+
+def getGlowValue(image:ImageReadFile,vlongitude:float,vlatitude:float):
+    lng_floor = int(math.floor(vlongitude))
+    lat_floor = int(math.floor(vlatitude))
+    lat_ceil = int(math.ceil(vlatitude))
+    lng_ceil = int(math.ceil(vlongitude))
+    if lat_ceil > 480:
+        lat_ceil = 480
+    if lng_ceil > 768:
+        lng_ceil = 768
 
 
-@api3.route("/zhongkexingtu/huoshaoyun")
+    r1,g1,b1,a1 = image.getpixel((lng_floor,lat_floor))
+    r2,g2,b2,a2 = image.getpixel((lng_ceil, lat_floor))
+    r3,g3,b3,a3 = image.getpixel((lng_ceil, lat_ceil))
+    r4,g4,b4,a4 = image.getpixel((lng_floor, lat_ceil))
+
+    vx = vlongitude - lng_floor
+    vy = vlatitude - lat_floor
+
+    T_D_weight = (1 - vx) * (1 - vy) * a1 / 255.0
+    T_C_weight = vx * (1 - vy) * a2 / 255.0
+    T_B_weight = vx * vy * a3 / 255.0
+    T_A_weight = (1 - vx) * vy  * a4 / 255.0
+    total_weight =  T_D_weight + T_C_weight + T_A_weight + T_B_weight
+    if total_weight < 0.7:
+        return 0
+    else:
+
+        T_D = r1 / 255.0
+
+        T_C = r2 / 255.0
+
+        T_B = r3 / 255.0
+
+        T_A = r4 / 255.0
+
+        T = (T_D_weight * T_D + T_C_weight * T_C + T_A_weight * T_A + T_B_weight * T_B) / total_weight
+
+        return T
+
+@api3.route("/zhongkexingtu/huoshaoyun/api")
 def huoshaoyun():
     result = {}
 
@@ -318,15 +287,15 @@ def huoshaoyunmap():
 
     result = {}
 
-    huoshaoyunpath = os.path.join(basedir,"static/huoshaoyun")
+    huoshaoyunpath = os.path.join(basedir,"static/CAMS","glow")
 
-    utc_now = datetime.datetime.utcnow()
-    timestamp = utc_now.timestamp()
+    localdaynow = datetime.datetime.now(tz=shanghai_tz)
+    timestamp = localdaynow.timestamp()
 
     hour = int(timestamp / 600)
 
 
-    url = "https://tiles.geovisearth.com/meteorology/v1/view/glow/mfv/Astronomical_ph/fc_idx/range?token=" + zhongkexingtu_token
+    # url = "https://tiles.geovisearth.com/meteorology/v1/view/glow/mfv/Astronomical_ph/fc_idx/range?token=" + zhongkexingtu_token
 
     try:
 
@@ -339,40 +308,58 @@ def huoshaoyunmap():
             rf.close()
             return json.dumps(datadict)
         else:
-            req = urllib.request.Request(url)
-            response = urllib.request.urlopen(req)
-            content = response.read()
-
-            datadict = json.loads(content)
-
-            urls = datadict["result"]["urls"]
             datalist = []
-            for key in urls.keys():
-                dict = {}
-                urllist = urls[key]
-                dict["url"] = urllist[0]
-                dict["month"] = key[4:6]
-                dict["day"] = key[6:8]
-                dict["hour"] = key[8:10]
-                if dict["hour"] == "08":
+            for i in range(0,3):
+
+                daytome = localdaynow + datetime.timedelta(days=i)
+                utcyear = daytome.year
+                utcmonth = daytome.month
+                utcday = daytome.day
+                daystr = "%d%02d%02d" % (utcyear, utcmonth, utcday)
+
+                risepath = os.path.join(huoshaoyunpath, daystr + "_riseme.webp")
+
+                setpath = os.path.join(huoshaoyunpath, daystr + "_setme.webp")
+
+                if os.path.exists(risepath):
+                    dict = {}
+
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/riseme/"+ daystr
+                    dict["month"] = "%02d"%utcmonth
+                    dict["day"] = "%02d" %utcday
+                    dict["hour"] = "06"
                     dict["type"] = 0 #朝霞
-                else:
-                    dict["type"] = 1 #晚霞
+                    dict["lonmin"] = 72
+                    dict["lonmax"] = 136
+                    dict["latmin"] = 15
+                    dict["latmax"] = 55
+                    dict["width"] = 1921
+                    dict["height"] = 1530
+                    datalist.append(dict)
+                if os.path.exists(setpath):
+                    dict = {}
 
-                dict["lonmin"] = 71.99999698166064
-                dict["lonmax"] = 135.95106206703144
-                dict["latmin"] = 15.000006383081164
-                dict["latmax"] = 54.97079910511656
-                dict["width"] = 2374
-                dict["height"] = 1890
-                datalist.append(dict)
-
-
-            result[x_code] = 200
-            result[x_data] = datalist
-            wf = open(jsonpath, "w")
-            wf.write(json.dumps(result))
-            wf.close()
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/setme/"+ daystr
+                    dict["month"] = "%02d"%utcmonth
+                    dict["day"] = "%02d" %utcday
+                    dict["hour"] = "18"
+                    dict["type"] = 1 #朝霞
+                    dict["lonmin"] = 72
+                    dict["lonmax"] = 136
+                    dict["latmin"] = 15
+                    dict["latmax"] = 55
+                    dict["width"] = 1921
+                    dict["height"] = 1530
+                    datalist.append(dict)
+            if len(datalist) > 3:
+                result[x_code] = 200
+                result[x_data] = datalist
+                wf = open(jsonpath, "w")
+                wf.write(json.dumps(result))
+                wf.close()
+            else:
+                result[x_code] = 200
+                result[x_data] = "no data"
 
             return json.dumps(result)
     except Exception as e:

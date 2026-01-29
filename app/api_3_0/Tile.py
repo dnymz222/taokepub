@@ -45,6 +45,17 @@ def cloudrgbmapcams(type,time):
    except Exception as e:
        return "%s"%e
 
+@api3.route("/cams/glow/<type>/<time>")
+def glowrgbmapcams(type,time):
+   path =  os.path.join(basedir,"static/CAMS/glow")
+   filename =  time + "_" + type + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
 
 @api3.route("/cams/cloudrgbmap/clear")
 def cloudrgbclear():
