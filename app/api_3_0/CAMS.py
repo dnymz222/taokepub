@@ -104,7 +104,7 @@ def camsrisesetmap():
 
 
 @api3.route("/cams/glow/map")
-def camsnmap():
+def camsglowmap():
 
     result = {}
 
