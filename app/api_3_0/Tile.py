@@ -56,6 +56,18 @@ def glowrgbmapcams(type,time):
    except Exception as e:
        return "%s"%e
 
+@api3.route("/cams/riseset/<type>/<time>")
+def riseserrgbmapcams(type,time):
+   path =  os.path.join(basedir,"static/CAMS/riseset")
+   filename =  time + "_" + type + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
+
 
 @api3.route("/cams/cloudrgbmap/clear")
 def cloudrgbclear():

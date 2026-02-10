@@ -31,6 +31,7 @@ from . import Aurora
 from . import Astronomy
 from . import Zhongkexingtu
 from . import CommetEdit
+from . import CAMS
 
 
 

@@ -30,10 +30,12 @@ def soluanrconfig():
     userType = request.args.get('userType', '0')
     appversion = request.args.get("appVersion","5.0")
 
-    hour = int (request.args.get("hour","480616"))
-
     now = datetime.datetime.now()
     nowhour = now.timestamp() / 3600
+
+    hour = int (request.args.get("hour",str(nowhour)))
+
+
 
     dict["isMonth"] = False
     dict["isRed"] = True
@@ -75,7 +77,7 @@ def soluanrconfig():
     else:
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,2, 17, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,2, 7, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -132,10 +134,12 @@ def fishconfig():
     isVip = request.args.get('isVip', '0')
     userType = request.args.get('userType', '0')
 
-    hour = int (request.args.get("hour","480458"))
-
     now = datetime.datetime.now()
     nowhour = now.timestamp() / 3600
+
+    hour = int (request.args.get("hour",str(nowhour)))
+
+
 
     if isVip == "0" and (userType == "1" or userType == "3"):
         dict["isOpen"] = True
@@ -162,7 +166,7 @@ def fishconfig():
 
     else:
         dict["isUpgrade"] = False
-        outtime = datetime.datetime(2026,2, 17, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,2, 7, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -200,7 +204,7 @@ def solunartidesconfig():
     appversion = request.args.get("appVersion", "5.0")
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026, 2, 17, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 2, 7, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -261,7 +265,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2026,2, 17, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,2, 7, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
