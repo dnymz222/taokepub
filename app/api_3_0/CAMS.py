@@ -331,7 +331,7 @@ def camssunforecast():
                 dict["value"] = Tsunrise
                 dict["level"] = getSunrisesetType(Tsunrise)
                 dict["type"] = 0
-                dict["group"] = 0
+                dict["group"] = 1
 
                 risesetlist.append(dict)
                 riseimage.close()
@@ -355,7 +355,7 @@ def camssunforecast():
                 dict["value"] = Tsunset
                 dict["level"] = getSunrisesetType(Tsunset)
                 dict["type"] = 1
-                dict["group"] = 0
+                dict["group"] = 1
 
                 risesetlist.append(dict)
                 setimage.close()
@@ -365,7 +365,7 @@ def camssunforecast():
             pass
 
     if len(risesetlist) > 0:
-        datadict["riseset"] = glowdatalist
+        datadict["riseset"] = risesetlist
 
     if len(glowdatalist) > 0 and len(risesetlist) > 0:
         result[x_code] = 200
