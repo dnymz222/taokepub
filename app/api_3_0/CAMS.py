@@ -50,14 +50,14 @@ def camsrisesetmap():
                 utcday = daytome.day
                 daystr = "%d%02d%02d" % (utcyear, utcmonth, utcday)
 
-                risepath = os.path.join(huoshaoyunpath, daystr + "_worldrise.webp")
+                risepath = os.path.join(huoshaoyunpath, daystr + "_rise.webp")
 
-                setpath = os.path.join(huoshaoyunpath, daystr + "_worldset.webp")
+                setpath = os.path.join(huoshaoyunpath, daystr + "_set.webp")
 
                 if os.path.exists(risepath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/worldrise/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/rise/"+ daystr
                     dict["month"] = utcmonth
                     dict["day"] = utcday
                     dict["hour"] = 6
@@ -73,7 +73,7 @@ def camsrisesetmap():
                 if os.path.exists(setpath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/worldset/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/set/"+ daystr
                     dict["month"] = utcmonth
                     dict["day"] = utcday
                     dict["hour"] = 18
@@ -138,14 +138,14 @@ def camsglowmap():
                 utcday = daytome.day
                 daystr = "%d%02d%02d" % (utcyear, utcmonth, utcday)
 
-                risepath = os.path.join(huoshaoyunpath, daystr + "_worldrise.webp")
+                risepath = os.path.join(huoshaoyunpath, daystr + "_rise.webp")
 
-                setpath = os.path.join(huoshaoyunpath, daystr + "_worldset.webp")
+                setpath = os.path.join(huoshaoyunpath, daystr + "_set.webp")
 
                 if os.path.exists(risepath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/worldrise/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/rise/"+ daystr
                     dict["month"] = utcmonth
                     dict["day"] = utcday
                     dict["hour"] =  6
@@ -161,7 +161,7 @@ def camsglowmap():
                 if os.path.exists(setpath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/worldset/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/set/"+ daystr
                     dict["month"] = utcmonth
                     dict["day"] =  utcday
                     dict["hour"] = 18
