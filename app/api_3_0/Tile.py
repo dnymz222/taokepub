@@ -67,6 +67,33 @@ def riseserrgbmapcams(type,time):
    except Exception as e:
        return "%s"%e
 
+@api3.route("/clear/cams/oval")
+def clearcamsovalredimage():
+
+    camsPath = os.path.join(basedir, 'static/CAMS/riseset')
+
+    for parent, _, fileNames in os.walk(camsPath):
+        for filename in fileNames:
+            if filename.find(".webp") > 0 :
+                jpath = os.path.join(camsPath,filename)
+                os.remove(jpath)
+
+    tpxoPath = os.path.join(basedir, 'static/CAMS/glow')
+
+    for parent, _, fileNames in os.walk(tpxoPath):
+        for filename in fileNames:
+            if filename.find(".webp") > 0 :
+                jpath = os.path.join(tpxoPath,filename)
+                os.remove(jpath)
+
+    ovalpath = os.path.join(basedir, 'static/Aurora/oval')
+    for parent, _, fileNames in os.walk(ovalpath):
+        for filename in fileNames:
+            if filename.find(".webp") > 0 :
+                jpath = os.path.join(ovalpath,filename)
+                os.remove(jpath)
+
+    return "done"
 
 
 @api3.route("/cams/cloudrgbmap/clear")

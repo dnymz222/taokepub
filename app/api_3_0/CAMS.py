@@ -54,6 +54,9 @@ def camsrisesetmap():
 
                 setpath = os.path.join(huoshaoyunpath, daystr + "_set.webp")
 
+                print(risepath)
+                print(setpath)
+
                 if os.path.exists(risepath):
                     dict = {}
 
