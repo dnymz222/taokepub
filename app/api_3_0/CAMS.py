@@ -64,7 +64,7 @@ def camsrisesetmap():
                     dict["day"] = utcday
                     dict["hour"] = 6
                     dict["type"] = 0 #日出
-                    dict["group"] = 0
+                    dict["group"] = 1
                     dict["lonmin"] = 72
                     dict["lonmax"] = 136
                     dict["latmin"] = 15
@@ -80,7 +80,7 @@ def camsrisesetmap():
                     dict["day"] = utcday
                     dict["hour"] = 18
                     dict["type"] = 1 # 日落
-                    dict["group"] = 0
+                    dict["group"] = 1
                     dict["lonmin"] = 72
                     dict["lonmax"] = 136
                     dict["latmin"] = 15
@@ -152,7 +152,7 @@ def camsglowmap():
                     dict["day"] = utcday
                     dict["hour"] =  6
                     dict["type"] = 0 #日出
-                    dict["group"] = 1
+                    dict["group"] = 0
                     dict["lonmin"] = 72
                     dict["lonmax"] = 136
                     dict["latmin"] = 15
@@ -168,7 +168,7 @@ def camsglowmap():
                     dict["day"] =  utcday
                     dict["hour"] = 18
                     dict["type"] = 1 # 日落
-                    dict["group"] = 1
+                    dict["group"] = 0
                     dict["lonmin"] = 72
                     dict["lonmax"] = 136
                     dict["latmin"] = 15
