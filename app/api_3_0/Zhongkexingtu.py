@@ -292,7 +292,9 @@ def huoshaoyunmap():
     localdaynow = datetime.datetime.now(tz=shanghai_tz)
     timestamp = localdaynow.timestamp()
 
-    hour = int(timestamp / 600)
+    hour = int(timestamp / 3600)
+
+    hourfix = "?hour=" + str(hour)
 
 
     # url = "https://tiles.geovisearth.com/meteorology/v1/view/glow/mfv/Astronomical_ph/fc_idx/range?token=" + zhongkexingtu_token
@@ -324,7 +326,7 @@ def huoshaoyunmap():
                 if os.path.exists(risepath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/riseme/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/riseme/"+ daystr + hourfix
                     dict["month"] = "%02d"%utcmonth
                     dict["day"] = "%02d" %utcday
                     dict["hour"] = "06"
@@ -339,7 +341,7 @@ def huoshaoyunmap():
                 if os.path.exists(setpath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/setme/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/setme/"+ daystr + hourfix
                     dict["month"] = "%02d"%utcmonth
                     dict["day"] = "%02d" %utcday
                     dict["hour"] = "18"

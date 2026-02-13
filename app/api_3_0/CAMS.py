@@ -29,7 +29,9 @@ def camsrisesetmap():
     localdaynow = datetime.datetime.now(tz=shanghai_tz)
     timestamp = localdaynow.timestamp()
 
-    hour = int(timestamp / 600)
+    hour = int(timestamp / 3600)
+
+    hourfix = "?hour=" + str(hour)
 
     try:
 
@@ -60,7 +62,7 @@ def camsrisesetmap():
                 if os.path.exists(risepath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/rise/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/rise/"+ daystr + hourfix
                     dict["month"] = utcmonth
                     dict["day"] = utcday
                     dict["hour"] = 6
@@ -76,7 +78,7 @@ def camsrisesetmap():
                 if os.path.exists(setpath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/set/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/set/"+ daystr + hourfix
                     dict["month"] = utcmonth
                     dict["day"] = utcday
                     dict["hour"] = 18
@@ -119,7 +121,9 @@ def camsglowmap():
     localdaynow = datetime.datetime.now(tz=shanghai_tz)
     timestamp = localdaynow.timestamp()
 
-    hour = int(timestamp / 600)
+    hour = int(timestamp / 3600)
+
+    hourfix = "?hour=" + str(hour)
 
     try:
 
@@ -148,7 +152,7 @@ def camsglowmap():
                 if os.path.exists(risepath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/rise/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/rise/"+ daystr + hourfix
                     dict["month"] = utcmonth
                     dict["day"] = utcday
                     dict["hour"] =  6
@@ -164,7 +168,7 @@ def camsglowmap():
                 if os.path.exists(setpath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/set/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/set/"+ daystr + hourfix
                     dict["month"] = utcmonth
                     dict["day"] =  utcday
                     dict["hour"] = 18
@@ -204,7 +208,9 @@ def camshuoshaoyunmap():
     localdaynow = datetime.datetime.now(tz=shanghai_tz)
     timestamp = localdaynow.timestamp()
 
-    hour = int(timestamp / 600)
+    hour = int(timestamp / 3600)
+
+    hourfix = "?hour=" + str(hour)
 
 
     try:
@@ -234,7 +240,7 @@ def camshuoshaoyunmap():
                 if os.path.exists(risepath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/riseme/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/riseme/"+ daystr + hourfix
                     dict["month"] = "%02d"%utcmonth
                     dict["day"] = "%02d" %utcday
                     dict["hour"] = "06"
@@ -250,7 +256,7 @@ def camshuoshaoyunmap():
                 if os.path.exists(setpath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/setme/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/glow/setme/"+ daystr + hourfix
                     dict["month"] = "%02d"%utcmonth
                     dict["day"] = "%02d" %utcday
                     dict["hour"] = "18"
@@ -290,7 +296,9 @@ def camsrichuriluomap():
     localdaynow = datetime.datetime.now(tz=shanghai_tz)
     timestamp = localdaynow.timestamp()
 
-    hour = int(timestamp / 600)
+    hour = int(timestamp / 3600)
+
+    hourfix = "?hour=" + str(hour)
 
 
     try:
@@ -320,7 +328,7 @@ def camsrichuriluomap():
                 if os.path.exists(risepath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/riseme/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/riseme/"+ daystr + hourfix
                     dict["month"] = "%02d"%utcmonth
                     dict["day"] = "%02d" %utcday
                     dict["hour"] = "06"
@@ -336,7 +344,7 @@ def camsrichuriluomap():
                 if os.path.exists(setpath):
                     dict = {}
 
-                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/setme/"+ daystr
+                    dict["url"] = "https://www.oulagongshi.com/api/v3.0/cams/riseset/setme/"+ daystr + hourfix
                     dict["month"] = "%02d"%utcmonth
                     dict["day"] = "%02d" %utcday
                     dict["hour"] = "18"
