@@ -303,7 +303,7 @@ def camsrichuriluomap():
 
     try:
 
-        file = "riseset_map_" + str(hour) + ".json"
+        file = "richuriluo_map_" + str(hour) + ".json"
 
         jsonpath = os.path.join(huoshaoyunpath, file)
         if os.path.exists(jsonpath):
