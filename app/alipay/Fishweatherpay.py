@@ -223,7 +223,7 @@ def fish_app_pay_v2():
             model.total_amount =amount
         model.subject = '钓鱼天气包季会员'
     elif type == "5":
-        model.total_amount = "36.00"
+        model.total_amount = "48.00"
         if amount:
             model.total_amount = amount
         if userType == "0":
