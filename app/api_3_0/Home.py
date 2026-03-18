@@ -166,7 +166,7 @@ def fishconfig():
 
     else:
         dict["isUpgrade"] = False
-        outtime = datetime.datetime(2026,3, 4, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,4, 17, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -176,12 +176,12 @@ def fishconfig():
             dict["isOpen"] = False
 
 
-        dict["homeText"] = "丙午马年新春特惠终身会员原98元现48元"
+        dict["homeText"] = "开春特惠终身会员原98元现48元"
         dict["amount"] = "48.00"
-        dict["mineText"] = "丙午马年新春特惠"
-        dict["buttonText"] = "新春特惠(终身会员:原价￥98):￥48"
-        dict["tipText"] = "丙午马年来临之际，特推出特别特惠。"
-        dict["orderName"] = "钓鱼天气新春特惠(终身会员)"
+        dict["mineText"] = "开春特惠"
+        dict["buttonText"] = "开春特惠(终身会员:原价￥98):￥48"
+        dict["tipText"] = "农历二月开春之际，特推出特别特惠。"
+        dict["orderName"] = "钓鱼天气开春特惠(终身会员)"
         result[x_data] = dict
         return json.dumps(result)
 
