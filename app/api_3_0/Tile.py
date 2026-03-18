@@ -115,6 +115,28 @@ def cloudrgbclear():
     return "done"
 
 
+@api3.route("/copernicus/china/clear")
+def copernicuschinaclear():
+    now = datetime.datetime.utcnow()
+    zero_today = now - datetime.timedelta(hours=now.hour, minutes=now.minute, seconds=now.second,
+                                          microseconds=now.microsecond)
+    zertimestmap = int(zero_today.timestamp()) - 24 * 3600
+    path = os.path.join(basedir, "static/copernicus")
+
+    tpxoPath = os.path.join(path, 'china')
+
+    for parent, _, fileNames in os.walk(tpxoPath):
+        for filename in fileNames:
+            if filename.find(".webp") > 0 :
+                timestamp = int(filename[-15:-5])
+                if timestamp < zertimestmap:
+                    jpath = os.path.join(tpxoPath,filename)
+                    os.remove(jpath)
+
+
+    return "done"
+
+
 
 
 
