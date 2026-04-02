@@ -979,56 +979,18 @@ def mountainweatherimageclear():
             pass
     return "done"
 
-@api3.route("/mountain/weather/image")
-def mountainweatherimage():
+@api3.route("/mountain/weather/image/<mountainId>")
+def mountainweatherimage(mountainId):
 
-
-
-    now = datetime.datetime.now(tz=shanghai_tz)
-
-
-    date = "%d%02d%02d" % (now.year, now.month, now.day)
-
-    todaynoon = datetime.datetime(year=now.year,month=now.month,day=now.day,hour=12)
-
-
-    dirpath = os.path.join(basedir,"static/meteoblue/weather",date)
+    dirpath = os.path.join(basedir,"static/meteoblue/weather")
     if os.path.exists(dirpath):
         pass
     else:
         os.mkdir(dirpath)
-    i = 0
-
-    scale = 1
-
-    font_path = os.path.join(basedir, "static/meteoblue/PingFangSC-Medium.ttf")
-    font = ImageFont.truetype(font_path, 50 * scale)
-
-    font_path1 = os.path.join(basedir, "static/meteoblue/PingFangSC-Regular.ttf")
-    font1 = ImageFont.truetype(font_path1, 30 * scale)
-
-    font2 = ImageFont.truetype(font_path1, 10 * scale)
-
-    font3 = ImageFont.truetype(font_path1, 20 * scale)
 
 
+    mountainPath = os.path.join(dirpath, "mountain_" + mountainId + ".png")
 
-    perhour = 1376 / 168.0 * scale
-    statrx = 112 * scale
-
-    lat = request.args.get("latitude","30.12745")
-    lng = request.args.get("longitude", "118.16598")
-    tz = "Asia/Shanghai"
-    asl = request.args.get("height","1864")
-    mountain_id = request.args.get("mountainId","C392")
-    baseheight = request.args.get("base","176")
-    name = request.args.get("name","莲花峰 / 黄山")
-
-    meteobluePath = os.path.join(dirpath, "meteo_" + mountain_id + ".png")
-
-    mountainPath = os.path.join(dirpath, "mountain_" + mountain_id + ".png")
-
-    unit = request.args.get("unit", "metric")
 
     if os.path.exists(mountainPath):
 
@@ -1036,149 +998,7 @@ def mountainweatherimage():
 
     else:
 
-
-        elevation = float(asl) - float(baseheight)
-
-        city = LocationInfo(name="custom", region="China", timezone="Asia/Shanghai", latitude=float(lat), longitude=float(lng))
-        location = Location(city)
-
-        cloudheight = height_to_weathercloud(float(asl)) *scale
+        return ""
 
 
-
-        if unit == "metric":
-            unitset = "&temperature_units=C&precipitation_units=mm&windspeed_units=kmh"
-        else:
-            unitset = "&temperature_units=F&precipitation_units=inch&windspeed_units=knot&"
-
-
-
-
-        url = "https://my.meteoblue.com/images/meteogram_extended?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&format=png&dpi=100&asl=" + asl + "&tz=" + tz + unitset
-
-
-
-        try:
-
-            r = requests.get(url, stream=True)
-            if r.status_code != 200:
-                print("faile:" + url)
-            else:
-
-                f = open(str(meteobluePath), "wb")
-                shutil.copyfileobj(r.raw, f, length=16 * 1024 * 1024)
-            if os.path.exists(meteobluePath):
-                try:
-                    print(meteobluePath)
-                    layer = Image.new("RGBA", (1600 * scale, 1456 * scale), (255, 255, 255, 255))
-                    img = Image.open(meteobluePath).convert("RGBA")
-                    layer.paste(img, (0, 0), img)
-
-                    draw = ImageDraw.Draw(layer)
-                    draw.text((640 * scale, 15 * scale), name, font=font, fill=(90, 136, 255, 255))
-
-                    draw.line([(80 * scale, cloudheight), (1520 * scale, cloudheight)], fill=(255, 0, 0, 255),
-                              width=1)
-
-                    for k in range(0, 7):
-
-                        try:
-
-                            daynoon = todaynoon + datetime.timedelta(days=k)
-                            sunrise = location.sunrise(date=daynoon, observer_elevation=float(elevation))
-                            sunset = location.sunset(date=daynoon, observer_elevation=float(elevation))
-
-                            risex = statrx + k * 24 * perhour + (sunrise.hour + sunrise.minute / 60.0) * perhour
-                            setx = statrx + k * 24 * perhour + (sunset.hour + sunset.minute / 60.0) * perhour
-
-                            draw.line([(risex, cloudheight - 15), (risex, cloudheight + 15)],
-                                      fill=(255, 0, 0, 255), width=1)
-                            draw.line([(setx, cloudheight - 15), (setx, cloudheight + 15)],
-                                      fill=(255, 0, 0, 255),
-                                      width=1)
-
-                            draw.text((risex + 1 * scale, cloudheight - 16 * scale),
-                                      "日出: %02d:%02d" % (sunrise.hour, sunrise.minute), font=font2,
-                                      fill=(255, 0, 0, 255))
-                            draw.text((setx + 1 * scale, cloudheight + 5 * scale),
-                                      "日落: %02d:%02d" % (sunset.hour, sunset.minute),
-                                      font=font2, fill=(255, 0, 0, 255))
-
-
-                        except Exception as e:
-                            print(e)
-
-                    draw.text((30 * scale, 13 * scale), "温馨提示: 山顶天气变幻莫测，请注意防寒和安全措施",
-                              font=font3, fill=(255, 0, 0, 255))
-                    draw.text((50 * scale, cloudheight - 20 * scale), "山顶", font=font3, fill=(255, 0, 0, 255))
-                    # draw.text((30 * scale, 1370 * scale), "更多山峰和一座山峰不同海拔天气查询可在以下App中查询",
-                    #           font=font1, fill=(90, 136, 255, 255))
-                    # draw.text((30 * scale, 1410 * scale), "iOS端：登山天气-海拔地图", font=font1,
-                    #           fill=(90, 136, 255, 255))
-                    # draw.text((530 * scale, 1410 * scale), "安卓端：气象计算", font=font1,
-                    #           fill=(90, 136, 255, 255))
-
-                    layer.save(mountainPath, "PNG")
-
-                    layer.close()
-
-                except Exception as e:
-                    print(e)
-
-
-        except Exception as e:
-            print(e)
-
-        if os.path.exists(mountainPath):
-            return send_file(mountainPath, as_attachment=True)
-        else:
-            return ""
-
-
-
-
-def height_to_weathercloud(mheight):
-
-    height =  mheight
-
-
-    min_height = 0
-    max_height = 14000
-    if height < min_height + 0.0000000000001:
-        return  714
-    if height > max_height - 0.0000000000001:
-        return 1140
-
-
-    normalized_value = height
-
-    breakpoints = [
-        (0, 993),
-        (1500, 950),
-        (3500, 911),
-        (6000, 870),
-        (9000, 829),
-        (14000, 790)
-    ]
-
-    # Find the two neighboring breakpoints for the normalized value
-    prev_breakpoint, prev_color = breakpoints[0]
-    for next_breakpoint, next_color in breakpoints[1:]:
-        if normalized_value < next_breakpoint:
-            break
-        prev_breakpoint, prev_color = next_breakpoint, next_color
-
-    # Interpolate between the neighboring colors
-    prev_normalized, prev_rgb = prev_breakpoint, prev_color
-    next_normalized, next_rgb = next_breakpoint, next_color
-    try:
-        t = (normalized_value - prev_normalized) / (next_normalized - prev_normalized)
-    except Exception as e:
-
-        print(height)
-        print(e)
-
-    r = prev_rgb + (next_rgb - prev_rgb) * t
-
-
-    return int(r+ 0.5)
+ 
