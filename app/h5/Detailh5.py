@@ -245,6 +245,12 @@ def meteocalcprivacy():
     return render_template("weatherpocket_privacy_zh.html")
 
 
+@h5.route("/yunhai/des")
+def yunhaides():
+
+    return render_template("YunhaiDes.html")
+
+
 @h5.route("/tian/static/terrain/<lat>/<lng>")
 def tianstaticterrian(lat,lng):
 
