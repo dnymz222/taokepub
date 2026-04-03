@@ -454,7 +454,7 @@ def solunar_app_pay_v6():
             model.total_amount = amount
         model.subject = '日出日落月相包季会员'
     elif  type == "5":
-        model.total_amount = "58.00"
+        model.total_amount = "36.00"
         if amount:
             model.total_amount = amount
         if userType == "0":
