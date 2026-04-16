@@ -28,7 +28,7 @@ def soluanrconfig():
 
     isVip = request.args.get('isVip', '0')
     userType = request.args.get('userType', '0')
-    appversion = request.args.get("appVersion","5.0")
+    appversion = request.args.get("appVersion","6.6")
 
     now = datetime.datetime.now()
     nowhour = now.timestamp() / 3600
@@ -43,17 +43,17 @@ def soluanrconfig():
     if isVip == "0" and (userType == "1" or userType == "3" or userType == "9"):
         dict["isOpen"] = True
         dict["isUpgrade"] = True
-        dict["homeText"] = "过期会员双升级终身会员原68元现36元"
-        dict["amount"] = "36.00"
+        dict["homeText"] = "过期会员双升级终身会员原98元现48元"
+        dict["amount"] = "98.00"
         dict["mineText"] = "会员过期可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥36"
-        dict["tipText"] = "为回馈用户，原价68的终身会员,之前会员过期的可36元升级终身会员"
+        dict["buttonText"] = "升级终身会员:￥48"
+        dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可48元升级终身会员"
         dict["orderName"] = "日出日落月相升级终身会员"
 
-        # if appversion.startswith("5.6"):
-        #     pass
-        # else:
-        #     dict["isOpen"] = False
+        if appversion.startswith("6.6"):
+            pass
+        else:
+            dict["isOpen"] = False
 
 
         result[x_data] = dict
@@ -62,13 +62,17 @@ def soluanrconfig():
 
             dict["isOpen"] = True
             dict["isUpgrade"] = True
-            dict["homeText"] = "老用户升级终身会员原68元现36元"
-            dict["amount"] = "36.00"
+            dict["homeText"] = "老用户升级终身会员原98元现48元"
+            dict["amount"] = "48.00"
             dict["mineText"] = "老用户可优惠升级终身会员"
-            dict["buttonText"] = "升级终身会员:￥36"
-            dict["tipText"] = "为回馈用户，原价68的终身会员,老用户可36元升级终身会员"
+            dict["buttonText"] = "升级终身会员:￥48"
+            dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可48元升级终身会员"
             dict["orderName"] = "日出日落月相升级终身会员"
 
+            if appversion.startswith("6.6"):
+                pass
+            else:
+                dict["isOpen"] = False
 
             result[x_data] = dict
             return json.dumps(result)
@@ -77,7 +81,7 @@ def soluanrconfig():
     else :
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,3, 17, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,4, 6, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -87,13 +91,17 @@ def soluanrconfig():
             dict["isOpen"] = False
 
 
+        if appversion.startswith("6.6"):
+            pass
+        else:
+            dict["isOpen"] = False
 
-        dict["homeText"] = "开春特惠终身会员原68元现36元"
-        dict["amount"] = "36.00"
-        dict["mineText"] = "开春特惠"
-        dict["buttonText"] = "开春特惠(终身会员:原价￥68):￥36"
-        dict["tipText"] = "二月开春之际，特推出特别特惠"
-        dict["orderName"] = "日出日落月相开春特惠(终身会员)"
+        dict["homeText"] = "五一春游特惠终身会员原98元现48元"
+        dict["amount"] = "48.00"
+        dict["mineText"] = "五一春游特惠"
+        dict["buttonText"] = "五一特惠(终身会员:原价￥98):￥48"
+        dict["tipText"] = "五一春游来临之际，特推出特别特惠"
+        dict["orderName"] = "日出日落月相五一特惠(终身会员)"
 
 
         result[x_data] = dict

@@ -44,27 +44,58 @@ import math
 #
 #     return "done"
 
+# @api3.route("/comet/upload")
+# def commetpload():
+#
+#     commet = Comet(number = "C/2025 R2 (SWAN)")
+#
+#     commet.OrbitalPeriod = str(653.7328801265198) #period 年
+#     commet.SemeMajorAxis = str(0.9933081809968088) #a
+#     commet.Inclination = str(335.3481131117367)  #i
+#     commet.Ecc = str(0.9933081809968088)   #e
+#     commet.PerihelionDistance = str(0.5040484344935993)  #q
+#     commet.LongitudeAscendingNode = str(335.3481131117367) #node
+#     commet.PerihelionArgument = str(308.3147420127663) #peri
+#     commet.MeanAnomaly = str(0.006287919304289602) #M
+#     commet.PerihelionPassageTime = str(2460931.329433867417) #tp
+#     commet.MeanMotion = str(0.001507689628792732) #n
+#     commet.AphelionDistance = str(150.1421164582602) #Q
+#
+#     commet.Epoch = str(2460935.5) #
+#     commet.MotionType = 3 #1.椭圆 2.抛物线 3.准抛物线
+#     commet.TotalMagnitude = str(11.9) #M1
+#     commet.TotalMagnitudeSlope = str(8.75)  # K1
+#
+#     try:
+#         db.session.add(commet)
+#         db.session.commit()
+#     except Exception as e:
+#         db.session.rollback()
+#         print(e)
+#
+#     return "done"
+
 @api3.route("/comet/upload")
 def commetpload():
 
-    commet = Comet(number = "C/2025 R2 (SWAN)")
+    commet = Comet(number = "C/2025 R3 ( PanSTARRS )")
 
     commet.OrbitalPeriod = str(653.7328801265198) #period 年
-    commet.SemeMajorAxis = str(0.9933081809968088) #a
-    commet.Inclination = str(335.3481131117367)  #i
-    commet.Ecc = str(0.9933081809968088)   #e
-    commet.PerihelionDistance = str(0.5040484344935993)  #q
-    commet.LongitudeAscendingNode = str(335.3481131117367) #node
-    commet.PerihelionArgument = str(308.3147420127663) #peri
-    commet.MeanAnomaly = str(0.006287919304289602) #M
-    commet.PerihelionPassageTime = str(2460931.329433867417) #tp
-    commet.MeanMotion = str(0.001507689628792732) #n
+    commet.SemeMajorAxis = str(-1425.294588322771) #a
+    commet.Inclination = str(124.7304943492678)  #i
+    commet.Ecc = str(1.000349830832454)   #e
+    commet.PerihelionDistance = str(0.4986119923252803)  #q
+    commet.LongitudeAscendingNode = str(38.69310350752203) #node
+    commet.PerihelionArgument = str(162.2254001039352) #peri
+    commet.MeanAnomaly = str(-0.002086168129977323) #M
+    commet.PerihelionPassageTime = str(2461150.394351689591) #tp
+    commet.MeanMotion = str(0.00001831669524458061) #n
     commet.AphelionDistance = str(150.1421164582602) #Q
 
-    commet.Epoch = str(2460935.5) #
+    commet.Epoch = str(2461036.5) #
     commet.MotionType = 3 #1.椭圆 2.抛物线 3.准抛物线
-    commet.TotalMagnitude = str(11.9) #M1
-    commet.TotalMagnitudeSlope = str(8.75)  # K1
+    commet.TotalMagnitude = str(12) #M1
+    commet.TotalMagnitudeSlope = str(11)  # K1
 
     try:
         db.session.add(commet)
