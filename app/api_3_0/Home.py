@@ -81,7 +81,7 @@ def soluanrconfig():
     else :
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,4, 6, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,5, 6, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
