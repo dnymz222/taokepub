@@ -81,7 +81,7 @@ def soluanrconfig():
     else :
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,4, 6, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,5, 6, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -91,10 +91,7 @@ def soluanrconfig():
             dict["isOpen"] = False
 
 
-        if appversion.startswith("6.6"):
-            pass
-        else:
-            dict["isOpen"] = False
+    
 
         dict["homeText"] = "五一春游特惠终身会员原98元现48元"
         dict["amount"] = "48.00"
