@@ -91,7 +91,7 @@ def soluanrconfig():
             dict["isOpen"] = False
 
 
-    
+
 
         dict["homeText"] = "五一春游特惠终身会员原98元现48元"
         dict["amount"] = "48.00"
