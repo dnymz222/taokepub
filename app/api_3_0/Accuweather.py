@@ -77,7 +77,7 @@ def acculocationges():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -98,7 +98,7 @@ def acculocationregions():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -121,7 +121,7 @@ def acculocationtopcity(code):
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -142,7 +142,7 @@ def acculocationadminareas(code):
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -379,7 +379,7 @@ def accuuindex():
         req.add_header('Accept-Encoding', 'gzip')
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         return content
     except Exception as e:
         return "%s" % e
@@ -411,7 +411,7 @@ def accuuspotindex():
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
 
-        content = response.read()
+        content = response.text
 
         contentlist = json.loads(content)
         for cdict in contentlist:
@@ -470,7 +470,7 @@ def accuhealthindex():
         response = urllib.request.urlopen(req)
 
         # req.add_header('Accept-Encoding', 'gzip')
-        content = response.read()
+        content = response.text
         indicelist = json.loads(content)
         for dict in indicelist:
 
@@ -536,7 +536,7 @@ def accuucurrent():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         datalist = json.loads(content)
         # for datadict in datalist:
@@ -580,7 +580,7 @@ def accuuhistory():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -611,7 +611,7 @@ def accuuhourly():
             req = urllib.request.Request(url)
             req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
             response = urllib.request.urlopen(req)
-            content = response.read()
+            content = response.text
             result[x_code] = 200
             datalist = json.loads(content)
             # for datadict in datalist:
@@ -651,7 +651,7 @@ def accuuradar():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -679,7 +679,7 @@ def accuregion():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -708,7 +708,7 @@ def accucountry():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -736,7 +736,7 @@ def accuarea():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -765,7 +765,7 @@ def accucity():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -796,7 +796,7 @@ def accuualarms():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_meteocalc_key)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
         return json.dumps(result)
@@ -828,7 +828,7 @@ def accuminutecast():
         req = urllib.request.Request(url)
         req.add_header("Authorization", "Bearer " + accu_minutecastkey)
         response = urllib.request.urlopen(req)
-        content = response.read()
+        content = response.text
         result[x_code] = 200
         result[x_data] = json.loads(content)
     except Exception as e:
