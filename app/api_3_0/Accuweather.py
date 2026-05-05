@@ -532,6 +532,7 @@ def accuucurrent():
         datalist = json.loads(content)
         for datadict in datalist:
             datadict["PrecipitationType"] = 0
+            datadict.pop("HeatIndex")
             # epoctime = int(datadict["EpochTime"])
             # forecasttime = datetime.datetime.fromtimestamp(epoctime,tz=tz)
             # sun_position = get_position(forecasttime,float(lng),float(lat))
@@ -604,13 +605,8 @@ def accuuhourly():
             content = response.text
             result[x_code] = 200
             datalist = json.loads(content)
-            # for datadict in datalist:
-            #     epoctime = int(datadict["EpochDateTime"])
-            #     forecasttime = datetime.datetime.fromtimestamp(epoctime, tz=tz)
-            #     sun_position = get_position(forecasttime, float(lng), float(lat))
-            #     sun_altitude = sun_position["altitude"]
-            #     datadict["SunAltitude"] = sun_altitude * 180.0 / math.pi
-            #     datadict["ClearSkyUV"] = estimatecleaskuv(sun_altitude, float(elevation))
+            for datadict in datalist:
+                datadict.pop("HeatIndex")
             result[x_data] = datalist
             return json.dumps(result)
         except Exception as e:
