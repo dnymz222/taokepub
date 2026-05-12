@@ -12,6 +12,11 @@ import json
 import math
 import requests
 from app.StormStation import StormStation
+import urllib
+from app.utils.constvalue import meteoblue_allapi_key
+import datetime
+import pytz
+gmt_tz = pytz.timezone("GMT")
 
 @api3.route("/storm/weather")
 def  stormweather():
@@ -74,70 +79,168 @@ def  stormweather():
 
     return json.dumps(result)
 
-@api3.route("/storm/wave")
-def stormwave():
-        lat = request.args.get('lat', '16.8')
-        lng = request.args.get('lng', '112.34')
-        timestamp = request.args.get('time', '1585843200')
-        starttime = request.args.get('starttime', '1585929600')
-        total = request.args.get('total', '1599918717')
-        result = {}
+# @api3.route("/storm/wave")
+# def stormwave():
+#         lat = request.args.get('lat', '16.8')
+#         lng = request.args.get('lng', '112.34')
+#         timestamp = request.args.get('time', '1585843200')
+#         starttime = request.args.get('starttime', '1585929600')
+#         total = request.args.get('total', '1599918717')
+#         result = {}
+#
+#         code = stormchecklatandlon(lat=lat, lng=lng, timestamp=timestamp, total=total)
+#         if 200 == code:
+#             pass
+#         elif 201 == code:
+#             result[x_code] = 201
+#             result[x_meesage] = "time out ,no data"
+#             return json.dumps(result)
+#         elif 202 == code:
+#             result[x_code] = 202
+#             result[x_meesage] = "error,no data!"
+#             return json.dumps(result)
+#
+#
+#
+#
+#         try:
+#
+#             response = requests.get(
+#                 'https://api.stormglass.io/v2/weather/point',
+#                 params={
+#                     'lat': lat,
+#                     'lng': lng,
+#                     'params': ','.join(
+#                         ["seaLevel",
+#                          "waterTemperature", 'waveHeight', "waveDirection", "wavePeriod", 'swellDirection', "swellHeight",
+#                          "swellPeriod", "windWaveHeight", "windWavePeriod", "windWaveDirection","iceCover","pressure","airTemperature","gust","humidity","precipitation","secondarySwellPeriod","secondarySwellDirection","secondarySwellHeight","windSpeed","currentDirection","currentSpeed","windDirection","visibility","cloudCover"]),
+#                     'start': starttime,  # Convert to UTC timestamp
+#                     'end': int(starttime) + 7 * 86400  # Convert to UTC timestamp
+#                 },
+#                 headers={
+#                     'Authorization': stormmglassapikey
+#                 }
+#             )
+#
+#             json_data = response.json()
+#
+#             result[x_code] = 200
+#             list = json_data["hours"]
+#             for dict1 in list:
+#
+#                 for key in dict1.keys():
+#
+#                     dict0 = dict1[key]
+#
+#                     if type(dict0) is dict:
+#                         value = valuefromdict(dict=dict0)
+#                         dict1[key] = value
+#
+#             result[x_data] = list
+#
+#         except Exception as e:
+#
+#             result[x_meesage] = "%s"%e
+#             result[x_code] = 201
+#
+#         return json.dumps(result)
 
-        code = stormchecklatandlon(lat=lat, lng=lng, timestamp=timestamp, total=total)
-        if 200 == code:
-            pass
-        elif 201 == code:
-            result[x_code] = 201
-            result[x_meesage] = "time out ,no data"
-            return json.dumps(result)
-        elif 202 == code:
-            result[x_code] = 202
-            result[x_meesage] = "error,no data!"
-            return json.dumps(result)
+
+@api3.route('/storm/wave')
+def stromwave():
+    lat = request.args.get('lat', '16.8')
+    lng = request.args.get('lng', '112.34')
+    timestamp = request.args.get('time', '1585843200')
+    starttime = request.args.get('starttime', '1585929600')
+    total = request.args.get('total', '1599918717')
+    tz = request.args.get('tz', 'Asia/Shanghai')
+    asl = request.args.get('asl', '0')
+
+    result = {}
+
+    url = "https://my.meteoblue.com/packages/sea-1h_basic-1h?apikey=" + meteoblue_allapi_key + "&lat=" + lat + "&lon=" + lng + "&asl="+asl+"&format=json&tz=" + tz
+
+
+    try:
+        req = urllib.request.Request(url)
+        response = urllib.request.urlopen(req)
+        content = response.read()
+
+        datadict = json.loads(content)
+        data_1h = datadict["data_1h"]
+
+        datarray = []
+
+        timelist = data_1h["time"]
+
+        metadata = datadict["metadata"]
+        utc_timeoffset = metadata["utc_timeoffset"]
+        timeoffset = int(utc_timeoffset * 3600)
+
+        n = len(timelist)
+
+        for i in range(0,n):
+            dict1 = {}
+
+            dict1["airTemperature"] = data_1h["temperature"][i]
+            dict1["cloudCover"] = 100
+            currentvelocity_u = data_1h["currentvelocity_u"][i]
+            currentvelocity_v = data_1h["currentvelocity_v"][i]
+
+            try:
+                angle = math.atan2(currentvelocity_u,currentvelocity_v)
+                degree= math.floor(angle*180/math.pi + 180 + 0.5)
+                dict1["currentDirection"] = degree
+            except:
+                dict1["currentDirection"] = 0
+            dict1["currentSpeed"] = math.sqrt(currentvelocity_u**2 + currentvelocity_v**2)
+            dict1["windDirection"] = data_1h["winddirection"][i]
+            dict1["gust"] = 0
+            dict1["windSpeed"] = data_1h["windspeed"][i]
+            dict1["humidity"] = data_1h["relativehumidity"][i]
+            dict1["iceCover"] = 0
+            dict1["pressure"] = data_1h["sealevelpressure"][i]
+            dict1["precipitation"] = data_1h["precipitation"][i]
+            dict1["seaLevel"] = 0
+            dict1["secondarySwellDirection"] = 0
+            dict1["secondarySwellHeight"] = 0
+            dict1["secondarySwellPeriod"] = 0
+            dict1["swellDirection"] = data_1h["swell_meandirection"][i]
+            dict1["swellHeight"] = data_1h["swell_significantheight"][i]
+            dict1["swellPeriod"] = data_1h["swell_meanperiod"][i]
+            dict1["visibility"] = 0
+            dict1["waterTemperature"] = data_1h["seasurfacetemperature"][i]
+            dict1["waveDirection"] = data_1h["mean_wavedirection"][i]
+            dict1["waveHeight"] = data_1h["significantwaveheight"][i]
+            dict1["wavePeriod"] = data_1h["mean_waveperiod"][i]
+            dict1["windWaveDirection"] = data_1h["winddirection"][i]
+            dict1["windWaveHeight"] = data_1h["windwave_height"][i]
+            dict1["windWavePeriod"] = data_1h["windwave_meanperiod"][i]
+            dict1["surfwaveHeight"] = data_1h["surfwave_height"][i]
+
+            time = data_1h["time"][i]
+
+            dt = datetime.datetime.strptime(time, "%Y-%m-%d %H:%M").replace(tzinfo=gmt_tz)
+
+            timestamp = int(dt.timestamp()) - timeoffset
+
+            dict1["timestamp"]  = timestamp
+
+            utc_dt = datetime.datetime.fromtimestamp(timestamp).astimezone(gmt_tz)
+
+            date_string = utc_dt.isoformat()
+            dict1["time"] = date_string
+            datarray.append(dict1)
+
+        result[x_code] = 200
+        result[x_data] = datarray
 
 
 
-
-        try:
-
-            response = requests.get(
-                'https://api.stormglass.io/v2/weather/point',
-                params={
-                    'lat': lat,
-                    'lng': lng,
-                    'params': ','.join(
-                        ["seaLevel",
-                         "waterTemperature", 'waveHeight', "waveDirection", "wavePeriod", 'swellDirection', "swellHeight",
-                         "swellPeriod", "windWaveHeight", "windWavePeriod", "windWaveDirection","iceCover","pressure","airTemperature","gust","humidity","precipitation","secondarySwellPeriod","secondarySwellDirection","secondarySwellHeight","windSpeed","currentDirection","currentSpeed","windDirection","visibility","cloudCover"]),
-                    'start': starttime,  # Convert to UTC timestamp
-                    'end': int(starttime) + 7 * 86400  # Convert to UTC timestamp
-                },
-                headers={
-                    'Authorization': stormmglassapikey
-                }
-            )
-
-            json_data = response.json()
-
-            result[x_code] = 200
-            list = json_data["hours"]
-            for dict1 in list:
-
-                for key in dict1.keys():
-
-                    dict0 = dict1[key]
-
-                    if type(dict0) is dict:
-                        value = valuefromdict(dict=dict0)
-                        dict1[key] = value
-
-            result[x_data] = list
-
-        except Exception as e:
-
-            result[x_meesage] = "%s"%e
-            result[x_code] = 201
-
+        return json.dumps(result)
+    except Exception as e:
+        result[x_code] = 201
+        result[x_meesage] = "%s"%e
         return json.dumps(result)
 
 @api3.route("/storm/surge/wave")
