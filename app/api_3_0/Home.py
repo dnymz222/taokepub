@@ -50,10 +50,6 @@ def soluanrconfig():
         dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可48元升级终身会员"
         dict["orderName"] = "日出日落月相升级终身会员"
 
-        if appversion.startswith("6.6"):
-            pass
-        else:
-            dict["isOpen"] = False
 
 
         result[x_data] = dict
@@ -69,10 +65,6 @@ def soluanrconfig():
             dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可48元升级终身会员"
             dict["orderName"] = "日出日落月相升级终身会员"
 
-            if appversion.startswith("6.6"):
-                pass
-            else:
-                dict["isOpen"] = False
 
             result[x_data] = dict
             return json.dumps(result)
@@ -171,7 +163,7 @@ def fishconfig():
 
     else:
         dict["isUpgrade"] = False
-        outtime = datetime.datetime(2026,5, 6, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,6, 22, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -181,12 +173,12 @@ def fishconfig():
             dict["isOpen"] = False
 
 
-        dict["homeText"] = "五一特惠终身会员原98元现48元"
+        dict["homeText"] = "端午特惠终身会员原98元现48元"
         dict["amount"] = "48.00"
-        dict["mineText"] = "五一特惠"
-        dict["buttonText"] = "五一特惠(终身会员:原价￥98):￥48"
-        dict["tipText"] = "五一假期来临之际，特推出特别特惠。"
-        dict["orderName"] = "钓鱼天气五一特惠(终身会员)"
+        dict["mineText"] = "端午特惠"
+        dict["buttonText"] = "端午特惠(终身会员:原价￥98):￥48"
+        dict["tipText"] = "端午节日来临之际，特推出特别特惠。"
+        dict["orderName"] = "钓鱼天气端午特惠(终身会员)"
         result[x_data] = dict
         return json.dumps(result)
 
