@@ -562,7 +562,7 @@ def camssunforecast():
 
 
 def getGlowType(value):
-    if value < 0.1:
+    if value < 0.02:
         return 0
     elif value < 0.2:
         return 1
@@ -576,7 +576,7 @@ def getGlowType(value):
         return 5
 
 def getSunrisesetType(value):
-    if value < 0.01:
+    if value < 0.02:
         return 0
     elif value < 0.2:
         return 1

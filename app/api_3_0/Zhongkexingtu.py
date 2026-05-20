@@ -79,7 +79,6 @@ def huoshaoyunold():
 
     localdaynow = datetime.datetime.now(tz=shanghai_tz)
 
-
     datalist = []
 
     vlongitude = (lngf - 72) * 12
@@ -143,7 +142,7 @@ def huoshaoyunold():
     return json.dumps(result)
 
 def getGlowType(value):
-    if value < 0.1:
+    if value < 0.02:
         return 0
     elif value < 0.2:
         return 1

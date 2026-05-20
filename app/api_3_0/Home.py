@@ -73,7 +73,7 @@ def soluanrconfig():
     else :
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,5, 6, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,6, 22, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -85,12 +85,12 @@ def soluanrconfig():
 
 
 
-        dict["homeText"] = "五一春游特惠终身会员原98元现48元"
+        dict["homeText"] = "端午特惠终身会员原98元现48元"
         dict["amount"] = "48.00"
-        dict["mineText"] = "五一春游特惠"
-        dict["buttonText"] = "五一特惠(终身会员:原价￥98):￥48"
-        dict["tipText"] = "五一春游来临之际，特推出特别特惠"
-        dict["orderName"] = "日出日落月相五一特惠(终身会员)"
+        dict["mineText"] = "端午特惠"
+        dict["buttonText"] = "端午特惠(终身会员:原价￥98):￥48"
+        dict["tipText"] = "端午节来临之际，特推出特别特惠"
+        dict["orderName"] = "日出日落月相端午特惠(终身会员)"
 
 
         result[x_data] = dict
@@ -262,7 +262,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2026,5, 6, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,6, 22, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -278,12 +278,12 @@ def astroconfig():
     # else:
     #     dict["isOpen"] = False
 
-    dict["homeText"] = "五一假期特惠终身会员原98元现48元"
+    dict["homeText"] = "端午节日特惠终身会员原98元现48元"
     dict["amount"] = "48.00"
-    dict["mineText"] = "五一假期特惠"
-    dict["buttonText"] = "五一特惠(终身会员:原价￥98):￥48"
-    dict["tipText"] = "五一假期来临之际，特推出特别特惠"
-    dict["orderName"] = "天文观星指南五一特惠(终身会员)"
+    dict["mineText"] = "端午节日特惠"
+    dict["buttonText"] = "端午特惠(终身会员:原价￥98):￥48"
+    dict["tipText"] = "端午节日来临之际，特推出特别特惠"
+    dict["orderName"] = "天文观星指南端午特惠(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
 
