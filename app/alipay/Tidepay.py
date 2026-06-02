@@ -379,6 +379,65 @@ def tide_app_pay_v6():
     return json.dumps(result)
 
 
+@alipay.route("/tide/app/pay/v7")
+def tide_app_pay_v7():
+
+    model = AlipayTradeAppPayModel()
+    type = request.args.get("type", "2")
+    type = str(type)
+    out_trade_no = request.args.get("out_trade_no","151671406202020031011")
+    out_trade_no = str(out_trade_no)
+    amount = request.args.get("amount")
+
+    if  type == "9":
+        model.total_amount = "5.00"
+        model.subject = '月相潮汐表包月会员'
+        if amount:
+            model.total_amount =amount
+    elif type == "3" :
+        model.total_amount = "15.00"
+        model.subject = '月相潮汐表包季会员'
+        if amount:
+            model.total_amount =amount
+    elif type == "1":
+        model.total_amount = "36.00"
+        model.subject = '月相潮汐表包年会员'
+        if amount:
+            model.total_amount =amount
+    elif type == "5":
+        model.total_amount = "48.00"
+        if amount:
+            model.total_amount = amount
+
+        model.subject = "月相潮汐表新春特惠(终身会员)"
+
+    elif type == "2":
+        model.total_amount = "98.00"
+        model.subject = '月相潮汐表终身会员'
+        if amount:
+            model.total_amount = amount
+
+    model.seller_id = "2088131645470041"
+    model.timeout_express = "90m"
+    model.product_code = "QUICK_MSECURITY_PAY"
+    model.body = '月相潮汐表会员'
+
+    model.out_trade_no = out_trade_no
+    request_ali = AlipayTradeAppPayRequest(biz_model=model)
+    request_ali.notify_url = "https://www.oulagongshi.com/api/v3.0/alipay/app/pay/notify"
+
+    response = tide_client.sdk_execute(request_ali)
+
+
+    result = {}
+    result[x_code]  =200
+    dict = {}
+    dict["trade_info"]  =response
+    result[x_data]  = dict
+
+    return json.dumps(result)
+
+
 
 
 @alipay.route("/tide/app/pay/v2")

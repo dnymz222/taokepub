@@ -154,8 +154,7 @@ def requsetzcodev2():
     s_request.add_query_param('SignName', "杭州欧拉公式科技")
     if app == "fish":
         s_request.add_query_param('SignName', "钓鱼天气")
-    elif app == "tide":
-        s_request.add_query_param('SignName', "月相潮汐表")
+
     else:
         writesmscode(phone=phone, code=str(sms_code), app=timestamp)
     # elif app == "solunar":
@@ -320,8 +319,7 @@ def eluerrequsetzcode():
     s_request.add_query_param('SignName', "杭州欧拉公式科技")
     if app == "fish":
         s_request.add_query_param('SignName', "钓鱼天气")
-    elif app == "tide":
-        s_request.add_query_param('SignName', "月相潮汐表")
+
     else:
         writesmscode(phone=phone, code=str(sms_code), app=timestamp)
     # elif app == "solunar":
