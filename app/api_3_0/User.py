@@ -152,11 +152,11 @@ def requsetzcodev2():
     s_request.add_query_param('RegionId', "cn-hangzhou")
     s_request.add_query_param('PhoneNumbers', phone)
     s_request.add_query_param('SignName', "杭州欧拉公式科技")
-    if app == "fish":
-        s_request.add_query_param('SignName', "钓鱼天气")
-
-    else:
-        writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+    # if app == "fish":
+    #     s_request.add_query_param('SignName', "钓鱼天气")
+    #
+    # else:
+    #     writesmscode(phone=phone, code=str(sms_code), app=timestamp)
     # elif app == "solunar":
     #     s_request.add_query_param('SignName', "日出日落月相")
         # writesmscode(phone=phone, code=str(sms_code), app=timestamp)
@@ -317,11 +317,11 @@ def eluerrequsetzcode():
     s_request.add_query_param('RegionId', "cn-hangzhou")
     s_request.add_query_param('PhoneNumbers', phone)
     s_request.add_query_param('SignName', "杭州欧拉公式科技")
-    if app == "fish":
-        s_request.add_query_param('SignName', "钓鱼天气")
+    # if app == "fish":
+    #     s_request.add_query_param('SignName', "钓鱼天气")
 
-    else:
-        writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+    # else:
+    #     writesmscode(phone=phone, code=str(sms_code), app=timestamp)
     # elif app == "solunar":
     #     s_request.add_query_param('SignName', "日出日落月相")
     # elif app == "astronomy":
