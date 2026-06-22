@@ -352,7 +352,7 @@ def huoshaoyunmap():
                     dict["width"] = 1921
                     dict["height"] = 1530
                     datalist.append(dict)
-            if len(datalist) > 3:
+            if len(datalist) > 1:
                 result[x_code] = 200
                 result[x_data] = datalist
                 wf = open(jsonpath, "w")

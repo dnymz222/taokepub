@@ -91,7 +91,7 @@ def camsrisesetmap():
                     dict["width"] = 769
                     dict["height"] = 481
                     datalist.append(dict)
-            if len(datalist) > 3:
+            if len(datalist) > 1:
                 result[x_code] = 200
                 result[x_data] = datalist
                 wf = open(jsonpath, "w")
@@ -181,7 +181,7 @@ def camsglowmap():
                     dict["width"] = 769
                     dict["height"] = 481
                     datalist.append(dict)
-            if len(datalist) > 3:
+            if len(datalist) > 1:
                 result[x_code] = 200
                 result[x_data] = datalist
                 wf = open(jsonpath, "w")
@@ -269,7 +269,7 @@ def camshuoshaoyunmap():
                     dict["height"] = 1530
                     dict["group"] = 0
                     datalist.append(dict)
-            if len(datalist) > 3:
+            if len(datalist) > 1:
                 result[x_code] = 200
                 result[x_data] = datalist
                 wf = open(jsonpath, "w")
@@ -357,7 +357,7 @@ def camsrichuriluomap():
                     dict["height"] = 1530
                     dict["group"] = 1
                     datalist.append(dict)
-            if len(datalist) > 3:
+            if len(datalist) > 1:
                 result[x_code] = 200
                 result[x_data] = datalist
                 wf = open(jsonpath, "w")
