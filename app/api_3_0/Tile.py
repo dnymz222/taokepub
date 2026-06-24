@@ -103,7 +103,7 @@ def cloudrgbclear():
                                           microseconds=now.microsecond)
     zertimestmap = int(zero_today.timestamp()) - 48 * 3600
     path = os.path.join(basedir, "static/CAMS/cloud_world")
-    list = ["hcc", "lcc", "mcc", "tcc", "aod550", "vis", "cbh"]
+    list = ["hcc", "lcc", "mcc", "tcc", "aod550", "vis", "cbh","blh"]
     for i in range(0,1000):
         time = zertimestmap - i * 3600
         for type in list:

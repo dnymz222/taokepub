@@ -29,7 +29,7 @@ def camsrisesetmap():
     localdaynow = datetime.datetime.now(tz=shanghai_tz)
     timestamp = localdaynow.timestamp()
 
-    hour = int(timestamp / 3600)
+    hour = int(timestamp / 1000)
 
     hourfix = "?hour=" + str(hour)
 
@@ -121,7 +121,7 @@ def camsglowmap():
     localdaynow = datetime.datetime.now(tz=shanghai_tz)
     timestamp = localdaynow.timestamp()
 
-    hour = int(timestamp / 3600)
+    hour = int(timestamp / 1000)
 
     hourfix = "?hour=" + str(hour)
 
