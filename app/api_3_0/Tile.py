@@ -215,7 +215,7 @@ def ecmwfrgbclear():
                                           microseconds=now.microsecond)
     zertimestmap = int(zero_today.timestamp()) - 48 * 3600
     path = os.path.join(basedir, "static/ECMWF/red")
-    list = ["precipitation", "temperature", "temperaturechange", "wave", "wind","tide"]
+    list = ["precipitation", "temperature", "temperaturechange", "wave", "wind","tide","wind2"]
     for i in range(0, 1000):
         time = zertimestmap - i * 3600
         for type in list:
