@@ -73,7 +73,7 @@ def soluanrconfig():
     else :
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,6, 22, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,9, 2, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -85,12 +85,12 @@ def soluanrconfig():
 
 
 
-        dict["homeText"] = "端午特惠终身会员原98元现48元"
+        dict["homeText"] = "暑假特惠终身会员原98元现48元"
         dict["amount"] = "48.00"
-        dict["mineText"] = "端午特惠"
-        dict["buttonText"] = "端午特惠(终身会员:原价￥98):￥48"
-        dict["tipText"] = "端午节来临之际，特推出特别特惠"
-        dict["orderName"] = "日出日落月相端午特惠(终身会员)"
+        dict["mineText"] = "暑假特惠"
+        dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
+        dict["tipText"] = "暑假来临之际，因为有不少学生用户特推出特惠"
+        dict["orderName"] = "日出日落月相暑假特惠(终身会员)"
 
 
         result[x_data] = dict
@@ -163,7 +163,7 @@ def fishconfig():
 
     else:
         dict["isUpgrade"] = False
-        outtime = datetime.datetime(2026,6, 22, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,9, 2, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 
@@ -173,12 +173,12 @@ def fishconfig():
             dict["isOpen"] = False
 
 
-        dict["homeText"] = "端午特惠终身会员原98元现48元"
+        dict["homeText"] = "暑期特惠终身会员原98元现48元"
         dict["amount"] = "48.00"
-        dict["mineText"] = "端午特惠"
-        dict["buttonText"] = "端午特惠(终身会员:原价￥98):￥48"
-        dict["tipText"] = "端午节日来临之际，特推出特别特惠。"
-        dict["orderName"] = "钓鱼天气端午特惠(终身会员)"
+        dict["mineText"] = "暑期特惠"
+        dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
+        dict["tipText"] = "暑期来临之际，特推出特别特惠。"
+        dict["orderName"] = "钓鱼天气暑期特惠(终身会员)"
         result[x_data] = dict
         return json.dumps(result)
 
