@@ -541,22 +541,34 @@ def aurorsolarwind():
                 datadict["time_tag"] = vlist[0]
                 datadict["speed"] = float(vlist[1])
                 datadict["density"] = float(vlist[2])
-                datadict["bz"] = float(vlist[6])
-                datadict["bt"] = float(vlist[7])
+                try:
+                    datadict["bz"] = float(vlist[6])
+                except:
+                    datadict["bz"] = 0
+                try:
+                    datadict["bt"] = float(vlist[7])
+                except:
+                    datadict["bt"] = 0
                 datadict["propagated_time_tag"] = vlist[11]
                 ftime = vlist[0][:-4]
-                fdate = datetime.strptime(ftime, "%Y-%m-%d %H:%M:%S")
+                fdate = datetime.strptime(ftime, "%Y-%m-%dT%H:%M")
                 datadict["time"] = int(fdate.timestamp()) + tz_offset
                 ptime = vlist[11][:-4]
-                pdate = datetime.strptime(ptime, "%Y-%m-%d %H:%M:%S")
+                pdate = datetime.strptime(ptime, "%Y-%m-%dT%H:%M")
                 datadict["propagated_time"] = int(pdate.timestamp()) + tz_offset
                 datalist.append(datadict)
             except Exception as e:
+                print(e)
                 pass
 
 
 
         result[x_code] = 200
+        if len(datalist) == 1:
+            dict = datalist[0]
+            dict["fix"] = 2
+            datalist.append(dict)
+
         result[x_data] = datalist
 
 
