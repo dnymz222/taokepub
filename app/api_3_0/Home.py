@@ -201,7 +201,7 @@ def solunartidesconfig():
     appversion = request.args.get("appVersion", "5.0")
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026, 3, 4, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 8, 1, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -215,14 +215,14 @@ def solunartidesconfig():
     else:
         dict["isOpen"] = False
 
-    dict["homeText"] = "丙午马年新春特惠终身会员原198元现98元"
-    dict["amount"] = "68.00"
-    dict["mineText"] = "丙午马年新春特惠"
-    dict["freeDays"] = 3
+    dict["homeText"] = "暑假特惠终身会员原198元现88元"
+    dict["amount"] = "88.00"
+    dict["mineText"] = "暑假特惠"
+    dict["freeDays"] = 2
     dict["harbourDays"] = 30  # 港口的天数
-    dict["buttonText"] = "新春特惠(终身会员:原价￥198):￥98"
-    dict["tipText"] = "丙午马年来临之际，特推出特别特惠。"
-    dict["orderName"] = "月相潮汐表新春特惠(终身会员)"
+    dict["buttonText"] = "暑期特惠(终身会员:原价￥198):￥88"
+    dict["tipText"] = "暑假推出特别特惠。"
+    dict["orderName"] = "月相潮汐表暑假特惠(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
 

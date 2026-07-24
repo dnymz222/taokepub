@@ -346,11 +346,11 @@ def tide_app_pay_v6():
         if amount:
             model.total_amount =amount
     elif type == "5":
-        model.total_amount = "98.00"
+        model.total_amount = "88.00"
         if amount:
             model.total_amount = amount
 
-        model.subject = "月相潮汐表新春特惠(终身会员)"
+        model.subject = "月相潮汐表暑期特惠(终身会员)"
 
     elif type == "2":
         model.total_amount = "198.00"
