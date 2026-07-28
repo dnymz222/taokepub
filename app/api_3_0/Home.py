@@ -138,49 +138,24 @@ def fishconfig():
 
 
 
-    if isVip == "0" and (userType == "1" or userType == "3"):
-        dict["isOpen"] = True
-        dict["isUpgrade"] = True
-        dict["homeText"] = "过期会员升级终身会员原98元现48元"
-        dict["amount"] = "48.00"
-        dict["mineText"] = "会员过期可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥48"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可48元升级终身会员"
-        dict["orderName"] = "钓鱼天气升级终身会员"
-        result[x_data] = dict
-        return json.dumps(result)
-    elif isVip == "0" and (nowhour - hour) > 2400:
-        dict["isOpen"] = True
-        dict["isUpgrade"] = True
-        dict["homeText"] = "老用户升级终身会员原98元现48元"
-        dict["amount"] = "48.00"
-        dict["mineText"] = "老用户可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥48"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可48元升级终身会员"
-        dict["orderName"] = "钓鱼天气升级终身会员"
-        result[x_data] = dict
-        return json.dumps(result)
+    dict["isUpgrade"] = False
+    outtime = datetime.datetime(2026,7, 2, hour=0, minute=0, second=0, microsecond=0)
 
-    else:
-        dict["isUpgrade"] = False
-        outtime = datetime.datetime(2026,9, 2, hour=0, minute=0, second=0, microsecond=0)
+    nowtime = datetime.datetime.now()
 
-        nowtime = datetime.datetime.now()
-
-        if outtime > nowtime:
+    if outtime > nowtime:
             dict["isOpen"] = True
-        else:
+    else:
             dict["isOpen"] = False
 
-
-        dict["homeText"] = "暑期特惠终身会员原98元现48元"
-        dict["amount"] = "48.00"
-        dict["mineText"] = "暑期特惠"
-        dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
-        dict["tipText"] = "暑期来临之际，特推出特别特惠。"
-        dict["orderName"] = "钓鱼天气暑期特惠(终身会员)"
-        result[x_data] = dict
-        return json.dumps(result)
+    dict["homeText"] = "暑期特惠终身会员原98元现48元"
+    dict["amount"] = "48.00"
+    dict["mineText"] = "暑期特惠"
+    dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
+    dict["tipText"] = "暑期来临之际，特推出特别特惠。"
+    dict["orderName"] = "钓鱼天气暑期特惠(终身会员)"
+    result[x_data] = dict
+    return json.dumps(result)
 
 
 @api3.route('/solunartides/config')
@@ -201,7 +176,7 @@ def solunartidesconfig():
     appversion = request.args.get("appVersion", "5.0")
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026, 8, 1, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 7, 1, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -218,7 +193,7 @@ def solunartidesconfig():
     dict["homeText"] = "暑假特惠终身会员原198元现88元"
     dict["amount"] = "88.00"
     dict["mineText"] = "暑假特惠"
-    dict["freeDays"] = 2
+    dict["freeDays"] = 3
     dict["harbourDays"] = 30  # 港口的天数
     dict["buttonText"] = "暑期特惠(终身会员:原价￥198):￥88"
     dict["tipText"] = "暑假推出特别特惠。"
@@ -262,7 +237,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2026,9, 2, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,7, 2, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 

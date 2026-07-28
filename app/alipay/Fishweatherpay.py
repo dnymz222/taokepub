@@ -328,6 +328,66 @@ def fish_app_pay_v3():
 
 
 
+@alipay.route("/fish/app/pay/v4")
+def fish_app_pay_v4():
+    model = AlipayTradeAppPayModel()
+    type = request.args.get("type", "1")
+    userType = request.args.get('userType', '0')
+    type = str(type)
+    out_trade_no = request.args.get("out_trade_no","151671406202020031011")
+    out_trade_no = str(out_trade_no)
+    amount = request.args.get("amount")
+
+    if type == "9":
+        model.total_amount = "12.00"
+        if amount:
+            model.total_amount =amount
+        model.subject = '钓鱼天气月会员'
+    elif type == "1":
+        model.total_amount = "78.00"
+        if amount:
+            model.total_amount =amount
+        model.subject = '钓鱼天气包年会员'
+    elif type == "3":
+        model.total_amount = "30.00"
+        if amount:
+            model.total_amount =amount
+        model.subject = '钓鱼天气包季会员'
+    elif type == "5":
+        model.total_amount = "88.00"
+        if amount:
+            model.total_amount = amount
+        if userType == "0":
+            model.subject = "钓鱼天气暑假特惠(终身会员)"
+        else:
+            model.subject = "钓鱼天气升级终身会员"
+    else:
+        model.total_amount = "198.00"
+        if amount:
+            model.total_amount =amount
+        model.subject = '钓鱼天气终身会员'
+    model.seller_id = "2088131645470041"
+    model.timeout_express = "90m"
+    model.product_code = "QUICK_MSECURITY_PAY"
+    model.body = '钓鱼天气会员'
+
+    model.out_trade_no = out_trade_no
+    request_ali = AlipayTradeAppPayRequest(biz_model=model)
+    request_ali.notify_url = "https://www.oulagongshi.com/api/v3.0/alipay/app/pay/notify"
+
+
+    response = fish_client.sdk_execute(request_ali)
+
+
+    result = {}
+    result[x_code]  =200
+    dict = {}
+    dict["trade_info"]  =response
+    result[x_data]  = dict
+
+    return json.dumps(result)
+
+
 
 
 
