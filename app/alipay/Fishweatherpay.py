@@ -339,17 +339,17 @@ def fish_app_pay_v4():
     amount = request.args.get("amount")
 
     if type == "9":
-        model.total_amount = "12.00"
+        model.total_amount = "8.00"
         if amount:
             model.total_amount =amount
         model.subject = '钓鱼天气月会员'
     elif type == "1":
-        model.total_amount = "78.00"
+        model.total_amount = "58.00"
         if amount:
             model.total_amount =amount
         model.subject = '钓鱼天气包年会员'
     elif type == "3":
-        model.total_amount = "30.00"
+        model.total_amount = "20.00"
         if amount:
             model.total_amount =amount
         model.subject = '钓鱼天气包季会员'
@@ -362,7 +362,7 @@ def fish_app_pay_v4():
         else:
             model.subject = "钓鱼天气升级终身会员"
     else:
-        model.total_amount = "198.00"
+        model.total_amount = "168.00"
         if amount:
             model.total_amount =amount
         model.subject = '钓鱼天气终身会员'
