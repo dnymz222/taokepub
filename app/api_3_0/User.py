@@ -189,6 +189,90 @@ def requsetzcodev2():
     return json.dumps(result)
 
 
+@api3.route("/user/requestcode/v4")
+def requsetzcodev4():
+    app = request.args.get('app',"fish")
+    phone = request.args.get("phone","15167140620")
+
+    lat = request.args.get('lat', '37.513')
+    lng = request.args.get('lng', '122.12')
+    timestamp = request.args.get('time', '1705466471')
+    total = request.args.get('total', '1599918717')
+
+    sms_code = random.randint(1000,9999)
+
+    code = userchecklatandlon(lat=lat, lng=lng, timestamp=timestamp, total=total)
+    result = {}
+    if 200 == code:
+        pass
+    elif 201 == code:
+        result[x_meesage] = "发送成功"
+        dict = {}
+        dict["sms_code"] = sms_code
+
+        return json.dumps(result)
+    elif 202 == code:
+        result[x_meesage] = "发送成功"
+        dict = {}
+        dict["sms_code"] = sms_code
+        return json.dumps(result)
+
+    # time.sleep(10)
+    # result[x_code] = 200
+    # dict = {}
+    # dict["sms_code"] = sms_code
+    # result[x_data] = dict
+    # return json.dumps(result)
+
+
+
+    s_request = CommonRequest()
+    s_request.set_accept_format('json')
+    s_request.set_domain('dysmsapi.aliyuncs.com')
+    s_request.set_method('POST')
+    s_request.set_protocol_type('https')  # https | http
+    s_request.set_version('2017-05-25')
+    s_request.set_action_name('SendSms')
+
+    s_request.add_query_param('RegionId', "cn-hangzhou")
+    s_request.add_query_param('PhoneNumbers', phone)
+    s_request.add_query_param('SignName', "杭州欧拉公式科技")
+    # if app == "fish":
+    #     s_request.add_query_param('SignName', "钓鱼天气")
+    #
+    # else:
+    #     writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+    # elif app == "solunar":
+    #     s_request.add_query_param('SignName', "日出日落月相")
+        # writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+
+    s_request.add_query_param('TemplateCode', "SMS_232161590")
+
+
+    dict = {"code":str(sms_code)}
+
+
+    s_request.add_query_param('TemplateParam', json.dumps(dict))
+
+
+
+
+
+    try:
+        response = sms_client_2.do_action_with_exception(s_request)
+
+        result[x_code] =200
+        result[x_meesage] = "发送成功"
+        dict = {}
+        dict["sms_code"] = sms_code
+        result[x_data] = dict
+    except Exception as e:
+        # writesmscode(phone=phone, code=str(sms_code), app=timestamp)
+        result[x_code] = 201
+        result[x_meesage] = "%s"%e
+
+    return json.dumps(result)
+
 
 
 @api3.route("/user/requestcode")
