@@ -829,7 +829,7 @@ def metershower():
     list = []
 
 
-    if os == "android":
+    if osp == "android":
 
         path = os.path.join(basedir,"static","2026meteoshowers.json")
         rf = open(path,"r")
