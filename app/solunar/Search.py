@@ -43,6 +43,8 @@ from app.MeteorShowers import MeteorShowers
 from config import  basedir
 from app.stardetail import stardetail
 from app.DeepskyDetail import DeepskyDetail
+import os
+from config import basedir
 
 
 
@@ -822,28 +824,38 @@ def ngccPage():
 @solunar.route("/metershower")
 def metershower():
     year = request.args.get("year","2021")
-    os = request.args.get("os","iOS")
+    osp = request.args.get("os","iOS")
     result = {}
     list = []
 
-    try:
-        metershowers = db.session.query(MeteorShowers).filter(MeteorShowers.year == year).order_by(MeteorShowers.index).all()
 
-        for metershowerobject in metershowers:
-            dict = metershowerobject.meteoshowersDict()
-            if dict["shortname"] == "QUA":
-                if os == "android":
-                    dict["year"] = str(int(year)-1)
-            list.append(dict)
-        result[x_code] = 200
-        result[x_data] = list
+    if os == "android":
 
-    except Exception as e:
-        db.session.rollback()
-        result[x_meesage]  = "%s"%e
-        result[x_code]  = 201
+        path = os.path.join(basedir,"static","2026meteoshowers.json")
+        rf = open(path,"r")
+        jdict = json.loads(rf.read())
 
-    return json.dumps(result)
+        return json.dumps(jdict)
+
+
+    else:
+
+
+        try:
+            metershowers = db.session.query(MeteorShowers).filter(MeteorShowers.year == year).order_by(MeteorShowers.index).all()
+
+            for metershowerobject in metershowers:
+                dict = metershowerobject.meteoshowersDict()
+                list.append(dict)
+            result[x_code] = 200
+            result[x_data] = list
+
+        except Exception as e:
+            db.session.rollback()
+            result[x_meesage]  = "%s"%e
+            result[x_code]  = 201
+
+        return json.dumps(result)
 
 
 @solunar.route("/constellation/detail/json")

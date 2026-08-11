@@ -40,7 +40,7 @@ def soluanrconfig():
     dict["isMonth"] = False
     dict["isRed"] = True
 
-    if isVip == "0" and (userType == "1" or userType == "3" or userType == "9"):
+    if isVip == "0" and (userType == "1" or userType == "3" ):
         dict["isOpen"] = True
         dict["isUpgrade"] = True
         dict["homeText"] = "过期会员双升级终身会员原98元现48元"
@@ -73,7 +73,7 @@ def soluanrconfig():
     else :
         dict["isUpgrade"] = False
 
-        outtime = datetime.datetime(2026,9, 2, hour=0, minute=0, second=0, microsecond=0)
+        outtime = datetime.datetime(2026,8, 2, hour=0, minute=0, second=0, microsecond=0)
 
         nowtime = datetime.datetime.now()
 

@@ -495,3 +495,72 @@ def solunar_app_pay_v6():
     return json.dumps(result)
 
 
+
+@alipay.route("/solunar/app/pay/v7")
+def solunar_app_pay_v7():
+    model = AlipayTradeAppPayModel()
+    type = request.args.get("type", "3")
+    userType = request.args.get('userType', '0')
+    amount  = request.args.get("amount")
+    ordername = request.args.get("ordername","日出日落月相阳春三月特惠(终身会员)")
+
+    type = str(type)
+    out_trade_no = request.args.get("out_trade_no","151671406202020031011")
+    out_trade_no = str(out_trade_no)
+    if  type == "9":
+        model.total_amount = "8.00"
+        model.subject = '日出日落月相包月会员'
+        if amount:
+            model.total_amount =amount
+    elif  type == "1":
+        model.total_amount = "58.00"
+        if amount:
+            model.total_amount = amount
+        model.subject = '日出日落月相包年会员'
+    elif type == "3":
+        model.total_amount = "18.00"
+        if amount:
+            model.total_amount = amount
+        model.subject = '日出日落月相包季会员'
+    elif  type == "5":
+        model.total_amount = "88.00"
+        if amount:
+            model.total_amount = amount
+        if userType == "0":
+            model.subject = "日出日落月相暑期特惠终身会员"
+        else:
+            model.subject = "日出日落月相升级终身会员"
+    else:
+        model.total_amount = "168.00"
+        if  amount:
+            model.total_amount = amount
+        model.subject = '日出日落月相终身会员'
+    model.seller_id = "2088131645470041"
+    model.timeout_express = "90m"
+    model.product_code = "QUICK_MSECURITY_PAY"
+    model.body = '日出日落月相会员'
+
+    model.out_trade_no = out_trade_no
+    request_ali = AlipayTradeAppPayRequest(biz_model=model)
+    request_ali.notify_url = "https://www.oulagongshi.com/api/v3.0/alipay/app/pay/notify"
+
+
+    response = solunar_client.sdk_execute(request_ali)
+
+
+    # print response
+    #
+    # return response
+
+    # return response
+    #
+
+    result = {}
+    result[x_code]  = 200
+    dict = {}
+    dict["trade_info"]  =response
+    result[x_data]  = dict
+
+    return json.dumps(result)
+
+
