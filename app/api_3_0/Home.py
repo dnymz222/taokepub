@@ -40,61 +40,32 @@ def soluanrconfig():
     dict["isMonth"] = False
     dict["isRed"] = True
 
-    if isVip == "0" and (userType == "1" or userType == "3" ):
+    dict["isUpgrade"] = False
+
+    outtime = datetime.datetime(2026, 8, 2, hour=0, minute=0, second=0, microsecond=0)
+
+    nowtime = datetime.datetime.now()
+
+    if outtime > nowtime:
         dict["isOpen"] = True
-        dict["isUpgrade"] = True
-        dict["homeText"] = "过期会员双升级终身会员原98元现48元"
-        dict["amount"] = "98.00"
-        dict["mineText"] = "会员过期可优惠升级终身会员"
-        dict["buttonText"] = "升级终身会员:￥48"
-        dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可48元升级终身会员"
-        dict["orderName"] = "日出日落月相升级终身会员"
+    else:
+        dict["isOpen"] = False
 
+    dict["homeText"] = "暑假特惠终身会员原98元现48元"
+    dict["amount"] = "48.00"
+    dict["mineText"] = "暑假特惠"
+    dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
+    dict["tipText"] = "暑假来临之际，因为有不少学生用户特推出特惠"
+    dict["orderName"] = "日出日落月相暑假特惠(终身会员)"
 
-
-        result[x_data] = dict
-        return json.dumps(result)
-    elif isVip == "0" and (nowhour - hour) > 2400:
-
-            dict["isOpen"] = True
-            dict["isUpgrade"] = True
-            dict["homeText"] = "老用户升级终身会员原98元现48元"
-            dict["amount"] = "48.00"
-            dict["mineText"] = "老用户可优惠升级终身会员"
-            dict["buttonText"] = "升级终身会员:￥48"
-            dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可48元升级终身会员"
-            dict["orderName"] = "日出日落月相升级终身会员"
-
-
-            result[x_data] = dict
-            return json.dumps(result)
-
-
-    else :
-        dict["isUpgrade"] = False
-
-        outtime = datetime.datetime(2026,8, 2, hour=0, minute=0, second=0, microsecond=0)
-
-        nowtime = datetime.datetime.now()
-
-        if outtime > nowtime:
-            dict["isOpen"] = True
-        else:
-            dict["isOpen"] = False
+    result[x_data] = dict
+    return json.dumps(result)
 
 
 
 
-        dict["homeText"] = "暑假特惠终身会员原98元现48元"
-        dict["amount"] = "48.00"
-        dict["mineText"] = "暑假特惠"
-        dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
-        dict["tipText"] = "暑假来临之际，因为有不少学生用户特推出特惠"
-        dict["orderName"] = "日出日落月相暑假特惠(终身会员)"
 
 
-        result[x_data] = dict
-        return json.dumps(result)
 
 @api3.route('/meteo/config')
 def meteoconfig():
