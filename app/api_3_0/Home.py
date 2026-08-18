@@ -58,6 +58,8 @@ def soluanrconfig():
     dict["tipText"] = "暑假来临之际，因为有不少学生用户特推出特惠"
     dict["orderName"] = "日出日落月相暑假特惠(终身会员)"
 
+    dict["lifeprice"] = "198"
+
     result[x_data] = dict
     return json.dumps(result)
 
@@ -125,6 +127,7 @@ def fishconfig():
     dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
     dict["tipText"] = "暑期来临之际，特推出特别特惠。"
     dict["orderName"] = "钓鱼天气暑期特惠(终身会员)"
+    dict["lifeprice"] = "168"
     result[x_data] = dict
     return json.dumps(result)
 
