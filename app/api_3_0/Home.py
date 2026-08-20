@@ -58,9 +58,9 @@ def soluanrconfig():
     dict["tipText"] = "暑假来临之际，因为有不少学生用户特推出特惠"
     dict["orderName"] = "日出日落月相暑假特惠(终身会员)"
 
-    dict["lifeprice"] = "198"
-    dict["monthprice"] = "9"
-    dict["yearprice"] = "68"
+    dict["lifeprice"] = "98"
+    dict["monthprice"] = "6"
+    dict["yearprice"] = "36"
 
     result[x_data] = dict
     return json.dumps(result)
@@ -114,7 +114,7 @@ def fishconfig():
 
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026,7, 2, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,9, 21, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -123,12 +123,12 @@ def fishconfig():
     else:
             dict["isOpen"] = False
 
-    dict["homeText"] = "暑期特惠终身会员原98元现48元"
-    dict["amount"] = "48.00"
-    dict["mineText"] = "暑期特惠"
-    dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
-    dict["tipText"] = "暑期来临之际，特推出特别特惠。"
-    dict["orderName"] = "钓鱼天气暑期特惠(终身会员)"
+    dict["homeText"] = "app7周年特惠终身会员现42元"
+    dict["amount"] = "28.00"
+    dict["mineText"] = "7周年特惠"
+    dict["buttonText"] = "7周年特惠(终身会员:原价￥168):￥28"
+    dict["tipText"] = "钓鱼天气app7周年来临之际，特推出特别特惠。"
+    dict["orderName"] = "钓鱼天气7周年特惠(终身会员)"
     dict["lifeprice"] = "168"
     dict["monthprice"] = "8"
     dict["yearprice"] = "58"

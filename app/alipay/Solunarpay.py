@@ -508,12 +508,12 @@ def solunar_app_pay_v7():
     out_trade_no = request.args.get("out_trade_no","151671406202020031011")
     out_trade_no = str(out_trade_no)
     if  type == "9":
-        model.total_amount = "9.00"
+        model.total_amount = "6.00"
         model.subject = '日出日落月相包月会员'
         if amount:
             model.total_amount =amount
     elif  type == "1":
-        model.total_amount = "68.00"
+        model.total_amount = "36.00"
         if amount:
             model.total_amount = amount
         model.subject = '日出日落月相包年会员'
@@ -523,7 +523,7 @@ def solunar_app_pay_v7():
             model.total_amount = amount
         model.subject = '日出日落月相包季会员'
     elif  type == "5":
-        model.total_amount = "88.00"
+        model.total_amount = "58.00"
         if amount:
             model.total_amount = amount
         if userType == "0":
@@ -531,7 +531,7 @@ def solunar_app_pay_v7():
         else:
             model.subject = "日出日落月相升级终身会员"
     else:
-        model.total_amount = "198.00"
+        model.total_amount = "98.00"
         if  amount:
             model.total_amount = amount
         model.subject = '日出日落月相终身会员'
