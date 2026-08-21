@@ -123,7 +123,7 @@ def fishconfig():
     else:
             dict["isOpen"] = False
 
-    dict["homeText"] = "app7周年特惠终身会员现28元"
+    dict["homeText"] = "app7周年特惠终身会员原98现28元"
     dict["amount"] = "28.00"
     dict["mineText"] = "7周年特惠"
     dict["buttonText"] = "7周年特惠(终身会员:原价￥98):￥28"
