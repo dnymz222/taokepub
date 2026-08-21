@@ -123,15 +123,15 @@ def fishconfig():
     else:
             dict["isOpen"] = False
 
-    dict["homeText"] = "app7周年特惠终身会员现42元"
+    dict["homeText"] = "app7周年特惠终身会员现28元"
     dict["amount"] = "28.00"
     dict["mineText"] = "7周年特惠"
-    dict["buttonText"] = "7周年特惠(终身会员:原价￥168):￥28"
+    dict["buttonText"] = "7周年特惠(终身会员:原价￥98):￥28"
     dict["tipText"] = "钓鱼天气app7周年来临之际，特推出特别特惠。"
     dict["orderName"] = "钓鱼天气7周年特惠(终身会员)"
-    dict["lifeprice"] = "168"
-    dict["monthprice"] = "8"
-    dict["yearprice"] = "58"
+    dict["lifeprice"] = "98"
+    dict["monthprice"] = "6"
+    dict["yearprice"] = "36"
     result[x_data] = dict
     return json.dumps(result)
 
