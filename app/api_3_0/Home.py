@@ -106,10 +106,10 @@ def fishconfig():
     isVip = request.args.get('isVip', '0')
     userType = request.args.get('userType', '0')
 
-    now = datetime.datetime.now()
-    nowhour = now.timestamp() / 3600
+    # now = datetime.datetime.now()
+    # nowhour = now.timestamp() / 3600
 
-    hour = int (request.args.get("hour",str(nowhour)))
+    # hour = int (request.args.get("hour",str(nowhour)))
 
 
 
