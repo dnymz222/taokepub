@@ -42,7 +42,7 @@ def soluanrconfig():
 
     dict["isUpgrade"] = False
 
-    outtime = datetime.datetime(2026, 8, 2, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 9, 8, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -51,12 +51,12 @@ def soluanrconfig():
     else:
         dict["isOpen"] = False
 
-    dict["homeText"] = "暑假特惠终身会员原98元现48元"
-    dict["amount"] = "48.00"
-    dict["mineText"] = "暑假特惠"
-    dict["buttonText"] = "暑期特惠(终身会员:原价￥98):￥48"
-    dict["tipText"] = "暑假来临之际，因为有不少学生用户特推出特惠"
-    dict["orderName"] = "日出日落月相暑假特惠(终身会员)"
+    dict["homeText"] = "开学特惠终身会员原98元现18元"
+    dict["amount"] = "18.00"
+    dict["mineText"] = "开学特惠"
+    dict["buttonText"] = "开学特惠(终身会员:原价￥98):￥18"
+    dict["tipText"] = "开学来临之际，因为app有不少学生用户特推出特别特惠"
+    dict["orderName"] = "日出日落月相开学特惠(终身会员)"
 
     dict["lifeprice"] = "98"
     dict["monthprice"] = "6"
@@ -105,12 +105,6 @@ def fishconfig():
 
     isVip = request.args.get('isVip', '0')
     userType = request.args.get('userType', '0')
-
-    # now = datetime.datetime.now()
-    # nowhour = now.timestamp() / 3600
-
-    # hour = int (request.args.get("hour",str(nowhour)))
-
 
 
     dict["isUpgrade"] = False
@@ -179,34 +173,6 @@ def solunartidesconfig():
     result[x_data] = dict
     return json.dumps(result)
 
-    # if isVip == "0" and (userType == "1" or userType == "3"):
-    #     dict["isOpen"] = True
-    #     dict["isUpgrade"] = True
-    #     dict["homeText"] = "过期会员升级终身会员原98元现58元"
-    #     dict["amount"] = "58.00"
-    #     dict["freeDays"] = 2
-    #     dict["harbourDays"] = 30 # 港口的天数
-    #     dict["mineText"] = "会员过期可优惠升级终身会员"
-    #     dict["buttonText"] = "升级终身会员:￥58"
-    #     dict["tipText"] = "为回馈用户，原价98的终身会员,之前会员过期的可58元升级终身会员"
-    #     dict["orderName"] = "月相潮汐表升级终身会员"
-    #     result[x_data] = dict
-    #     return json.dumps(result)
-    # elif isVip == "0" and (nowhour - hour) > 2400:
-    #
-    #     dict["isOpen"] = True
-    #     dict["isUpgrade"] = True
-    #     dict["homeText"] = "老用户升级终身会员原98元现58元"
-    #     dict["amount"] = "58.00"
-    #     dict["freeDays"] = 2
-    #     dict["harbourDays"] = 30 # 港口的天数
-    #     dict["mineText"] = "老用户可优惠升级终身会员"
-    #     dict["buttonText"] = "升级终身会员:￥58"
-    #     dict["tipText"] = "为回馈用户，原价98的终身会员,老用户可58元升级终身会员"
-    #     dict["orderName"] = "月相潮汐表升级终身会员"
-    #     result[x_data] = dict
-    #     return json.dumps(result)
-    # else:
 
 
 @api3.route('/astro/config')
@@ -215,7 +181,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2026,7, 2, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,9, 8, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -231,12 +197,12 @@ def astroconfig():
     # else:
     #     dict["isOpen"] = False
 
-    dict["homeText"] = "暑假特惠终身会员原98元现48元"
-    dict["amount"] = "48.00"
-    dict["mineText"] = "暑假特惠"
-    dict["buttonText"] = "端午特惠(终身会员:原价￥98):￥48"
-    dict["tipText"] = "因为app有不少学生用户，特暑假期间推出特惠"
-    dict["orderName"] = "天文观星指南暑假特惠(终身会员)"
+    dict["homeText"] = "开学特惠终身会员原98元现18元"
+    dict["amount"] = "18.00"
+    dict["mineText"] = "开学特惠"
+    dict["buttonText"] = "开学特惠(终身会员:原价￥98):￥18"
+    dict["tipText"] = "因为app有不少学生用户，特开学期间推出特惠"
+    dict["orderName"] = "天文观星指南开学特惠(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
 

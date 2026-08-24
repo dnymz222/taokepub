@@ -346,7 +346,7 @@ def tide_app_pay_v6():
         if amount:
             model.total_amount =amount
     elif type == "5":
-        model.total_amount = "88.00"
+        model.total_amount = "68.00"
         if amount:
             model.total_amount = amount
 

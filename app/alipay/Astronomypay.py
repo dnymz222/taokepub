@@ -164,10 +164,10 @@ def astro_app_pay():
             model.total_amount =amount
         model.subject = '天文观星指南包季会员'
     elif  type == "5":
-        model.total_amount = "48.00"
+        model.total_amount = "18.00"
         if amount:
             model.total_amount = amount
-        model.subject = "天文观星指南暑假特惠(终身会员)"
+        model.subject = "天文观星指南开学特惠(终身会员)"
     else:
         model.total_amount = "98.00"
         if amount:
