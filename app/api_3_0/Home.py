@@ -26,15 +26,6 @@ def soluanrconfig():
     result[x_code] = 200
     dict = {}
 
-    isVip = request.args.get('isVip', '0')
-    userType = request.args.get('userType', '0')
-    appversion = request.args.get("appVersion","6.6")
-
-    now = datetime.datetime.now()
-    nowhour = now.timestamp() / 3600
-
-    hour = int (request.args.get("hour",str(nowhour)))
-
 
 
     dict["isMonth"] = False
