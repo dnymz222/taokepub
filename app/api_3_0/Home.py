@@ -99,7 +99,7 @@ def fishconfig():
 
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026,8, 21, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,9, 21, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -117,7 +117,7 @@ def fishconfig():
     dict["lifeprice"] = "98"
     dict["monthprice"] = "6"
     dict["yearprice"] = "36"
-    dict["viewdays"] = 2
+    dict["viewdays"] = 1
     result[x_data] = dict
     return json.dumps(result)
 
