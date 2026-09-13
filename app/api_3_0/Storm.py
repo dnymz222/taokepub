@@ -372,8 +372,8 @@ def openmeteosurfforecast():
                 dict["waterTemperature"] = wavedatahourly["sea_surface_temperature_meteofrance_currents"][i]
 
                 dict["windDirection"] = weatherdatahourly["wind_direction_10m"][i]
-                dict["windSpeed"] = weatherdatahourly["wind_speed_10m"][i]
-                dict["gust"] = weatherdatahourly["wind_gusts_10m"][i]
+                dict["windSpeed"] = weatherdatahourly["wind_speed_10m"][i] / 3.6
+                dict["gust"] = weatherdatahourly["wind_gusts_10m"][i] / 3.6
 
                 dict["surfwaveHeight"] = 0
 
@@ -398,7 +398,14 @@ def openmeteosurfforecast():
                 dict["visibility"] = 0
                 dict["isdaylight"] = weatherdatahourly["is_day"][i]
 
-                dict["time"] = timelist[i]
+                dict["timestamp"] = timelist[i]
+
+                utc_dt = datetime.datetime.fromtimestamp(timelist[i]).astimezone(gmt_tz)
+
+                date_string = utc_dt.isoformat()
+                dict["time"] = date_string
+
+
 
                 datalist.append(dict)
 
