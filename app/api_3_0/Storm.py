@@ -311,7 +311,7 @@ def openmeteosurfforecast():
     # lat = request.args.get('lat', '18.6260')
     # lng = request.args.get('lng', '110.2140')
 
-    tz = request.args.get('tz', 'Europe/Paris')
+    tz = request.args.get('tz', 'Asia/Shanghai')
 
     lat_float = float(lat)
     lng_float = float(lng)
