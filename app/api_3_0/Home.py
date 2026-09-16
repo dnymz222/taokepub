@@ -33,7 +33,7 @@ def soluanrconfig():
 
     dict["isUpgrade"] = False
 
-    outtime = datetime.datetime(2026, 9, 14, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 10, 8, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -42,12 +42,12 @@ def soluanrconfig():
     else:
         dict["isOpen"] = False
 
-    dict["homeText"] = "开学特惠终身会员原98元现18元"
-    dict["amount"] = "18.00"
-    dict["mineText"] = "开学特惠"
-    dict["buttonText"] = "开学特惠(终身会员:原价￥98):￥18"
-    dict["tipText"] = "开学来临之际，因为app有不少学生用户特推出特别特惠"
-    dict["orderName"] = "日出日落月相开学特惠(终身会员)"
+    dict["homeText"] = "双节特惠终身会员原98元现28元"
+    dict["amount"] = "28.00"
+    dict["mineText"] = "双节特惠"
+    dict["buttonText"] = "双节特惠(终身会员:原价￥98):￥28"
+    dict["tipText"] = "中秋节和国庆节来临之际，特推出特惠"
+    dict["orderName"] = "日出日落月相双节特惠(终身会员)"
 
     dict["lifeprice"] = "98"
     dict["monthprice"] = "6"
