@@ -76,10 +76,10 @@ timezonefinder==6.5.9
 pyMeeus==0.5.12
 bs4==0.0.2
 
-alipay-sdk-python==3.3.202
-aliyun-python-sdk-core==2.13.15
-aliyun-python-sdk-dysmsapi==1.0.0
-alibabacloud_dysmsapi20170525==3.1.2
+#alipay-sdk-python==3.3.202
+#aliyun-python-sdk-core==2.13.15
+#aliyun-python-sdk-dysmsapi==1.0.0
+#alibabacloud_dysmsapi20170525==3.1.2
 
 selenium==2.53.6
 astral
