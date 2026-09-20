@@ -159,7 +159,7 @@ def fish_app_pay():
             model.total_amount =amount
         model.subject = '钓鱼天气包季会员'
     elif type == "5":
-        model.total_amount = "68.00"
+        model.total_amount = "28.00"
         if amount:
             model.total_amount = amount
         model.subject = ordername.encode('utf8')
@@ -227,7 +227,7 @@ def fish_app_pay_v2():
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "钓鱼天气7周年特惠(终身会员)"
+            model.subject = "钓鱼天气双节特惠(终身会员)"
         else:
             model.subject = "钓鱼天气升级终身会员"
     else:
@@ -297,7 +297,7 @@ def fish_app_pay_v3():
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "钓鱼天气7周年特惠(终身会员)"
+            model.subject = "钓鱼天气双节特惠(终身会员)"
         else:
             model.subject = "钓鱼天气升级终身会员"
     else:
@@ -358,7 +358,7 @@ def fish_app_pay_v4():
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "钓鱼天气7周年特惠(终身会员)"
+            model.subject = "钓鱼天气双节特惠(终身会员)"
         else:
             model.subject = "钓鱼天气升级终身会员"
     else:
