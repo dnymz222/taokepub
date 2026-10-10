@@ -259,7 +259,7 @@ def solunar_app_pay_v3():
         model.subject = '日出日落月相包年会员'
     elif  type == "5":
         if userType == "0":
-            model.subject = "日出日落月相月全食特惠终身会员"
+            model.subject = "日出日落月相双十一特惠终身会员"
             model.total_amount = "28.00"
         else:
             model.subject = "日出日落月相升级终身会员"
@@ -319,11 +319,11 @@ def solunar_app_pay_v4():
             model.total_amount = amount
         model.subject = '日出日落月相包季会员'
     elif  type == "5":
-        model.total_amount = "36.00"
+        model.total_amount = "28.00"
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "日出日落月相月全食特惠终身会员"
+            model.subject = "日出日落月相月双十一特惠终身会员"
         else:
             model.subject = "日出日落月相升级终身会员"
     else:
@@ -390,7 +390,7 @@ def solunar_app_pay_v5():
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "日出日落月相双节特惠终身会员"
+            model.subject = "日出日落月相双十一特惠终身会员"
         else:
             model.subject = "日出日落月相升级终身会员"
     else:
@@ -458,7 +458,7 @@ def solunar_app_pay_v6():
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "日出日落月相双节特惠终身会员"
+            model.subject = "日出日落月相双十一特惠终身会员"
         else:
             model.subject = "日出日落月相升级终身会员"
     else:
@@ -527,7 +527,7 @@ def solunar_app_pay_v7():
         if amount:
             model.total_amount = amount
         if userType == "0":
-            model.subject = "日出日落月相双节特惠终身会员"
+            model.subject = "日出日落月相双十一特惠终身会员"
         else:
             model.subject = "日出日落月相升级终身会员"
     else:

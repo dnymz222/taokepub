@@ -33,7 +33,7 @@ def soluanrconfig():
 
     dict["isUpgrade"] = False
 
-    outtime = datetime.datetime(2026, 10, 8, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 11, 12, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -42,12 +42,12 @@ def soluanrconfig():
     else:
         dict["isOpen"] = False
 
-    dict["homeText"] = "双节特惠终身会员原98元现28元"
+    dict["homeText"] = "双十一特惠终身会员原98元现28元"
     dict["amount"] = "28.00"
-    dict["mineText"] = "双节特惠"
-    dict["buttonText"] = "双节特惠(终身会员:原价￥98):￥28"
-    dict["tipText"] = "中秋节和国庆节来临之际，特推出特惠"
-    dict["orderName"] = "日出日落月相双节特惠(终身会员)"
+    dict["mineText"] = "双十一特惠"
+    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥28"
+    dict["tipText"] = "双十一来临之际，特推出特惠"
+    dict["orderName"] = "日出日落月相双十一特惠(终身会员)"
 
     dict["lifeprice"] = "98"
     dict["monthprice"] = "6"
@@ -99,7 +99,7 @@ def fishconfig():
 
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026,10, 8, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,11, 12, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -108,12 +108,12 @@ def fishconfig():
     else:
             dict["isOpen"] = False
 
-    dict["homeText"] = "双节特惠终身会员原98现28元"
+    dict["homeText"] = "双十一特惠终身会员原98现28元"
     dict["amount"] = "28.00"
-    dict["mineText"] = "双节特惠"
-    dict["buttonText"] = "双节特惠(终身会员:原价￥98):￥28"
-    dict["tipText"] = "中秋节和国庆节来临之际，特推出特惠。"
-    dict["orderName"] = "钓鱼天气双节特惠(终身会员)"
+    dict["mineText"] = "双十一特惠"
+    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥28"
+    dict["tipText"] = "双十一来临之际，特推出特惠。"
+    dict["orderName"] = "钓鱼天气双十一特惠(终身会员)"
     dict["lifeprice"] = "98"
     dict["monthprice"] = "6"
     dict["yearprice"] = "36"
@@ -173,7 +173,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2026,9, 8, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,11, 12, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -189,12 +189,12 @@ def astroconfig():
     # else:
     #     dict["isOpen"] = False
 
-    dict["homeText"] = "双节特惠终身会员原98元现28元"
+    dict["homeText"] = "双十一特惠终身会员原98元现28元"
     dict["amount"] = "28.00"
-    dict["mineText"] = "双节特惠"
-    dict["buttonText"] = "双节特惠(终身会员:原价￥98):￥28"
-    dict["tipText"] = "中秋节和国庆节来临之际，特推出特惠"
-    dict["orderName"] = "天文观星指南双节特惠(终身会员)"
+    dict["mineText"] = "双十一特惠"
+    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥28"
+    dict["tipText"] = "双十一来临之际，特推出特惠"
+    dict["orderName"] = "天文观星指南双十一特惠(终身会员)"
     result[x_data] = dict
     return json.dumps(result)
 
