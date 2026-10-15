@@ -154,10 +154,72 @@
     margin-top: 2px;
   }
 
+  .footer-stack {
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* The footer is fixed; pin both edges so the icon row always gets the
+       real viewport width and can shrink its nine buttons into one line. */
+    left: 0 !important;
+    right: 0 !important;
+  }
+  .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+  }
+  .footer-info > * { min-width: 0; }
+  .footer-info .v-btn { min-width: 0; }
+  .footer-info .v-btn__content { min-width: 0; }
+  .footer-info .v-btn__content > span {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .footer-info .text-subtitle-2,
+  .footer-info .text-caption {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   .time-control {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+  @media (max-width: 600px) {
+    .footer-info .time-btn { padding: 0 6px; }
+    .footer-info .time-btn .v-icon { margin-right: 4px; }
+  }
+  .sel-card {
+    position: absolute;
+    top: 64px;
+    width: 430px;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    background: rgba(33, 33, 33, 0.72);
+  }
+  /* On phones keep blank sky around the card so a tap outside closes it,
+     and stop it short of #stel's bottom edge, which sits above the fixed
+     footer (icon row + location/time buttons). */
+  @media (max-width: 600px) {
+    .sel-card {
+      top: 12px;
+      left: 10%;
+      width: 80%;
+      max-height: calc(100% - 24px);
+    }
   }
   .fov-readout {
     display: none;
@@ -197,10 +259,12 @@
 
   .stel-button {
     position: relative;
-    flex: 0 0 auto;
-    width: 2.75rem;
-    height: 2.75rem;
-    margin: 0 4px;
+    /* Shrinkable so the nine icons still fit one row on a narrow phone. */
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 2.75rem;
+    height: auto;
+    margin: 0 2px;
     cursor: pointer;
   }
   .stel-button a {
@@ -217,7 +281,7 @@
   .stel-button img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   .stel-button-label {
     position: absolute;
@@ -405,165 +469,168 @@
       <v-icon>mdi-fullscreen-exit</v-icon>
     </v-btn>
 
-    <v-footer app fixed class="transparent" style="height:auto;">
-      <v-menu v-model="locMenu" :close-on-content-click="false" offset-y top>
-        <template v-slot:activator="{ on }">
-          <v-btn class="time-btn" color="secondary" v-on="on"
-                 @click="prefillManual">
-            <v-icon left>mdi-map-marker</v-icon>
-            <span>
-              <div class="text-subtitle-2">{{ locLabel }}</div>
-              <div class="text-caption">{{ locCoordStr }}</div>
-            </span>
-          </v-btn>
-        </template>
-        <v-card width="320">
-          <v-list dense>
-            <v-list-item @click="useDeviceLocation">
-              <v-list-item-icon><v-icon>mdi-crosshairs-gps</v-icon></v-list-item-icon>
-              <v-list-item-content>
-                <v-list-item-title>{{ t('Use device location') }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-          <v-divider></v-divider>
-          <v-list dense style="max-height:240px; overflow-y:auto;">
-            <v-list-item v-for="c in cities" :key="c.name"
-                         @click="setLocation(c.name, c.lon, c.lat, c.elev)">
-              <v-list-item-content>
-                <v-list-item-title>{{ t(c.name) }}</v-list-item-title>
-                <v-list-item-subtitle>{{ fmtCoord(c.lat, c.lon) }}</v-list-item-subtitle>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-          <v-divider></v-divider>
-          <div style="display:flex; align-items:center; padding:8px;">
-            <v-text-field v-model="manualLon" :label="t('Lon (°)')" dense
-                          hide-details
-                          style="max-width:110px;" class="mr-2"></v-text-field>
-            <v-text-field v-model="manualLat" :label="t('Lat (°)')" dense
-                          hide-details
-                          style="max-width:110px;" class="mr-2"></v-text-field>
-            <v-btn small color="primary" @click="applyManual">
-              {{ t('Apply') }}
-            </v-btn>
-          </div>
-        </v-card>
-      </v-menu>
-      <v-spacer></v-spacer>
-      <stel-button :label="t('Constellations')"
-                   img="static/imgs/symbols/btn-cst-lines.svg"
-                   :obj="stel && stel.core.constellations"
-                   attr="lines_visible" :also="['labels_visible']">
-      </stel-button>
-      <stel-button :label="t('Constellation Art')"
-                   img="static/imgs/symbols/btn-cst-art.svg"
-                   :obj="stel && stel.core.constellations"
-                   attr="images_visible">
-      </stel-button>
-      <stel-button :label="t('Atmosphere')"
-                   img="static/imgs/symbols/btn-atmosphere.svg"
-                   :obj="stel && stel.core.atmosphere"
-                   attr="visible">
-      </stel-button>
-      <stel-button :label="t('Landscape')"
-                   img="static/imgs/symbols/btn-landscape.svg"
-                   :obj="stel && stel.core.landscapes"
-                   attr="visible">
-      </stel-button>
-      <stel-button :label="t('Azimuthal Grid')"
-                   img="static/imgs/symbols/btn-azimuthal-grid.svg"
-                   :obj="stel && stel.core.lines.azimuthal"
-                   attr="visible">
-      </stel-button>
-      <stel-button :label="t('Equatorial Grid')"
-                   img="static/imgs/symbols/btn-equatorial-grid.svg"
-                   :obj="stel && stel.core.lines.equatorial"
-                   attr="visible">
-      </stel-button>
-      <stel-button :label="t('Deep Sky Objects')"
-                   img="static/imgs/symbols/btn-nebulae.svg"
-                   :obj="stel && stel.core.dsos"
-                   attr="visible">
-      </stel-button>
-      <div class="stel-button" :class="{'semi-transparent': !nightmode}">
-        <a role="button" tabindex="0" :aria-label="t('Night Mode')"
-           @click="toggleNightMode"
-           @keydown.enter.prevent="toggleNightMode"
-           @keydown.space.prevent="toggleNightMode">
-          <img src="static/imgs/symbols/btn-night-mode.svg" alt=""/>
-        </a>
-        <span class="stel-button-label" aria-hidden="true">{{ t('Night Mode') }}</span>
-      </div>
-      <div class="stel-button" :class="{'semi-transparent': !fsActive}">
-        <a role="button" tabindex="0"
-           :aria-label="fsActive ? t('Exit Full Screen') : t('Full Screen')"
-           @click="toggleFullscreen"
-           @keydown.enter.prevent="toggleFullscreen"
-           @keydown.space.prevent="toggleFullscreen">
-          <img :src="fsActive ? 'static/imgs/symbols/fullscreen_exit.svg'
-                              : 'static/imgs/symbols/fullscreen.svg'" alt=""/>
-        </a>
-        <span class="stel-button-label" aria-hidden="true">
-          {{ fsActive ? t('Exit Full Screen') : t('Full Screen') }}
-        </span>
-      </div>
-      <v-spacer></v-spacer>
-      <div class="time-control">
-        <v-menu v-model="timeMenu" :close-on-content-click="false"
-                offset-y top left>
+    <v-footer app fixed class="transparent footer-stack"
+              style="height:auto;">
+      <div class="footer-info">
+        <v-menu v-model="locMenu" :close-on-content-click="false" offset-y top>
           <template v-slot:activator="{ on }">
-            <v-btn class="time-btn" color="secondary" v-on="on">
+            <v-btn class="time-btn" color="secondary" v-on="on"
+                   @click="prefillManual">
+              <v-icon left>mdi-map-marker</v-icon>
               <span>
-                <div class="text-subtitle-2">{{ simTimeStr }}</div>
-                <div class="text-caption">{{ simDateStr }}</div>
+                <div class="text-subtitle-2">{{ locLabel }}</div>
+                <div class="text-caption">{{ locCoordStr }}</div>
               </span>
             </v-btn>
           </template>
-          <v-card class="time-panel" width="400">
-            <div class="time-panel-row">
-              <div class="time-field" v-for="f in dateFields" :key="f.unit">
-                <v-btn icon x-small @click="step(f.unit, 1)">
-                  <v-icon>mdi-menu-up</v-icon>
-                </v-btn>
-                <div class="time-field-val">{{ part(f.unit) }}</div>
-                <v-btn icon x-small @click="step(f.unit, -1)">
-                  <v-icon>mdi-menu-down</v-icon>
-                </v-btn>
-              </div>
-              <div class="time-panel-actions">
-                <v-btn icon small @click="resetNow">
-                  <v-icon>mdi-history</v-icon>
-                </v-btn>
-                <v-btn icon small @click="togglePause">
-                  <v-icon>{{ paused ? 'mdi-play' : 'mdi-pause' }}</v-icon>
-                </v-btn>
-              </div>
-              <div class="time-field" v-for="f in timeFields" :key="f.unit">
-                <v-btn icon x-small @click="step(f.unit, 1)">
-                  <v-icon>mdi-menu-up</v-icon>
-                </v-btn>
-                <div class="time-field-val">{{ part(f.unit) }}</div>
-                <v-btn icon x-small @click="step(f.unit, -1)">
-                  <v-icon>mdi-menu-down</v-icon>
-                </v-btn>
-              </div>
-            </div>
-            <div class="speed-row">
-              <v-btn icon small @click="changeSpeed(-1)">
-                <v-icon>mdi-rewind</v-icon>
+          <v-card width="320">
+            <v-list dense>
+              <v-list-item @click="useDeviceLocation">
+                <v-list-item-icon><v-icon>mdi-crosshairs-gps</v-icon></v-list-item-icon>
+                <v-list-item-content>
+                  <v-list-item-title>{{ t('Use device location') }}</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+            <v-divider></v-divider>
+            <v-list dense style="max-height:240px; overflow-y:auto;">
+              <v-list-item v-for="c in cities" :key="c.name"
+                           @click="setLocation(c.name, c.lon, c.lat, c.elev)">
+                <v-list-item-content>
+                  <v-list-item-title>{{ t(c.name) }}</v-list-item-title>
+                  <v-list-item-subtitle>{{ fmtCoord(c.lat, c.lon) }}</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+            <v-divider></v-divider>
+            <div style="display:flex; align-items:center; padding:8px;">
+              <v-text-field v-model="manualLon" :label="t('Lon (°)')" dense
+                            hide-details
+                            style="max-width:110px;" class="mr-2"></v-text-field>
+              <v-text-field v-model="manualLat" :label="t('Lat (°)')" dense
+                            hide-details
+                            style="max-width:110px;" class="mr-2"></v-text-field>
+              <v-btn small color="primary" @click="applyManual">
+                {{ t('Apply') }}
               </v-btn>
-              <span class="speed-label">{{ speedLabel }}</span>
-              <v-btn icon small @click="changeSpeed(1)">
-                <v-icon>mdi-fast-forward</v-icon>
-              </v-btn>
-            </div>
-            <div class="day-slider" :style="{background: sliderBg}">
-              <v-slider min="0" max="1439" v-model="timeMinute"
-                        :hint="sliderHint" persistent-hint></v-slider>
             </div>
           </v-card>
         </v-menu>
+        <div class="time-control">
+          <v-menu v-model="timeMenu" :close-on-content-click="false"
+                  offset-y top left>
+            <template v-slot:activator="{ on }">
+              <v-btn class="time-btn" color="secondary" v-on="on">
+                <span>
+                  <div class="text-subtitle-2">{{ simTimeStr }}</div>
+                  <div class="text-caption">{{ simDateStr }}</div>
+                </span>
+              </v-btn>
+            </template>
+            <v-card class="time-panel" width="400">
+              <div class="time-panel-row">
+                <div class="time-field" v-for="f in dateFields" :key="f.unit">
+                  <v-btn icon x-small @click="step(f.unit, 1)">
+                    <v-icon>mdi-menu-up</v-icon>
+                  </v-btn>
+                  <div class="time-field-val">{{ part(f.unit) }}</div>
+                  <v-btn icon x-small @click="step(f.unit, -1)">
+                    <v-icon>mdi-menu-down</v-icon>
+                  </v-btn>
+                </div>
+                <div class="time-panel-actions">
+                  <v-btn icon small @click="resetNow">
+                    <v-icon>mdi-history</v-icon>
+                  </v-btn>
+                  <v-btn icon small @click="togglePause">
+                    <v-icon>{{ paused ? 'mdi-play' : 'mdi-pause' }}</v-icon>
+                  </v-btn>
+                </div>
+                <div class="time-field" v-for="f in timeFields" :key="f.unit">
+                  <v-btn icon x-small @click="step(f.unit, 1)">
+                    <v-icon>mdi-menu-up</v-icon>
+                  </v-btn>
+                  <div class="time-field-val">{{ part(f.unit) }}</div>
+                  <v-btn icon x-small @click="step(f.unit, -1)">
+                    <v-icon>mdi-menu-down</v-icon>
+                  </v-btn>
+                </div>
+              </div>
+              <div class="speed-row">
+                <v-btn icon small @click="changeSpeed(-1)">
+                  <v-icon>mdi-rewind</v-icon>
+                </v-btn>
+                <span class="speed-label">{{ speedLabel }}</span>
+                <v-btn icon small @click="changeSpeed(1)">
+                  <v-icon>mdi-fast-forward</v-icon>
+                </v-btn>
+              </div>
+              <div class="day-slider" :style="{background: sliderBg}">
+                <v-slider min="0" max="1439" v-model="timeMinute"
+                          :hint="sliderHint" persistent-hint></v-slider>
+              </div>
+            </v-card>
+          </v-menu>
+        </div>
+      </div>
+      <div class="footer-icons">
+        <stel-button :label="t('Constellations')"
+                     img="static/imgs/symbols/btn-cst-lines.svg"
+                     :obj="stel && stel.core.constellations"
+                     attr="lines_visible" :also="['labels_visible']">
+        </stel-button>
+        <stel-button :label="t('Constellation Art')"
+                     img="static/imgs/symbols/btn-cst-art.svg"
+                     :obj="stel && stel.core.constellations"
+                     attr="images_visible">
+        </stel-button>
+        <stel-button :label="t('Atmosphere')"
+                     img="static/imgs/symbols/btn-atmosphere.svg"
+                     :obj="stel && stel.core.atmosphere"
+                     attr="visible">
+        </stel-button>
+        <stel-button :label="t('Landscape')"
+                     img="static/imgs/symbols/btn-landscape.svg"
+                     :obj="stel && stel.core.landscapes"
+                     attr="visible">
+        </stel-button>
+        <stel-button :label="t('Azimuthal Grid')"
+                     img="static/imgs/symbols/btn-azimuthal-grid.svg"
+                     :obj="stel && stel.core.lines.azimuthal"
+                     attr="visible">
+        </stel-button>
+        <stel-button :label="t('Equatorial Grid')"
+                     img="static/imgs/symbols/btn-equatorial-grid.svg"
+                     :obj="stel && stel.core.lines.equatorial"
+                     attr="visible">
+        </stel-button>
+        <stel-button :label="t('Deep Sky Objects')"
+                     img="static/imgs/symbols/btn-nebulae.svg"
+                     :obj="stel && stel.core.dsos"
+                     attr="visible">
+        </stel-button>
+        <div class="stel-button" :class="{'semi-transparent': !nightmode}">
+          <a role="button" tabindex="0" :aria-label="t('Night Mode')"
+             @click="toggleNightMode"
+             @keydown.enter.prevent="toggleNightMode"
+             @keydown.space.prevent="toggleNightMode">
+            <img src="static/imgs/symbols/btn-night-mode.svg" alt=""/>
+          </a>
+          <span class="stel-button-label" aria-hidden="true">{{ t('Night Mode') }}</span>
+        </div>
+        <div class="stel-button" :class="{'semi-transparent': !fsActive}">
+          <a role="button" tabindex="0"
+             :aria-label="fsActive ? t('Exit Full Screen') : t('Full Screen')"
+             @click="toggleFullscreen"
+             @keydown.enter.prevent="toggleFullscreen"
+             @keydown.space.prevent="toggleFullscreen">
+            <img :src="fsActive ? 'static/imgs/symbols/fullscreen_exit.svg'
+                                : 'static/imgs/symbols/fullscreen.svg'" alt=""/>
+          </a>
+          <span class="stel-button-label" aria-hidden="true">
+            {{ fsActive ? t('Exit Full Screen') : t('Full Screen') }}
+          </span>
+        </div>
       </div>
     </v-footer>
 
@@ -572,10 +639,7 @@
               class="w-100 h-100">
       </canvas>
       <div class="fov-readout" ref="fovReadout"></div>
-      <v-card v-if="stel && stel.core.selection"
-              style="position:absolute; top: 64px; width:430px;
-                     max-height: calc(100vh - 160px); overflow-y: auto;
-                     background: rgba(33, 33, 33, 0.72);">
+      <v-card v-if="stel && stel.core.selection" class="sel-card">
         <v-card-title primary-title>
           <div style="width: 100%">
             <h3>{{getTitle(stel.core.selection)}}</h3>
