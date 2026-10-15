@@ -214,15 +214,17 @@
     overflow-y: auto;
     background: rgba(33, 33, 33, 0.72);
   }
-  /* On phones keep blank sky around the card so a tap outside closes it,
-     and stop it short of #stel's bottom edge, which sits above the fixed
-     footer (icon row + location/time buttons). */
+  /* On phones keep blank sky around the card so a tap outside closes it.
+     The max-height is the sky area (#stel) minus a 12px gap top and bottom,
+     so long articles scroll inside the card instead of running under the
+     fixed footer (icon row + location/time buttons). */
   @media (max-width: 600px) {
     .sel-card {
       top: 12px;
       left: 10%;
       width: 80%;
-      max-height: calc(100% - 24px);
+      max-height: calc(100vh - var(--chrome-top, 56px)
+                             - var(--chrome-bottom, 92px) - 24px);
     }
   }
   .fov-readout {
@@ -1323,6 +1325,28 @@
       document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && that.pseudoFs) that.setPseudoFs(false);
       });
+      // The selection card is sized against the sky area, which is the
+      // viewport minus these two bars; percentages cannot express that
+      // because #stel's own height is not definite.
+      var syncChromeVars = function() {
+        var bar = document.querySelector('.v-app-bar');
+        var foot = document.querySelector('.v-footer');
+        var s = document.documentElement.style;
+        if (bar) s.setProperty('--chrome-top', bar.offsetHeight + 'px');
+        if (foot) s.setProperty('--chrome-bottom', foot.offsetHeight + 'px');
+      };
+      syncChromeVars();
+      window.addEventListener('resize', syncChromeVars);
+      window.addEventListener('load', syncChromeVars);
+      // The footer grows again once its icon images decode, so track size
+      // changes instead of measuring once.
+      if (window.ResizeObserver) {
+        var ro = new ResizeObserver(syncChromeVars);
+        var barEl = document.querySelector('.v-app-bar');
+        var footEl = document.querySelector('.v-footer');
+        if (barEl) ro.observe(barEl);
+        if (footEl) ro.observe(footEl);
+      }
       StelWebEngine({
         wasmFile: '../../build/stellarium-web-engine.wasm',
         canvas: document.getElementById('stel-canvas'),
