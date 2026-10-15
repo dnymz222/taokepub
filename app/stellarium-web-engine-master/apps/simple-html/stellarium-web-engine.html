@@ -212,7 +212,13 @@
     width: 430px;
     max-height: calc(100vh - 160px);
     overflow-y: auto;
-    background: rgba(33, 33, 33, 0.72);
+  }
+  /* Dark but see-through so the sky behind the card shows; the blur keeps
+     light text readable over bright star fields. The extra class specificity
+     is needed to beat Vuetify's opaque .theme--dark.v-sheet background. */
+  .v-card.sel-card.theme--dark {
+    background: rgba(15, 20, 26, 0.7);
+
   }
   /* On phones keep blank sky around the card so a tap outside closes it.
      The max-height is the sky area (#stel) minus a 12px gap top and bottom,
@@ -224,7 +230,7 @@
       left: 10%;
       width: 80%;
       max-height: calc(100vh - var(--chrome-top, 56px)
-                             - var(--chrome-bottom, 92px) - 24px);
+                             - var(--chrome-bottom, 92px) - 30px);
     }
   }
   .fov-readout {
