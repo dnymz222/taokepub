@@ -212,17 +212,17 @@ def astro_app_pay_v2():
     amount = request.args.get("amount")
     ordername = request.args.get("ordername", "天文观星指南阳春三月特惠(终身会员)")
     if  type == "1":
-        model.total_amount = "78.00"
+        model.total_amount = "36.00"
         if amount:
             model.total_amount =amount
         model.subject = '天文观星指南包年会员'
     elif type == "9":
-        model.total_amount = "12.00"
+        model.total_amount = "6.00"
         if amount:
             model.total_amount = amount
         model.subject = '天文观星指南包月会员'
     elif type == "3" :
-        model.total_amount = "30.00"
+        model.total_amount = "15.00"
         if amount:
             model.total_amount =amount
         model.subject = '天文观星指南包季会员'
@@ -232,7 +232,7 @@ def astro_app_pay_v2():
             model.total_amount = amount
         model.subject = "天文观星指南双十一特惠(终身会员)"
     else:
-        model.total_amount = "198.00"
+        model.total_amount = "98.00"
         if amount:
             model.total_amount =amount
         model.subject = '天文观星指南终身会员'

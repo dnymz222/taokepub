@@ -99,6 +99,10 @@ def create_app(config_name):
     app.register_blueprint(main_blueprint, url_prefix="/")
 
 
+    from  .skymap import skymap as skymap_blueprint
+    app.register_blueprint(skymap_blueprint)
+
+
 
     return app
 

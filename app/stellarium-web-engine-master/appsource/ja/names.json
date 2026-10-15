@@ -1,0 +1,16466 @@
+{
+  "Sun": [
+    "太陽"
+  ],
+  "Moon": [
+    "月"
+  ],
+  "Mercury": [
+    "水星"
+  ],
+  "Venus": [
+    "金星"
+  ],
+  "Mars": [
+    "火星"
+  ],
+  "Jupiter": [
+    "木星"
+  ],
+  "Saturn": [
+    "土星"
+  ],
+  "Uranus": [
+    "天王星"
+  ],
+  "Neptune": [
+    "海王星"
+  ],
+  "Pluto": [
+    "冥王星"
+  ],
+  "Andromeda": [
+    "アンドロメダ座"
+  ],
+  "Antlia": [
+    "ポンプ座"
+  ],
+  "Apus": [
+    "ふうちょう座"
+  ],
+  "Aquarius": [
+    "みずがめ座"
+  ],
+  "Aquila": [
+    "わし座"
+  ],
+  "Ara": [
+    "さいだん座"
+  ],
+  "Aries": [
+    "おひつじ座"
+  ],
+  "Auriga": [
+    "ぎょしゃ座"
+  ],
+  "Bootes": [
+    "うしかい座"
+  ],
+  "Caelum": [
+    "ちょうこくぐ座"
+  ],
+  "Camelopardalis": [
+    "きりん座"
+  ],
+  "Cancer": [
+    "かに座"
+  ],
+  "Canes Venatici": [
+    "りょうけん座"
+  ],
+  "Canis Major": [
+    "おおいぬ座"
+  ],
+  "Canis Minor": [
+    "こいぬ座"
+  ],
+  "Capricornus": [
+    "やぎ座"
+  ],
+  "Carina": [
+    "りゅうこつ座"
+  ],
+  "Cassiopeia": [
+    "カシオペヤ座"
+  ],
+  "Centaurus": [
+    "ケンタウルス座"
+  ],
+  "Cepheus": [
+    "ケフェウス座"
+  ],
+  "Cetus": [
+    "くじら座"
+  ],
+  "Chamaeleon": [
+    "カメレオン座"
+  ],
+  "Circinus": [
+    "コンパス座"
+  ],
+  "Columba": [
+    "はと座"
+  ],
+  "Coma Berenices": [
+    "かみのけ座"
+  ],
+  "Corona Australis": [
+    "みなみのかんむり座"
+  ],
+  "Corona Borealis": [
+    "かんむり座"
+  ],
+  "Corvus": [
+    "からす座"
+  ],
+  "Crater": [
+    "コップ座"
+  ],
+  "Crux": [
+    "みなみじゅうじ座"
+  ],
+  "Cygnus": [
+    "はくちょう座"
+  ],
+  "Delphinus": [
+    "いるか座"
+  ],
+  "Dorado": [
+    "かじき座"
+  ],
+  "Draco": [
+    "りゅう座"
+  ],
+  "Equuleus": [
+    "こうま座"
+  ],
+  "Eridanus": [
+    "エリダヌス座"
+  ],
+  "Fornax": [
+    "ろ座"
+  ],
+  "Gemini": [
+    "ふたご座"
+  ],
+  "Grus": [
+    "つる座"
+  ],
+  "Hercules": [
+    "ヘルクレス座"
+  ],
+  "Horologium": [
+    "とけい座"
+  ],
+  "Hydra": [
+    "うみへび座"
+  ],
+  "Hydrus": [
+    "みずへび座"
+  ],
+  "Indus": [
+    "インディアン座"
+  ],
+  "Lacerta": [
+    "とかげ座"
+  ],
+  "Leo": [
+    "しし座"
+  ],
+  "Leo Minor": [
+    "こじし座"
+  ],
+  "Lepus": [
+    "うさぎ座"
+  ],
+  "Libra": [
+    "てんびん座"
+  ],
+  "Lupus": [
+    "おおかみ座"
+  ],
+  "Lynx": [
+    "やまねこ座"
+  ],
+  "Lyra": [
+    "こと座"
+  ],
+  "Mensa": [
+    "テーブルさん座"
+  ],
+  "Microscopium": [
+    "けんびきょう座"
+  ],
+  "Monoceros": [
+    "いっかくじゅう座"
+  ],
+  "Musca": [
+    "はえ座"
+  ],
+  "Norma": [
+    "じょうぎ座"
+  ],
+  "Octans": [
+    "はちぶんぎ座"
+  ],
+  "Ophiuchus": [
+    "へびつかい座"
+  ],
+  "Orion": [
+    "オリオン座"
+  ],
+  "Pavo": [
+    "くじゃく座"
+  ],
+  "Pegasus": [
+    "ペガスス座"
+  ],
+  "Perseus": [
+    "ペルセウス座"
+  ],
+  "Phoenix": [
+    "ほうおう座"
+  ],
+  "Pictor": [
+    "がか座"
+  ],
+  "Pisces": [
+    "うお座"
+  ],
+  "Piscis Austrinus": [
+    "みなみのうお座"
+  ],
+  "Puppis": [
+    "とも座"
+  ],
+  "Pyxis": [
+    "らしんばん座"
+  ],
+  "Reticulum": [
+    "レチクル座"
+  ],
+  "Sagitta": [
+    "や座"
+  ],
+  "Sagittarius": [
+    "いて座"
+  ],
+  "Scorpius": [
+    "さそり座"
+  ],
+  "Sculptor": [
+    "ちょうこくしつ座"
+  ],
+  "Scutum": [
+    "たて座"
+  ],
+  "Serpens": [
+    "へび座"
+  ],
+  "Sextans": [
+    "ろくぶんぎ座"
+  ],
+  "Taurus": [
+    "おうし座"
+  ],
+  "Telescopium": [
+    "ぼうえんきょう座"
+  ],
+  "Triangulum": [
+    "さんかく座"
+  ],
+  "Triangulum Australe": [
+    "みなみのさんかく座"
+  ],
+  "Tucana": [
+    "きょしちょう座"
+  ],
+  "Ursa Major": [
+    "おおぐま座"
+  ],
+  "Ursa Minor": [
+    "こぐま座"
+  ],
+  "Vela": [
+    "ほ座"
+  ],
+  "Virgo": [
+    "おとめ座"
+  ],
+  "Volans": [
+    "とびうお座"
+  ],
+  "Vulpecula": [
+    "こぎつね座"
+  ],
+  "Sirius": [
+    "シリウス"
+  ],
+  "Canopus": [
+    "カノープス"
+  ],
+  "Arcturus": [
+    "アークトゥルス"
+  ],
+  "Rigel Kentaurus": [
+    "ケンタウルス座アルファ星"
+  ],
+  "Vega": [
+    "ベガ"
+  ],
+  "Capella": [
+    "カペラ"
+  ],
+  "Rigel": [
+    "リゲル"
+  ],
+  "Procyon": [
+    "プロキオン"
+  ],
+  "Betelgeuse": [
+    "ベテルギウス"
+  ],
+  "Achernar": [
+    "アケルナル"
+  ],
+  "Hamal": [
+    "おひつじ座アルファ星"
+  ],
+  "Altair": [
+    "アルタイル"
+  ],
+  "Aldebaran": [
+    "アルデバラン"
+  ],
+  "Antares": [
+    "アンタレス"
+  ],
+  "Spica": [
+    "スピカ"
+  ],
+  "Pollux": [
+    "ポルックス"
+  ],
+  "Fomalhaut": [
+    "フォーマルハウト"
+  ],
+  "Deneb": [
+    "デネブ"
+  ],
+  "Mimosa": [
+    "みなみじゅうじ座ベータ星"
+  ],
+  "Regulus": [
+    "レグルス"
+  ],
+  "Adhara": [
+    "おおいぬ座イプシロン星"
+  ],
+  "Castor": [
+    "カストル"
+  ],
+  "Shaula": [
+    "さそり座ラムダ星"
+  ],
+  "Bellatrix": [
+    "オリオン座ガンマ星"
+  ],
+  "Elnath": [
+    "おうし座ベータ星"
+  ],
+  "Miaplacidus": [
+    "りゅうこつ座ベータ星"
+  ],
+  "Alnilam": [
+    "オリオン座イプシロン星"
+  ],
+  "Alnitak": [
+    "オリオン座ゼータ星"
+  ],
+  "Wezen": [
+    "おおいぬ座デルタ星"
+  ],
+  "Avior": [
+    "りゅうこつ座イプシロン星"
+  ],
+  "Dubhe": [
+    "おおぐま座アルファ星"
+  ],
+  "Mirfak": [
+    "ペルセウス座アルファ星"
+  ],
+  "Alkaid": [
+    "おおぐま座イータ星"
+  ],
+  "Sargas": [
+    "さそり座シータ星"
+  ],
+  "Menkalinan": [
+    "ぎょしゃ座ベータ星"
+  ],
+  "Atria": [
+    "みなみのさんかく座アルファ星"
+  ],
+  "Alhena": [
+    "ふたご座ガンマ星"
+  ],
+  "Peacock": [
+    "くじゃく座アルファ星"
+  ],
+  "Mirzam": [
+    "おおいぬ座ベータ星"
+  ],
+  "Alphard": [
+    "アルファルド"
+  ],
+  "Polaris": [
+    "ポラリス"
+  ],
+  "Diphda": [
+    "くじら座ベータ星"
+  ],
+  "Rasalhague": [
+    "へびつかい座アルファ星"
+  ],
+  "Kochab": [
+    "こぐま座ベータ星"
+  ],
+  "Saiph": [
+    "オリオン座カッパ星"
+  ],
+  "Denebola": [
+    "デネボラ"
+  ],
+  "Algol": [
+    "アルゴル"
+  ],
+  "Mintaka": [
+    "オリオン座デルタ星"
+  ],
+  "Almach": [
+    "アンドロメダ座ガンマ星"
+  ],
+  "Menkar": [
+    "くじら座アルファ星"
+  ],
+  "Atlas": [
+    "アトラス"
+  ],
+  "Schedar": [
+    "カシオペヤ座アルファ星"
+  ],
+  "Caph": [
+    "カシオペヤ座ベータ星"
+  ],
+  "Alioth": [
+    "おおぐま座イプシロン星"
+  ],
+  "Merak": [
+    "おおぐま座ベータ星"
+  ],
+  "Phecda": [
+    "おおぐま座ガンマ星"
+  ],
+  "Izar": [
+    "うしかい座イプシロン星"
+  ],
+  "Alphecca": [
+    "かんむり座アルファ星"
+  ],
+  "Algieba": [
+    "しし座ガンマ星"
+  ],
+  "Markab": [
+    "ペガスス座アルファ星"
+  ],
+  "Scheat": [
+    "ペガスス座ベータ星"
+  ],
+  "Enif": [
+    "ペガスス座イプシロン星"
+  ],
+  "Andromeda Nebula": [
+    "アンドロメダ銀河"
+  ],
+  "Great Orion Nebula": [
+    "オリオン大星雲"
+  ],
+  "Pleiades": [
+    "プレアデス星団"
+  ],
+  "Beehive Cluster": [
+    "プレセペ星団"
+  ],
+  "Ring Nebula": [
+    "環状星雲"
+  ],
+  "Dumbbell Nebula": [
+    "亜鈴状星雲"
+  ],
+  "Whirlpool Galaxy": [
+    "子持ち銀河"
+  ],
+  "Sombrero Galaxy": [
+    "ソンブレロ銀河"
+  ],
+  "ω Cen Cluster": [
+    "Ω星団"
+  ],
+  "1 Aquarii": [
+    ""
+  ],
+  "1 Arietis": [
+    ""
+  ],
+  "1 Aurigae": [
+    ""
+  ],
+  "1 Boötis": [
+    ""
+  ],
+  "1 Camelopardalis": [
+    ""
+  ],
+  "1 Cancri": [
+    ""
+  ],
+  "1 Canis Minoris": [
+    ""
+  ],
+  "1 Capricorni": [
+    ""
+  ],
+  "1 Cassiopeiae": [
+    ""
+  ],
+  "1 Centauri": [
+    ""
+  ],
+  "1 Ceti": [
+    ""
+  ],
+  "1 Delphini": [
+    ""
+  ],
+  "1 Eridani": [
+    ""
+  ],
+  "1 Geminorum": [
+    ""
+  ],
+  "1 Lacertae": [
+    ""
+  ],
+  "1 Lupi": [
+    ""
+  ],
+  "1 Lyncis": [
+    ""
+  ],
+  "1 Orionis": [
+    "オリオン座パイ3星"
+  ],
+  "1 Pegasi": [
+    ""
+  ],
+  "1 Persei": [
+    ""
+  ],
+  "1 Puppis": [
+    ""
+  ],
+  "1 Scorpii": [
+    ""
+  ],
+  "1 Serpentis": [
+    ""
+  ],
+  "1 Vulpeculae": [
+    ""
+  ],
+  "10 Andromedae": [
+    ""
+  ],
+  "10 Aquilae": [
+    ""
+  ],
+  "10 Arietis": [
+    ""
+  ],
+  "10 Boötis": [
+    ""
+  ],
+  "10 Cancri": [
+    ""
+  ],
+  "10 Canis Majoris": [
+    ""
+  ],
+  "10 Capricorni": [
+    ""
+  ],
+  "10 Cassiopeiae": [
+    ""
+  ],
+  "10 Cephei": [
+    "ケフェウス座ニュー星"
+  ],
+  "10 Delphini": [
+    ""
+  ],
+  "10 Draconis": [
+    ""
+  ],
+  "10 Eridani": [
+    ""
+  ],
+  "10 Lacertae": [
+    "とかげ座10番星"
+  ],
+  "10 Leonis Minoris": [
+    ""
+  ],
+  "10 Orionis": [
+    ""
+  ],
+  "10 Persei": [
+    ""
+  ],
+  "10 Scorpii": [
+    "さそり座オメガ2星"
+  ],
+  "10 Serpentis": [
+    ""
+  ],
+  "10 Tauri": [
+    "おうし座10番星"
+  ],
+  "10 Trianguli": [
+    ""
+  ],
+  "10 Ursae Majoris": [
+    ""
+  ],
+  "10 Vulpeculae": [
+    ""
+  ],
+  "100 Aquarii": [
+    ""
+  ],
+  "101 Aquarii": [
+    ""
+  ],
+  "101 Piscium": [
+    ""
+  ],
+  "101 Virginis": [
+    ""
+  ],
+  "102 Aquarii": [
+    ""
+  ],
+  "102 Herculis": [
+    ""
+  ],
+  "102 Piscium": [
+    "うお座パイ星"
+  ],
+  "103 Aquarii": [
+    ""
+  ],
+  "104 Aquarii": [
+    ""
+  ],
+  "104 Herculis": [
+    ""
+  ],
+  "104 Tauri": [
+    ""
+  ],
+  "105 Aquarii": [
+    ""
+  ],
+  "106 Aquarii": [
+    ""
+  ],
+  "106 Herculis": [
+    ""
+  ],
+  "106 Piscium": [
+    ""
+  ],
+  "107 Aquarii": [
+    ""
+  ],
+  "107 Piscium": [
+    "うお座107番星"
+  ],
+  "107 Virginis": [
+    "おとめ座ミュー星"
+  ],
+  "108 Aquarii": [
+    ""
+  ],
+  "109 Herculis": [
+    ""
+  ],
+  "109 Piscium": [
+    "うお座109番星"
+  ],
+  "109 Tauri": [
+    ""
+  ],
+  "109 Virginis": [
+    "おとめ座109番星"
+  ],
+  "11 Andromedae": [
+    ""
+  ],
+  "11 Aquarii": [
+    ""
+  ],
+  "11 Aquilae": [
+    ""
+  ],
+  "11 Arietis": [
+    ""
+  ],
+  "11 Aurigae": [
+    "ぎょしゃ座ミュー星"
+  ],
+  "11 Boötis": [
+    ""
+  ],
+  "11 Camelopardalis": [
+    ""
+  ],
+  "11 Canis Majoris": [
+    ""
+  ],
+  "11 Canis Minoris": [
+    ""
+  ],
+  "11 Cephei": [
+    ""
+  ],
+  "11 Comae Berenices": [
+    "かみのけ座11番星"
+  ],
+  "11 Lacertae": [
+    ""
+  ],
+  "11 Leonis Minoris": [
+    ""
+  ],
+  "11 Librae": [
+    ""
+  ],
+  "11 Lyrae": [
+    ""
+  ],
+  "11 Orionis": [
+    ""
+  ],
+  "11 Persei": [
+    ""
+  ],
+  "11 Puppis": [
+    ""
+  ],
+  "11 Sagittae": [
+    ""
+  ],
+  "11 Sagittarii": [
+    ""
+  ],
+  "11 Serpentis": [
+    ""
+  ],
+  "11 Trianguli": [
+    ""
+  ],
+  "11 Ursae Majoris": [
+    ""
+  ],
+  "11 Ursae Minoris": [
+    "こぐま座11番星"
+  ],
+  "110 Herculis": [
+    ""
+  ],
+  "110 Virginis": [
+    ""
+  ],
+  "111 Herculis": [
+    ""
+  ],
+  "111 Piscium": [
+    ""
+  ],
+  "111 Tauri": [
+    ""
+  ],
+  "112 Herculis": [
+    ""
+  ],
+  "112 Piscium": [
+    ""
+  ],
+  "113 Herculis": [
+    ""
+  ],
+  "114 Tauri": [
+    ""
+  ],
+  "119 Tauri": [
+    "おうし座CE星"
+  ],
+  "12 Andromedae": [
+    ""
+  ],
+  "12 Aquarii": [
+    ""
+  ],
+  "12 Aquilae": [
+    "わし座12番星"
+  ],
+  "12 Boötis": [
+    ""
+  ],
+  "12 Camelopardalis": [
+    ""
+  ],
+  "12 Cancri": [
+    ""
+  ],
+  "12 Canis Majoris": [
+    ""
+  ],
+  "12 Cassiopeiae": [
+    ""
+  ],
+  "12 Comae Berenices": [
+    ""
+  ],
+  "12 Delphini": [
+    "いるか座ガンマ星"
+  ],
+  "12 Hydrae": [
+    ""
+  ],
+  "12 Lacertae": [
+    ""
+  ],
+  "12 Lyncis": [
+    ""
+  ],
+  "12 Lyrae": [
+    "こと座デルタ2星"
+  ],
+  "12 Ophiuchi": [
+    "へびつかい座12番星"
+  ],
+  "12 Pegasi": [
+    ""
+  ],
+  "12 Persei": [
+    ""
+  ],
+  "12 Scorpii": [
+    ""
+  ],
+  "12 Serpentis": [
+    ""
+  ],
+  "12 Trianguli": [
+    ""
+  ],
+  "12 Vulpeculae": [
+    ""
+  ],
+  "126 Tauri": [
+    ""
+  ],
+  "13 Andromedae": [
+    ""
+  ],
+  "13 Aquarii": [
+    "みずがめ座ニュー星"
+  ],
+  "13 Boötis": [
+    ""
+  ],
+  "13 Cancri": [
+    ""
+  ],
+  "13 Capricorni": [
+    ""
+  ],
+  "13 Ceti": [
+    ""
+  ],
+  "13 Comae Berenices": [
+    ""
+  ],
+  "13 Delphini": [
+    ""
+  ],
+  "13 Geminorum": [
+    "ふたご座ミュー星"
+  ],
+  "13 Lyrae": [
+    "こと座R星"
+  ],
+  "13 Monocerotis": [
+    ""
+  ],
+  "13 Sagittae": [
+    ""
+  ],
+  "13 Sagittarii": [
+    "いて座ミュー星"
+  ],
+  "13 Scorpii": [
+    ""
+  ],
+  "13 Trianguli": [
+    ""
+  ],
+  "13 Ursae Majoris": [
+    ""
+  ],
+  "13 Vulpeculae": [
+    ""
+  ],
+  "14 Andromedae": [
+    "アンドロメダ座14番星"
+  ],
+  "14 Aquilae": [
+    ""
+  ],
+  "14 Arietis": [
+    ""
+  ],
+  "14 Aurigae": [
+    ""
+  ],
+  "14 Boötis": [
+    ""
+  ],
+  "14 Camelopardalis": [
+    ""
+  ],
+  "14 Canis Minoris": [
+    ""
+  ],
+  "14 Cephei": [
+    ""
+  ],
+  "14 Ceti": [
+    ""
+  ],
+  "14 Comae Berenices": [
+    ""
+  ],
+  "14 Eridani": [
+    ""
+  ],
+  "14 Herculis": [
+    "ヘルクレス座14番星"
+  ],
+  "14 Lacertae": [
+    ""
+  ],
+  "14 Persei": [
+    ""
+  ],
+  "14 Piscis Austrini": [
+    ""
+  ],
+  "14 Sagittae": [
+    ""
+  ],
+  "14 Sagittarii": [
+    ""
+  ],
+  "14 Scorpii": [
+    "さそり座ニュー星"
+  ],
+  "14 Trianguli": [
+    ""
+  ],
+  "14 Vulpeculae": [
+    ""
+  ],
+  "15 Andromedae": [
+    "アンドロメダ座15番星"
+  ],
+  "15 Aquarii": [
+    ""
+  ],
+  "15 Aquilae": [
+    "わし座15番星"
+  ],
+  "15 Arietis": [
+    "おひつじ座AV星"
+  ],
+  "15 Boötis": [
+    ""
+  ],
+  "15 Camelopardalis": [
+    ""
+  ],
+  "15 Cancri": [
+    ""
+  ],
+  "15 Canis Majoris": [
+    ""
+  ],
+  "15 Cygni": [
+    ""
+  ],
+  "15 Delphini": [
+    ""
+  ],
+  "15 Draconis": [
+    ""
+  ],
+  "15 Eridani": [
+    ""
+  ],
+  "15 Lacertae": [
+    ""
+  ],
+  "15 Leonis Minoris": [
+    ""
+  ],
+  "15 Lyncis": [
+    ""
+  ],
+  "15 Monocerotis": [
+    ""
+  ],
+  "15 Orionis": [
+    "オリオン座15番星"
+  ],
+  "15 Sagittae": [
+    ""
+  ],
+  "15 Sagittarii": [
+    ""
+  ],
+  "15 Serpentis": [
+    ""
+  ],
+  "15 Trianguli": [
+    ""
+  ],
+  "15 Ursae Majoris": [
+    ""
+  ],
+  "15 Vulpeculae": [
+    ""
+  ],
+  "16 Aquarii": [
+    ""
+  ],
+  "16 Arietis": [
+    ""
+  ],
+  "16 Aurigae": [
+    ""
+  ],
+  "16 Camelopardalis": [
+    ""
+  ],
+  "16 Canis Majoris": [
+    "おおいぬ座オミクロン1星"
+  ],
+  "16 Cephei": [
+    ""
+  ],
+  "16 Comae Berenices": [
+    ""
+  ],
+  "16 Cygni": [
+    "はくちょう座16番星"
+  ],
+  "16 Delphini": [
+    ""
+  ],
+  "16 Eridani": [
+    "エリダヌス座タウ4星"
+  ],
+  "16 Lacertae": [
+    ""
+  ],
+  "16 Librae": [
+    ""
+  ],
+  "16 Lyncis": [
+    ""
+  ],
+  "16 Lyrae": [
+    ""
+  ],
+  "16 Persei": [
+    ""
+  ],
+  "16 Puppis": [
+    ""
+  ],
+  "16 Sagittarii": [
+    ""
+  ],
+  "16 Serpentis": [
+    ""
+  ],
+  "16 Tauri": [
+    "おうし座16番星"
+  ],
+  "16 Ursae Majoris": [
+    ""
+  ],
+  "16 Virginis": [
+    ""
+  ],
+  "16 Vulpeculae": [
+    ""
+  ],
+  "17 Aquarii": [
+    ""
+  ],
+  "17 Aurigae": [
+    ""
+  ],
+  "17 Boötis": [
+    "うしかい座カッパ星"
+  ],
+  "17 Camelopardalis": [
+    ""
+  ],
+  "17 Canis Majoris": [
+    ""
+  ],
+  "17 Cephei": [
+    "ケフェウス座クシー星"
+  ],
+  "17 Ceti": [
+    ""
+  ],
+  "17 Comae Berenices": [
+    ""
+  ],
+  "17 Crateris": [
+    ""
+  ],
+  "17 Cygni": [
+    ""
+  ],
+  "17 Delphini": [
+    ""
+  ],
+  "17 Eridani": [
+    ""
+  ],
+  "17 Leporis": [
+    ""
+  ],
+  "17 Lyrae": [
+    ""
+  ],
+  "17 Monocerotis": [
+    ""
+  ],
+  "17 Persei": [
+    ""
+  ],
+  "17 Sagittarii": [
+    ""
+  ],
+  "17 Serpentis": [
+    ""
+  ],
+  "17 Tauri": [
+    "おうし座17番星"
+  ],
+  "17 Vulpeculae": [
+    ""
+  ],
+  "18 Andromedae": [
+    ""
+  ],
+  "18 Aquarii": [
+    ""
+  ],
+  "18 Aquilae": [
+    ""
+  ],
+  "18 Aurigae": [
+    ""
+  ],
+  "18 Boötis": [
+    ""
+  ],
+  "18 Camelopardalis": [
+    ""
+  ],
+  "18 Canis Majoris": [
+    ""
+  ],
+  "18 Delphini": [
+    "いるか座18番星"
+  ],
+  "18 Draconis": [
+    ""
+  ],
+  "18 Geminorum": [
+    ""
+  ],
+  "18 Monocerotis": [
+    ""
+  ],
+  "18 Sagittarii": [
+    ""
+  ],
+  "18 Scorpii": [
+    "さそり座18番星"
+  ],
+  "18 Serpentis": [
+    ""
+  ],
+  "18 Sextantis": [
+    ""
+  ],
+  "18 Tauri": [
+    ""
+  ],
+  "18 Ursae Majoris": [
+    ""
+  ],
+  "18 Ursae Minoris": [
+    ""
+  ],
+  "18 Vulpeculae": [
+    ""
+  ],
+  "19 Aquarii": [
+    ""
+  ],
+  "19 Aquilae": [
+    ""
+  ],
+  "19 Arietis": [
+    ""
+  ],
+  "19 Aurigae": [
+    ""
+  ],
+  "19 Canis Majoris": [
+    ""
+  ],
+  "19 Cassiopeiae": [
+    ""
+  ],
+  "19 Cephei": [
+    ""
+  ],
+  "19 Ceti": [
+    ""
+  ],
+  "19 Coronae Borealis": [
+    ""
+  ],
+  "19 Draconis": [
+    ""
+  ],
+  "19 Eridani": [
+    ""
+  ],
+  "19 Leonis Minoris": [
+    ""
+  ],
+  "19 Lyncis": [
+    ""
+  ],
+  "19 Lyrae": [
+    ""
+  ],
+  "19 Monocerotis": [
+    ""
+  ],
+  "19 Piscium": [
+    ""
+  ],
+  "19 Puppis": [
+    "とも座19番星"
+  ],
+  "19 Serpentis": [
+    ""
+  ],
+  "19 Sextantis": [
+    ""
+  ],
+  "19 Tauri": [
+    "おうし座19番星"
+  ],
+  "19 Vulpeculae": [
+    ""
+  ],
+  "2 Andromedae": [
+    "アンドロメダ座2番星"
+  ],
+  "2 Aurigae": [
+    ""
+  ],
+  "2 Boötis": [
+    ""
+  ],
+  "2 Camelopardalis": [
+    ""
+  ],
+  "2 Capricorni": [
+    ""
+  ],
+  "2 Cassiopeiae": [
+    ""
+  ],
+  "2 Centauri": [
+    ""
+  ],
+  "2 Ceti": [
+    ""
+  ],
+  "2 Cygni": [
+    ""
+  ],
+  "2 Eridani": [
+    "エリダヌス座タウ2星"
+  ],
+  "2 Lacertae": [
+    ""
+  ],
+  "2 Lupi": [
+    ""
+  ],
+  "2 Lyncis": [
+    ""
+  ],
+  "2 Lyrae": [
+    "こと座ミュー星"
+  ],
+  "2 Orionis": [
+    ""
+  ],
+  "2 Pegasi": [
+    ""
+  ],
+  "2 Persei": [
+    ""
+  ],
+  "2 Piscis Austrini": [
+    ""
+  ],
+  "2 Scorpii": [
+    ""
+  ],
+  "2 Sextantis": [
+    ""
+  ],
+  "2 Tauri": [
+    ""
+  ],
+  "2 Ursae Majoris": [
+    ""
+  ],
+  "2 Ursae Minoris": [
+    ""
+  ],
+  "2 Virginis": [
+    ""
+  ],
+  "2 Vulpeculae": [
+    ""
+  ],
+  "20 Aquarii": [
+    ""
+  ],
+  "20 Aquilae": [
+    ""
+  ],
+  "20 Arietis": [
+    ""
+  ],
+  "20 Boötis": [
+    ""
+  ],
+  "20 Cancri": [
+    ""
+  ],
+  "20 Cassiopeiae": [
+    ""
+  ],
+  "20 Ceti": [
+    ""
+  ],
+  "20 Coronae Borealis": [
+    ""
+  ],
+  "20 Cygni": [
+    ""
+  ],
+  "20 Leonis Minoris": [
+    "こじし座20番星"
+  ],
+  "20 Monocerotis": [
+    ""
+  ],
+  "20 Ophiuchi": [
+    ""
+  ],
+  "20 Persei": [
+    ""
+  ],
+  "20 Puppis": [
+    ""
+  ],
+  "20 Tauri": [
+    "おうし座20番星"
+  ],
+  "20 Vulpeculae": [
+    ""
+  ],
+  "21 Aquarii": [
+    ""
+  ],
+  "21 Aquilae": [
+    ""
+  ],
+  "21 Arietis": [
+    ""
+  ],
+  "21 Cancri": [
+    ""
+  ],
+  "21 Cassiopeiae": [
+    ""
+  ],
+  "21 Comae Berenices": [
+    ""
+  ],
+  "21 Coronae Borealis": [
+    ""
+  ],
+  "21 Leonis Minoris": [
+    ""
+  ],
+  "21 Lyncis": [
+    ""
+  ],
+  "21 Persei": [
+    ""
+  ],
+  "21 Sagittarii": [
+    ""
+  ],
+  "21 Tauri": [
+    ""
+  ],
+  "21 Vulpeculae": [
+    ""
+  ],
+  "22 Andromedae": [
+    ""
+  ],
+  "22 Aquilae": [
+    ""
+  ],
+  "22 Aurigae": [
+    ""
+  ],
+  "22 Boötis": [
+    ""
+  ],
+  "22 Cancri": [
+    ""
+  ],
+  "22 Ceti": [
+    ""
+  ],
+  "22 Cygni": [
+    ""
+  ],
+  "22 Orionis": [
+    ""
+  ],
+  "22 Pegasi": [
+    ""
+  ],
+  "22 Persei": [
+    "ペルセウス座パイ星"
+  ],
+  "22 Scorpii": [
+    ""
+  ],
+  "22 Serpentis": [
+    ""
+  ],
+  "22 Tauri": [
+    ""
+  ],
+  "22 Vulpeculae": [
+    ""
+  ],
+  "23 Andromedae": [
+    ""
+  ],
+  "23 Aquarii": [
+    "みずがめ座クシー星"
+  ],
+  "23 Aquilae": [
+    ""
+  ],
+  "23 Camelopardalis": [
+    ""
+  ],
+  "23 Cancri": [
+    ""
+  ],
+  "23 Ceti": [
+    ""
+  ],
+  "23 Comae Berenices": [
+    ""
+  ],
+  "23 Cygni": [
+    ""
+  ],
+  "23 Leonis Minoris": [
+    ""
+  ],
+  "23 Librae": [
+    "てんびん座23番星"
+  ],
+  "23 Orionis": [
+    ""
+  ],
+  "23 Sextantis": [
+    ""
+  ],
+  "23 Tauri": [
+    "おうし座23番星"
+  ],
+  "23 Ursae Majoris": [
+    "おおぐま座h星"
+  ],
+  "23 Vulpeculae": [
+    ""
+  ],
+  "24 Aquarii": [
+    ""
+  ],
+  "24 Aquilae": [
+    ""
+  ],
+  "24 Arietis": [
+    ""
+  ],
+  "24 Boötis": [
+    ""
+  ],
+  "24 Camelopardalis": [
+    ""
+  ],
+  "24 Cancri": [
+    ""
+  ],
+  "24 Canis Majoris": [
+    "おおいぬ座オミクロン2星"
+  ],
+  "24 Capricorni": [
+    ""
+  ],
+  "24 Cephei": [
+    ""
+  ],
+  "24 Comae Berenices": [
+    ""
+  ],
+  "24 Draconis": [
+    "りゅう座ニュー星"
+  ],
+  "24 Leonis": [
+    "しし座ミュー星"
+  ],
+  "24 Lyncis": [
+    ""
+  ],
+  "24 Persei": [
+    ""
+  ],
+  "24 Scorpii": [
+    ""
+  ],
+  "24 Ursae Majoris": [
+    ""
+  ],
+  "24 Vulpeculae": [
+    ""
+  ],
+  "25 Aquarii": [
+    "みずがめ座25番星"
+  ],
+  "25 Aquilae": [
+    ""
+  ],
+  "25 Arietis": [
+    ""
+  ],
+  "25 Cancri": [
+    ""
+  ],
+  "25 Cassiopeiae": [
+    ""
+  ],
+  "25 Orionis": [
+    "オリオン座25番星"
+  ],
+  "25 Scorpii": [
+    ""
+  ],
+  "25 Serpentis": [
+    ""
+  ],
+  "25 Sextantis": [
+    ""
+  ],
+  "25 Vulpeculae": [
+    ""
+  ],
+  "26 Andromedae": [
+    ""
+  ],
+  "26 Aquarii": [
+    ""
+  ],
+  "26 Aquilae": [
+    ""
+  ],
+  "26 Arietis": [
+    ""
+  ],
+  "26 Aurigae": [
+    ""
+  ],
+  "26 Boötis": [
+    ""
+  ],
+  "26 Camelopardalis": [
+    ""
+  ],
+  "26 Canis Majoris": [
+    ""
+  ],
+  "26 Cassiopeiae": [
+    ""
+  ],
+  "26 Cygni": [
+    ""
+  ],
+  "26 Draconis": [
+    "りゅう座26番星"
+  ],
+  "26 Eridani": [
+    ""
+  ],
+  "26 Hydrae": [
+    ""
+  ],
+  "26 Serpentis": [
+    ""
+  ],
+  "26 Ursae Majoris": [
+    ""
+  ],
+  "26 Vulpeculae": [
+    ""
+  ],
+  "27 Aquilae": [
+    ""
+  ],
+  "27 Arietis": [
+    ""
+  ],
+  "27 Cancri": [
+    ""
+  ],
+  "27 Canis Majoris": [
+    ""
+  ],
+  "27 Cygni": [
+    ""
+  ],
+  "27 Eridani": [
+    ""
+  ],
+  "27 Hydrae": [
+    ""
+  ],
+  "27 Leonis": [
+    ""
+  ],
+  "27 Lyncis": [
+    ""
+  ],
+  "27 Monocerotis": [
+    ""
+  ],
+  "27 Pegasi": [
+    ""
+  ],
+  "27 Piscium": [
+    ""
+  ],
+  "27 Tauri": [
+    "おうし座27番星"
+  ],
+  "27 Vulpeculae": [
+    ""
+  ],
+  "28 Andromedae": [
+    ""
+  ],
+  "28 Aquarii": [
+    ""
+  ],
+  "28 Aquilae": [
+    ""
+  ],
+  "28 Camelopardalis": [
+    ""
+  ],
+  "28 Cancri": [
+    ""
+  ],
+  "28 Cassiopeiae": [
+    "カシオペヤ座ウプシロン2星"
+  ],
+  "28 Cephei": [
+    ""
+  ],
+  "28 Cygni": [
+    ""
+  ],
+  "28 Eridani": [
+    ""
+  ],
+  "28 Herculis": [
+    ""
+  ],
+  "28 Leonis Minoris": [
+    ""
+  ],
+  "28 Monocerotis": [
+    ""
+  ],
+  "28 Tauri": [
+    "おうし座28番星"
+  ],
+  "28 Vulpeculae": [
+    ""
+  ],
+  "29 Andromedae": [
+    "アンドロメダ座パイ星"
+  ],
+  "29 Aquarii": [
+    ""
+  ],
+  "29 Aquilae": [
+    ""
+  ],
+  "29 Arietis": [
+    ""
+  ],
+  "29 Boötis": [
+    "うしかい座パイ星"
+  ],
+  "29 Camelopardalis": [
+    ""
+  ],
+  "29 Cancri": [
+    ""
+  ],
+  "29 Canis Majoris": [
+    ""
+  ],
+  "29 Cygni": [
+    ""
+  ],
+  "29 Herculis": [
+    ""
+  ],
+  "29 Leonis": [
+    ""
+  ],
+  "29 Orionis": [
+    ""
+  ],
+  "29 Pegasi": [
+    "ペガスス座パイ2星"
+  ],
+  "29 Persei": [
+    ""
+  ],
+  "29 Vulpeculae": [
+    ""
+  ],
+  "3 Andromedae": [
+    ""
+  ],
+  "3 Aquarii": [
+    ""
+  ],
+  "3 Arietis": [
+    ""
+  ],
+  "3 Boötis": [
+    ""
+  ],
+  "3 Camelopardalis": [
+    ""
+  ],
+  "3 Cancri": [
+    ""
+  ],
+  "3 Centauri": [
+    ""
+  ],
+  "3 Ceti": [
+    ""
+  ],
+  "3 Corvi": [
+    ""
+  ],
+  "3 Equulei": [
+    ""
+  ],
+  "3 Geminorum": [
+    ""
+  ],
+  "3 Lupi": [
+    ""
+  ],
+  "3 Monocerotis": [
+    "いっかくじゅう座3番星"
+  ],
+  "3 Orionis": [
+    "オリオン座パイ4星"
+  ],
+  "3 Persei": [
+    ""
+  ],
+  "3 Piscis Austrini": [
+    ""
+  ],
+  "3 Puppis": [
+    ""
+  ],
+  "3 Sagittarii": [
+    ""
+  ],
+  "3 Serpentis": [
+    ""
+  ],
+  "3 Ursae Majoris": [
+    "おおぐま座パイ1星"
+  ],
+  "3 Virginis": [
+    "おとめ座ニュー星"
+  ],
+  "3 Vulpeculae": [
+    ""
+  ],
+  "30 Aquarii": [
+    ""
+  ],
+  "30 Arietis": [
+    "おひつじ座30番星"
+  ],
+  "30 Aurigae": [
+    ""
+  ],
+  "30 Camelopardalis": [
+    ""
+  ],
+  "30 Cancri": [
+    ""
+  ],
+  "30 Cassiopeiae": [
+    "カシオペヤ座ミュー星"
+  ],
+  "30 Cygni": [
+    ""
+  ],
+  "30 Geminorum": [
+    ""
+  ],
+  "30 Herculis": [
+    ""
+  ],
+  "30 Leonis Minoris": [
+    ""
+  ],
+  "30 Ophiuchi": [
+    ""
+  ],
+  "30 Persei": [
+    ""
+  ],
+  "30 Piscium": [
+    ""
+  ],
+  "30 Vulpeculae": [
+    ""
+  ],
+  "31 Aquilae": [
+    "わし座31番星"
+  ],
+  "31 Arietis": [
+    ""
+  ],
+  "31 Boötis": [
+    ""
+  ],
+  "31 Camelopardalis": [
+    ""
+  ],
+  "31 Comae Berenices": [
+    ""
+  ],
+  "31 Crateris": [
+    ""
+  ],
+  "31 Cygni": [
+    ""
+  ],
+  "31 Geminorum": [
+    "ふたご座クシー星"
+  ],
+  "31 Hydrae": [
+    ""
+  ],
+  "31 Leonis": [
+    ""
+  ],
+  "31 Lyncis": [
+    "やまねこ座31番星"
+  ],
+  "31 Orionis": [
+    ""
+  ],
+  "31 Pegasi": [
+    ""
+  ],
+  "31 Persei": [
+    ""
+  ],
+  "31 Vulpeculae": [
+    ""
+  ],
+  "32 Andromedae": [
+    ""
+  ],
+  "32 Aquarii": [
+    ""
+  ],
+  "32 Aquilae": [
+    "わし座ニュー星"
+  ],
+  "32 Arietis": [
+    ""
+  ],
+  "32 Aurigae": [
+    "ぎょしゃ座ニュー星"
+  ],
+  "32 Boötis": [
+    ""
+  ],
+  "32 Cancri": [
+    ""
+  ],
+  "32 Cygni": [
+    ""
+  ],
+  "32 Draconis": [
+    "りゅう座クシー星"
+  ],
+  "32 Eridani": [
+    ""
+  ],
+  "32 Hydrae": [
+    ""
+  ],
+  "32 Leonis Minoris": [
+    ""
+  ],
+  "32 Librae": [
+    ""
+  ],
+  "32 Ophiuchi": [
+    ""
+  ],
+  "32 Orionis": [
+    ""
+  ],
+  "32 Pegasi": [
+    ""
+  ],
+  "32 Persei": [
+    ""
+  ],
+  "32 Sagittarii": [
+    "いて座ニュー1星"
+  ],
+  "32 Serpentis": [
+    ""
+  ],
+  "32 Tauri": [
+    ""
+  ],
+  "32 Virginis": [
+    ""
+  ],
+  "32 Vulpeculae": [
+    ""
+  ],
+  "33 Arietis": [
+    ""
+  ],
+  "33 Boötis": [
+    ""
+  ],
+  "33 Cephei": [
+    ""
+  ],
+  "33 Cygni": [
+    ""
+  ],
+  "33 Eridani": [
+    ""
+  ],
+  "33 Librae": [
+    ""
+  ],
+  "33 Pegasi": [
+    ""
+  ],
+  "33 Piscium": [
+    ""
+  ],
+  "33 Vulpeculae": [
+    ""
+  ],
+  "34 Arietis": [
+    ""
+  ],
+  "34 Boötis": [
+    ""
+  ],
+  "34 Cancri": [
+    ""
+  ],
+  "34 Cygni": [
+    "はくちょう座P星"
+  ],
+  "34 Draconis": [
+    ""
+  ],
+  "34 Leonis Minoris": [
+    ""
+  ],
+  "34 Pegasi": [
+    ""
+  ],
+  "34 Persei": [
+    ""
+  ],
+  "34 Ursae Majoris": [
+    "おおぐま座ミュー星"
+  ],
+  "35 Andromedae": [
+    "アンドロメダ座ニュー星"
+  ],
+  "35 Aquarii": [
+    ""
+  ],
+  "35 Aquilae": [
+    ""
+  ],
+  "35 Arietis": [
+    ""
+  ],
+  "35 Aurigae": [
+    "ぎょしゃ座パイ星"
+  ],
+  "35 Camelopardalis": [
+    ""
+  ],
+  "35 Cancri": [
+    ""
+  ],
+  "35 Comae Berenices": [
+    ""
+  ],
+  "35 Cygni": [
+    ""
+  ],
+  "35 Leonis": [
+    ""
+  ],
+  "35 Pegasi": [
+    ""
+  ],
+  "35 Piscium": [
+    ""
+  ],
+  "35 Sagittarii": [
+    ""
+  ],
+  "35 Sextantis": [
+    ""
+  ],
+  "35 Vulpeculae": [
+    ""
+  ],
+  "36 Andromedae": [
+    ""
+  ],
+  "36 Aquilae": [
+    ""
+  ],
+  "36 Arietis": [
+    ""
+  ],
+  "36 Aurigae": [
+    ""
+  ],
+  "36 Camelopardalis": [
+    ""
+  ],
+  "36 Cancri": [
+    ""
+  ],
+  "36 Capricorni": [
+    ""
+  ],
+  "36 Comae Berenices": [
+    ""
+  ],
+  "36 Draconis": [
+    ""
+  ],
+  "36 Eridani": [
+    ""
+  ],
+  "36 Lyncis": [
+    ""
+  ],
+  "36 Ophiuchi": [
+    "へびつかい座36番星"
+  ],
+  "36 Persei": [
+    ""
+  ],
+  "36 Sagittarii": [
+    ""
+  ],
+  "36 Serpentis": [
+    ""
+  ],
+  "36 Tauri": [
+    ""
+  ],
+  "36 Ursae Majoris": [
+    "おおぐま座36番星"
+  ],
+  "37 Andromedae": [
+    "アンドロメダ座ミュー星"
+  ],
+  "37 Aquilae": [
+    ""
+  ],
+  "37 Boötis": [
+    "うしかい座クシー星"
+  ],
+  "37 Camelopardalis": [
+    ""
+  ],
+  "37 Cancri": [
+    ""
+  ],
+  "37 Comae Berenices": [
+    ""
+  ],
+  "37 Geminorum": [
+    "ふたご座37番星"
+  ],
+  "37 Leonis Minoris": [
+    "こじし座37番星"
+  ],
+  "37 Librae": [
+    ""
+  ],
+  "37 Orionis": [
+    ""
+  ],
+  "37 Sagittarii": [
+    "いて座クシー2星"
+  ],
+  "37 Tauri": [
+    ""
+  ],
+  "38 Aquarii": [
+    ""
+  ],
+  "38 Aquilae": [
+    ""
+  ],
+  "38 Arietis": [
+    ""
+  ],
+  "38 Aurigae": [
+    ""
+  ],
+  "38 Boötis": [
+    "うしかい座38番星"
+  ],
+  "38 Cancri": [
+    ""
+  ],
+  "38 Eridani": [
+    "エリダヌス座オミクロン1星"
+  ],
+  "38 Geminorum": [
+    ""
+  ],
+  "38 Leonis Minoris": [
+    ""
+  ],
+  "38 Lyncis": [
+    ""
+  ],
+  "38 Virginis": [
+    ""
+  ],
+  "39 Andromedae": [
+    ""
+  ],
+  "39 Aquarii": [
+    ""
+  ],
+  "39 Arietis": [
+    "おひつじ座39番星"
+  ],
+  "39 Aurigae": [
+    ""
+  ],
+  "39 Boötis": [
+    ""
+  ],
+  "39 Cancri": [
+    ""
+  ],
+  "39 Ceti": [
+    ""
+  ],
+  "39 Crucis": [
+    ""
+  ],
+  "39 Cygni": [
+    ""
+  ],
+  "39 Draconis": [
+    ""
+  ],
+  "39 Eridani": [
+    ""
+  ],
+  "39 Hydrae": [
+    "うみへび座ウプシロン1星"
+  ],
+  "39 Leonis": [
+    ""
+  ],
+  "39 Tauri": [
+    ""
+  ],
+  "4 Andromedae": [
+    ""
+  ],
+  "4 Aquarii": [
+    ""
+  ],
+  "4 Aquilae": [
+    ""
+  ],
+  "4 Arietis": [
+    ""
+  ],
+  "4 Aurigae": [
+    "ぎょしゃ座オメガ星"
+  ],
+  "4 Camelopardalis": [
+    ""
+  ],
+  "4 Cancri": [
+    ""
+  ],
+  "4 Canis Majoris": [
+    ""
+  ],
+  "4 Cassiopeiae": [
+    ""
+  ],
+  "4 Centauri": [
+    ""
+  ],
+  "4 Cygni": [
+    ""
+  ],
+  "4 Draconis": [
+    ""
+  ],
+  "4 Equulei": [
+    ""
+  ],
+  "4 Lacertae": [
+    ""
+  ],
+  "4 Lupi": [
+    ""
+  ],
+  "4 Lyrae": [
+    "こと座イプシロン星"
+  ],
+  "4 Orionis": [
+    ""
+  ],
+  "4 Persei": [
+    ""
+  ],
+  "4 Sagittarii": [
+    ""
+  ],
+  "4 Scorpii": [
+    ""
+  ],
+  "4 Ursae Majoris": [
+    "おおぐま座パイ2星"
+  ],
+  "4 Ursae Minoris": [
+    ""
+  ],
+  "4 Vulpeculae": [
+    ""
+  ],
+  "40 Arietis": [
+    ""
+  ],
+  "40 Aurigae": [
+    ""
+  ],
+  "40 Boötis": [
+    ""
+  ],
+  "40 Camelopardalis": [
+    ""
+  ],
+  "40 Cancri": [
+    ""
+  ],
+  "40 Eridani": [
+    "エリダヌス座オミクロン2星"
+  ],
+  "40 Hydrae": [
+    ""
+  ],
+  "40 Leonis": [
+    ""
+  ],
+  "40 Leonis Minoris": [
+    ""
+  ],
+  "40 Ophiuchi": [
+    ""
+  ],
+  "40 Orionis": [
+    "オリオン座ファイ2星"
+  ],
+  "40 Persei": [
+    ""
+  ],
+  "40 Tauri": [
+    ""
+  ],
+  "41 Andromedae": [
+    ""
+  ],
+  "41 Aquarii": [
+    ""
+  ],
+  "41 Arietis": [
+    "おひつじ座41番星"
+  ],
+  "41 Aurigae": [
+    ""
+  ],
+  "41 Capricorni": [
+    ""
+  ],
+  "41 Comae Berenices": [
+    ""
+  ],
+  "41 Cygni": [
+    ""
+  ],
+  "41 Eridani": [
+    "エリダヌス座ウプシロン4星"
+  ],
+  "41 Herculis": [
+    ""
+  ],
+  "41 Leonis Minoris": [
+    ""
+  ],
+  "41 Lyncis": [
+    "やまねこ座41番星"
+  ],
+  "41 Ophiuchi": [
+    ""
+  ],
+  "41 Orionis": [
+    "トラペジウム"
+  ],
+  "41 Persei": [
+    "ペルセウス座ニュー星"
+  ],
+  "41 Sagittarii": [
+    "いて座パイ星"
+  ],
+  "41 Sextantis": [
+    ""
+  ],
+  "41 Tauri": [
+    ""
+  ],
+  "42 Aquarii": [
+    ""
+  ],
+  "42 Aquilae": [
+    ""
+  ],
+  "42 Arietis": [
+    "おひつじ座パイ星"
+  ],
+  "42 Aurigae": [
+    ""
+  ],
+  "42 Camelopardalis": [
+    ""
+  ],
+  "42 Cancri": [
+    ""
+  ],
+  "42 Capricorni": [
+    ""
+  ],
+  "42 Cassiopeiae": [
+    ""
+  ],
+  "42 Draconis": [
+    "りゅう座42番星"
+  ],
+  "42 Eridani": [
+    ""
+  ],
+  "42 Herculis": [
+    ""
+  ],
+  "42 Hydrae": [
+    ""
+  ],
+  "42 Leonis Minoris": [
+    ""
+  ],
+  "42 Librae": [
+    ""
+  ],
+  "42 Orionis": [
+    "オリオン座c星"
+  ],
+  "42 Persei": [
+    ""
+  ],
+  "43 Aurigae": [
+    ""
+  ],
+  "43 Camelopardalis": [
+    ""
+  ],
+  "43 Eridani": [
+    "エリダヌス座ウプシロン3星"
+  ],
+  "43 Orionis": [
+    ""
+  ],
+  "43 Persei": [
+    ""
+  ],
+  "43 Sagittarii": [
+    ""
+  ],
+  "43 Tauri": [
+    ""
+  ],
+  "44 Andromedae": [
+    ""
+  ],
+  "44 Aquarii": [
+    ""
+  ],
+  "44 Boötis": [
+    "うしかい座i星"
+  ],
+  "44 Cygni": [
+    ""
+  ],
+  "44 Eridani": [
+    ""
+  ],
+  "44 Ophiuchi": [
+    ""
+  ],
+  "44 Sagittarii": [
+    "いて座ロー1星"
+  ],
+  "44 Serpentis": [
+    ""
+  ],
+  "44 Tauri": [
+    ""
+  ],
+  "45 Andromedae": [
+    ""
+  ],
+  "45 Aquarii": [
+    ""
+  ],
+  "45 Aquilae": [
+    ""
+  ],
+  "45 Arietis": [
+    "おひつじ座ロー2星"
+  ],
+  "45 Aurigae": [
+    ""
+  ],
+  "45 Boötis": [
+    ""
+  ],
+  "45 Cancri": [
+    ""
+  ],
+  "45 Cygni": [
+    ""
+  ],
+  "45 Draconis": [
+    ""
+  ],
+  "45 Eridani": [
+    ""
+  ],
+  "45 Herculis": [
+    ""
+  ],
+  "45 Ophiuchi": [
+    "へびつかい座45番星"
+  ],
+  "45 Sagittarii": [
+    ""
+  ],
+  "46 Andromedae": [
+    "アンドロメダ座クシー星"
+  ],
+  "46 Aquilae": [
+    ""
+  ],
+  "46 Aurigae": [
+    "ぎょしゃ座プサイ1星"
+  ],
+  "46 Boötis": [
+    ""
+  ],
+  "46 Cancri": [
+    ""
+  ],
+  "46 Capricorni": [
+    ""
+  ],
+  "46 Ceti": [
+    ""
+  ],
+  "46 Cygni": [
+    ""
+  ],
+  "46 Leonis Minoris": [
+    "こじし座46番星"
+  ],
+  "46 Pegasi": [
+    "ペガスス座クシー星"
+  ],
+  "46 Persei": [
+    "ペルセウス座クシー星"
+  ],
+  "47 Andromedae": [
+    ""
+  ],
+  "47 Aquarii": [
+    ""
+  ],
+  "47 Arietis": [
+    ""
+  ],
+  "47 Aurigae": [
+    ""
+  ],
+  "47 Boötis": [
+    ""
+  ],
+  "47 Capricorni": [
+    ""
+  ],
+  "47 Cassiopeiae": [
+    ""
+  ],
+  "47 Cygni": [
+    ""
+  ],
+  "47 Ophiuchi": [
+    ""
+  ],
+  "47 Sagittarii": [
+    ""
+  ],
+  "47 Tauri": [
+    ""
+  ],
+  "47 Ursae Majoris": [
+    "おおぐま座47番星"
+  ],
+  "48 Aurigae": [
+    ""
+  ],
+  "48 Cassiopeiae": [
+    ""
+  ],
+  "48 Eridani": [
+    ""
+  ],
+  "48 Librae": [
+    ""
+  ],
+  "48 Pegasi": [
+    "ペガスス座ミュー星"
+  ],
+  "48 Persei": [
+    ""
+  ],
+  "49 Andromedae": [
+    ""
+  ],
+  "49 Aquarii": [
+    ""
+  ],
+  "49 Arietis": [
+    ""
+  ],
+  "49 Aurigae": [
+    ""
+  ],
+  "49 Camelopardalis": [
+    ""
+  ],
+  "49 Cancri": [
+    ""
+  ],
+  "49 Cassiopeiae": [
+    ""
+  ],
+  "49 Ceti": [
+    "くじら座49番星"
+  ],
+  "49 Hydrae": [
+    "うみへび座パイ星"
+  ],
+  "49 Leonis": [
+    ""
+  ],
+  "49 Librae": [
+    ""
+  ],
+  "49 Orionis": [
+    ""
+  ],
+  "49 Persei": [
+    ""
+  ],
+  "49 Sagittarii": [
+    ""
+  ],
+  "49 Tauri": [
+    ""
+  ],
+  "5 Andromedae": [
+    ""
+  ],
+  "5 Aquarii": [
+    ""
+  ],
+  "5 Aquilae": [
+    ""
+  ],
+  "5 Arietis": [
+    "おひつじ座ガンマ星"
+  ],
+  "5 Aurigae": [
+    ""
+  ],
+  "5 Camelopardalis": [
+    ""
+  ],
+  "5 Cancri": [
+    ""
+  ],
+  "5 Canis Majoris": [
+    ""
+  ],
+  "5 Capricorni": [
+    "やぎ座アルファ1星"
+  ],
+  "5 Lacertae": [
+    ""
+  ],
+  "5 Leonis": [
+    ""
+  ],
+  "5 Leporis": [
+    "うさぎ座ミュー星"
+  ],
+  "5 Persei": [
+    ""
+  ],
+  "5 Serpentis": [
+    ""
+  ],
+  "5 Tauri": [
+    ""
+  ],
+  "5 Trianguli": [
+    ""
+  ],
+  "5 Ursae Minoris": [
+    ""
+  ],
+  "5 Vulpeculae": [
+    ""
+  ],
+  "50 Aquarii": [
+    ""
+  ],
+  "50 Aurigae": [
+    ""
+  ],
+  "50 Boötis": [
+    ""
+  ],
+  "50 Cancri": [
+    ""
+  ],
+  "50 Cassiopeiae": [
+    "カシオペヤ座50番星"
+  ],
+  "50 Draconis": [
+    ""
+  ],
+  "50 Eridani": [
+    ""
+  ],
+  "50 Persei": [
+    ""
+  ],
+  "51 Andromedae": [
+    "アンドロメダ座51番星"
+  ],
+  "51 Aquarii": [
+    ""
+  ],
+  "51 Aquilae": [
+    ""
+  ],
+  "51 Arietis": [
+    ""
+  ],
+  "51 Aurigae": [
+    ""
+  ],
+  "51 Boötis": [
+    "うしかい座ミュー星"
+  ],
+  "51 Camelopardalis": [
+    ""
+  ],
+  "51 Cancri": [
+    ""
+  ],
+  "51 Capricorni": [
+    ""
+  ],
+  "51 Eridani": [
+    ""
+  ],
+  "51 Hydrae": [
+    ""
+  ],
+  "51 Ophiuchi": [
+    "へびつかい座51番星"
+  ],
+  "51 Orionis": [
+    ""
+  ],
+  "51 Pegasi": [
+    "ペガスス座51番星"
+  ],
+  "51 Persei": [
+    ""
+  ],
+  "52 Aquarii": [
+    "みずがめ座パイ星"
+  ],
+  "52 Aquilae": [
+    ""
+  ],
+  "52 Arietis": [
+    ""
+  ],
+  "52 Aurigae": [
+    ""
+  ],
+  "52 Boötis": [
+    ""
+  ],
+  "52 Cygni": [
+    ""
+  ],
+  "52 Eridani": [
+    "エリダヌス座ウプシロン2星"
+  ],
+  "52 Herculis": [
+    ""
+  ],
+  "52 Hydrae": [
+    ""
+  ],
+  "52 Persei": [
+    ""
+  ],
+  "52 Sagittarii": [
+    ""
+  ],
+  "53 Aquarii": [
+    ""
+  ],
+  "53 Arietis": [
+    ""
+  ],
+  "53 Aurigae": [
+    ""
+  ],
+  "53 Boötis": [
+    ""
+  ],
+  "53 Camelopardalis": [
+    ""
+  ],
+  "53 Cancri": [
+    ""
+  ],
+  "53 Eridani": [
+    "エリダヌス座53番星"
+  ],
+  "53 Ophiuchi": [
+    ""
+  ],
+  "53 Persei": [
+    ""
+  ],
+  "53 Piscium": [
+    ""
+  ],
+  "53 Serpentis": [
+    ""
+  ],
+  "53 Virginis": [
+    ""
+  ],
+  "54 Arietis": [
+    ""
+  ],
+  "54 Aurigae": [
+    ""
+  ],
+  "54 Cancri": [
+    ""
+  ],
+  "54 Cassiopeiae": [
+    ""
+  ],
+  "54 Ceti": [
+    ""
+  ],
+  "54 Eridani": [
+    ""
+  ],
+  "54 Hydrae": [
+    ""
+  ],
+  "54 Leonis": [
+    ""
+  ],
+  "54 Orionis": [
+    "オリオン座カイ1星"
+  ],
+  "54 Persei": [
+    ""
+  ],
+  "54 Piscium": [
+    "うお座54番星"
+  ],
+  "54 Ursae Majoris": [
+    "おおぐま座ニュー星"
+  ],
+  "55 Andromedae": [
+    ""
+  ],
+  "55 Aquarii": [
+    "みずがめ座ゼータ星"
+  ],
+  "55 Arietis": [
+    ""
+  ],
+  "55 Aurigae": [
+    ""
+  ],
+  "55 Cancri": [
+    "かに座55番星"
+  ],
+  "55 Cygni": [
+    ""
+  ],
+  "55 Pegasi": [
+    ""
+  ],
+  "55 Persei": [
+    ""
+  ],
+  "55 Serpentis": [
+    "へび座クシー星"
+  ],
+  "55 Ursae Majoris": [
+    ""
+  ],
+  "56 Andromedae": [
+    ""
+  ],
+  "56 Aquarii": [
+    ""
+  ],
+  "56 Aquilae": [
+    ""
+  ],
+  "56 Arietis": [
+    "おひつじ座56番星"
+  ],
+  "56 Aurigae": [
+    ""
+  ],
+  "56 Ceti": [
+    ""
+  ],
+  "56 Cygni": [
+    ""
+  ],
+  "56 Leonis": [
+    ""
+  ],
+  "56 Orionis": [
+    ""
+  ],
+  "56 Pegasi": [
+    ""
+  ],
+  "56 Persei": [
+    ""
+  ],
+  "56 Sagittarii": [
+    ""
+  ],
+  "56 Ursae Majoris": [
+    ""
+  ],
+  "57 Aquilae": [
+    ""
+  ],
+  "57 Aurigae": [
+    ""
+  ],
+  "57 Cancri": [
+    ""
+  ],
+  "57 Cygni": [
+    ""
+  ],
+  "57 Eridani": [
+    ""
+  ],
+  "57 Geminorum": [
+    ""
+  ],
+  "57 Ophiuchi": [
+    ""
+  ],
+  "57 Pegasi": [
+    ""
+  ],
+  "57 Persei": [
+    ""
+  ],
+  "57 Tauri": [
+    ""
+  ],
+  "58 Andromedae": [
+    ""
+  ],
+  "58 Aquarii": [
+    ""
+  ],
+  "58 Aquilae": [
+    ""
+  ],
+  "58 Aurigae": [
+    ""
+  ],
+  "58 Cancri": [
+    ""
+  ],
+  "58 Cygni": [
+    ""
+  ],
+  "58 Draconis": [
+    ""
+  ],
+  "58 Eridani": [
+    ""
+  ],
+  "58 Hydrae": [
+    ""
+  ],
+  "58 Leonis": [
+    ""
+  ],
+  "58 Ophiuchi": [
+    ""
+  ],
+  "58 Persei": [
+    ""
+  ],
+  "59 Andromedae": [
+    ""
+  ],
+  "59 Aquilae": [
+    "わし座クシー星"
+  ],
+  "59 Arietis": [
+    ""
+  ],
+  "59 Aurigae": [
+    ""
+  ],
+  "59 Cancri": [
+    ""
+  ],
+  "59 Cygni": [
+    ""
+  ],
+  "59 Draconis": [
+    ""
+  ],
+  "59 Leonis": [
+    ""
+  ],
+  "59 Orionis": [
+    ""
+  ],
+  "59 Persei": [
+    ""
+  ],
+  "59 Sagittarii": [
+    ""
+  ],
+  "59 Serpentis": [
+    ""
+  ],
+  "59 Virginis": [
+    "おとめ座59番星"
+  ],
+  "6 Andromedae": [
+    ""
+  ],
+  "6 Aquarii": [
+    "みずがめ座ミュー星"
+  ],
+  "6 Aurigae": [
+    ""
+  ],
+  "6 Boötis": [
+    ""
+  ],
+  "6 Canis Majoris": [
+    ""
+  ],
+  "6 Canis Minoris": [
+    ""
+  ],
+  "6 Capricorni": [
+    "やぎ座アルファ2星"
+  ],
+  "6 Cassiopeiae": [
+    "カシオペヤ座6番星"
+  ],
+  "6 Ceti": [
+    ""
+  ],
+  "6 Coronae Borealis": [
+    ""
+  ],
+  "6 Corvi": [
+    ""
+  ],
+  "6 Cygni": [
+    "アルビレオ"
+  ],
+  "6 Draconis": [
+    ""
+  ],
+  "6 Equulei": [
+    ""
+  ],
+  "6 Geminorum": [
+    ""
+  ],
+  "6 Hydrae": [
+    ""
+  ],
+  "6 Lacertae": [
+    ""
+  ],
+  "6 Lyncis": [
+    "やまねこ座6番星"
+  ],
+  "6 Lyrae": [
+    "こと座ゼータ1星"
+  ],
+  "6 Persei": [
+    ""
+  ],
+  "6 Sagittarii": [
+    ""
+  ],
+  "6 Scorpii": [
+    "さそり座パイ星"
+  ],
+  "6 Serpentis": [
+    ""
+  ],
+  "6 Tauri": [
+    ""
+  ],
+  "6 Trianguli": [
+    ""
+  ],
+  "60 Andromedae": [
+    ""
+  ],
+  "60 Aquarii": [
+    ""
+  ],
+  "60 Arietis": [
+    "おひつじ座60番星"
+  ],
+  "60 Aurigae": [
+    ""
+  ],
+  "60 Cancri": [
+    ""
+  ],
+  "60 Herculis": [
+    ""
+  ],
+  "60 Leonis": [
+    ""
+  ],
+  "60 Sagittarii": [
+    ""
+  ],
+  "60 Serpentis": [
+    ""
+  ],
+  "61 Aurigae": [
+    ""
+  ],
+  "61 Cancri": [
+    ""
+  ],
+  "61 Cygni": [
+    "はくちょう座61番星"
+  ],
+  "61 Leonis": [
+    ""
+  ],
+  "61 Orionis": [
+    "オリオン座ミュー星"
+  ],
+  "61 Ursae Majoris": [
+    "おおぐま座61番星"
+  ],
+  "61 Virginis": [
+    "おとめ座61番星"
+  ],
+  "62 Andromedae": [
+    ""
+  ],
+  "62 Aquilae": [
+    ""
+  ],
+  "62 Arietis": [
+    ""
+  ],
+  "62 Aurigae": [
+    ""
+  ],
+  "62 Cancri": [
+    "かに座オミクロン1星"
+  ],
+  "62 Cygni": [
+    ""
+  ],
+  "62 Eridani": [
+    ""
+  ],
+  "62 Orionis": [
+    "オリオン座カイ2星"
+  ],
+  "62 Sagittarii": [
+    ""
+  ],
+  "62 Serpentis": [
+    ""
+  ],
+  "63 Andromedae": [
+    ""
+  ],
+  "63 Arietis": [
+    ""
+  ],
+  "63 Aurigae": [
+    ""
+  ],
+  "63 Cancri": [
+    ""
+  ],
+  "63 Ceti": [
+    ""
+  ],
+  "63 Cygni": [
+    ""
+  ],
+  "63 Ophiuchi": [
+    ""
+  ],
+  "63 Serpentis": [
+    "へび座シータ星"
+  ],
+  "64 Andromedae": [
+    ""
+  ],
+  "64 Aquilae": [
+    ""
+  ],
+  "64 Arietis": [
+    ""
+  ],
+  "64 Aurigae": [
+    ""
+  ],
+  "64 Cancri": [
+    ""
+  ],
+  "64 Ceti": [
+    ""
+  ],
+  "64 Draconis": [
+    ""
+  ],
+  "64 Eridani": [
+    ""
+  ],
+  "64 Herculis": [
+    "ヘルクレス座アルファ星"
+  ],
+  "64 Ophiuchi": [
+    "へびつかい座ニュー星"
+  ],
+  "64 Piscium": [
+    ""
+  ],
+  "64 Serpentis": [
+    ""
+  ],
+  "64 Tauri": [
+    ""
+  ],
+  "65 Andromedae": [
+    ""
+  ],
+  "65 Arietis": [
+    ""
+  ],
+  "65 Aurigae": [
+    ""
+  ],
+  "65 Ceti": [
+    ""
+  ],
+  "65 Ursae Majoris": [
+    ""
+  ],
+  "66 Andromedae": [
+    ""
+  ],
+  "66 Aquarii": [
+    ""
+  ],
+  "66 Aquilae": [
+    ""
+  ],
+  "66 Arietis": [
+    ""
+  ],
+  "66 Aurigae": [
+    ""
+  ],
+  "66 Cancri": [
+    ""
+  ],
+  "66 Eridani": [
+    ""
+  ],
+  "66 Ophiuchi": [
+    ""
+  ],
+  "66 Tauri": [
+    ""
+  ],
+  "67 Aquarii": [
+    ""
+  ],
+  "67 Cancri": [
+    ""
+  ],
+  "67 Herculis": [
+    "ヘルクレス座パイ星"
+  ],
+  "67 Ophiuchi": [
+    ""
+  ],
+  "67 Orionis": [
+    "オリオン座ニュー星"
+  ],
+  "67 Tauri": [
+    ""
+  ],
+  "68 Aquarii": [
+    ""
+  ],
+  "68 Aquilae": [
+    ""
+  ],
+  "68 Cygni": [
+    ""
+  ],
+  "68 Draconis": [
+    ""
+  ],
+  "68 Herculis": [
+    ""
+  ],
+  "68 Ophiuchi": [
+    ""
+  ],
+  "68 Tauri": [
+    "おうし座デルタ3星"
+  ],
+  "69 Aquarii": [
+    ""
+  ],
+  "69 Aquilae": [
+    ""
+  ],
+  "69 Cancri": [
+    ""
+  ],
+  "69 Ceti": [
+    ""
+  ],
+  "69 Herculis": [
+    ""
+  ],
+  "69 Orionis": [
+    ""
+  ],
+  "69 Virginis": [
+    ""
+  ],
+  "7 Andromedae": [
+    "アンドロメダ座7番星"
+  ],
+  "7 Aquarii": [
+    ""
+  ],
+  "7 Arietis": [
+    ""
+  ],
+  "7 Boötis": [
+    ""
+  ],
+  "7 Camelopardalis": [
+    ""
+  ],
+  "7 Canis Majoris": [
+    ""
+  ],
+  "7 Canis Minoris": [
+    ""
+  ],
+  "7 Cephei": [
+    ""
+  ],
+  "7 Ceti": [
+    ""
+  ],
+  "7 Comae Berenices": [
+    ""
+  ],
+  "7 Coronae Borealis": [
+    ""
+  ],
+  "7 Cygni": [
+    ""
+  ],
+  "7 Draconis": [
+    "りゅう座7番星"
+  ],
+  "7 Leonis Minoris": [
+    ""
+  ],
+  "7 Leporis": [
+    ""
+  ],
+  "7 Librae": [
+    "てんびん座ミュー星"
+  ],
+  "7 Lyrae": [
+    "こと座ゼータ2星"
+  ],
+  "7 Orionis": [
+    "オリオン座パイ1星"
+  ],
+  "7 Piscium": [
+    ""
+  ],
+  "7 Puppis": [
+    "とも座クシー星"
+  ],
+  "7 Sagittarii": [
+    ""
+  ],
+  "7 Sextantis": [
+    ""
+  ],
+  "7 Tauri": [
+    ""
+  ],
+  "7 Trianguli": [
+    ""
+  ],
+  "7 Vulpeculae": [
+    ""
+  ],
+  "70 Aquarii": [
+    ""
+  ],
+  "70 Aquilae": [
+    ""
+  ],
+  "70 Cancri": [
+    ""
+  ],
+  "70 Ophiuchi": [
+    "へびつかい座70番星"
+  ],
+  "70 Orionis": [
+    ""
+  ],
+  "70 Pegasi": [
+    ""
+  ],
+  "70 Virginis": [
+    "おとめ座70番星"
+  ],
+  "71 Aquarii": [
+    ""
+  ],
+  "71 Aquilae": [
+    ""
+  ],
+  "71 Cygni": [
+    ""
+  ],
+  "71 Ophiuchi": [
+    ""
+  ],
+  "71 Tauri": [
+    ""
+  ],
+  "72 Columbae": [
+    ""
+  ],
+  "72 Cygni": [
+    ""
+  ],
+  "72 Herculis": [
+    "ヘルクレス座72番星"
+  ],
+  "72 Leonis": [
+    ""
+  ],
+  "72 Ophiuchi": [
+    "へびつかい座72番星"
+  ],
+  "72 Pegasi": [
+    ""
+  ],
+  "72 Tauri": [
+    ""
+  ],
+  "73 Ceti": [
+    ""
+  ],
+  "73 Leonis": [
+    ""
+  ],
+  "73 Tauri": [
+    ""
+  ],
+  "74 Aquarii": [
+    ""
+  ],
+  "74 Cygni": [
+    ""
+  ],
+  "74 Geminorum": [
+    ""
+  ],
+  "74 Ophiuchi": [
+    ""
+  ],
+  "74 Orionis": [
+    ""
+  ],
+  "74 Piscium": [
+    ""
+  ],
+  "74 Virginis": [
+    ""
+  ],
+  "75 Cancri": [
+    ""
+  ],
+  "75 Ceti": [
+    "くじら座75番星"
+  ],
+  "75 Cygni": [
+    ""
+  ],
+  "75 Tauri": [
+    ""
+  ],
+  "77 Aquarii": [
+    ""
+  ],
+  "77 Cancri": [
+    "かに座クシー星"
+  ],
+  "77 Ceti": [
+    ""
+  ],
+  "77 Piscium": [
+    ""
+  ],
+  "77 Tauri": [
+    "おうし座シータ星"
+  ],
+  "78 Aquarii": [
+    ""
+  ],
+  "78 Ceti": [
+    ""
+  ],
+  "78 Cygni": [
+    ""
+  ],
+  "78 Pegasi": [
+    ""
+  ],
+  "78 Ursae Majoris": [
+    ""
+  ],
+  "78 Virginis": [
+    ""
+  ],
+  "79 Cancri": [
+    ""
+  ],
+  "79 Ceti": [
+    "くじら座79番星"
+  ],
+  "79 Piscium": [
+    ""
+  ],
+  "79 Tauri": [
+    ""
+  ],
+  "8 Andromedae": [
+    "アンドロメダ座8番星"
+  ],
+  "8 Aquilae": [
+    ""
+  ],
+  "8 Camelopardalis": [
+    ""
+  ],
+  "8 Cancri": [
+    ""
+  ],
+  "8 Canis Majoris": [
+    ""
+  ],
+  "8 Canis Minoris": [
+    ""
+  ],
+  "8 Capricorni": [
+    "やぎ座ニュー星"
+  ],
+  "8 Cygni": [
+    ""
+  ],
+  "8 Draconis": [
+    "りゅう座8番星"
+  ],
+  "8 Eridani": [
+    ""
+  ],
+  "8 Herculis": [
+    ""
+  ],
+  "8 Leonis Minoris": [
+    ""
+  ],
+  "8 Librae": [
+    "てんびん座アルファ星"
+  ],
+  "8 Lyrae": [
+    ""
+  ],
+  "8 Orionis": [
+    "オリオン座パイ5星"
+  ],
+  "8 Persei": [
+    ""
+  ],
+  "8 Scorpii": [
+    "さそり座ベータ星"
+  ],
+  "8 Ursae Minoris": [
+    "こぐま座8番星"
+  ],
+  "8 Virginis": [
+    ""
+  ],
+  "8 Vulpeculae": [
+    ""
+  ],
+  "80 Cygni": [
+    "はくちょう座パイ1星"
+  ],
+  "80 Geminorum": [
+    ""
+  ],
+  "80 Ursae Majoris": [
+    "アルコル"
+  ],
+  "81 Aquarii": [
+    ""
+  ],
+  "81 Cancri": [
+    ""
+  ],
+  "81 Ceti": [
+    "くじら座81番星"
+  ],
+  "81 Cygni": [
+    ""
+  ],
+  "81 Geminorum": [
+    ""
+  ],
+  "81 Piscium": [
+    ""
+  ],
+  "82 Aquarii": [
+    ""
+  ],
+  "82 Cancri": [
+    ""
+  ],
+  "82 Eridani": [
+    "エリダヌス座82番星"
+  ],
+  "82 Virginis": [
+    ""
+  ],
+  "83 Aquarii": [
+    ""
+  ],
+  "83 Cancri": [
+    ""
+  ],
+  "83 Leonis": [
+    "しし座83番星"
+  ],
+  "83 Ursae Majoris": [
+    ""
+  ],
+  "84 Ceti": [
+    ""
+  ],
+  "84 Ursae Majoris": [
+    ""
+  ],
+  "85 Ceti": [
+    ""
+  ],
+  "85 Geminorum": [
+    ""
+  ],
+  "85 Pegasi": [
+    "ペガスス座85番星"
+  ],
+  "86 Aquarii": [
+    ""
+  ],
+  "86 Herculis": [
+    "ヘルクレス座ミュー星"
+  ],
+  "87 Ceti": [
+    "くじら座ミュー星"
+  ],
+  "87 Leonis": [
+    ""
+  ],
+  "87 Pegasi": [
+    ""
+  ],
+  "88 Aquarii": [
+    "みずがめ座88番星"
+  ],
+  "88 Leonis": [
+    ""
+  ],
+  "88 Tauri": [
+    ""
+  ],
+  "89 Aquarii": [
+    ""
+  ],
+  "89 Ceti": [
+    ""
+  ],
+  "89 Herculis": [
+    ""
+  ],
+  "89 Leonis": [
+    ""
+  ],
+  "89 Virginis": [
+    ""
+  ],
+  "9 Andromedae": [
+    ""
+  ],
+  "9 Aurigae": [
+    ""
+  ],
+  "9 Boötis": [
+    ""
+  ],
+  "9 Cancri": [
+    ""
+  ],
+  "9 Canis Minoris": [
+    ""
+  ],
+  "9 Cassiopeiae": [
+    ""
+  ],
+  "9 Cephei": [
+    ""
+  ],
+  "9 Ceti": [
+    "くじら座9番星"
+  ],
+  "9 Coronae Borealis": [
+    "かんむり座パイ星"
+  ],
+  "9 Cygni": [
+    ""
+  ],
+  "9 Equulei": [
+    ""
+  ],
+  "9 Eridani": [
+    ""
+  ],
+  "9 Hydrae": [
+    ""
+  ],
+  "9 Lacertae": [
+    ""
+  ],
+  "9 Lyrae": [
+    ""
+  ],
+  "9 Orionis": [
+    ""
+  ],
+  "9 Pegasi": [
+    ""
+  ],
+  "9 Persei": [
+    ""
+  ],
+  "9 Puppis": [
+    ""
+  ],
+  "9 Sagittarii": [
+    ""
+  ],
+  "9 Scorpii": [
+    "さそり座オメガ1星"
+  ],
+  "9 Serpentis": [
+    ""
+  ],
+  "9 Vulpeculae": [
+    ""
+  ],
+  "90 Tauri": [
+    ""
+  ],
+  "91 Aquarii": [
+    "みずがめ座プサイ1星"
+  ],
+  "91 Tauri": [
+    ""
+  ],
+  "92 Herculis": [
+    ""
+  ],
+  "92 Tauri": [
+    ""
+  ],
+  "93 Aquarii": [
+    ""
+  ],
+  "93 Herculis": [
+    ""
+  ],
+  "93 Leonis": [
+    ""
+  ],
+  "94 Aquarii": [
+    ""
+  ],
+  "94 Ceti": [
+    "くじら座94番星"
+  ],
+  "94 Herculis": [
+    ""
+  ],
+  "94 Piscium": [
+    ""
+  ],
+  "95 Aquarii": [
+    ""
+  ],
+  "95 Herculis": [
+    ""
+  ],
+  "96 Aquarii": [
+    ""
+  ],
+  "97 Aquarii": [
+    ""
+  ],
+  "97 Ceti": [
+    ""
+  ],
+  "97 Tauri": [
+    ""
+  ],
+  "98 Aquarii": [
+    "みずがめ座98番星"
+  ],
+  "98 Herculis": [
+    ""
+  ],
+  "98 Piscium": [
+    ""
+  ],
+  "99 Aquarii": [
+    ""
+  ],
+  "99 Herculis": [
+    "ヘルクレス座b星"
+  ],
+  "Alderamin": [
+    "ケフェウス座アルファ星"
+  ],
+  "Aljanah": [
+    "はくちょう座イプシロン星"
+  ],
+  "Alnair": [
+    "つる座アルファ星"
+  ],
+  "Alpha Antliae": [
+    "ポンプ座アルファ星"
+  ],
+  "Alpha Apodis": [
+    "ふうちょう座アルファ星"
+  ],
+  "Alpha Aquarii": [
+    "みずがめ座アルファ星"
+  ],
+  "Alpha Arae": [
+    "さいだん座アルファ星"
+  ],
+  "Alpha Caeli": [
+    "ちょうこくぐ座アルファ星"
+  ],
+  "Alpha Camelopardalis": [
+    "きりん座アルファ星"
+  ],
+  "Alpha Cancri": [
+    "かに座アルファ星"
+  ],
+  "Alpha Chamaeleontis": [
+    "カメレオン座アルファ星"
+  ],
+  "Alpha Circini": [
+    "コンパス座アルファ星"
+  ],
+  "Alpha Columbae": [
+    "はと座アルファ星"
+  ],
+  "Alpha Comae Berenices": [
+    "かみのけ座アルファ星"
+  ],
+  "Alpha Coronae Australis": [
+    "みなみのかんむり座アルファ星"
+  ],
+  "Alpha Corvi": [
+    "からす座アルファ星"
+  ],
+  "Alpha Crateris": [
+    "コップ座アルファ星"
+  ],
+  "Alpha Delphini": [
+    "いるか座アルファ星"
+  ],
+  "Alpha Doradus": [
+    "かじき座アルファ星"
+  ],
+  "Alpha Draconis": [
+    "りゅう座アルファ星"
+  ],
+  "Alpha Equulei": [
+    "こうま座アルファ星"
+  ],
+  "Alpha Fornacis": [
+    "ろ座アルファ星"
+  ],
+  "Alpha Horologii": [
+    "とけい座アルファ星"
+  ],
+  "Alpha Hydri": [
+    "みずへび座アルファ星"
+  ],
+  "Alpha Indi": [
+    "インディアン座アルファ星"
+  ],
+  "Alpha Lacertae": [
+    "とかげ座アルファ星"
+  ],
+  "Alpha Lupi": [
+    "おおかみ座アルファ星"
+  ],
+  "Alpha Lyncis": [
+    "やまねこ座アルファ星"
+  ],
+  "Alpha Mensae": [
+    "テーブルさん座アルファ星"
+  ],
+  "Alpha Microscopii": [
+    "けんびきょう座アルファ星"
+  ],
+  "Alpha Monocerotis": [
+    "いっかくじゅう座アルファ星"
+  ],
+  "Alpha Muscae": [
+    "はえ座アルファ星"
+  ],
+  "Alpha Octantis": [
+    "はちぶんぎ座アルファ星"
+  ],
+  "Alpha Pictoris": [
+    "がか座アルファ星"
+  ],
+  "Alpha Piscium": [
+    "うお座アルファ星"
+  ],
+  "Alpha Pyxidis": [
+    "らしんばん座アルファ星"
+  ],
+  "Alpha Reticuli": [
+    "レチクル座アルファ星"
+  ],
+  "Alpha Sagittae": [
+    "や座アルファ星"
+  ],
+  "Alpha Sagittarii": [
+    "いて座アルファ星"
+  ],
+  "Alpha Sculptoris": [
+    "ちょうこくしつ座アルファ星"
+  ],
+  "Alpha Scuti": [
+    "たて座アルファ星"
+  ],
+  "Alpha Serpentis": [
+    "へび座アルファ星"
+  ],
+  "Alpha Sextantis": [
+    "ろくぶんぎ座アルファ星"
+  ],
+  "Alpha Telescopii": [
+    "ぼうえんきょう座アルファ星"
+  ],
+  "Alpha Trianguli": [
+    "さんかく座アルファ星"
+  ],
+  "Alpha Tucanae": [
+    "きょしちょう座アルファ星"
+  ],
+  "Alpha Volantis": [
+    "とびうお座アルファ星"
+  ],
+  "Alpha Vulpeculae": [
+    "こぎつね座アルファ星"
+  ],
+  "Aludra": [
+    "おおいぬ座イータ星"
+  ],
+  "Ankaa": [
+    "ほうおう座アルファ星"
+  ],
+  "Arneb": [
+    "うさぎ座アルファ星"
+  ],
+  "Aspidiske": [
+    "りゅうこつ座イオタ星"
+  ],
+  "Beta Apodis": [
+    "ふうちょう座ベータ星"
+  ],
+  "Beta Aquarii": [
+    "みずがめ座ベータ星"
+  ],
+  "Beta Aquilae": [
+    "わし座ベータ星"
+  ],
+  "Beta Arae": [
+    "さいだん座ベータ星"
+  ],
+  "Beta Arietis": [
+    "おひつじ座ベータ星"
+  ],
+  "Beta Boötis": [
+    "うしかい座ベータ星"
+  ],
+  "Beta Caeli": [
+    "ちょうこくぐ座ベータ星"
+  ],
+  "Beta Camelopardalis": [
+    "きりん座ベータ星"
+  ],
+  "Beta Cancri": [
+    "かに座ベータ星"
+  ],
+  "Beta Canis Minoris": [
+    "こいぬ座ベータ星"
+  ],
+  "Beta Capricorni": [
+    "やぎ座ベータ星"
+  ],
+  "Beta Cephei": [
+    "ケフェウス座ベータ星"
+  ],
+  "Beta Chamaeleontis": [
+    ""
+  ],
+  "Beta Circini": [
+    "コンパス座ベータ星"
+  ],
+  "Beta Columbae": [
+    "はと座ベータ星"
+  ],
+  "Beta Comae Berenices": [
+    "かみのけ座ベータ星"
+  ],
+  "Beta Coronae Australis": [
+    "みなみのかんむり座ベータ星"
+  ],
+  "Beta Coronae Borealis": [
+    "かんむり座ベータ星"
+  ],
+  "Beta Corvi": [
+    "からす座ベータ星"
+  ],
+  "Beta Crateris": [
+    "コップ座ベータ星"
+  ],
+  "Beta Delphini": [
+    "いるか座ベータ星"
+  ],
+  "Beta Doradus": [
+    "かじき座ベータ星"
+  ],
+  "Beta Draconis": [
+    "りゅう座ベータ星"
+  ],
+  "Beta Equulei": [
+    "こうま座ベータ星"
+  ],
+  "Beta Eridani": [
+    "エリダヌス座ベータ星"
+  ],
+  "Beta Fornacis": [
+    "ろ座ベータ星"
+  ],
+  "Beta Herculis": [
+    "ヘルクレス座ベータ星"
+  ],
+  "Beta Horologii": [
+    "とけい座ベータ星"
+  ],
+  "Beta Hydrae": [
+    "うみへび座ベータ星"
+  ],
+  "Beta Hydri": [
+    "みずへび座ベータ星"
+  ],
+  "Beta Indi": [
+    "インディアン座ベータ星"
+  ],
+  "Beta Lacertae": [
+    "とかげ座ベータ星"
+  ],
+  "Beta Leonis Minoris": [
+    "こじし座ベータ星"
+  ],
+  "Beta Leporis": [
+    "うさぎ座ベータ星"
+  ],
+  "Beta Librae": [
+    "てんびん座ベータ星"
+  ],
+  "Beta Lupi": [
+    "おおかみ座ベータ星"
+  ],
+  "Beta Lyrae": [
+    "こと座ベータ星"
+  ],
+  "Beta Mensae": [
+    ""
+  ],
+  "Beta Microscopii": [
+    ""
+  ],
+  "Beta Monocerotis": [
+    "いっかくじゅう座ベータ星"
+  ],
+  "Beta Muscae": [
+    "はえ座ベータ星"
+  ],
+  "Beta Octantis": [
+    ""
+  ],
+  "Beta Ophiuchi": [
+    "へびつかい座ベータ星"
+  ],
+  "Beta Pavonis": [
+    "くじゃく座ベータ星"
+  ],
+  "Beta Phoenicis": [
+    "ほうおう座ベータ星"
+  ],
+  "Beta Pictoris": [
+    "がか座ベータ星"
+  ],
+  "Beta Piscis Austrini": [
+    "みなみのうお座ベータ星"
+  ],
+  "Beta Piscium": [
+    "うお座ベータ星"
+  ],
+  "Beta Pyxidis": [
+    ""
+  ],
+  "Beta Reticuli": [
+    "レチクル座ベータ星"
+  ],
+  "Beta Sagittae": [
+    "や座ベータ星"
+  ],
+  "Beta Sculptoris": [
+    "ちょうこくしつ座ベータ星"
+  ],
+  "Beta Scuti": [
+    "たて座ベータ星"
+  ],
+  "Beta Serpentis": [
+    "へび座ベータ星"
+  ],
+  "Beta Sextantis": [
+    "ろくぶんぎ座ベータ星"
+  ],
+  "Beta Trianguli": [
+    "さんかく座ベータ星"
+  ],
+  "Beta Virginis": [
+    "おとめ座ベータ星"
+  ],
+  "Beta Volantis": [
+    "とびうお座ベータ星"
+  ],
+  "Chi Andromedae": [
+    "アンドロメダ座カイ星"
+  ],
+  "Chi Aquarii": [
+    ""
+  ],
+  "Chi Aquilae": [
+    "わし座カイ星"
+  ],
+  "Chi Aurigae": [
+    ""
+  ],
+  "Chi Boötis": [
+    ""
+  ],
+  "Chi Cancri": [
+    "かに座カイ星"
+  ],
+  "Chi Capricorni": [
+    "やぎ座カイ星"
+  ],
+  "Chi Carinae": [
+    "りゅうこつ座カイ星"
+  ],
+  "Chi Cassiopeiae": [
+    ""
+  ],
+  "Chi Centauri": [
+    ""
+  ],
+  "Chi Ceti": [
+    ""
+  ],
+  "Chi Draconis": [
+    "りゅう座カイ星"
+  ],
+  "Chi Eridani": [
+    ""
+  ],
+  "Chi Geminorum": [
+    ""
+  ],
+  "Chi Herculis": [
+    ""
+  ],
+  "Chi Leonis": [
+    "しし座カイ星"
+  ],
+  "Chi Lupi": [
+    ""
+  ],
+  "Chi Octantis": [
+    ""
+  ],
+  "Chi Ophiuchi": [
+    ""
+  ],
+  "Chi Pegasi": [
+    ""
+  ],
+  "Chi Persei": [
+    ""
+  ],
+  "Chi Piscium": [
+    ""
+  ],
+  "Chi Puppis": [
+    ""
+  ],
+  "Chi Scorpii": [
+    ""
+  ],
+  "Chi Serpentis": [
+    "へび座カイ星"
+  ],
+  "Chi Tauri": [
+    ""
+  ],
+  "Chi Ursae Majoris": [
+    "おおぐま座カイ星"
+  ],
+  "Chi Virginis": [
+    "おとめ座カイ星"
+  ],
+  "Delta Andromedae": [
+    "アンドロメダ座デルタ星"
+  ],
+  "Delta Antliae": [
+    "ポンプ座デルタ星"
+  ],
+  "Delta Aquarii": [
+    "みずがめ座デルタ星"
+  ],
+  "Delta Aquilae": [
+    "わし座デルタ星"
+  ],
+  "Delta Arae": [
+    "さいだん座デルタ星"
+  ],
+  "Delta Arietis": [
+    "おひつじ座デルタ星"
+  ],
+  "Delta Aurigae": [
+    "ぎょしゃ座デルタ星"
+  ],
+  "Delta Boötis": [
+    "うしかい座デルタ星"
+  ],
+  "Delta Caeli": [
+    "ちょうこくぐ座デルタ星"
+  ],
+  "Delta Cancri": [
+    "かに座デルタ星"
+  ],
+  "Delta Capricorni": [
+    "やぎ座デルタ星"
+  ],
+  "Delta Cassiopeiae": [
+    "カシオペヤ座デルタ星"
+  ],
+  "Delta Centauri": [
+    "ケンタウルス座デルタ星"
+  ],
+  "Delta Cephei": [
+    "ケフェウス座デルタ星"
+  ],
+  "Delta Ceti": [
+    "くじら座デルタ星"
+  ],
+  "Delta Circini": [
+    "コンパス座デルタ星"
+  ],
+  "Delta Columbae": [
+    "はと座デルタ星"
+  ],
+  "Delta Coronae Australis": [
+    "みなみのかんむり座デルタ星"
+  ],
+  "Delta Coronae Borealis": [
+    "かんむり座デルタ星"
+  ],
+  "Delta Corvi": [
+    "からす座デルタ星"
+  ],
+  "Delta Crateris": [
+    "コップ座デルタ星"
+  ],
+  "Delta Crucis": [
+    "みなみじゅうじ座デルタ星"
+  ],
+  "Delta Cygni": [
+    "はくちょう座デルタ星"
+  ],
+  "Delta Delphini": [
+    "いるか座デルタ星"
+  ],
+  "Delta Doradus": [
+    "かじき座デルタ星"
+  ],
+  "Delta Draconis": [
+    "りゅう座デルタ星"
+  ],
+  "Delta Equulei": [
+    "こうま座デルタ星"
+  ],
+  "Delta Eridani": [
+    "エリダヌス座デルタ星"
+  ],
+  "Delta Fornacis": [
+    ""
+  ],
+  "Delta Geminorum": [
+    "ふたご座デルタ星"
+  ],
+  "Delta Herculis": [
+    "ヘルクレス座デルタ星"
+  ],
+  "Delta Horologii": [
+    ""
+  ],
+  "Delta Hydrae": [
+    ""
+  ],
+  "Delta Hydri": [
+    "みずへび座デルタ星"
+  ],
+  "Delta Indi": [
+    ""
+  ],
+  "Delta Leporis": [
+    "うさぎ座デルタ星"
+  ],
+  "Delta Librae": [
+    "てんびん座デルタ星"
+  ],
+  "Delta Lupi": [
+    "おおかみ座デルタ星"
+  ],
+  "Delta Mensae": [
+    ""
+  ],
+  "Delta Microscopii": [
+    ""
+  ],
+  "Delta Monocerotis": [
+    "いっかくじゅう座デルタ星"
+  ],
+  "Delta Muscae": [
+    "はえ座デルタ星"
+  ],
+  "Delta Normae": [
+    ""
+  ],
+  "Delta Octantis": [
+    "はちぶんぎ座デルタ星"
+  ],
+  "Delta Ophiuchi": [
+    "へびつかい座デルタ星"
+  ],
+  "Delta Pavonis": [
+    "くじゃく座デルタ星"
+  ],
+  "Delta Persei": [
+    "ペルセウス座デルタ星"
+  ],
+  "Delta Phoenicis": [
+    ""
+  ],
+  "Delta Pictoris": [
+    ""
+  ],
+  "Delta Piscis Austrini": [
+    ""
+  ],
+  "Delta Piscium": [
+    ""
+  ],
+  "Delta Pyxidis": [
+    ""
+  ],
+  "Delta Reticuli": [
+    "レチクル座デルタ星"
+  ],
+  "Delta Sagittae": [
+    ""
+  ],
+  "Delta Sagittarii": [
+    "いて座デルタ星"
+  ],
+  "Delta Sculptoris": [
+    ""
+  ],
+  "Delta Scuti": [
+    "たて座デルタ星"
+  ],
+  "Delta Serpentis": [
+    "へび座デルタ星"
+  ],
+  "Delta Sextantis": [
+    ""
+  ],
+  "Delta Tauri": [
+    "おうし座デルタ星"
+  ],
+  "Delta Trianguli": [
+    "さんかく座デルタ星"
+  ],
+  "Delta Tucanae": [
+    "きょしちょう座デルタ星"
+  ],
+  "Delta Ursae Majoris": [
+    "おおぐま座デルタ星"
+  ],
+  "Delta Ursae Minoris": [
+    "こぐま座デルタ星"
+  ],
+  "Delta Velorum": [
+    "ほ座デルタ星"
+  ],
+  "Delta Virginis": [
+    "おとめ座デルタ星"
+  ],
+  "Delta Volantis": [
+    "とびうお座デルタ星"
+  ],
+  "Dschubba": [
+    "さそり座デルタ星"
+  ],
+  "Eltanin": [
+    "りゅう座ガンマ星"
+  ],
+  "Epsilon Andromedae": [
+    "アンドロメダ座イプシロン星"
+  ],
+  "Epsilon Antliae": [
+    "ポンプ座イプシロン星"
+  ],
+  "Epsilon Apodis": [
+    "ふうちょう座イプシロン星"
+  ],
+  "Epsilon Aquarii": [
+    "みずがめ座イプシロン星"
+  ],
+  "Epsilon Aquilae": [
+    "わし座イプシロン星"
+  ],
+  "Epsilon Arietis": [
+    "おひつじ座イプシロン星"
+  ],
+  "Epsilon Aurigae": [
+    "ぎょしゃ座イプシロン星"
+  ],
+  "Epsilon Cancri": [
+    "かに座イプシロン星"
+  ],
+  "Epsilon Canis Minoris": [
+    ""
+  ],
+  "Epsilon Capricorni": [
+    "やぎ座イプシロン星"
+  ],
+  "Epsilon Cassiopeiae": [
+    "カシオペヤ座イプシロン星"
+  ],
+  "Epsilon Centauri": [
+    "ケンタウルス座イプシロン星"
+  ],
+  "Epsilon Cephei": [
+    "ケフェウス座イプシロン星"
+  ],
+  "Epsilon Ceti": [
+    ""
+  ],
+  "Epsilon Chamaeleontis": [
+    ""
+  ],
+  "Epsilon Circini": [
+    ""
+  ],
+  "Epsilon Columbae": [
+    ""
+  ],
+  "Epsilon Coronae Australis": [
+    ""
+  ],
+  "Epsilon Coronae Borealis": [
+    ""
+  ],
+  "Epsilon Corvi": [
+    "からす座イプシロン星"
+  ],
+  "Epsilon Crateris": [
+    ""
+  ],
+  "Epsilon Crucis": [
+    "みなみじゅうじ座イプシロン星"
+  ],
+  "Epsilon Delphini": [
+    "いるか座イプシロン星"
+  ],
+  "Epsilon Doradus": [
+    ""
+  ],
+  "Epsilon Draconis": [
+    "りゅう座イプシロン星"
+  ],
+  "Epsilon Equulei": [
+    ""
+  ],
+  "Epsilon Eridani": [
+    "エリダヌス座イプシロン星"
+  ],
+  "Epsilon Fornacis": [
+    ""
+  ],
+  "Epsilon Geminorum": [
+    "ふたご座イプシロン星"
+  ],
+  "Epsilon Gruis": [
+    "つる座イプシロン星"
+  ],
+  "Epsilon Herculis": [
+    "ヘルクレス座イプシロン星"
+  ],
+  "Epsilon Hydrae": [
+    "うみへび座イプシロン星"
+  ],
+  "Epsilon Hydri": [
+    ""
+  ],
+  "Epsilon Indi": [
+    "インディアン座イプシロン星"
+  ],
+  "Epsilon Leonis": [
+    "しし座イプシロン星"
+  ],
+  "Epsilon Leporis": [
+    "うさぎ座イプシロン星"
+  ],
+  "Epsilon Librae": [
+    ""
+  ],
+  "Epsilon Lupi": [
+    "おおかみ座イプシロン星"
+  ],
+  "Epsilon Mensae": [
+    ""
+  ],
+  "Epsilon Microscopii": [
+    "けんびきょう座イプシロン星"
+  ],
+  "Epsilon Monocerotis": [
+    ""
+  ],
+  "Epsilon Muscae": [
+    ""
+  ],
+  "Epsilon Normae": [
+    "じょうぎ座イプシロン星"
+  ],
+  "Epsilon Octantis": [
+    ""
+  ],
+  "Epsilon Ophiuchi": [
+    "へびつかい座イプシロン星"
+  ],
+  "Epsilon Pavonis": [
+    "くじゃく座イプシロン星"
+  ],
+  "Epsilon Persei": [
+    "ペルセウス座イプシロン星"
+  ],
+  "Epsilon Phoenicis": [
+    ""
+  ],
+  "Epsilon Piscis Austrini": [
+    ""
+  ],
+  "Epsilon Piscium": [
+    "うお座イプシロン星"
+  ],
+  "Epsilon Pyxidis": [
+    ""
+  ],
+  "Epsilon Reticuli": [
+    "レチクル座イプシロン星"
+  ],
+  "Epsilon Sagittae": [
+    ""
+  ],
+  "Epsilon Sculptoris": [
+    "ちょうこくしつ座イプシロン星"
+  ],
+  "Epsilon Scuti": [
+    ""
+  ],
+  "Epsilon Serpentis": [
+    "へび座イプシロン星"
+  ],
+  "Epsilon Sextantis": [
+    ""
+  ],
+  "Epsilon Tauri": [
+    "おうし座イプシロン星"
+  ],
+  "Epsilon Telescopii": [
+    "ぼうえんきょう座イプシロン星"
+  ],
+  "Epsilon Trianguli": [
+    ""
+  ],
+  "Epsilon Tucanae": [
+    ""
+  ],
+  "Epsilon Ursae Minoris": [
+    "こぐま座イプシロン星"
+  ],
+  "Epsilon Virginis": [
+    "おとめ座イプシロン星"
+  ],
+  "Epsilon Volantis": [
+    ""
+  ],
+  "Eta Andromedae": [
+    "アンドロメダ座イータ星"
+  ],
+  "Eta Antliae": [
+    "ポンプ座イータ星"
+  ],
+  "Eta Apodis": [
+    "ふうちょう座イータ星"
+  ],
+  "Eta Aquarii": [
+    "みずがめ座イータ星"
+  ],
+  "Eta Aquilae": [
+    "わし座イータ星"
+  ],
+  "Eta Arae": [
+    "さいだん座イータ星"
+  ],
+  "Eta Arietis": [
+    "おひつじ座イータ星"
+  ],
+  "Eta Aurigae": [
+    "ぎょしゃ座イータ星"
+  ],
+  "Eta Boötis": [
+    "うしかい座イータ星"
+  ],
+  "Eta Cancri": [
+    "かに座イータ星"
+  ],
+  "Eta Canis Minoris": [
+    ""
+  ],
+  "Eta Capricorni": [
+    "やぎ座イータ星"
+  ],
+  "Eta Carinae": [
+    "りゅうこつ座イータ星"
+  ],
+  "Eta Cassiopeiae": [
+    "カシオペヤ座イータ星"
+  ],
+  "Eta Cephei": [
+    "ケフェウス座イータ星"
+  ],
+  "Eta Ceti": [
+    "くじら座イータ星"
+  ],
+  "Eta Chamaeleontis": [
+    ""
+  ],
+  "Eta Circini": [
+    ""
+  ],
+  "Eta Columbae": [
+    ""
+  ],
+  "Eta Coronae Australis": [
+    ""
+  ],
+  "Eta Coronae Borealis": [
+    ""
+  ],
+  "Eta Corvi": [
+    "からす座イータ星"
+  ],
+  "Eta Crateris": [
+    ""
+  ],
+  "Eta Crucis": [
+    ""
+  ],
+  "Eta Cygni": [
+    "はくちょう座イータ星"
+  ],
+  "Eta Delphini": [
+    ""
+  ],
+  "Eta Doradus": [
+    ""
+  ],
+  "Eta Draconis": [
+    "りゅう座イータ星"
+  ],
+  "Eta Eridani": [
+    "エリダヌス座イータ星"
+  ],
+  "Eta Geminorum": [
+    "ふたご座イータ星"
+  ],
+  "Eta Gruis": [
+    ""
+  ],
+  "Eta Herculis": [
+    "ヘルクレス座イータ星"
+  ],
+  "Eta Horologii": [
+    ""
+  ],
+  "Eta Hydrae": [
+    ""
+  ],
+  "Eta Hydri": [
+    "みずへび座イータ星"
+  ],
+  "Eta Indi": [
+    ""
+  ],
+  "Eta Leonis": [
+    "しし座イータ星"
+  ],
+  "Eta Leporis": [
+    "うさぎ座イータ星"
+  ],
+  "Eta Lupi": [
+    "おおかみ座イータ星"
+  ],
+  "Eta Lyrae": [
+    "こと座イータ星"
+  ],
+  "Eta Mensae": [
+    ""
+  ],
+  "Eta Microscopii": [
+    ""
+  ],
+  "Eta Muscae": [
+    ""
+  ],
+  "Eta Normae": [
+    ""
+  ],
+  "Eta Octantis": [
+    ""
+  ],
+  "Eta Ophiuchi": [
+    "へびつかい座イータ星"
+  ],
+  "Eta Orionis": [
+    "オリオン座イータ星"
+  ],
+  "Eta Pavonis": [
+    ""
+  ],
+  "Eta Pegasi": [
+    "ペガスス座イータ星"
+  ],
+  "Eta Persei": [
+    "ペルセウス座イータ星"
+  ],
+  "Eta Phoenicis": [
+    ""
+  ],
+  "Eta Pictoris": [
+    ""
+  ],
+  "Eta Piscis Austrini": [
+    ""
+  ],
+  "Eta Piscium": [
+    "うお座イータ星"
+  ],
+  "Eta Pyxidis": [
+    ""
+  ],
+  "Eta Reticuli": [
+    ""
+  ],
+  "Eta Sagittae": [
+    ""
+  ],
+  "Eta Sagittarii": [
+    "いて座イータ星"
+  ],
+  "Eta Sculptoris": [
+    ""
+  ],
+  "Eta Scuti": [
+    ""
+  ],
+  "Eta Serpentis": [
+    "へび座イータ星"
+  ],
+  "Eta Tauri": [
+    "おうし座イータ星"
+  ],
+  "Eta Telescopii": [
+    "ぼうえんきょう座イータ星"
+  ],
+  "Eta Tucanae": [
+    ""
+  ],
+  "Eta Ursae Minoris": [
+    "こぐま座イータ星"
+  ],
+  "Eta Virginis": [
+    "おとめ座イータ星"
+  ],
+  "Eta Volantis": [
+    ""
+  ],
+  "Gacrux": [
+    "みなみじゅうじ座ガンマ星"
+  ],
+  "Gamma Apodis": [
+    "ふうちょう座ガンマ星"
+  ],
+  "Gamma Aquarii": [
+    "みずがめ座ガンマ星"
+  ],
+  "Gamma Aquilae": [
+    "わし座ガンマ星"
+  ],
+  "Gamma Arae": [
+    "さいだん座ガンマ星"
+  ],
+  "Gamma Boötis": [
+    "うしかい座ガンマ星"
+  ],
+  "Gamma Caeli": [
+    "ちょうこくぐ座ガンマ星"
+  ],
+  "Gamma Camelopardalis": [
+    "きりん座ガンマ星"
+  ],
+  "Gamma Cancri": [
+    "かに座ガンマ星"
+  ],
+  "Gamma Canis Majoris": [
+    "おおいぬ座ガンマ星"
+  ],
+  "Gamma Canis Minoris": [
+    ""
+  ],
+  "Gamma Capricorni": [
+    "やぎ座ガンマ星"
+  ],
+  "Gamma Cassiopeiae": [
+    "カシオペヤ座ガンマ星"
+  ],
+  "Gamma Centauri": [
+    "ケンタウルス座ガンマ星"
+  ],
+  "Gamma Cephei": [
+    "ケフェウス座ガンマ星"
+  ],
+  "Gamma Ceti": [
+    "くじら座ガンマ星"
+  ],
+  "Gamma Chamaeleontis": [
+    "カメレオン座ガンマ星"
+  ],
+  "Gamma Circini": [
+    ""
+  ],
+  "Gamma Columbae": [
+    ""
+  ],
+  "Gamma Comae Berenices": [
+    "かみのけ座ガンマ星"
+  ],
+  "Gamma Coronae Australis": [
+    ""
+  ],
+  "Gamma Coronae Borealis": [
+    "かんむり座ガンマ星"
+  ],
+  "Gamma Crateris": [
+    ""
+  ],
+  "Gamma Cygni": [
+    "はくちょう座ガンマ星"
+  ],
+  "Gamma Doradus": [
+    "かじき座ガンマ星"
+  ],
+  "Gamma Equulei": [
+    "こうま座ガンマ星"
+  ],
+  "Gamma Eridani": [
+    "エリダヌス座ガンマ星"
+  ],
+  "Gamma Gruis": [
+    "つる座ガンマ星"
+  ],
+  "Gamma Herculis": [
+    "ヘルクレス座ガンマ星"
+  ],
+  "Gamma Horologii": [
+    ""
+  ],
+  "Gamma Hydrae": [
+    "うみへび座ガンマ星"
+  ],
+  "Gamma Hydri": [
+    "みずへび座ガンマ星"
+  ],
+  "Gamma Indi": [
+    ""
+  ],
+  "Gamma Leporis": [
+    "うさぎ座ガンマ星"
+  ],
+  "Gamma Librae": [
+    "てんびん座ガンマ星"
+  ],
+  "Gamma Lupi": [
+    "おおかみ座ガンマ星"
+  ],
+  "Gamma Lyrae": [
+    "こと座ガンマ星"
+  ],
+  "Gamma Mensae": [
+    ""
+  ],
+  "Gamma Microscopii": [
+    "けんびきょう座ガンマ星"
+  ],
+  "Gamma Monocerotis": [
+    ""
+  ],
+  "Gamma Muscae": [
+    "はえ座ガンマ星"
+  ],
+  "Gamma Ophiuchi": [
+    "へびつかい座ガンマ星"
+  ],
+  "Gamma Pavonis": [
+    "くじゃく座ガンマ星"
+  ],
+  "Gamma Pegasi": [
+    "ペガスス座ガンマ星"
+  ],
+  "Gamma Persei": [
+    "ペルセウス座ガンマ星"
+  ],
+  "Gamma Phoenicis": [
+    "ほうおう座ガンマ星"
+  ],
+  "Gamma Pictoris": [
+    ""
+  ],
+  "Gamma Piscis Austrini": [
+    "みなみのうお座ガンマ星"
+  ],
+  "Gamma Piscium": [
+    "うお座ガンマ星"
+  ],
+  "Gamma Pyxidis": [
+    ""
+  ],
+  "Gamma Reticuli": [
+    "レチクル座ガンマ星"
+  ],
+  "Gamma Sagittae": [
+    "や座ガンマ星"
+  ],
+  "Gamma Sagittarii": [
+    ""
+  ],
+  "Gamma Sculptoris": [
+    ""
+  ],
+  "Gamma Scuti": [
+    "たて座ガンマ星"
+  ],
+  "Gamma Serpentis": [
+    "へび座ガンマ星"
+  ],
+  "Gamma Sextantis": [
+    ""
+  ],
+  "Gamma Tauri": [
+    "おうし座ガンマ星"
+  ],
+  "Gamma Trianguli": [
+    "さんかく座ガンマ星"
+  ],
+  "Gamma Tucanae": [
+    "きょしちょう座ガンマ星"
+  ],
+  "Gamma Ursae Minoris": [
+    "こぐま座ガンマ星"
+  ],
+  "Gamma Virginis": [
+    "おとめ座ガンマ星"
+  ],
+  "Gienah": [
+    "からす座ガンマ星"
+  ],
+  "Hadar": [
+    "ケンタウルス座ベータ星"
+  ],
+  "Iota Andromedae": [
+    "アンドロメダ座イオタ星"
+  ],
+  "Iota Antliae": [
+    "ポンプ座イオタ星"
+  ],
+  "Iota Apodis": [
+    "ふうちょう座イオタ星"
+  ],
+  "Iota Aquarii": [
+    "みずがめ座イオタ星"
+  ],
+  "Iota Aquilae": [
+    "わし座イオタ星"
+  ],
+  "Iota Arae": [
+    "さいだん座イオタ星"
+  ],
+  "Iota Arietis": [
+    "おひつじ座イオタ星"
+  ],
+  "Iota Aurigae": [
+    "ぎょしゃ座イオタ星"
+  ],
+  "Iota Boötis": [
+    "うしかい座イオタ星"
+  ],
+  "Iota Cancri": [
+    "かに座イオタ星"
+  ],
+  "Iota Canis Majoris": [
+    "おおいぬ座イオタ星"
+  ],
+  "Iota Capricorni": [
+    "やぎ座イオタ星"
+  ],
+  "Iota Cassiopeiae": [
+    "カシオペヤ座イオタ星"
+  ],
+  "Iota Centauri": [
+    "ケンタウルス座イオタ星"
+  ],
+  "Iota Cephei": [
+    "ケフェウス座イオタ星"
+  ],
+  "Iota Ceti": [
+    "くじら座イオタ星"
+  ],
+  "Iota Chamaeleontis": [
+    ""
+  ],
+  "Iota Coronae Borealis": [
+    "かんむり座イオタ星"
+  ],
+  "Iota Crateris": [
+    ""
+  ],
+  "Iota Crucis": [
+    ""
+  ],
+  "Iota Cygni": [
+    ""
+  ],
+  "Iota Delphini": [
+    ""
+  ],
+  "Iota Draconis": [
+    "りゅう座イオタ星"
+  ],
+  "Iota Eridani": [
+    ""
+  ],
+  "Iota Geminorum": [
+    "ふたご座イオタ星"
+  ],
+  "Iota Gruis": [
+    ""
+  ],
+  "Iota Herculis": [
+    "ヘルクレス座イオタ星"
+  ],
+  "Iota Horologii": [
+    "とけい座イオタ星"
+  ],
+  "Iota Hydrae": [
+    "うみへび座イオタ星"
+  ],
+  "Iota Leonis": [
+    "しし座イオタ星"
+  ],
+  "Iota Leporis": [
+    ""
+  ],
+  "Iota Librae": [
+    ""
+  ],
+  "Iota Lupi": [
+    ""
+  ],
+  "Iota Lyrae": [
+    ""
+  ],
+  "Iota Mensae": [
+    ""
+  ],
+  "Iota Microscopii": [
+    ""
+  ],
+  "Iota Octantis": [
+    "はちぶんぎ座イオタ星"
+  ],
+  "Iota Ophiuchi": [
+    ""
+  ],
+  "Iota Orionis": [
+    "オリオン座イオタ星"
+  ],
+  "Iota Pavonis": [
+    ""
+  ],
+  "Iota Pegasi": [
+    "ペガスス座イオタ星"
+  ],
+  "Iota Persei": [
+    "ペルセウス座イオタ星"
+  ],
+  "Iota Phoenicis": [
+    ""
+  ],
+  "Iota Pictoris": [
+    ""
+  ],
+  "Iota Piscis Austrini": [
+    ""
+  ],
+  "Iota Piscium": [
+    "うお座イオタ星"
+  ],
+  "Iota Reticuli": [
+    ""
+  ],
+  "Iota Sagittarii": [
+    ""
+  ],
+  "Iota Sculptoris": [
+    ""
+  ],
+  "Iota Serpentis": [
+    ""
+  ],
+  "Iota Tauri": [
+    ""
+  ],
+  "Iota Telescopii": [
+    ""
+  ],
+  "Iota Tucanae": [
+    ""
+  ],
+  "Iota Ursae Majoris": [
+    "おおぐま座イオタ星"
+  ],
+  "Iota Virginis": [
+    "おとめ座イオタ星"
+  ],
+  "Iota Volantis": [
+    ""
+  ],
+  "Kappa Andromedae": [
+    "アンドロメダ座カッパ星"
+  ],
+  "Kappa Aquarii": [
+    "みずがめ座カッパ星"
+  ],
+  "Kappa Aquilae": [
+    "わし座カッパ星"
+  ],
+  "Kappa Arae": [
+    ""
+  ],
+  "Kappa Arietis": [
+    "おひつじ座カッパ星"
+  ],
+  "Kappa Aurigae": [
+    ""
+  ],
+  "Kappa Cancri": [
+    "かに座カッパ星"
+  ],
+  "Kappa Canis Majoris": [
+    "おおいぬ座カッパ星"
+  ],
+  "Kappa Capricorni": [
+    ""
+  ],
+  "Kappa Cassiopeiae": [
+    "カシオペヤ座カッパ星"
+  ],
+  "Kappa Centauri": [
+    "ケンタウルス座カッパ星"
+  ],
+  "Kappa Cephei": [
+    ""
+  ],
+  "Kappa Ceti": [
+    "くじら座カッパ星"
+  ],
+  "Kappa Chamaeleontis": [
+    ""
+  ],
+  "Kappa Columbae": [
+    ""
+  ],
+  "Kappa Coronae Borealis": [
+    "かんむり座カッパ星"
+  ],
+  "Kappa Crateris": [
+    ""
+  ],
+  "Kappa Crucis": [
+    ""
+  ],
+  "Kappa Cygni": [
+    ""
+  ],
+  "Kappa Delphini": [
+    ""
+  ],
+  "Kappa Doradus": [
+    ""
+  ],
+  "Kappa Draconis": [
+    ""
+  ],
+  "Kappa Eridani": [
+    ""
+  ],
+  "Kappa Fornacis": [
+    ""
+  ],
+  "Kappa Geminorum": [
+    "ふたご座カッパ星"
+  ],
+  "Kappa Gruis": [
+    ""
+  ],
+  "Kappa Herculis": [
+    "ヘルクレス座カッパ星"
+  ],
+  "Kappa Hydrae": [
+    ""
+  ],
+  "Kappa Indi": [
+    ""
+  ],
+  "Kappa Leonis": [
+    "しし座カッパ星"
+  ],
+  "Kappa Leporis": [
+    ""
+  ],
+  "Kappa Librae": [
+    ""
+  ],
+  "Kappa Lyrae": [
+    ""
+  ],
+  "Kappa Mensae": [
+    ""
+  ],
+  "Kappa Normae": [
+    ""
+  ],
+  "Kappa Octantis": [
+    ""
+  ],
+  "Kappa Ophiuchi": [
+    "へびつかい座カッパ星"
+  ],
+  "Kappa Pavonis": [
+    ""
+  ],
+  "Kappa Pegasi": [
+    "ペガスス座カッパ星"
+  ],
+  "Kappa Persei": [
+    "ペルセウス座カッパ星"
+  ],
+  "Kappa Phoenicis": [
+    ""
+  ],
+  "Kappa Pictoris": [
+    ""
+  ],
+  "Kappa Piscium": [
+    "うお座カッパ星"
+  ],
+  "Kappa Pyxidis": [
+    ""
+  ],
+  "Kappa Reticuli": [
+    "レチクル座カッパ星"
+  ],
+  "Kappa Scorpii": [
+    "さそり座カッパ星"
+  ],
+  "Kappa Serpentis": [
+    "へび座カッパ星"
+  ],
+  "Kappa Telescopii": [
+    ""
+  ],
+  "Kappa Tucanae": [
+    ""
+  ],
+  "Kappa Ursae Majoris": [
+    "おおぐま座カッパ星"
+  ],
+  "Kappa Velorum": [
+    "ほ座カッパ星"
+  ],
+  "Kappa Virginis": [
+    "おとめ座カッパ星"
+  ],
+  "Kaus Australis": [
+    "いて座イプシロン星"
+  ],
+  "Lambda Andromedae": [
+    "アンドロメダ座ラムダ星"
+  ],
+  "Lambda Aquarii": [
+    "みずがめ座ラムダ星"
+  ],
+  "Lambda Aquilae": [
+    "わし座ラムダ星"
+  ],
+  "Lambda Arae": [
+    "さいだん座ラムダ星"
+  ],
+  "Lambda Arietis": [
+    "おひつじ座ラムダ星"
+  ],
+  "Lambda Aurigae": [
+    "ぎょしゃ座ラムダ星"
+  ],
+  "Lambda Boötis": [
+    "うしかい座ラムダ星"
+  ],
+  "Lambda Caeli": [
+    ""
+  ],
+  "Lambda Cancri": [
+    "かに座ラムダ星"
+  ],
+  "Lambda Canis Majoris": [
+    ""
+  ],
+  "Lambda Capricorni": [
+    ""
+  ],
+  "Lambda Cassiopeiae": [
+    ""
+  ],
+  "Lambda Centauri": [
+    "ケンタウルス座ラムダ星"
+  ],
+  "Lambda Cephei": [
+    "ケフェウス座ラムダ星"
+  ],
+  "Lambda Ceti": [
+    ""
+  ],
+  "Lambda Columbae": [
+    ""
+  ],
+  "Lambda Coronae Australis": [
+    ""
+  ],
+  "Lambda Coronae Borealis": [
+    ""
+  ],
+  "Lambda Crateris": [
+    ""
+  ],
+  "Lambda Crucis": [
+    ""
+  ],
+  "Lambda Cygni": [
+    ""
+  ],
+  "Lambda Doradus": [
+    ""
+  ],
+  "Lambda Draconis": [
+    "りゅう座ラムダ星"
+  ],
+  "Lambda Equulei": [
+    ""
+  ],
+  "Lambda Eridani": [
+    ""
+  ],
+  "Lambda Geminorum": [
+    "ふたご座ラムダ星"
+  ],
+  "Lambda Gruis": [
+    ""
+  ],
+  "Lambda Herculis": [
+    "ヘルクレス座ラムダ星"
+  ],
+  "Lambda Horologii": [
+    ""
+  ],
+  "Lambda Hydrae": [
+    ""
+  ],
+  "Lambda Leonis": [
+    "しし座ラムダ星"
+  ],
+  "Lambda Leporis": [
+    ""
+  ],
+  "Lambda Librae": [
+    "てんびん座ラムダ星"
+  ],
+  "Lambda Lupi": [
+    ""
+  ],
+  "Lambda Lyrae": [
+    ""
+  ],
+  "Lambda Mensae": [
+    ""
+  ],
+  "Lambda Muscae": [
+    ""
+  ],
+  "Lambda Normae": [
+    ""
+  ],
+  "Lambda Octantis": [
+    ""
+  ],
+  "Lambda Ophiuchi": [
+    "へびつかい座ラムダ星"
+  ],
+  "Lambda Orionis": [
+    "オリオン座ラムダ星"
+  ],
+  "Lambda Pavonis": [
+    ""
+  ],
+  "Lambda Pegasi": [
+    "ペガスス座ラムダ星"
+  ],
+  "Lambda Persei": [
+    ""
+  ],
+  "Lambda Pictoris": [
+    ""
+  ],
+  "Lambda Piscis Austrini": [
+    ""
+  ],
+  "Lambda Piscium": [
+    ""
+  ],
+  "Lambda Pyxidis": [
+    ""
+  ],
+  "Lambda Sagittarii": [
+    "いて座ラムダ星"
+  ],
+  "Lambda Serpentis": [
+    "へび座ラムダ星"
+  ],
+  "Lambda Tauri": [
+    "おうし座ラムダ星"
+  ],
+  "Lambda Telescopii": [
+    ""
+  ],
+  "Lambda Ursae Majoris": [
+    "おおぐま座ラムダ星"
+  ],
+  "Lambda Ursae Minoris": [
+    "こぐま座ラムダ星"
+  ],
+  "Lambda Virginis": [
+    "おとめ座ラムダ星"
+  ],
+  "Larawag": [
+    "さそり座イプシロン星"
+  ],
+  "Menkent": [
+    "ケンタウルス座シータ星"
+  ],
+  "Mirach": [
+    "アンドロメダ座ベータ星"
+  ],
+  "Naos": [
+    "とも座ゼータ星"
+  ],
+  "Nunki": [
+    "いて座シグマ星"
+  ],
+  "Omega Andromedae": [
+    "アンドロメダ座オメガ星"
+  ],
+  "Omega Boötis": [
+    ""
+  ],
+  "Omega Cancri": [
+    ""
+  ],
+  "Omega Canis Majoris": [
+    ""
+  ],
+  "Omega Capricorni": [
+    "やぎ座オメガ星"
+  ],
+  "Omega Carinae": [
+    "りゅうこつ座オメガ星"
+  ],
+  "Omega Cassiopeiae": [
+    "カシオペヤ座オメガ星"
+  ],
+  "Omega Draconis": [
+    ""
+  ],
+  "Omega Eridani": [
+    ""
+  ],
+  "Omega Fornacis": [
+    ""
+  ],
+  "Omega Geminorum": [
+    ""
+  ],
+  "Omega Herculis": [
+    "ヘルクレス座オメガ星"
+  ],
+  "Omega Hydrae": [
+    ""
+  ],
+  "Omega Leonis": [
+    ""
+  ],
+  "Omega Lupi": [
+    ""
+  ],
+  "Omega Octantis": [
+    ""
+  ],
+  "Omega Ophiuchi": [
+    ""
+  ],
+  "Omega Orionis": [
+    "オリオン座オメガ星"
+  ],
+  "Omega Persei": [
+    ""
+  ],
+  "Omega Piscium": [
+    "うお座オメガ星"
+  ],
+  "Omega Sagittarii": [
+    "いて座オメガ星"
+  ],
+  "Omega Serpentis": [
+    ""
+  ],
+  "Omega Tauri": [
+    ""
+  ],
+  "Omega Ursae Majoris": [
+    "おおぐま座オメガ星"
+  ],
+  "Omega Virginis": [
+    ""
+  ],
+  "Omicron Andromedae": [
+    "アンドロメダ座オミクロン星"
+  ],
+  "Omicron Aquarii": [
+    "みずがめ座オミクロン星"
+  ],
+  "Omicron Aquilae": [
+    ""
+  ],
+  "Omicron Arietis": [
+    ""
+  ],
+  "Omicron Aurigae": [
+    "ぎょしゃ座オミクロン星"
+  ],
+  "Omicron Boötis": [
+    ""
+  ],
+  "Omicron Capricorni": [
+    ""
+  ],
+  "Omicron Cassiopeiae": [
+    ""
+  ],
+  "Omicron Cephei": [
+    ""
+  ],
+  "Omicron Ceti": [
+    "ミラ"
+  ],
+  "Omicron Columbae": [
+    ""
+  ],
+  "Omicron Coronae Borealis": [
+    "かんむり座オミクロン星"
+  ],
+  "Omicron Draconis": [
+    ""
+  ],
+  "Omicron Geminorum": [
+    "ふたご座オミクロン星"
+  ],
+  "Omicron Gruis": [
+    ""
+  ],
+  "Omicron Herculis": [
+    ""
+  ],
+  "Omicron Hydrae": [
+    ""
+  ],
+  "Omicron Leonis": [
+    "しし座オミクロン星"
+  ],
+  "Omicron Lupi": [
+    ""
+  ],
+  "Omicron Ophiuchi": [
+    ""
+  ],
+  "Omicron Pegasi": [
+    ""
+  ],
+  "Omicron Persei": [
+    "ペルセウス座オミクロン星"
+  ],
+  "Omicron Piscium": [
+    "うお座オミクロン星"
+  ],
+  "Omicron Puppis": [
+    ""
+  ],
+  "Omicron Sagittarii": [
+    "いて座オミクロン星"
+  ],
+  "Omicron Scorpii": [
+    "さそり座オミクロン星"
+  ],
+  "Omicron Serpentis": [
+    ""
+  ],
+  "Omicron Tauri": [
+    "おうし座オミクロン星"
+  ],
+  "Omicron Ursae Majoris": [
+    "おおぐま座オミクロン星"
+  ],
+  "Omicron Velorum": [
+    "ほ座オミクロン星"
+  ],
+  "Omicron Virginis": [
+    ""
+  ],
+  "Phi Andromedae": [
+    "アンドロメダ座ファイ星"
+  ],
+  "Phi Aquarii": [
+    ""
+  ],
+  "Phi Aquilae": [
+    "わし座ファイ星"
+  ],
+  "Phi Aurigae": [
+    ""
+  ],
+  "Phi Boötis": [
+    ""
+  ],
+  "Phi Capricorni": [
+    ""
+  ],
+  "Phi Cassiopeiae": [
+    ""
+  ],
+  "Phi Centauri": [
+    ""
+  ],
+  "Phi Cygni": [
+    ""
+  ],
+  "Phi Draconis": [
+    "りゅう座ファイ星"
+  ],
+  "Phi Eridani": [
+    "エリダヌス座ファイ星"
+  ],
+  "Phi Fornacis": [
+    ""
+  ],
+  "Phi Geminorum": [
+    ""
+  ],
+  "Phi Gruis": [
+    ""
+  ],
+  "Phi Herculis": [
+    "ヘルクレス座ファイ星"
+  ],
+  "Phi Hydrae": [
+    ""
+  ],
+  "Phi Leonis": [
+    ""
+  ],
+  "Phi Octantis": [
+    ""
+  ],
+  "Phi Ophiuchi": [
+    ""
+  ],
+  "Phi Pegasi": [
+    ""
+  ],
+  "Phi Persei": [
+    ""
+  ],
+  "Phi Phoenicis": [
+    ""
+  ],
+  "Phi Piscium": [
+    ""
+  ],
+  "Phi Sagittarii": [
+    "いて座ファイ星"
+  ],
+  "Phi Serpentis": [
+    ""
+  ],
+  "Phi Tauri": [
+    ""
+  ],
+  "Phi Ursae Majoris": [
+    ""
+  ],
+  "Phi Velorum": [
+    "ほ座ファイ星"
+  ],
+  "Phi Virginis": [
+    "おとめ座ファイ星"
+  ],
+  "Psi Andromedae": [
+    "アンドロメダ座プサイ星"
+  ],
+  "Psi Aquilae": [
+    ""
+  ],
+  "Psi Boötis": [
+    "うしかい座プサイ星"
+  ],
+  "Psi Cancri": [
+    ""
+  ],
+  "Psi Capricorni": [
+    "やぎ座プサイ星"
+  ],
+  "Psi Cassiopeiae": [
+    ""
+  ],
+  "Psi Centauri": [
+    ""
+  ],
+  "Psi Crateris": [
+    ""
+  ],
+  "Psi Cygni": [
+    ""
+  ],
+  "Psi Draconis": [
+    ""
+  ],
+  "Psi Eridani": [
+    ""
+  ],
+  "Psi Hydrae": [
+    ""
+  ],
+  "Psi Leonis": [
+    ""
+  ],
+  "Psi Octantis": [
+    ""
+  ],
+  "Psi Ophiuchi": [
+    ""
+  ],
+  "Psi Orionis": [
+    ""
+  ],
+  "Psi Pegasi": [
+    ""
+  ],
+  "Psi Persei": [
+    ""
+  ],
+  "Psi Phoenicis": [
+    ""
+  ],
+  "Psi Sagittarii": [
+    ""
+  ],
+  "Psi Scorpii": [
+    ""
+  ],
+  "Psi Serpentis": [
+    "へび座プサイ星"
+  ],
+  "Psi Tauri": [
+    ""
+  ],
+  "Psi Ursae Majoris": [
+    "おおぐま座プサイ星"
+  ],
+  "Psi Velorum": [
+    "ほ座プサイ星"
+  ],
+  "Psi Virginis": [
+    ""
+  ],
+  "Rho Andromedae": [
+    "アンドロメダ座ロー星"
+  ],
+  "Rho Aquarii": [
+    ""
+  ],
+  "Rho Aquilae": [
+    "わし座ロー星"
+  ],
+  "Rho Arietis": [
+    "おひつじ座ロー星"
+  ],
+  "Rho Aurigae": [
+    ""
+  ],
+  "Rho Boötis": [
+    "うしかい座ロー星"
+  ],
+  "Rho Capricorni": [
+    "やぎ座ロー星"
+  ],
+  "Rho Cassiopeiae": [
+    "カシオペヤ座ロー星"
+  ],
+  "Rho Centauri": [
+    ""
+  ],
+  "Rho Cephei": [
+    "ケフェウス座ロー星"
+  ],
+  "Rho Ceti": [
+    ""
+  ],
+  "Rho Coronae Borealis": [
+    "かんむり座ロー星"
+  ],
+  "Rho Cygni": [
+    "はくちょう座ロー星"
+  ],
+  "Rho Draconis": [
+    ""
+  ],
+  "Rho Fornacis": [
+    ""
+  ],
+  "Rho Geminorum": [
+    "ふたご座ロー星"
+  ],
+  "Rho Gruis": [
+    ""
+  ],
+  "Rho Herculis": [
+    ""
+  ],
+  "Rho Hydrae": [
+    ""
+  ],
+  "Rho Indi": [
+    "インディアン座ロー星"
+  ],
+  "Rho Leonis": [
+    "しし座ロー星"
+  ],
+  "Rho Lupi": [
+    ""
+  ],
+  "Rho Octantis": [
+    ""
+  ],
+  "Rho Ophiuchi": [
+    "へびつかい座ロー星"
+  ],
+  "Rho Orionis": [
+    ""
+  ],
+  "Rho Pavonis": [
+    ""
+  ],
+  "Rho Pegasi": [
+    "ペガスス座ロー星"
+  ],
+  "Rho Persei": [
+    "ペルセウス座ロー星"
+  ],
+  "Rho Phoenicis": [
+    ""
+  ],
+  "Rho Piscium": [
+    ""
+  ],
+  "Rho Puppis": [
+    "とも座ロー星"
+  ],
+  "Rho Scorpii": [
+    "さそり座ロー星"
+  ],
+  "Rho Serpentis": [
+    ""
+  ],
+  "Rho Tauri": [
+    ""
+  ],
+  "Rho Telescopii": [
+    ""
+  ],
+  "Rho Tucanae": [
+    ""
+  ],
+  "Rho Ursae Majoris": [
+    "おおぐま座ロー星"
+  ],
+  "Rho Virginis": [
+    ""
+  ],
+  "Sigma Andromedae": [
+    "アンドロメダ座シグマ星"
+  ],
+  "Sigma Aquarii": [
+    "みずがめ座シグマ星"
+  ],
+  "Sigma Aquilae": [
+    "わし座シグマ星"
+  ],
+  "Sigma Arae": [
+    ""
+  ],
+  "Sigma Arietis": [
+    ""
+  ],
+  "Sigma Aurigae": [
+    ""
+  ],
+  "Sigma Boötis": [
+    "うしかい座シグマ星"
+  ],
+  "Sigma Canis Majoris": [
+    "おおいぬ座シグマ星"
+  ],
+  "Sigma Capricorni": [
+    ""
+  ],
+  "Sigma Cassiopeiae": [
+    ""
+  ],
+  "Sigma Centauri": [
+    "ケンタウルス座シグマ星"
+  ],
+  "Sigma Ceti": [
+    ""
+  ],
+  "Sigma Columbae": [
+    ""
+  ],
+  "Sigma Coronae Borealis": [
+    ""
+  ],
+  "Sigma Cygni": [
+    ""
+  ],
+  "Sigma Draconis": [
+    "りゅう座シグマ星"
+  ],
+  "Sigma Geminorum": [
+    ""
+  ],
+  "Sigma Herculis": [
+    ""
+  ],
+  "Sigma Hydrae": [
+    "うみへび座シグマ星"
+  ],
+  "Sigma Leonis": [
+    "しし座シグマ星"
+  ],
+  "Sigma Librae": [
+    "てんびん座シグマ星"
+  ],
+  "Sigma Lupi": [
+    ""
+  ],
+  "Sigma Octantis": [
+    "はちぶんぎ座シグマ星"
+  ],
+  "Sigma Ophiuchi": [
+    ""
+  ],
+  "Sigma Orionis": [
+    "オリオン座シグマ星"
+  ],
+  "Sigma Pegasi": [
+    ""
+  ],
+  "Sigma Persei": [
+    ""
+  ],
+  "Sigma Piscium": [
+    ""
+  ],
+  "Sigma Puppis": [
+    "とも座シグマ星"
+  ],
+  "Sigma Scorpii": [
+    "さそり座シグマ星"
+  ],
+  "Sigma Sculptoris": [
+    ""
+  ],
+  "Sigma Serpentis": [
+    ""
+  ],
+  "Sigma Virginis": [
+    ""
+  ],
+  "Sirrah": [
+    "アンドロメダ座アルファ星"
+  ],
+  "Suhail": [
+    "ほ座ラムダ星"
+  ],
+  "Tau Andromedae": [
+    "アンドロメダ座タウ星"
+  ],
+  "Tau Aquilae": [
+    "わし座タウ星"
+  ],
+  "Tau Arietis": [
+    ""
+  ],
+  "Tau Aurigae": [
+    "ぎょしゃ座タウ星"
+  ],
+  "Tau Boötis": [
+    "うしかい座タウ星"
+  ],
+  "Tau Cancri": [
+    ""
+  ],
+  "Tau Canis Majoris": [
+    "おおいぬ座タウ星"
+  ],
+  "Tau Capricorni": [
+    ""
+  ],
+  "Tau Cassiopeiae": [
+    ""
+  ],
+  "Tau Centauri": [
+    "ケンタウルス座タウ星"
+  ],
+  "Tau Ceti": [
+    "くじら座タウ星"
+  ],
+  "Tau Coronae Borealis": [
+    ""
+  ],
+  "Tau Cygni": [
+    "はくちょう座タウ星"
+  ],
+  "Tau Draconis": [
+    ""
+  ],
+  "Tau Geminorum": [
+    "ふたご座タウ星"
+  ],
+  "Tau Herculis": [
+    "ヘルクレス座タウ星"
+  ],
+  "Tau Leonis": [
+    ""
+  ],
+  "Tau Librae": [
+    "てんびん座タウ星"
+  ],
+  "Tau Octantis": [
+    ""
+  ],
+  "Tau Ophiuchi": [
+    ""
+  ],
+  "Tau Orionis": [
+    "オリオン座タウ星"
+  ],
+  "Tau Pegasi": [
+    "ペガスス座タウ星"
+  ],
+  "Tau Persei": [
+    ""
+  ],
+  "Tau Piscis Austrini": [
+    ""
+  ],
+  "Tau Piscium": [
+    ""
+  ],
+  "Tau Puppis": [
+    "とも座タウ星"
+  ],
+  "Tau Sagittarii": [
+    "いて座タウ星"
+  ],
+  "Tau Scorpii": [
+    "さそり座タウ星"
+  ],
+  "Tau Sculptoris": [
+    ""
+  ],
+  "Tau Tauri": [
+    "おうし座タウ星"
+  ],
+  "Tau Ursae Majoris": [
+    "おおぐま座タウ星"
+  ],
+  "Tau Virginis": [
+    "おとめ座タウ星"
+  ],
+  "Tiaki": [
+    "つる座ベータ星"
+  ],
+  "Upsilon Andromedae": [
+    "アンドロメダ座ウプシロン星"
+  ],
+  "Upsilon Aquarii": [
+    ""
+  ],
+  "Upsilon Aquilae": [
+    ""
+  ],
+  "Upsilon Aurigae": [
+    "ぎょしゃ座ウプシロン星"
+  ],
+  "Upsilon Boötis": [
+    ""
+  ],
+  "Upsilon Capricorni": [
+    ""
+  ],
+  "Upsilon Carinae": [
+    "りゅうこつ座ウプシロン星"
+  ],
+  "Upsilon Cephei": [
+    ""
+  ],
+  "Upsilon Ceti": [
+    "くじら座ウプシロン星"
+  ],
+  "Upsilon Coronae Borealis": [
+    ""
+  ],
+  "Upsilon Cygni": [
+    ""
+  ],
+  "Upsilon Draconis": [
+    ""
+  ],
+  "Upsilon Geminorum": [
+    ""
+  ],
+  "Upsilon Gruis": [
+    ""
+  ],
+  "Upsilon Herculis": [
+    ""
+  ],
+  "Upsilon Leonis": [
+    ""
+  ],
+  "Upsilon Librae": [
+    "てんびん座ウプシロン星"
+  ],
+  "Upsilon Lupi": [
+    ""
+  ],
+  "Upsilon Octantis": [
+    ""
+  ],
+  "Upsilon Ophiuchi": [
+    ""
+  ],
+  "Upsilon Orionis": [
+    "オリオン座ウプシロン星"
+  ],
+  "Upsilon Pegasi": [
+    "ペガスス座ウプシロン星"
+  ],
+  "Upsilon Piscis Austrini": [
+    ""
+  ],
+  "Upsilon Piscium": [
+    ""
+  ],
+  "Upsilon Sagittarii": [
+    ""
+  ],
+  "Upsilon Scorpii": [
+    "さそり座ウプシロン星"
+  ],
+  "Upsilon Serpentis": [
+    ""
+  ],
+  "Upsilon Tauri": [
+    ""
+  ],
+  "Upsilon Ursae Majoris": [
+    "おおぐま座ウプシロン星"
+  ],
+  "Upsilon Virginis": [
+    ""
+  ],
+  "Zeta Andromedae": [
+    "アンドロメダ座ゼータ星"
+  ],
+  "Zeta Apodis": [
+    "ふうちょう座ゼータ星"
+  ],
+  "Zeta Aquilae": [
+    "わし座ゼータ星"
+  ],
+  "Zeta Arae": [
+    "さいだん座ゼータ星"
+  ],
+  "Zeta Arietis": [
+    "おひつじ座ゼータ星"
+  ],
+  "Zeta Aurigae": [
+    "ぎょしゃ座ゼータ星"
+  ],
+  "Zeta Boötis": [
+    "うしかい座ゼータ星"
+  ],
+  "Zeta Caeli": [
+    ""
+  ],
+  "Zeta Canis Majoris": [
+    "おおいぬ座ゼータ星"
+  ],
+  "Zeta Canis Minoris": [
+    "こいぬ座ゼータ星"
+  ],
+  "Zeta Capricorni": [
+    "やぎ座ゼータ星"
+  ],
+  "Zeta Cassiopeiae": [
+    "カシオペヤ座ゼータ星"
+  ],
+  "Zeta Centauri": [
+    "ケンタウルス座ゼータ星"
+  ],
+  "Zeta Cephei": [
+    "ケフェウス座ゼータ星"
+  ],
+  "Zeta Ceti": [
+    "くじら座ゼータ星"
+  ],
+  "Zeta Chamaeleontis": [
+    ""
+  ],
+  "Zeta Circini": [
+    ""
+  ],
+  "Zeta Coronae Australis": [
+    ""
+  ],
+  "Zeta Corvi": [
+    ""
+  ],
+  "Zeta Crateris": [
+    ""
+  ],
+  "Zeta Crucis": [
+    "みなみじゅうじ座ゼータ星"
+  ],
+  "Zeta Cygni": [
+    "はくちょう座ゼータ星"
+  ],
+  "Zeta Delphini": [
+    ""
+  ],
+  "Zeta Doradus": [
+    "かじき座ゼータ星"
+  ],
+  "Zeta Draconis": [
+    "りゅう座ゼータ星"
+  ],
+  "Zeta Eridani": [
+    "エリダヌス座ゼータ星"
+  ],
+  "Zeta Fornacis": [
+    ""
+  ],
+  "Zeta Geminorum": [
+    "ふたご座ゼータ星"
+  ],
+  "Zeta Gruis": [
+    ""
+  ],
+  "Zeta Herculis": [
+    "ヘルクレス座ゼータ星"
+  ],
+  "Zeta Horologii": [
+    ""
+  ],
+  "Zeta Hydrae": [
+    "うみへび座ゼータ星"
+  ],
+  "Zeta Hydri": [
+    ""
+  ],
+  "Zeta Indi": [
+    ""
+  ],
+  "Zeta Leonis": [
+    "しし座ゼータ星"
+  ],
+  "Zeta Leporis": [
+    "うさぎ座ゼータ星"
+  ],
+  "Zeta Lupi": [
+    "おおかみ座ゼータ星"
+  ],
+  "Zeta Mensae": [
+    ""
+  ],
+  "Zeta Microscopii": [
+    ""
+  ],
+  "Zeta Monocerotis": [
+    ""
+  ],
+  "Zeta Normae": [
+    ""
+  ],
+  "Zeta Octantis": [
+    ""
+  ],
+  "Zeta Ophiuchi": [
+    "へびつかい座ゼータ星"
+  ],
+  "Zeta Pavonis": [
+    ""
+  ],
+  "Zeta Pegasi": [
+    "ペガスス座ゼータ星"
+  ],
+  "Zeta Persei": [
+    "ペルセウス座ゼータ星"
+  ],
+  "Zeta Phoenicis": [
+    "ほうおう座ゼータ星"
+  ],
+  "Zeta Pictoris": [
+    ""
+  ],
+  "Zeta Piscis Austrini": [
+    ""
+  ],
+  "Zeta Piscium": [
+    "うお座ゼータ星"
+  ],
+  "Zeta Pyxidis": [
+    ""
+  ],
+  "Zeta Sagittae": [
+    ""
+  ],
+  "Zeta Sagittarii": [
+    "いて座ゼータ星"
+  ],
+  "Zeta Sculptoris": [
+    ""
+  ],
+  "Zeta Scuti": [
+    ""
+  ],
+  "Zeta Serpentis": [
+    ""
+  ],
+  "Zeta Tauri": [
+    "おうし座ゼータ星"
+  ],
+  "Zeta Telescopii": [
+    "ぼうえんきょう座ゼータ星"
+  ],
+  "Zeta Tucanae": [
+    "きょしちょう座ゼータ星"
+  ],
+  "Zeta Ursae Majoris": [
+    "ミザール"
+  ],
+  "Zeta Ursae Minoris": [
+    "こぐま座ゼータ星"
+  ],
+  "Zeta Virginis": [
+    "おとめ座ゼータ星"
+  ],
+  "Zeta Volantis": [
+    ""
+  ],
+  "Zosma": [
+    "しし座デルタ星"
+  ],
+  "Crab Nebula": [
+    "かに星雲"
+  ],
+  "M 2": [
+    "M2"
+  ],
+  "M 3": [
+    "M3"
+  ],
+  "Crab Globular Cluster": [
+    "M4"
+  ],
+  "Rose Cluster": [
+    "M5"
+  ],
+  "Butterfly Cluster": [
+    "M6"
+  ],
+  "Ptolemy's Cluster": [
+    "M7"
+  ],
+  "Lagoon Nebula": [
+    "干潟星雲"
+  ],
+  "M 9": [
+    "M9"
+  ],
+  "M 10": [
+    "M10"
+  ],
+  "Wild Duck Cluster": [
+    "M11"
+  ],
+  "M 12": [
+    "M12"
+  ],
+  "Hercules Globular Cluster": [
+    "M13"
+  ],
+  "M 14": [
+    "M14"
+  ],
+  "Pegasus Cluster": [
+    "M15"
+  ],
+  "Eagle Nebula": [
+    "わし星雲"
+  ],
+  "Omega Nebula": [
+    "オメガ星雲"
+  ],
+  "Black Swan Cluster": [
+    "M18"
+  ],
+  "M 19": [
+    "M19"
+  ],
+  "Trifid Nebula": [
+    "三裂星雲"
+  ],
+  "Webb's Cross": [
+    "M21"
+  ],
+  "Great Sagittarius Cluster": [
+    "M22"
+  ],
+  "M 23": [
+    "M23"
+  ],
+  "Small Sagittarius Star Cloud": [
+    "M24"
+  ],
+  "M 25": [
+    "M25"
+  ],
+  "M 26": [
+    "M26"
+  ],
+  "M 28": [
+    "M28"
+  ],
+  "Cooling Tower": [
+    "冷却塔"
+  ],
+  "Jellyfish Cluster": [
+    "M30"
+  ],
+  "M 32": [
+    "M32"
+  ],
+  "Triangulum Galaxy": [
+    "さんかく座銀河"
+  ],
+  "Spiral Cluster": [
+    "M34"
+  ],
+  "Shoe-Buckle Cluster": [
+    "M35"
+  ],
+  "Pinwheel Cluster": [
+    "M36"
+  ],
+  "January Salt-and-Pepper Cluster": [
+    "M37"
+  ],
+  "Starfish Cluster": [
+    "M38"
+  ],
+  "M 39": [
+    "M39"
+  ],
+  "Little Beehive Cluster": [
+    "M41"
+  ],
+  "de Mairan's Nebula": [
+    "M43"
+  ],
+  "M 46": [
+    "M46"
+  ],
+  "M 47": [
+    "M47"
+  ],
+  "M 49": [
+    "M49"
+  ],
+  "Heart-Shaped Cluster": [
+    "M50"
+  ],
+  "Cassiopeia Salt-and-Pepper Cluster": [
+    "M52"
+  ],
+  "M 53": [
+    "M53"
+  ],
+  "M 54": [
+    "M54"
+  ],
+  "Specter Cluster": [
+    "M55"
+  ],
+  "M 56": [
+    "M56"
+  ],
+  "M 58": [
+    "M58"
+  ],
+  "M 59": [
+    "M59"
+  ],
+  "M 60": [
+    "M60"
+  ],
+  "Swelling Spiral Galaxy": [
+    "M61"
+  ],
+  "Flickering Globular Cluster": [
+    "M62"
+  ],
+  "Sunflower Galaxy": [
+    "M63"
+  ],
+  "Black Eye Galaxy": [
+    "黒眼銀河"
+  ],
+  "Leo Triplet": [
+    "しし座の三つ子銀河"
+  ],
+  "Golden-Eye Cluster": [
+    "M67"
+  ],
+  "M 68": [
+    "M68"
+  ],
+  "M 69": [
+    "M69"
+  ],
+  "M 70": [
+    "M70"
+  ],
+  "Angelfish Cluster": [
+    "M71"
+  ],
+  "M 72": [
+    "M72"
+  ],
+  "M 73": [
+    "M73"
+  ],
+  "Phantom Galaxy": [
+    "M74"
+  ],
+  "M 75": [
+    "M75"
+  ],
+  "Little Dumbbell Nebula": [
+    "M76"
+  ],
+  "Cetus A": [
+    "M77"
+  ],
+  "Casper the Friendly Ghost Nebula": [
+    "M78"
+  ],
+  "M 79": [
+    "M79"
+  ],
+  "M 80": [
+    "M80"
+  ],
+  "Bode's Galaxy": [
+    "M81"
+  ],
+  "Cigar Galaxy": [
+    "M82"
+  ],
+  "Southern Pinwheel Galaxy": [
+    "M83"
+  ],
+  "Markarian's Chain": [
+    "マルカリアンの鎖"
+  ],
+  "M 85": [
+    "M85"
+  ],
+  "Faust V051": [
+    "M86"
+  ],
+  "Virgo Galaxy": [
+    "M87"
+  ],
+  "M 88": [
+    "M88"
+  ],
+  "M 89": [
+    "M89"
+  ],
+  "M 90": [
+    "M90"
+  ],
+  "M 91": [
+    "M91"
+  ],
+  "M 92": [
+    "M92"
+  ],
+  "Croc's Eye Galaxy": [
+    "M94"
+  ],
+  "M 95": [
+    "M95"
+  ],
+  "M 96": [
+    "M96"
+  ],
+  "Owl Nebula": [
+    "ふくろう星雲"
+  ],
+  "M 98": [
+    "M98"
+  ],
+  "Virgo Cluster Pinwheel": [
+    "M99"
+  ],
+  "Blowdryer Galaxy": [
+    "M100"
+  ],
+  "Pinwheel Galaxy": [
+    "M101"
+  ],
+  "M 103": [
+    "M103"
+  ],
+  "M 105": [
+    "M105"
+  ],
+  "M 106": [
+    "M106"
+  ],
+  "The Crucifix Cluster": [
+    "M107"
+  ],
+  "Surfboard Galaxy": [
+    "M108"
+  ],
+  "Vacuum Cleaner Galaxy": [
+    "M109"
+  ],
+  "M 110": [
+    "M110"
+  ],
+  "NGC 1": [
+    "NGC 1"
+  ],
+  "NGC 2": [
+    "NGC 2"
+  ],
+  "NGC 3": [
+    "NGC 3"
+  ],
+  "NGC 7": [
+    "NGC 7"
+  ],
+  "NGC 9": [
+    "NGC 9"
+  ],
+  "NGC 10": [
+    "NGC 10"
+  ],
+  "NGC 11": [
+    "NGC 11"
+  ],
+  "NGC 12": [
+    "NGC 12"
+  ],
+  "NGC 13": [
+    "NGC 13"
+  ],
+  "NGC 14": [
+    "NGC 14"
+  ],
+  "NGC 15": [
+    "NGC 15"
+  ],
+  "NGC 16": [
+    "NGC 16"
+  ],
+  "NGC 34": [
+    "NGC 17"
+  ],
+  "NGC 19": [
+    "NGC 19"
+  ],
+  "NGC 20": [
+    "NGC 20"
+  ],
+  "NGC 22": [
+    "NGC 22"
+  ],
+  "NGC 23": [
+    "NGC 23"
+  ],
+  "NGC 24": [
+    "NGC 24"
+  ],
+  "NGC 25": [
+    "NGC 25"
+  ],
+  "NGC 26": [
+    "NGC 26"
+  ],
+  "NGC 27": [
+    "NGC 27"
+  ],
+  "NGC 28": [
+    "NGC 28"
+  ],
+  "NGC 29": [
+    "NGC 21"
+  ],
+  "NGC 31": [
+    "NGC 31"
+  ],
+  "NGC 35": [
+    "NGC 35"
+  ],
+  "NGC 36": [
+    "NGC 36"
+  ],
+  "NGC 37": [
+    "NGC 37"
+  ],
+  "NGC 38": [
+    "NGC 38"
+  ],
+  "NGC 39": [
+    "NGC 39"
+  ],
+  "Bow-Tie Nebula": [
+    "NGC 40"
+  ],
+  "NGC 41": [
+    "NGC 41"
+  ],
+  "NGC 42": [
+    "NGC 42"
+  ],
+  "NGC 43": [
+    "NGC 43"
+  ],
+  "NGC 45": [
+    "NGC 45"
+  ],
+  "NGC 47": [
+    "NGC 47"
+  ],
+  "NGC 48": [
+    "NGC 48"
+  ],
+  "NGC 49": [
+    "NGC 49"
+  ],
+  "NGC 50": [
+    "NGC 50"
+  ],
+  "NGC 51": [
+    "NGC 51"
+  ],
+  "NGC 52": [
+    "NGC 52"
+  ],
+  "NGC 53": [
+    "NGC 53"
+  ],
+  "NGC 54": [
+    "NGC 54"
+  ],
+  "String of Pearls": [
+    "NGC 55"
+  ],
+  "NGC 57": [
+    "NGC 57"
+  ],
+  "NGC 59": [
+    "NGC 59"
+  ],
+  "NGC 60": [
+    "NGC 60"
+  ],
+  "NGC 61": [
+    ""
+  ],
+  "NGC 62": [
+    ""
+  ],
+  "NGC 63": [
+    "NGC 63"
+  ],
+  "NGC 64": [
+    ""
+  ],
+  "NGC 65": [
+    ""
+  ],
+  "NGC 66": [
+    ""
+  ],
+  "NGC 68": [
+    ""
+  ],
+  "NGC 70": [
+    ""
+  ],
+  "NGC 71": [
+    ""
+  ],
+  "NGC 72": [
+    ""
+  ],
+  "NGC 73": [
+    ""
+  ],
+  "NGC 75": [
+    ""
+  ],
+  "NGC 76": [
+    ""
+  ],
+  "NGC 78": [
+    ""
+  ],
+  "NGC 79": [
+    ""
+  ],
+  "NGC 80": [
+    "NGC 80"
+  ],
+  "NGC 83": [
+    "NGC 83"
+  ],
+  "NGC 84": [
+    ""
+  ],
+  "NGC 85": [
+    ""
+  ],
+  "NGC 86": [
+    ""
+  ],
+  "Robert's Quartet": [
+    "ロバートの四つ子銀河"
+  ],
+  "NGC 90": [
+    ""
+  ],
+  "NGC 93": [
+    ""
+  ],
+  "NGC 95": [
+    ""
+  ],
+  "NGC 97": [
+    ""
+  ],
+  "NGC 98": [
+    ""
+  ],
+  "NGC 99": [
+    ""
+  ],
+  "NGC 100": [
+    ""
+  ],
+  "NGC 101": [
+    ""
+  ],
+  "NGC 102": [
+    ""
+  ],
+  "NGC 103": [
+    ""
+  ],
+  "47 Tuc": [
+    "きょしちょう座47"
+  ],
+  "NGC 105": [
+    "NGC 105"
+  ],
+  "NGC 106": [
+    ""
+  ],
+  "NGC 108": [
+    ""
+  ],
+  "NGC 109": [
+    ""
+  ],
+  "NGC 110": [
+    ""
+  ],
+  "NGC 112": [
+    ""
+  ],
+  "NGC 113": [
+    ""
+  ],
+  "NGC 114": [
+    ""
+  ],
+  "NGC 115": [
+    ""
+  ],
+  "NGC 116": [
+    ""
+  ],
+  "NGC 118": [
+    ""
+  ],
+  "NGC 119": [
+    ""
+  ],
+  "NGC 120": [
+    ""
+  ],
+  "NGC 121": [
+    ""
+  ],
+  "NGC 124": [
+    ""
+  ],
+  "NGC 125": [
+    ""
+  ],
+  "NGC 127": [
+    ""
+  ],
+  "NGC 128 group": [
+    ""
+  ],
+  "NGC 129": [
+    ""
+  ],
+  "NGC 130": [
+    ""
+  ],
+  "NGC 131": [
+    ""
+  ],
+  "NGC 132": [
+    ""
+  ],
+  "NGC 133": [
+    ""
+  ],
+  "Giant Squid Galaxy": [
+    ""
+  ],
+  "NGC 136": [
+    ""
+  ],
+  "NGC 137": [
+    ""
+  ],
+  "NGC 138": [
+    ""
+  ],
+  "NGC 140": [
+    ""
+  ],
+  "NGC 144": [
+    ""
+  ],
+  "NGC 145": [
+    "NGC 145"
+  ],
+  "NGC 146": [
+    ""
+  ],
+  "NGC 147": [
+    "NGC 147"
+  ],
+  "NGC 148": [
+    ""
+  ],
+  "NGC 149": [
+    ""
+  ],
+  "NGC 150": [
+    ""
+  ],
+  "NGC 151": [
+    ""
+  ],
+  "NGC 152": [
+    ""
+  ],
+  "NGC 154": [
+    ""
+  ],
+  "NGC 155": [
+    ""
+  ],
+  "NGC 159": [
+    ""
+  ],
+  "NGC 160": [
+    ""
+  ],
+  "NGC 161": [
+    ""
+  ],
+  "NGC 163": [
+    ""
+  ],
+  "NGC 165": [
+    ""
+  ],
+  "NGC 166": [
+    ""
+  ],
+  "NGC 167": [
+    ""
+  ],
+  "NGC 168": [
+    ""
+  ],
+  "NGC 169": [
+    ""
+  ],
+  "NGC 175": [
+    ""
+  ],
+  "NGC 172": [
+    ""
+  ],
+  "NGC 173": [
+    ""
+  ],
+  "NGC 174": [
+    ""
+  ],
+  "NGC 176": [
+    ""
+  ],
+  "NGC 177": [
+    ""
+  ],
+  "NGC 178": [
+    ""
+  ],
+  "NGC 179": [
+    ""
+  ],
+  "NGC 180": [
+    ""
+  ],
+  "NGC 182": [
+    ""
+  ],
+  "NGC 183": [
+    ""
+  ],
+  "NGC 185": [
+    "NGC 185"
+  ],
+  "NGC 186": [
+    ""
+  ],
+  "NGC 187": [
+    ""
+  ],
+  "Polarissima Cluster": [
+    "NGC 188"
+  ],
+  "NGC 189": [
+    ""
+  ],
+  "NGC 190": [
+    ""
+  ],
+  "NGC 191": [
+    ""
+  ],
+  "NGC 192": [
+    ""
+  ],
+  "NGC 193": [
+    ""
+  ],
+  "NGC 194": [
+    ""
+  ],
+  "NGC 195": [
+    ""
+  ],
+  "NGC 196": [
+    ""
+  ],
+  "NGC 197": [
+    ""
+  ],
+  "NGC 198": [
+    ""
+  ],
+  "NGC 199": [
+    ""
+  ],
+  "NGC 200": [
+    ""
+  ],
+  "NGC 201": [
+    ""
+  ],
+  "NGC 203": [
+    ""
+  ],
+  "NGC 204": [
+    ""
+  ],
+  "Great Star Cloud in Andromeda Galaxy": [
+    "NGC 206"
+  ],
+  "NGC 207": [
+    ""
+  ],
+  "NGC 209": [
+    ""
+  ],
+  "NGC 210": [
+    ""
+  ],
+  "NGC 212": [
+    ""
+  ],
+  "NGC 213": [
+    ""
+  ],
+  "NGC 214": [
+    ""
+  ],
+  "NGC 215": [
+    ""
+  ],
+  "NGC 216": [
+    ""
+  ],
+  "NGC 217": [
+    ""
+  ],
+  "NGC 218": [
+    ""
+  ],
+  "NGC 219": [
+    ""
+  ],
+  "NGC 220": [
+    ""
+  ],
+  "NGC 222": [
+    ""
+  ],
+  "NGC 223": [
+    ""
+  ],
+  "Sailboat Cluster": [
+    ""
+  ],
+  "NGC 226": [
+    ""
+  ],
+  "NGC 227": [
+    ""
+  ],
+  "NGC 228": [
+    ""
+  ],
+  "NGC 229": [
+    ""
+  ],
+  "NGC 231": [
+    ""
+  ],
+  "NGC 232": [
+    ""
+  ],
+  "NGC 233": [
+    ""
+  ],
+  "NGC 234": [
+    ""
+  ],
+  "NGC 235": [
+    ""
+  ],
+  "NGC 236": [
+    ""
+  ],
+  "NGC 237": [
+    ""
+  ],
+  "NGC 238": [
+    ""
+  ],
+  "NGC 239": [
+    ""
+  ],
+  "NGC 240": [
+    ""
+  ],
+  "NGC 242": [
+    ""
+  ],
+  "NGC 243": [
+    ""
+  ],
+  "NGC 244": [
+    ""
+  ],
+  "NGC 245": [
+    ""
+  ],
+  "Skull Nebula": [
+    "NGC 246"
+  ],
+  "Burbidge Chain": [
+    "NGC 247"
+  ],
+  "NGC 249": [
+    ""
+  ],
+  "NGC 250": [
+    ""
+  ],
+  "NGC 251": [
+    ""
+  ],
+  "NGC 252": [
+    "NGC 252"
+  ],
+  "Sculptor Galaxy": [
+    "NGC 253"
+  ],
+  "NGC 254": [
+    ""
+  ],
+  "NGC 255": [
+    ""
+  ],
+  "NGC 256": [
+    ""
+  ],
+  "NGC 257": [
+    ""
+  ],
+  "NGC 258": [
+    ""
+  ],
+  "NGC 259": [
+    ""
+  ],
+  "NGC 260": [
+    ""
+  ],
+  "NGC 261": [
+    ""
+  ],
+  "Markarian 348": [
+    ""
+  ],
+  "NGC 263": [
+    ""
+  ],
+  "NGC 264": [
+    ""
+  ],
+  "NGC 266": [
+    ""
+  ],
+  "NGC 268": [
+    ""
+  ],
+  "NGC 269": [
+    ""
+  ],
+  "NGC 270": [
+    ""
+  ],
+  "NGC 271": [
+    ""
+  ],
+  "NGC 272": [
+    ""
+  ],
+  "NGC 273": [
+    ""
+  ],
+  "NGC 274": [
+    ""
+  ],
+  "NGC 275": [
+    ""
+  ],
+  "NGC 278": [
+    "NGC 278"
+  ],
+  "NGC 279": [
+    ""
+  ],
+  "NGC 280": [
+    ""
+  ],
+  "Pacman Nebula": [
+    "NGC 281"
+  ],
+  "NGC 282": [
+    ""
+  ],
+  "NGC 283": [
+    ""
+  ],
+  "NGC 285": [
+    ""
+  ],
+  "NGC 286": [
+    ""
+  ],
+  "NGC 287": [
+    ""
+  ],
+  "NGC 288": [
+    "NGC 288"
+  ],
+  "NGC 289": [
+    ""
+  ],
+  "NGC 290": [
+    ""
+  ],
+  "NGC 291": [
+    ""
+  ],
+  "Small Magellanic Cloud": [
+    "小マゼラン雲"
+  ],
+  "NGC 293": [
+    ""
+  ],
+  "NGC 294": [
+    ""
+  ],
+  "NGC 296": [
+    ""
+  ],
+  "NGC 298": [
+    ""
+  ],
+  "NGC 299": [
+    ""
+  ],
+  "NGC 301": [
+    ""
+  ],
+  "NGC 304": [
+    ""
+  ],
+  "NGC 306": [
+    ""
+  ],
+  "NGC 307": [
+    ""
+  ],
+  "NGC 309": [
+    ""
+  ],
+  "NGC 311": [
+    ""
+  ],
+  "NGC 312": [
+    ""
+  ],
+  "NGC 314": [
+    ""
+  ],
+  "NGC 315": [
+    ""
+  ],
+  "NGC 317": [
+    ""
+  ],
+  "NGC 318": [
+    ""
+  ],
+  "NGC 319": [
+    ""
+  ],
+  "NGC 320": [
+    ""
+  ],
+  "NGC 322": [
+    ""
+  ],
+  "NGC 323": [
+    ""
+  ],
+  "NGC 324": [
+    ""
+  ],
+  "NGC 325": [
+    ""
+  ],
+  "NGC 326": [
+    ""
+  ],
+  "NGC 327": [
+    ""
+  ],
+  "NGC 328": [
+    ""
+  ],
+  "NGC 329": [
+    ""
+  ],
+  "NGC 330": [
+    ""
+  ],
+  "NGC 331": [
+    ""
+  ],
+  "NGC 332": [
+    ""
+  ],
+  "NGC 333": [
+    ""
+  ],
+  "NGC 334": [
+    ""
+  ],
+  "NGC 335": [
+    ""
+  ],
+  "NGC 337": [
+    ""
+  ],
+  "NGC 338": [
+    ""
+  ],
+  "NGC 339": [
+    ""
+  ],
+  "NGC 340": [
+    ""
+  ],
+  "NGC 341": [
+    ""
+  ],
+  "NGC 342": [
+    ""
+  ],
+  "NGC 345": [
+    ""
+  ],
+  "NGC 348": [
+    ""
+  ],
+  "NGC 349": [
+    ""
+  ],
+  "NGC 350": [
+    ""
+  ],
+  "NGC 351": [
+    ""
+  ],
+  "NGC 352": [
+    ""
+  ],
+  "NGC 353": [
+    ""
+  ],
+  "NGC 354": [
+    ""
+  ],
+  "NGC 355": [
+    ""
+  ],
+  "NGC 356": [
+    ""
+  ],
+  "NGC 357": [
+    ""
+  ],
+  "NGC 358": [
+    ""
+  ],
+  "NGC 359": [
+    ""
+  ],
+  "NGC 360": [
+    ""
+  ],
+  "NGC 361": [
+    ""
+  ],
+  "NGC 362": [
+    "NGC 362"
+  ],
+  "NGC 363": [
+    ""
+  ],
+  "NGC 364": [
+    ""
+  ],
+  "NGC 365": [
+    ""
+  ],
+  "NGC 366": [
+    ""
+  ],
+  "NGC 368": [
+    ""
+  ],
+  "NGC 369": [
+    ""
+  ],
+  "NGC 373": [
+    ""
+  ],
+  "NGC 374": [
+    ""
+  ],
+  "Pisces Cloud": [
+    ""
+  ],
+  "NGC 376": [
+    ""
+  ],
+  "NGC 378": [
+    ""
+  ],
+  "NGC 379": [
+    ""
+  ],
+  "NGC 380": [
+    ""
+  ],
+  "NGC 381": [
+    ""
+  ],
+  "NGC 382": [
+    ""
+  ],
+  "NGC 383 group": [
+    ""
+  ],
+  "NGC 384": [
+    ""
+  ],
+  "NGC 385": [
+    ""
+  ],
+  "NGC 386": [
+    ""
+  ],
+  "NGC 388": [
+    ""
+  ],
+  "NGC 389": [
+    ""
+  ],
+  "NGC 390": [
+    "NGC 390"
+  ],
+  "NGC 391": [
+    ""
+  ],
+  "NGC 392": [
+    ""
+  ],
+  "NGC 393": [
+    ""
+  ],
+  "NGC 394": [
+    ""
+  ],
+  "NGC 397": [
+    ""
+  ],
+  "NGC 398": [
+    ""
+  ],
+  "NGC 399": [
+    ""
+  ],
+  "NGC 403": [
+    ""
+  ],
+  "Mirach's Ghost": [
+    ""
+  ],
+  "NGC 406": [
+    ""
+  ],
+  "NGC 407": [
+    ""
+  ],
+  "NGC 408": [
+    "NGC 408"
+  ],
+  "NGC 409": [
+    ""
+  ],
+  "NGC 410": [
+    ""
+  ],
+  "NGC 411": [
+    ""
+  ],
+  "NGC 413": [
+    ""
+  ],
+  "NGC 414": [
+    ""
+  ],
+  "NGC 415": [
+    ""
+  ],
+  "NGC 416": [
+    ""
+  ],
+  "NGC 418": [
+    ""
+  ],
+  "NGC 419": [
+    ""
+  ],
+  "NGC 420": [
+    ""
+  ],
+  "NGC 422": [
+    ""
+  ],
+  "NGC 423": [
+    ""
+  ],
+  "NGC 424": [
+    ""
+  ],
+  "NGC 425": [
+    ""
+  ],
+  "NGC 427": [
+    ""
+  ],
+  "NGC 428": [
+    ""
+  ],
+  "NGC 429": [
+    ""
+  ],
+  "NGC 430": [
+    ""
+  ],
+  "NGC 431": [
+    ""
+  ],
+  "NGC 432": [
+    ""
+  ],
+  "NGC 433": [
+    ""
+  ],
+  "NGC 434": [
+    ""
+  ],
+  "NGC 435": [
+    ""
+  ],
+  "NGC 436": [
+    ""
+  ],
+  "NGC 437": [
+    ""
+  ],
+  "NGC 438": [
+    ""
+  ],
+  "NGC 439": [
+    ""
+  ],
+  "NGC 440": [
+    ""
+  ],
+  "NGC 441": [
+    ""
+  ],
+  "NGC 442": [
+    ""
+  ],
+  "NGC 443": [
+    ""
+  ],
+  "NGC 444": [
+    ""
+  ],
+  "NGC 446": [
+    ""
+  ],
+  "NGC 447": [
+    ""
+  ],
+  "NGC 448": [
+    ""
+  ],
+  "NGC 449": [
+    ""
+  ],
+  "NGC 450": [
+    ""
+  ],
+  "NGC 451": [
+    ""
+  ],
+  "NGC 452": [
+    ""
+  ],
+  "NGC 454": [
+    ""
+  ],
+  "NGC 455": [
+    ""
+  ],
+  "Dragonfly Cluster": [
+    "NGC 457"
+  ],
+  "NGC 458": [
+    ""
+  ],
+  "NGC 461": [
+    ""
+  ],
+  "NGC 464": [
+    "NGC 464"
+  ],
+  "NGC 466": [
+    ""
+  ],
+  "NGC 467": [
+    ""
+  ],
+  "NGC 468": [
+    ""
+  ],
+  "NGC 469": [
+    ""
+  ],
+  "NGC 470": [
+    ""
+  ],
+  "NGC 471": [
+    ""
+  ],
+  "NGC 472": [
+    ""
+  ],
+  "NGC 473": [
+    ""
+  ],
+  "NGC 474": [
+    "NGC 474"
+  ],
+  "NGC 475": [
+    ""
+  ],
+  "NGC 477": [
+    ""
+  ],
+  "NGC 478": [
+    ""
+  ],
+  "NGC 479": [
+    ""
+  ],
+  "NGC 481": [
+    ""
+  ],
+  "NGC 482": [
+    ""
+  ],
+  "NGC 483": [
+    ""
+  ],
+  "NGC 484": [
+    ""
+  ],
+  "NGC 485": [
+    ""
+  ],
+  "NGC 487": [
+    ""
+  ],
+  "Whirligig Galaxy": [
+    ""
+  ],
+  "NGC 489": [
+    ""
+  ],
+  "NGC 490": [
+    ""
+  ],
+  "NGC 491": [
+    ""
+  ],
+  "NGC 493": [
+    ""
+  ],
+  "NGC 494": [
+    ""
+  ],
+  "NGC 495": [
+    ""
+  ],
+  "NGC 496": [
+    ""
+  ],
+  "NGC 497": [
+    ""
+  ],
+  "NGC 498": [
+    ""
+  ],
+  "NGC 499": [
+    ""
+  ],
+  "NGC 500": [
+    ""
+  ],
+  "NGC 501": [
+    ""
+  ],
+  "NGC 502": [
+    ""
+  ],
+  "NGC 503": [
+    ""
+  ],
+  "NGC 504": [
+    ""
+  ],
+  "NGC 505": [
+    ""
+  ],
+  "NGC 507 group": [
+    ""
+  ],
+  "NGC 508": [
+    ""
+  ],
+  "NGC 509": [
+    ""
+  ],
+  "NGC 512": [
+    ""
+  ],
+  "NGC 513": [
+    ""
+  ],
+  "NGC 514": [
+    "NGC 514"
+  ],
+  "NGC 515": [
+    ""
+  ],
+  "NGC 516": [
+    ""
+  ],
+  "NGC 517": [
+    ""
+  ],
+  "NGC 518": [
+    ""
+  ],
+  "NGC 520": [
+    "NGC 520"
+  ],
+  "NGC 521": [
+    ""
+  ],
+  "NGC 522": [
+    ""
+  ],
+  "NGC 523": [
+    ""
+  ],
+  "NGC 524": [
+    ""
+  ],
+  "NGC 525": [
+    ""
+  ],
+  "NGC 526": [
+    ""
+  ],
+  "NGC 527": [
+    ""
+  ],
+  "NGC 528": [
+    ""
+  ],
+  "NGC 530": [
+    ""
+  ],
+  "NGC 531": [
+    ""
+  ],
+  "NGC 532": [
+    ""
+  ],
+  "NGC 533": [
+    ""
+  ],
+  "NGC 534": [
+    ""
+  ],
+  "NGC 535": [
+    ""
+  ],
+  "NGC 536": [
+    ""
+  ],
+  "NGC 538": [
+    ""
+  ],
+  "NGC 539": [
+    ""
+  ],
+  "NGC 541": [
+    ""
+  ],
+  "NGC 542": [
+    ""
+  ],
+  "NGC 543": [
+    ""
+  ],
+  "NGC 544": [
+    ""
+  ],
+  "NGC 545": [
+    ""
+  ],
+  "NGC 546": [
+    ""
+  ],
+  "NGC 547": [
+    ""
+  ],
+  "NGC 548": [
+    ""
+  ],
+  "NGC 549": [
+    ""
+  ],
+  "NGC 550": [
+    ""
+  ],
+  "NGC 551": [
+    ""
+  ],
+  "NGC 555": [
+    ""
+  ],
+  "NGC 559": [
+    "NGC 559"
+  ],
+  "NGC 560": [
+    ""
+  ],
+  "NGC 561": [
+    ""
+  ],
+  "NGC 564": [
+    ""
+  ],
+  "NGC 568": [
+    ""
+  ],
+  "NGC 570": [
+    ""
+  ],
+  "NGC 575": [
+    ""
+  ],
+  "NGC 578": [
+    ""
+  ],
+  "NGC 579": [
+    ""
+  ],
+  "NGC 582": [
+    ""
+  ],
+  "NGC 585": [
+    ""
+  ],
+  "NGC 588": [
+    ""
+  ],
+  "NGC 591": [
+    ""
+  ],
+  "NGC 595": [
+    "NGC 595"
+  ],
+  "NGC 596": [
+    ""
+  ],
+  "NGC 600": [
+    ""
+  ],
+  "NGC 602": [
+    "NGC 602"
+  ],
+  "NGC 604": [
+    "NGC 604"
+  ],
+  "NGC 605": [
+    ""
+  ],
+  "NGC 606": [
+    ""
+  ],
+  "NGC 608": [
+    ""
+  ],
+  "NGC 609": [
+    ""
+  ],
+  "NGC 612": [
+    ""
+  ],
+  "NGC 613": [
+    ""
+  ],
+  "NGC 614": [
+    ""
+  ],
+  "NGC 615": [
+    ""
+  ],
+  "NGC 620": [
+    ""
+  ],
+  "NGC 622": [
+    ""
+  ],
+  "NGC 623": [
+    ""
+  ],
+  "NGC 624": [
+    ""
+  ],
+  "NGC 625": [
+    "NGC 625"
+  ],
+  "NGC 626": [
+    ""
+  ],
+  "NGC 630": [
+    ""
+  ],
+  "NGC 632": [
+    ""
+  ],
+  "NGC 633": [
+    ""
+  ],
+  "NGC 634": [
+    "NGC 634"
+  ],
+  "NGC 636": [
+    ""
+  ],
+  "NGC 637": [
+    ""
+  ],
+  "NGC 638": [
+    ""
+  ],
+  "NGC 644": [
+    ""
+  ],
+  "NGC 645": [
+    ""
+  ],
+  "NGC 646": [
+    ""
+  ],
+  "Fuzzy Butterfly Cluster": [
+    ""
+  ],
+  "NGC 655": [
+    ""
+  ],
+  "NGC 656": [
+    ""
+  ],
+  "NGC 657": [
+    ""
+  ],
+  "Yin-Yang Cluster": [
+    ""
+  ],
+  "NGC 660": [
+    ""
+  ],
+  "NGC 662": [
+    ""
+  ],
+  "Lawnmower Cluster": [
+    "NGC 663"
+  ],
+  "NGC 664": [
+    ""
+  ],
+  "NGC 665": [
+    ""
+  ],
+  "NGC 668": [
+    ""
+  ],
+  "NGC 669": [
+    ""
+  ],
+  "NGC 670": [
+    ""
+  ],
+  "NGC 672": [
+    ""
+  ],
+  "NGC 673": [
+    ""
+  ],
+  "NGC 676": [
+    ""
+  ],
+  "NGC 677": [
+    ""
+  ],
+  "NGC 679": [
+    ""
+  ],
+  "NGC 680": [
+    ""
+  ],
+  "NGC 681": [
+    ""
+  ],
+  "NGC 682": [
+    ""
+  ],
+  "NGC 684": [
+    ""
+  ],
+  "NGC 685": [
+    ""
+  ],
+  "NGC 687": [
+    ""
+  ],
+  "NGC 688": [
+    ""
+  ],
+  "NGC 690": [
+    ""
+  ],
+  "NGC 691": [
+    ""
+  ],
+  "NGC 692": [
+    ""
+  ],
+  "NGC 694": [
+    ""
+  ],
+  "NGC 695": [
+    ""
+  ],
+  "NGC 700": [
+    ""
+  ],
+  "NGC 701": [
+    ""
+  ],
+  "NGC 702": [
+    ""
+  ],
+  "NGC 703": [
+    ""
+  ],
+  "NGC 704": [
+    ""
+  ],
+  "NGC 705": [
+    ""
+  ],
+  "NGC 706": [
+    ""
+  ],
+  "NGC 707": [
+    ""
+  ],
+  "NGC 708": [
+    ""
+  ],
+  "NGC 709": [
+    ""
+  ],
+  "NGC 710": [
+    ""
+  ],
+  "NGC 712": [
+    ""
+  ],
+  "NGC 713": [
+    ""
+  ],
+  "NGC 714": [
+    ""
+  ],
+  "NGC 716": [
+    ""
+  ],
+  "NGC 717": [
+    ""
+  ],
+  "NGC 718": [
+    ""
+  ],
+  "NGC 719": [
+    ""
+  ],
+  "NGC 720": [
+    ""
+  ],
+  "NGC 721": [
+    ""
+  ],
+  "NGC 725": [
+    ""
+  ],
+  "NGC 731": [
+    ""
+  ],
+  "NGC 732": [
+    ""
+  ],
+  "NGC 734": [
+    ""
+  ],
+  "NGC 735": [
+    ""
+  ],
+  "NGC 736": [
+    ""
+  ],
+  "NGC 739": [
+    ""
+  ],
+  "NGC 740": [
+    ""
+  ],
+  "NGC 741": [
+    ""
+  ],
+  "NGC 743": [
+    ""
+  ],
+  "NGC 744": [
+    ""
+  ],
+  "NGC 747": [
+    ""
+  ],
+  "NGC 750": [
+    ""
+  ],
+  "NGC 751": [
+    ""
+  ],
+  "NGC 752": [
+    "NGC 752"
+  ],
+  "NGC 753": [
+    ""
+  ],
+  "NGC 755": [
+    ""
+  ],
+  "NGC 759": [
+    ""
+  ],
+  "NGC 765": [
+    ""
+  ],
+  "NGC 766": [
+    ""
+  ],
+  "NGC 767": [
+    ""
+  ],
+  "NGC 768": [
+    ""
+  ],
+  "NGC 769": [
+    ""
+  ],
+  "NGC 770": [
+    ""
+  ],
+  "Fiddlehead Galaxy": [
+    "NGC 772"
+  ],
+  "NGC 774": [
+    ""
+  ],
+  "NGC 777": [
+    ""
+  ],
+  "NGC 779": [
+    ""
+  ],
+  "NGC 781": [
+    ""
+  ],
+  "NGC 782": [
+    ""
+  ],
+  "NGC 784": [
+    ""
+  ],
+  "NGC 785": [
+    ""
+  ],
+  "NGC 786": [
+    ""
+  ],
+  "NGC 788": [
+    ""
+  ],
+  "NGC 789": [
+    ""
+  ],
+  "NGC 790": [
+    ""
+  ],
+  "NGC 794": [
+    ""
+  ],
+  "NGC 797": [
+    ""
+  ],
+  "NGC 800": [
+    ""
+  ],
+  "NGC 801": [
+    ""
+  ],
+  "NGC 802": [
+    ""
+  ],
+  "NGC 803": [
+    ""
+  ],
+  "NGC 804": [
+    ""
+  ],
+  "NGC 805": [
+    ""
+  ],
+  "NGC 806": [
+    ""
+  ],
+  "NGC 807": [
+    ""
+  ],
+  "NGC 809": [
+    ""
+  ],
+  "NGC 810": [
+    ""
+  ],
+  "NGC 811": [
+    ""
+  ],
+  "NGC 812": [
+    ""
+  ],
+  "NGC 813": [
+    ""
+  ],
+  "NGC 814": [
+    ""
+  ],
+  "NGC 818": [
+    ""
+  ],
+  "NGC 819": [
+    ""
+  ],
+  "NGC 820": [
+    ""
+  ],
+  "NGC 821": [
+    ""
+  ],
+  "NGC 822": [
+    ""
+  ],
+  "NGC 823": [
+    ""
+  ],
+  "NGC 824": [
+    ""
+  ],
+  "NGC 825": [
+    ""
+  ],
+  "NGC 828": [
+    ""
+  ],
+  "NGC 830": [
+    ""
+  ],
+  "NGC 833": [
+    ""
+  ],
+  "NGC 834": [
+    ""
+  ],
+  "NGC 838": [
+    ""
+  ],
+  "NGC 839": [
+    ""
+  ],
+  "NGC 840": [
+    ""
+  ],
+  "NGC 846": [
+    ""
+  ],
+  "NGC 850": [
+    ""
+  ],
+  "NGC 852": [
+    ""
+  ],
+  "NGC 855": [
+    ""
+  ],
+  "NGC 860": [
+    ""
+  ],
+  "NGC 861": [
+    ""
+  ],
+  "NGC 862": [
+    ""
+  ],
+  "NGC 863": [
+    ""
+  ],
+  "NGC 864": [
+    ""
+  ],
+  "NGC 871": [
+    ""
+  ],
+  "NGC 873": [
+    ""
+  ],
+  "NGC 874": [
+    ""
+  ],
+  "NGC 877": [
+    ""
+  ],
+  "NGC 880": [
+    ""
+  ],
+  "Double Cluster": [
+    "二重星団"
+  ],
+  "NGC 886": [
+    ""
+  ],
+  "NGC 888": [
+    ""
+  ],
+  "NGC 890": [
+    ""
+  ],
+  "NGC 891": [
+    "NGC 891"
+  ],
+  "NGC 894": [
+    "NGC 895"
+  ],
+  "NGC 896": [
+    ""
+  ],
+  "NGC 900": [
+    ""
+  ],
+  "NGC 902": [
+    ""
+  ],
+  "NGC 903": [
+    ""
+  ],
+  "NGC 904": [
+    ""
+  ],
+  "NGC 905": [
+    ""
+  ],
+  "NGC 906": [
+    ""
+  ],
+  "NGC 907": [
+    ""
+  ],
+  "NGC 908": [
+    ""
+  ],
+  "NGC 910": [
+    ""
+  ],
+  "NGC 911": [
+    ""
+  ],
+  "NGC 912": [
+    ""
+  ],
+  "NGC 913": [
+    ""
+  ],
+  "NGC 916": [
+    ""
+  ],
+  "NGC 918": [
+    ""
+  ],
+  "NGC 920": [
+    ""
+  ],
+  "NGC 922": [
+    ""
+  ],
+  "NGC 925": [
+    ""
+  ],
+  "NGC 930": [
+    ""
+  ],
+  "NGC 931": [
+    ""
+  ],
+  "NGC 935": [
+    ""
+  ],
+  "Darth Vader's Starfighter": [
+    ""
+  ],
+  "NGC 937": [
+    ""
+  ],
+  "NGC 938": [
+    ""
+  ],
+  "NGC 939": [
+    ""
+  ],
+  "NGC 940": [
+    ""
+  ],
+  "NGC 941": [
+    ""
+  ],
+  "NGC 945": [
+    ""
+  ],
+  "NGC 950": [
+    ""
+  ],
+  "NGC 953": [
+    ""
+  ],
+  "NGC 956": [
+    ""
+  ],
+  "NGC 957": [
+    ""
+  ],
+  "NGC 958": [
+    ""
+  ],
+  "NGC 959": [
+    ""
+  ],
+  "NGC 960": [
+    ""
+  ],
+  "NGC 965": [
+    ""
+  ],
+  "NGC 966": [
+    ""
+  ],
+  "NGC 970": [
+    ""
+  ],
+  "NGC 972": [
+    ""
+  ],
+  "NGC 973": [
+    ""
+  ],
+  "NGC 977": [
+    ""
+  ],
+  "NGC 979": [
+    ""
+  ],
+  "NGC 980": [
+    ""
+  ],
+  "NGC 985": [
+    ""
+  ],
+  "NGC 986": [
+    ""
+  ],
+  "NGC 988": [
+    ""
+  ],
+  "NGC 990": [
+    ""
+  ],
+  "NGC 991": [
+    ""
+  ],
+  "NGC 992": [
+    ""
+  ],
+  "NGC 995": [
+    ""
+  ],
+  "NGC 996": [
+    ""
+  ],
+  "NGC 997": [
+    ""
+  ],
+  "NGC 998": [
+    ""
+  ],
+  "NGC 999": [
+    ""
+  ],
+  "NGC 1000": [
+    ""
+  ],
+  "NGC 1001": [
+    ""
+  ],
+  "NGC 1003": [
+    ""
+  ],
+  "NGC 1012": [
+    ""
+  ],
+  "NGC 1015": [
+    ""
+  ],
+  "NGC 1019": [
+    ""
+  ],
+  "NGC 1022": [
+    ""
+  ],
+  "Perseus Lenticular Galaxy": [
+    ""
+  ],
+  "NGC 1024": [
+    ""
+  ],
+  "NGC 1027": [
+    ""
+  ],
+  "NGC 1032": [
+    "NGC 1032"
+  ],
+  "NGC 1035": [
+    ""
+  ],
+  "NGC 1042": [
+    ""
+  ],
+  "NGC 1047": [
+    ""
+  ],
+  "NGC 1048": [
+    ""
+  ],
+  "Fornax Dwarf Cluster 3": [
+    ""
+  ],
+  "NGC 1052": [
+    ""
+  ],
+  "NGC 1055": [
+    "NGC 1055"
+  ],
+  "NGC 1058": [
+    ""
+  ],
+  "NGC 1060": [
+    ""
+  ],
+  "NGC 1073": [
+    "NGC 1073"
+  ],
+  "NGC 1077": [
+    ""
+  ],
+  "NGC 1079": [
+    ""
+  ],
+  "NGC 1084": [
+    ""
+  ],
+  "NGC 1085": [
+    ""
+  ],
+  "NGC 1086": [
+    ""
+  ],
+  "NGC 1087": [
+    "NGC 1087"
+  ],
+  "NGC 1090": [
+    ""
+  ],
+  "NGC 1097": [
+    "NGC 1097"
+  ],
+  "NGC 1100": [
+    ""
+  ],
+  "NGC 1101": [
+    ""
+  ],
+  "NGC 1106": [
+    ""
+  ],
+  "NGC 1110": [
+    ""
+  ],
+  "NGC 1125": [
+    ""
+  ],
+  "NGC 1128": [
+    ""
+  ],
+  "NGC 1132": [
+    ""
+  ],
+  "NGC 1134": [
+    ""
+  ],
+  "NGC 1140": [
+    ""
+  ],
+  "NGC 1142": [
+    ""
+  ],
+  "NGC 1153": [
+    ""
+  ],
+  "NGC 1154": [
+    ""
+  ],
+  "NGC 1155": [
+    ""
+  ],
+  "NGC 1156": [
+    ""
+  ],
+  "NGC 1157": [
+    ""
+  ],
+  "NGC 1158": [
+    ""
+  ],
+  "NGC 1159": [
+    ""
+  ],
+  "NGC 1160": [
+    ""
+  ],
+  "NGC 1161": [
+    ""
+  ],
+  "NGC 1162": [
+    ""
+  ],
+  "NGC 1163": [
+    ""
+  ],
+  "NGC 1164": [
+    ""
+  ],
+  "NGC 1166": [
+    ""
+  ],
+  "NGC 1167": [
+    ""
+  ],
+  "NGC 1168": [
+    ""
+  ],
+  "NGC 1169": [
+    ""
+  ],
+  "NGC 1172": [
+    ""
+  ],
+  "NGC 1175": [
+    ""
+  ],
+  "NGC 1184": [
+    ""
+  ],
+  "NGC 1187": [
+    ""
+  ],
+  "NGC 1189": [
+    ""
+  ],
+  "NGC 1190": [
+    ""
+  ],
+  "NGC 1191": [
+    ""
+  ],
+  "NGC 1193": [
+    ""
+  ],
+  "NGC 1194": [
+    ""
+  ],
+  "NGC 1198": [
+    ""
+  ],
+  "NGC 1199": [
+    ""
+  ],
+  "NGC 1201": [
+    ""
+  ],
+  "NGC 1210": [
+    ""
+  ],
+  "NGC 1217": [
+    ""
+  ],
+  "NGC 1218": [
+    ""
+  ],
+  "NGC 1220": [
+    ""
+  ],
+  "NGC 1222": [
+    ""
+  ],
+  "Eye of God Galaxy": [
+    "NGC 1232"
+  ],
+  "NGC 1233": [
+    ""
+  ],
+  "NGC 1234": [
+    "NGC 1234"
+  ],
+  "NGC 1241": [
+    ""
+  ],
+  "Patrick Starfish Cluster": [
+    ""
+  ],
+  "NGC 1247": [
+    ""
+  ],
+  "NGC 1249": [
+    ""
+  ],
+  "NGC 1250": [
+    ""
+  ],
+  "NGC 1253": [
+    ""
+  ],
+  "NGC 1255": [
+    ""
+  ],
+  "NGC 1258": [
+    ""
+  ],
+  "NGC 1259": [
+    ""
+  ],
+  "NGC 1260": [
+    "NGC 1260"
+  ],
+  "NGC 1261": [
+    "NGC 1261"
+  ],
+  "NGC 1262": [
+    ""
+  ],
+  "NGC 1264": [
+    ""
+  ],
+  "NGC 1265": [
+    ""
+  ],
+  "NGC 1266": [
+    ""
+  ],
+  "NGC 1267": [
+    ""
+  ],
+  "NGC 1268": [
+    ""
+  ],
+  "Snow Collar Galaxy": [
+    ""
+  ],
+  "NGC 1270": [
+    ""
+  ],
+  "NGC 1271": [
+    ""
+  ],
+  "NGC 1272": [
+    ""
+  ],
+  "NGC 1273": [
+    ""
+  ],
+  "NGC 1274": [
+    ""
+  ],
+  "Perseus A": [
+    "NGC 1275"
+  ],
+  "NGC 1277": [
+    "NGC 1277"
+  ],
+  "NGC 1278": [
+    ""
+  ],
+  "NGC 1279": [
+    ""
+  ],
+  "NGC 1281": [
+    ""
+  ],
+  "NGC 1282": [
+    ""
+  ],
+  "NGC 1283": [
+    ""
+  ],
+  "NGC 1285": [
+    ""
+  ],
+  "NGC 1288": [
+    ""
+  ],
+  "NGC 1293": [
+    ""
+  ],
+  "NGC 1294": [
+    ""
+  ],
+  "NGC 1300": [
+    "NGC 1300"
+  ],
+  "NGC 1309": [
+    ""
+  ],
+  "NGC 1310": [
+    ""
+  ],
+  "NGC 1311": [
+    ""
+  ],
+  "NGC 1313": [
+    "NGC 1313"
+  ],
+  "Fornax A": [
+    ""
+  ],
+  "Fornax B": [
+    ""
+  ],
+  "NGC 1320": [
+    ""
+  ],
+  "Holmberg VI": [
+    ""
+  ],
+  "NGC 1326": [
+    ""
+  ],
+  "NGC 1332": [
+    ""
+  ],
+  "Embryo Nebula": [
+    ""
+  ],
+  "NGC 1334": [
+    ""
+  ],
+  "NGC 1337": [
+    ""
+  ],
+  "NGC 1340": [
+    ""
+  ],
+  "NGC 1341": [
+    ""
+  ],
+  "Little Scorpion Cluster": [
+    ""
+  ],
+  "NGC 1343": [
+    ""
+  ],
+  "NGC 1345": [
+    ""
+  ],
+  "NGC 1347": [
+    ""
+  ],
+  "NGC 1348": [
+    ""
+  ],
+  "NGC 1349": [
+    ""
+  ],
+  "The Colossal Cosmic Eye": [
+    ""
+  ],
+  "NGC 1351": [
+    ""
+  ],
+  "NGC 1353": [
+    ""
+  ],
+  "NGC 1356": [
+    ""
+  ],
+  "NGC 1357": [
+    ""
+  ],
+  "NGC 1358": [
+    ""
+  ],
+  "Robin's Egg Nebula": [
+    "NGC 1360"
+  ],
+  "NGC 1363": [
+    ""
+  ],
+  "Great Barred Spiral Galaxy": [
+    "NGC 1365"
+  ],
+  "NGC 1367": [
+    ""
+  ],
+  "NGC 1369": [
+    ""
+  ],
+  "NGC 1373": [
+    ""
+  ],
+  "NGC 1374": [
+    ""
+  ],
+  "NGC 1375": [
+    ""
+  ],
+  "NGC 1376": [
+    ""
+  ],
+  "NGC 1377": [
+    ""
+  ],
+  "NGC 1379": [
+    ""
+  ],
+  "NGC 1380": [
+    ""
+  ],
+  "NGC 1381": [
+    ""
+  ],
+  "NGC 1385": [
+    ""
+  ],
+  "NGC 1386": [
+    ""
+  ],
+  "NGC 1387": [
+    ""
+  ],
+  "NGC 1395": [
+    ""
+  ],
+  "NGC 1396": [
+    ""
+  ],
+  "NGC 1398": [
+    ""
+  ],
+  "NGC 1399": [
+    ""
+  ],
+  "NGC 1400": [
+    ""
+  ],
+  "NGC 1403": [
+    ""
+  ],
+  "NGC 1404": [
+    ""
+  ],
+  "NGC 1406": [
+    ""
+  ],
+  "Eridanus A Group": [
+    ""
+  ],
+  "NGC 1409": [
+    ""
+  ],
+  "NGC 1410": [
+    ""
+  ],
+  "NGC 1415": [
+    ""
+  ],
+  "NGC 1418": [
+    ""
+  ],
+  "NGC 1419": [
+    ""
+  ],
+  "NGC 1421": [
+    ""
+  ],
+  "NGC 1425": [
+    ""
+  ],
+  "NGC 1426": [
+    ""
+  ],
+  "NGC 1427": [
+    ""
+  ],
+  "NGC 1428": [
+    ""
+  ],
+  "NGC 1433": [
+    ""
+  ],
+  "Merope Nebula": [
+    ""
+  ],
+  "NGC 1436": [
+    ""
+  ],
+  "NGC 1439": [
+    ""
+  ],
+  "NGC 1444": [
+    ""
+  ],
+  "NGC 1448": [
+    "NGC 1448"
+  ],
+  "NGC 1452": [
+    ""
+  ],
+  "NGC 1460": [
+    ""
+  ],
+  "NGC 1466": [
+    ""
+  ],
+  "NGC 1482": [
+    ""
+  ],
+  "NGC 1483": [
+    ""
+  ],
+  "NGC 1484": [
+    ""
+  ],
+  "NGC 1487": [
+    ""
+  ],
+  "Fossil Footprint Nebula": [
+    ""
+  ],
+  "NGC 1493": [
+    ""
+  ],
+  "California Nebula": [
+    "カリフォルニア星雲"
+  ],
+  "Camel's Eye Nebula": [
+    ""
+  ],
+  "Jolly Roger Cluster": [
+    ""
+  ],
+  "NGC 1510": [
+    ""
+  ],
+  "NGC 1511": [
+    ""
+  ],
+  "NGC 1512": [
+    "NGC 1512"
+  ],
+  "NGC 1513": [
+    ""
+  ],
+  "Crystal Ball Nebula": [
+    ""
+  ],
+  "NGC 1515": [
+    ""
+  ],
+  "NGC 1521": [
+    ""
+  ],
+  "NGC 1527": [
+    ""
+  ],
+  "m & m Double Cluster": [
+    ""
+  ],
+  "NGC 1530": [
+    ""
+  ],
+  "NGC 1531": [
+    ""
+  ],
+  "NGC 1532": [
+    "NGC 1532"
+  ],
+  "NGC 1533": [
+    ""
+  ],
+  "Cleopatra's Eye Nebula": [
+    ""
+  ],
+  "NGC 1536": [
+    ""
+  ],
+  "NGC 1537": [
+    ""
+  ],
+  "NGC 1543": [
+    ""
+  ],
+  "NGC 1546": [
+    ""
+  ],
+  "NGC 1549": [
+    ""
+  ],
+  "NGC 1550": [
+    ""
+  ],
+  "NGC 1553": [
+    ""
+  ],
+  "Struve's Lost Nebula": [
+    ""
+  ],
+  "Hind's Variable Nebula": [
+    "NGC 1555"
+  ],
+  "NGC 1559": [
+    ""
+  ],
+  "NGC 1560": [
+    ""
+  ],
+  "NGC 1566": [
+    ""
+  ],
+  "NGC 1569": [
+    ""
+  ],
+  "NGC 1570": [
+    ""
+  ],
+  "NGC 1572": [
+    ""
+  ],
+  "NGC 1573": [
+    ""
+  ],
+  "NGC 1574": [
+    ""
+  ],
+  "NGC 1578": [
+    ""
+  ],
+  "Northern Trifid Nebula": [
+    ""
+  ],
+  "NGC 1581": [
+    ""
+  ],
+  "NGC 1582": [
+    ""
+  ],
+  "NGC 1585": [
+    ""
+  ],
+  "NGC 1589": [
+    ""
+  ],
+  "NGC 1590": [
+    ""
+  ],
+  "NGC 1592": [
+    ""
+  ],
+  "NGC 1596": [
+    ""
+  ],
+  "Carafe Group": [
+    ""
+  ],
+  "NGC 1600": [
+    "NGC 1600"
+  ],
+  "NGC 1602": [
+    ""
+  ],
+  "NGC 1605": [
+    ""
+  ],
+  "NGC 1614": [
+    ""
+  ],
+  "NGC 1616": [
+    ""
+  ],
+  "NGC 1617": [
+    ""
+  ],
+  "NGC 1620": [
+    ""
+  ],
+  "NGC 1624": [
+    ""
+  ],
+  "NGC 1633": [
+    ""
+  ],
+  "NGC 1634": [
+    ""
+  ],
+  "NGC 1637": [
+    "NGC 1637"
+  ],
+  "NGC 1642": [
+    ""
+  ],
+  "NGC 1643": [
+    ""
+  ],
+  "Pirate Moon Cluster": [
+    ""
+  ],
+  "NGC 1659": [
+    ""
+  ],
+  "NGC 1662": [
+    ""
+  ],
+  "4-H cluster": [
+    ""
+  ],
+  "NGC 1667": [
+    ""
+  ],
+  "NGC 1672": [
+    "NGC 1672"
+  ],
+  "NGC 1683": [
+    ""
+  ],
+  "NGC 1692": [
+    ""
+  ],
+  "NGC 1700": [
+    ""
+  ],
+  "NGC 1701": [
+    ""
+  ],
+  "NGC 1703": [
+    ""
+  ],
+  "NGC 1705": [
+    "NGC 1705"
+  ],
+  "NGC 1706": [
+    ""
+  ],
+  "NGC 1714": [
+    ""
+  ],
+  "NGC 1716": [
+    ""
+  ],
+  "NGC 1719": [
+    ""
+  ],
+  "NGC 1721": [
+    ""
+  ],
+  "NGC 1723": [
+    ""
+  ],
+  "NGC 1725": [
+    ""
+  ],
+  "NGC 1728": [
+    ""
+  ],
+  "NGC 1741": [
+    ""
+  ],
+  "NGC 1744": [
+    ""
+  ],
+  "NGC 1746": [
+    ""
+  ],
+  "NGC 1755": [
+    ""
+  ],
+  "NGC 1761": [
+    ""
+  ],
+  "NGC 1762": [
+    ""
+  ],
+  "NGC 1763": [
+    ""
+  ],
+  "NGC 1777": [
+    ""
+  ],
+  "NGC 1781": [
+    ""
+  ],
+  "NGC 1783": [
+    ""
+  ],
+  "NGC 1784": [
+    ""
+  ],
+  "NGC 1786": [
+    ""
+  ],
+  "Cosmic Bat Nebula": [
+    ""
+  ],
+  "NGC 1792": [
+    ""
+  ],
+  "NGC 1803": [
+    ""
+  ],
+  "NGC 1806": [
+    "NGC 1806"
+  ],
+  "NGC 1808": [
+    ""
+  ],
+  "Poor Man's Double Cluster": [
+    ""
+  ],
+  "NGC 1818": [
+    ""
+  ],
+  "NGC 1819": [
+    ""
+  ],
+  "NGC 1820": [
+    ""
+  ],
+  "NGC 1832": [
+    ""
+  ],
+  "NGC 1846": [
+    ""
+  ],
+  "NGC 1847": [
+    ""
+  ],
+  "NGC 1850": [
+    ""
+  ],
+  "NGC 1851": [
+    "NGC 1851"
+  ],
+  "NGC 1852": [
+    ""
+  ],
+  "NGC 1855": [
+    ""
+  ],
+  "NGC 1856": [
+    ""
+  ],
+  "NGC 1857": [
+    ""
+  ],
+  "NGC 1858": [
+    ""
+  ],
+  "NGC 1859": [
+    ""
+  ],
+  "NGC 1860": [
+    ""
+  ],
+  "NGC 1866": [
+    ""
+  ],
+  "NGC 1868": [
+    ""
+  ],
+  "NGC 1871": [
+    ""
+  ],
+  "NGC 1872": [
+    ""
+  ],
+  "NGC 1873": [
+    ""
+  ],
+  "NGC 1875": [
+    ""
+  ],
+  "NGC 1892": [
+    ""
+  ],
+  "NGC 1893": [
+    ""
+  ],
+  "NGC 1898": [
+    ""
+  ],
+  "NGC 1903": [
+    ""
+  ],
+  "NGC 1907": [
+    ""
+  ],
+  "Witch Head Nebula": [
+    "IC 2118"
+  ],
+  "S Dor Cluster": [
+    ""
+  ],
+  "NGC 1914": [
+    ""
+  ],
+  "NGC 1924": [
+    ""
+  ],
+  "NGC 1929": [
+    ""
+  ],
+  "The Fly Nebula": [
+    ""
+  ],
+  "NGC 1934": [
+    ""
+  ],
+  "NGC 1936": [
+    ""
+  ],
+  "NGC 1943": [
+    ""
+  ],
+  "NGC 1947": [
+    ""
+  ],
+  "NGC 1954": [
+    ""
+  ],
+  "NGC 1955": [
+    ""
+  ],
+  "NGC 1959": [
+    ""
+  ],
+  "NGC 1961": [
+    "NGC 1961"
+  ],
+  "NGC 1964": [
+    ""
+  ],
+  "NGC 1969": [
+    ""
+  ],
+  "NGC 1970": [
+    ""
+  ],
+  "NGC 1971": [
+    ""
+  ],
+  "Mermaid's Purse Nebula": [
+    ""
+  ],
+  "NGC 1974": [
+    ""
+  ],
+  "NGC 1978": [
+    ""
+  ],
+  "NGC 1979": [
+    ""
+  ],
+  "The Lost Jewel of Orion": [
+    ""
+  ],
+  "Coal Car Cluster": [
+    ""
+  ],
+  "NGC 1984": [
+    ""
+  ],
+  "NGC 1985": [
+    ""
+  ],
+  "NGC 1986": [
+    ""
+  ],
+  "NGC 1987": [
+    ""
+  ],
+  "NGC 1989": [
+    ""
+  ],
+  "ε Ori Nebula": [
+    ""
+  ],
+  "NGC 1992": [
+    ""
+  ],
+  "NGC 1993": [
+    ""
+  ],
+  "NGC 1995": [
+    "NGC 1995"
+  ],
+  "NGC 1996": [
+    ""
+  ],
+  "NGC 1997": [
+    ""
+  ],
+  "13th Pearl Nebula": [
+    "NGC 1999"
+  ],
+  "NGC 2000": [
+    ""
+  ],
+  "NGC 2002": [
+    ""
+  ],
+  "NGC 2003": [
+    ""
+  ],
+  "NGC 2004": [
+    ""
+  ],
+  "NGC 2005": [
+    ""
+  ],
+  "NGC 2006": [
+    ""
+  ],
+  "NGC 2008": [
+    ""
+  ],
+  "NGC 2009": [
+    ""
+  ],
+  "NGC 2010": [
+    ""
+  ],
+  "NGC 2011": [
+    ""
+  ],
+  "NGC 2012": [
+    ""
+  ],
+  "NGC 2014": [
+    ""
+  ],
+  "Kissing Crescents Nebula": [
+    ""
+  ],
+  "NGC 2023": [
+    ""
+  ],
+  "Flame Nebula": [
+    "NGC 2024"
+  ],
+  "NGC 2025": [
+    ""
+  ],
+  "NGC 2027": [
+    ""
+  ],
+  "NGC 2029": [
+    ""
+  ],
+  "NGC 2035": [
+    ""
+  ],
+  "NGC 2040": [
+    ""
+  ],
+  "NGC 2041": [
+    ""
+  ],
+  "30 Dor B": [
+    "NGC 2060"
+  ],
+  "NGC 2064": [
+    ""
+  ],
+  "NGC 2067": [
+    ""
+  ],
+  "NGC 2069": [
+    "タランチュラ星雲"
+  ],
+  "NGC 2071": [
+    ""
+  ],
+  "NGC 2074": [
+    ""
+  ],
+  "NGC 2078": [
+    ""
+  ],
+  "Ghost Head Nebula": [
+    ""
+  ],
+  "NGC 2082": [
+    ""
+  ],
+  "NGC 2090": [
+    ""
+  ],
+  "NGC 2100": [
+    ""
+  ],
+  "NGC 2108": [
+    ""
+  ],
+  "NGC 2110": [
+    ""
+  ],
+  "NGC 2115": [
+    ""
+  ],
+  "NGC 2119": [
+    ""
+  ],
+  "NGC 2122": [
+    ""
+  ],
+  "NGC 2126": [
+    ""
+  ],
+  "NGC 2129": [
+    ""
+  ],
+  "NGC 2139": [
+    ""
+  ],
+  "NGC 2144": [
+    ""
+  ],
+  "Dusty Hand Galaxy": [
+    ""
+  ],
+  "NGC 2158": [
+    ""
+  ],
+  "NGC 2164": [
+    ""
+  ],
+  "The 37 Cluster": [
+    "NGC 2169"
+  ],
+  "Mon R2 IRS3": [
+    ""
+  ],
+  "NGC 2173": [
+    ""
+  ],
+  "Monkey Head Nebula": [
+    "NGC 2174"
+  ],
+  "NGC 2175": [
+    ""
+  ],
+  "NGC 2178": [
+    ""
+  ],
+  "NGC 2188": [
+    ""
+  ],
+  "Intergalactic Wanderer": [
+    "NGC 2419"
+  ],
+  "NGC 2196": [
+    ""
+  ],
+  "NGC 2197": [
+    ""
+  ],
+  "NGC 2202": [
+    ""
+  ],
+  "NGC 2204": [
+    ""
+  ],
+  "NGC 2207": [
+    "NGC 2207とIC 2163"
+  ],
+  "NGC 2210": [
+    ""
+  ],
+  "NGC 2216": [
+    ""
+  ],
+  "NGC 2217": [
+    "NGC 2217"
+  ],
+  "NGC 2223": [
+    ""
+  ],
+  "NGC 2227": [
+    ""
+  ],
+  "Double Wedge Cluster": [
+    ""
+  ],
+  "NGC 2240": [
+    ""
+  ],
+  "NGC 2241": [
+    ""
+  ],
+  "NGC 2242": [
+    ""
+  ],
+  "Rosette Nebula": [
+    "ばら星雲"
+  ],
+  "NGC 2257": [
+    ""
+  ],
+  "NGC 2263": [
+    ""
+  ],
+  "Christmas Tree Cluster": [
+    "NGC 2264"
+  ],
+  "NGC 2266": [
+    ""
+  ],
+  "NGC 2272": [
+    ""
+  ],
+  "NGC 2273": [
+    ""
+  ],
+  "NGC 2276": [
+    ""
+  ],
+  "NGC 2280": [
+    ""
+  ],
+  "Broken Heart Cluster": [
+    ""
+  ],
+  "NGC 2283": [
+    ""
+  ],
+  "NGC 2291": [
+    ""
+  ],
+  "NGC 2293": [
+    ""
+  ],
+  "NGC 2294": [
+    ""
+  ],
+  "NGC 2297": [
+    ""
+  ],
+  "NGC 2298": [
+    ""
+  ],
+  "NGC 2300": [
+    ""
+  ],
+  "Hagrid's Dragon Cluster": [
+    ""
+  ],
+  "NGC 2302": [
+    ""
+  ],
+  "NGC 2305": [
+    ""
+  ],
+  "NGC 2315": [
+    ""
+  ],
+  "NGC 2320": [
+    ""
+  ],
+  "NGC 2324": [
+    ""
+  ],
+  "NGC 2325": [
+    ""
+  ],
+  "NGC 2326": [
+    ""
+  ],
+  "NGC 2327": [
+    "IC 2177"
+  ],
+  "NGC 2328": [
+    ""
+  ],
+  "NGC 2336": [
+    ""
+  ],
+  "NGC 2340": [
+    ""
+  ],
+  "NGC 2342": [
+    ""
+  ],
+  "Butterfly Nebula": [
+    "NGC 2346"
+  ],
+  "NGC 2349": [
+    ""
+  ],
+  "Avery's Island": [
+    ""
+  ],
+  "NGC 2354": [
+    ""
+  ],
+  "NGC 2355": [
+    ""
+  ],
+  "NGC 2357": [
+    ""
+  ],
+  "Thor's Helmet": [
+    "NGC 2359"
+  ],
+  "Caroline's Cluster": [
+    "NGC 2360"
+  ],
+  "τ CMa Cluster": [
+    "NGC 2362"
+  ],
+  "NGC 2363": [
+    ""
+  ],
+  "NGC 2366": [
+    ""
+  ],
+  "Gemini Nebula": [
+    ""
+  ],
+  "NGC 2374": [
+    ""
+  ],
+  "Eskimo Nebula": [
+    "エスキモー星雲"
+  ],
+  "NGC 2397": [
+    ""
+  ],
+  "NGC 2403": [
+    "NGC 2403"
+  ],
+  "Twinkling Comet Cluster": [
+    ""
+  ],
+  "NGC 2423": [
+    ""
+  ],
+  "NGC 2427": [
+    ""
+  ],
+  "NGC 2434": [
+    ""
+  ],
+  "NGC 2438": [
+    "NGC 2438"
+  ],
+  "NGC 2439": [
+    ""
+  ],
+  "Albino Butterfly Nebula": [
+    "NGC 2440"
+  ],
+  "NGC 2441": [
+    ""
+  ],
+  "Meathook Galaxy": [
+    "NGC 2442/2443"
+  ],
+  "NGC 2444": [
+    ""
+  ],
+  "NGC 2445": [
+    ""
+  ],
+  "Stinging Scorpion Cluster": [
+    ""
+  ],
+  "NGC 2452": [
+    ""
+  ],
+  "NGC 2460": [
+    ""
+  ],
+  "NGC 2466": [
+    ""
+  ],
+  "Skull and Crossbones Nebula": [
+    ""
+  ],
+  "Electric Guitar Cluster": [
+    "NGC 2477"
+  ],
+  "NGC 2484": [
+    ""
+  ],
+  "NGC 2485": [
+    ""
+  ],
+  "NGC 2491": [
+    ""
+  ],
+  "NGC 2494": [
+    ""
+  ],
+  "NGC 2500": [
+    ""
+  ],
+  "NGC 2503": [
+    ""
+  ],
+  "NGC 2506": [
+    "NGC 2506"
+  ],
+  "NGC 2509": [
+    ""
+  ],
+  "NGC 2512": [
+    ""
+  ],
+  "Sprinter Cluster": [
+    "NGC 2516"
+  ],
+  "NGC 2523": [
+    ""
+  ],
+  "NGC 2525": [
+    ""
+  ],
+  "NGC 2527": [
+    ""
+  ],
+  "NGC 2528": [
+    ""
+  ],
+  "NGC 2532": [
+    ""
+  ],
+  "NGC 2535": [
+    ""
+  ],
+  "NGC 2536": [
+    ""
+  ],
+  "Bear's Paw Galaxy": [
+    ""
+  ],
+  "The Dish Cluster": [
+    ""
+  ],
+  "NGC 2541": [
+    "NGC 2541"
+  ],
+  "NGC 2545": [
+    ""
+  ],
+  "Heart and Dagger Cluster": [
+    ""
+  ],
+  "Golden Earring Cluster": [
+    ""
+  ],
+  "NGC 2551": [
+    ""
+  ],
+  "NGC 2552": [
+    ""
+  ],
+  "NGC 2556": [
+    ""
+  ],
+  "NGC 2558": [
+    ""
+  ],
+  "NGC 2559": [
+    ""
+  ],
+  "NGC 2560": [
+    ""
+  ],
+  "NGC 2563": [
+    ""
+  ],
+  "NGC 2565": [
+    ""
+  ],
+  "NGC 2566": [
+    ""
+  ],
+  "NGC 2567": [
+    ""
+  ],
+  "Polarissima Australis": [
+    ""
+  ],
+  "NGC 2595": [
+    ""
+  ],
+  "NGC 2599": [
+    ""
+  ],
+  "NGC 2608": [
+    "NGC 2608"
+  ],
+  "NGC 2613": [
+    ""
+  ],
+  "NGC 2617": [
+    ""
+  ],
+  "NGC 2623": [
+    ""
+  ],
+  "NGC 2626": [
+    ""
+  ],
+  "NGC 2627": [
+    ""
+  ],
+  "NGC 2642": [
+    ""
+  ],
+  "NGC 2648": [
+    ""
+  ],
+  "NGC 2974": [
+    ""
+  ],
+  "NGC 2655": [
+    ""
+  ],
+  "NGC 2659": [
+    ""
+  ],
+  "NGC 2663": [
+    ""
+  ],
+  "NGC 2672": [
+    ""
+  ],
+  "NGC 2681": [
+    ""
+  ],
+  "UFO Galaxy": [
+    "NGC 2683"
+  ],
+  "Helix Galaxy": [
+    ""
+  ],
+  "NGC 2688": [
+    ""
+  ],
+  "NGC 2692": [
+    ""
+  ],
+  "NGC 2697": [
+    ""
+  ],
+  "NGC 2708": [
+    ""
+  ],
+  "NGC 2715": [
+    "NGC 2715"
+  ],
+  "NGC 2719": [
+    ""
+  ],
+  "NGC 2721": [
+    ""
+  ],
+  "Pencil Nebula": [
+    ""
+  ],
+  "NGC 2748": [
+    ""
+  ],
+  "NGC 2758": [
+    ""
+  ],
+  "NGC 2768": [
+    ""
+  ],
+  "Supernova Factory": [
+    "NGC 2770"
+  ],
+  "NGC 2775": [
+    "NGC 2775"
+  ],
+  "NGC 2776": [
+    ""
+  ],
+  "NGC 2777": [
+    ""
+  ],
+  "NGC 2782": [
+    ""
+  ],
+  "NGC 2787": [
+    "NGC 2787"
+  ],
+  "NGC 2792": [
+    ""
+  ],
+  "NGC 2797": [
+    ""
+  ],
+  "NGC 2798": [
+    ""
+  ],
+  "NGC 2800": [
+    ""
+  ],
+  "NGC 2801": [
+    ""
+  ],
+  "NGC 2803": [
+    ""
+  ],
+  "NGC 2804": [
+    ""
+  ],
+  "NGC 2805": [
+    ""
+  ],
+  "NGC 2808": [
+    ""
+  ],
+  "NGC 2809": [
+    ""
+  ],
+  "NGC 2812": [
+    ""
+  ],
+  "NGC 2814": [
+    ""
+  ],
+  "NGC 2818": [
+    ""
+  ],
+  "NGC 2830": [
+    ""
+  ],
+  "NGC 2832": [
+    ""
+  ],
+  "NGC 2835": [
+    ""
+  ],
+  "Tiger's Eye Galaxy": [
+    "NGC 2841"
+  ],
+  "NGC 2844": [
+    ""
+  ],
+  "NGC 2848": [
+    ""
+  ],
+  "NGC 2857": [
+    "NGC 2857"
+  ],
+  "NGC 2859": [
+    ""
+  ],
+  "NGC 2865": [
+    ""
+  ],
+  "NGC 2867": [
+    "NGC 2867"
+  ],
+  "NGC 2890": [
+    ""
+  ],
+  "NGC 2899": [
+    "NGC 2899"
+  ],
+  "NGC 2903": [
+    "NGC 2903"
+  ],
+  "NGC 2906": [
+    ""
+  ],
+  "NGC 2911": [
+    ""
+  ],
+  "NGC 2915": [
+    "NGC 2915"
+  ],
+  "NGC 2927": [
+    ""
+  ],
+  "NGC 2930": [
+    ""
+  ],
+  "NGC 2935": [
+    ""
+  ],
+  "The Penguin Galaxy": [
+    ""
+  ],
+  "The Egg Galaxy": [
+    ""
+  ],
+  "NGC 2939": [
+    ""
+  ],
+  "NGC 2950": [
+    ""
+  ],
+  "NGC 2959": [
+    ""
+  ],
+  "NGC 2960": [
+    ""
+  ],
+  "NGC 2962": [
+    ""
+  ],
+  "NGC 2964": [
+    ""
+  ],
+  "NGC 2967": [
+    ""
+  ],
+  "NGC 2968": [
+    ""
+  ],
+  "NGC 2976": [
+    "NGC 2976"
+  ],
+  "NGC 2980": [
+    ""
+  ],
+  "NGC 2985": [
+    ""
+  ],
+  "NGC 2986": [
+    ""
+  ],
+  "NGC 2992": [
+    ""
+  ],
+  "NGC 2997": [
+    "NGC 2997"
+  ],
+  "NGC 2998": [
+    ""
+  ],
+  "NGC 3001": [
+    ""
+  ],
+  "NGC 3003": [
+    ""
+  ],
+  "NGC 3005": [
+    ""
+  ],
+  "NGC 3006": [
+    ""
+  ],
+  "NGC 3008": [
+    ""
+  ],
+  "NGC 3009": [
+    ""
+  ],
+  "NGC 3015": [
+    ""
+  ],
+  "NGC 3016": [
+    ""
+  ],
+  "NGC 3017": [
+    ""
+  ],
+  "NGC 3019": [
+    ""
+  ],
+  "NGC 3021": [
+    ""
+  ],
+  "NGC 3026": [
+    ""
+  ],
+  "NGC 3030": [
+    ""
+  ],
+  "NGC 3032": [
+    ""
+  ],
+  "NGC 3035": [
+    ""
+  ],
+  "NGC 3041": [
+    ""
+  ],
+  "NGC 3044": [
+    ""
+  ],
+  "NGC 3048": [
+    ""
+  ],
+  "NGC 3049": [
+    ""
+  ],
+  "NGC 3052": [
+    ""
+  ],
+  "NGC 3054": [
+    "NGC 3054"
+  ],
+  "NGC 3059": [
+    ""
+  ],
+  "NGC 3067": [
+    ""
+  ],
+  "NGC 3068": [
+    ""
+  ],
+  "NGC 3073": [
+    ""
+  ],
+  "NGC 3074": [
+    ""
+  ],
+  "The Phantom Frisbee Galaxy": [
+    "NGC 3079"
+  ],
+  "NGC 3081": [
+    ""
+  ],
+  "NGC 3087": [
+    ""
+  ],
+  "NGC 3106": [
+    ""
+  ],
+  "NGC 3109": [
+    "NGC 3109"
+  ],
+  "NGC 3110": [
+    ""
+  ],
+  "NGC 3114": [
+    ""
+  ],
+  "NGC 3117": [
+    ""
+  ],
+  "NGC 3120": [
+    ""
+  ],
+  "NGC 3124": [
+    ""
+  ],
+  "NGC 3125": [
+    ""
+  ],
+  "Eight-Burst Planetary Nebula": [
+    "NGC 3132"
+  ],
+  "NGC 3134": [
+    ""
+  ],
+  "NGC 3137": [
+    ""
+  ],
+  "NGC 3147": [
+    ""
+  ],
+  "NGC 3156": [
+    ""
+  ],
+  "NGC 3166": [
+    ""
+  ],
+  "NGC 3169": [
+    ""
+  ],
+  "Polarissima Borealis": [
+    ""
+  ],
+  "NGC 3175": [
+    ""
+  ],
+  "NGC 3177": [
+    ""
+  ],
+  "Little Pinwheel Galaxy": [
+    "NGC 3184"
+  ],
+  "NGC 3182": [
+    ""
+  ],
+  "NGC 3190 Group": [
+    ""
+  ],
+  "NGC 3191": [
+    ""
+  ],
+  "Leo Quartet": [
+    ""
+  ],
+  "NGC 3195": [
+    "NGC 3195"
+  ],
+  "NGC 3197": [
+    ""
+  ],
+  "NGC 3198": [
+    ""
+  ],
+  "NGC 3199": [
+    ""
+  ],
+  "NGC 3200": [
+    ""
+  ],
+  "NGC 3201": [
+    "NGC 3201"
+  ],
+  "NGC 3206": [
+    ""
+  ],
+  "NGC 3220": [
+    ""
+  ],
+  "NGC 3223": [
+    ""
+  ],
+  "NGC 3226": [
+    ""
+  ],
+  "NGC 3227": [
+    ""
+  ],
+  "Queen's Cache Cluster": [
+    ""
+  ],
+  "NGC 3239": [
+    ""
+  ],
+  "NGC 3241": [
+    ""
+  ],
+  "Ghost of Jupiter Nebula": [
+    "木星状星雲"
+  ],
+  "NGC 3244": [
+    ""
+  ],
+  "NGC 3245": [
+    ""
+  ],
+  "NGC 3247": [
+    ""
+  ],
+  "NGC 3254": [
+    ""
+  ],
+  "NGC 3256": [
+    ""
+  ],
+  "NGC 3258": [
+    ""
+  ],
+  "NGC 3260": [
+    ""
+  ],
+  "NGC 3261": [
+    ""
+  ],
+  "NGC 3264": [
+    ""
+  ],
+  "NGC 3266": [
+    ""
+  ],
+  "NGC 3267": [
+    ""
+  ],
+  "NGC 3268": [
+    ""
+  ],
+  "NGC 3269": [
+    ""
+  ],
+  "NGC 3271": [
+    ""
+  ],
+  "NGC 3274": [
+    ""
+  ],
+  "NGC 3277": [
+    ""
+  ],
+  "NGC 3278": [
+    ""
+  ],
+  "NGC 3281": [
+    ""
+  ],
+  "NGC 3285": [
+    ""
+  ],
+  "Gem Cluster": [
+    ""
+  ],
+  "NGC 3294": [
+    ""
+  ],
+  "NGC 3300": [
+    ""
+  ],
+  "NGC 3301": [
+    ""
+  ],
+  "NGC 3302": [
+    ""
+  ],
+  "NGC 3305": [
+    ""
+  ],
+  "NGC 3307": [
+    ""
+  ],
+  "NGC 3308": [
+    ""
+  ],
+  "NGC 3309": [
+    ""
+  ],
+  "NGC 3310": [
+    "NGC 3310"
+  ],
+  "NGC 3311": [
+    ""
+  ],
+  "NGC 3312": [
+    ""
+  ],
+  "NGC 3313": [
+    ""
+  ],
+  "NGC 3314": [
+    "NGC 3314"
+  ],
+  "NGC 3315": [
+    ""
+  ],
+  "NGC 3316": [
+    ""
+  ],
+  "NGC 3318": [
+    ""
+  ],
+  "NGC 3319": [
+    ""
+  ],
+  "Keyhole Nebula": [
+    ""
+  ],
+  "NGC 3326": [
+    ""
+  ],
+  "NGC 3327": [
+    ""
+  ],
+  "NGC 3336": [
+    ""
+  ],
+  "NGC 3338": [
+    ""
+  ],
+  "Sliced Onion Galaxy": [
+    "NGC 3344"
+  ],
+  "NGC 3346": [
+    ""
+  ],
+  "NGC 3353": [
+    ""
+  ],
+  "NGC 3357": [
+    ""
+  ],
+  "NGC 3359": [
+    ""
+  ],
+  "NGC 3367": [
+    ""
+  ],
+  "NGC 3369": [
+    ""
+  ],
+  "NGC 3370": [
+    "NGC 3370"
+  ],
+  "NGC 3384": [
+    ""
+  ],
+  "η Car Nebula": [
+    "イータカリーナ星雲"
+  ],
+  "NGC 3389": [
+    ""
+  ],
+  "NGC 3377": [
+    ""
+  ],
+  "NGC 3383": [
+    ""
+  ],
+  "NGC 3393": [
+    ""
+  ],
+  "NGC 3395": [
+    ""
+  ],
+  "NGC 3396": [
+    ""
+  ],
+  "NGC 3411": [
+    ""
+  ],
+  "NGC 3408": [
+    ""
+  ],
+  "NGC 3412": [
+    ""
+  ],
+  "NGC 3414": [
+    ""
+  ],
+  "NGC 3423": [
+    ""
+  ],
+  "NGC 3426": [
+    ""
+  ],
+  "NGC 3430": [
+    ""
+  ],
+  "Knitting Needle Galaxy": [
+    ""
+  ],
+  "NGC 3435": [
+    ""
+  ],
+  "NGC 3437": [
+    ""
+  ],
+  "NGC 3445": [
+    ""
+  ],
+  "NGC 3448": [
+    ""
+  ],
+  "NGC 3449": [
+    ""
+  ],
+  "NGC 3455": [
+    ""
+  ],
+  "NGC 3457": [
+    ""
+  ],
+  "NGC 3463": [
+    ""
+  ],
+  "NGC 3464": [
+    ""
+  ],
+  "NGC 3465": [
+    ""
+  ],
+  "NGC 3486": [
+    "NGC 3486"
+  ],
+  "NGC 3489": [
+    ""
+  ],
+  "NGC 3501": [
+    ""
+  ],
+  "NGC 3504": [
+    ""
+  ],
+  "NGC 3506": [
+    ""
+  ],
+  "NGC 3507": [
+    ""
+  ],
+  "NGC 3509": [
+    ""
+  ],
+  "NGC 3511": [
+    ""
+  ],
+  "NGC 3512": [
+    ""
+  ],
+  "NGC 3513": [
+    ""
+  ],
+  "NGC 3516": [
+    ""
+  ],
+  "NGC 3521": [
+    ""
+  ],
+  "NGC 3524": [
+    ""
+  ],
+  "NGC 3527": [
+    ""
+  ],
+  "Wishing Well Cluster": [
+    "NGC 3532"
+  ],
+  "NGC 3535": [
+    ""
+  ],
+  "NGC 3539": [
+    ""
+  ],
+  "NGC 3550": [
+    ""
+  ],
+  "NGC 3557": [
+    ""
+  ],
+  "NGC 3558": [
+    ""
+  ],
+  "Ambartsumian's Knot": [
+    ""
+  ],
+  "NGC 3568": [
+    ""
+  ],
+  "NGC 3572": [
+    ""
+  ],
+  "Statue of Liberty Nebula": [
+    "NGC 3576"
+  ],
+  "NGC 3583": [
+    ""
+  ],
+  "NGC 3585": [
+    ""
+  ],
+  "NGC 3593": [
+    "NGC 3593"
+  ],
+  "NGC 3596": [
+    "NGC 3596"
+  ],
+  "NGC 3597": [
+    ""
+  ],
+  "NGC 3598": [
+    ""
+  ],
+  "NGC 3599": [
+    ""
+  ],
+  "NGC 3603": [
+    ""
+  ],
+  "NGC 3611": [
+    ""
+  ],
+  "NGC 3605": [
+    ""
+  ],
+  "NGC 3607": [
+    ""
+  ],
+  "NGC 3608": [
+    ""
+  ],
+  "NGC 3610": [
+    ""
+  ],
+  "NGC 3613": [
+    ""
+  ],
+  "NGC 3614": [
+    ""
+  ],
+  "NGC 3619": [
+    ""
+  ],
+  "Frame Galaxy": [
+    ""
+  ],
+  "NGC 3625": [
+    ""
+  ],
+  "NGC 3626": [
+    ""
+  ],
+  "NGC 3631": [
+    ""
+  ],
+  "NGC 3640": [
+    ""
+  ],
+  "NGC 3642": [
+    ""
+  ],
+  "NGC 3646": [
+    ""
+  ],
+  "NGC 3656": [
+    ""
+  ],
+  "NGC 3657": [
+    ""
+  ],
+  "NGC 3658": [
+    ""
+  ],
+  "NGC 3665": [
+    ""
+  ],
+  "NGC 3666": [
+    ""
+  ],
+  "NGC 3669": [
+    ""
+  ],
+  "NGC 3672": [
+    ""
+  ],
+  "NGC 3673": [
+    ""
+  ],
+  "NGC 3675": [
+    ""
+  ],
+  "NGC 3678": [
+    ""
+  ],
+  "NGC 3681": [
+    ""
+  ],
+  "NGC 3684": [
+    ""
+  ],
+  "NGC 3686": [
+    ""
+  ],
+  "NGC 3689": [
+    ""
+  ],
+  "NGC 3690": [
+    ""
+  ],
+  "NGC 3691": [
+    ""
+  ],
+  "NGC 3705": [
+    ""
+  ],
+  "NGC 3717": [
+    ""
+  ],
+  "NGC 3718": [
+    ""
+  ],
+  "NGC 3726": [
+    ""
+  ],
+  "NGC 3729": [
+    ""
+  ],
+  "NGC 3735": [
+    ""
+  ],
+  "NGC 3738": [
+    ""
+  ],
+  "NGC 3741": [
+    ""
+  ],
+  "NGC 3749": [
+    ""
+  ],
+  "NGC 3756": [
+    ""
+  ],
+  "Pearl Cluster": [
+    "NGC 3766"
+  ],
+  "NGC 3768": [
+    ""
+  ],
+  "NGC 3780": [
+    ""
+  ],
+  "NGC 3783": [
+    ""
+  ],
+  "NGC 3786": [
+    ""
+  ],
+  "NGC 3790": [
+    ""
+  ],
+  "NGC 3804": [
+    ""
+  ],
+  "NGC 3800": [
+    ""
+  ],
+  "NGC 3801": [
+    ""
+  ],
+  "NGC 3805": [
+    ""
+  ],
+  "NGC 3810": [
+    ""
+  ],
+  "NGC 3811": [
+    ""
+  ],
+  "NGC 3816": [
+    ""
+  ],
+  "NGC 3817": [
+    ""
+  ],
+  "NGC 3818": [
+    ""
+  ],
+  "NGC 3821": [
+    ""
+  ],
+  "NGC 3822": [
+    ""
+  ],
+  "NGC 3833": [
+    ""
+  ],
+  "NGC 3836": [
+    ""
+  ],
+  "NGC 3837": [
+    ""
+  ],
+  "NGC 3840": [
+    ""
+  ],
+  "NGC 3842": [
+    ""
+  ],
+  "NGC 3843": [
+    ""
+  ],
+  "NGC 3844": [
+    ""
+  ],
+  "NGC 3860": [
+    ""
+  ],
+  "NGC 3861": [
+    ""
+  ],
+  "NGC 3867": [
+    ""
+  ],
+  "NGC 3873": [
+    ""
+  ],
+  "NGC 3877": [
+    ""
+  ],
+  "NGC 3883": [
+    ""
+  ],
+  "NGC 3884": [
+    ""
+  ],
+  "NGC 3886": [
+    ""
+  ],
+  "NGC 3887": [
+    ""
+  ],
+  "NGC 3888": [
+    ""
+  ],
+  "NGC 3891": [
+    ""
+  ],
+  "NGC 3893": [
+    ""
+  ],
+  "NGC 3898": [
+    ""
+  ],
+  "NGC 3900": [
+    ""
+  ],
+  "NGC 3902": [
+    ""
+  ],
+  "NGC 3904": [
+    ""
+  ],
+  "NGC 3905": [
+    ""
+  ],
+  "NGC 3913": [
+    ""
+  ],
+  "NGC 3914": [
+    ""
+  ],
+  "NGC 3916": [
+    ""
+  ],
+  "Blue Planetary Nebula": [
+    "NGC 3918"
+  ],
+  "NGC 3921": [
+    ""
+  ],
+  "NGC 3923": [
+    ""
+  ],
+  "Miniature Spiral": [
+    ""
+  ],
+  "NGC 3936": [
+    ""
+  ],
+  "NGC 3937": [
+    ""
+  ],
+  "NGC 3938": [
+    ""
+  ],
+  "NGC 3941": [
+    ""
+  ],
+  "NGC 3943": [
+    ""
+  ],
+  "NGC 3945": [
+    ""
+  ],
+  "NGC 3947": [
+    ""
+  ],
+  "NGC 3949": [
+    "NGC 3949"
+  ],
+  "NGC 3950": [
+    ""
+  ],
+  "NGC 3951": [
+    ""
+  ],
+  "NGC 3953": [
+    "NGC 3953"
+  ],
+  "NGC 3954": [
+    ""
+  ],
+  "NGC 3955": [
+    ""
+  ],
+  "NGC 3961": [
+    ""
+  ],
+  "NGC 3962": [
+    ""
+  ],
+  "NGC 3971": [
+    ""
+  ],
+  "NGC 3972": [
+    ""
+  ],
+  "NGC 3977": [
+    ""
+  ],
+  "NGC 3978": [
+    ""
+  ],
+  "NGC 3981": [
+    ""
+  ],
+  "NGC 3982": [
+    "NGC 3982"
+  ],
+  "NGC 3985": [
+    ""
+  ],
+  "NGC 3988": [
+    ""
+  ],
+  "NGC 3994": [
+    ""
+  ],
+  "NGC 3995": [
+    ""
+  ],
+  "NGC 3998": [
+    ""
+  ],
+  "NGC 4003": [
+    ""
+  ],
+  "NGC 4005 group": [
+    ""
+  ],
+  "NGC 4010": [
+    ""
+  ],
+  "NGC 4013": [
+    "NGC 4013"
+  ],
+  "NGC 4014": [
+    ""
+  ],
+  "NGC 4015": [
+    ""
+  ],
+  "NGC 4017": [
+    ""
+  ],
+  "NGC 4020": [
+    ""
+  ],
+  "NGC 4026": [
+    "NGC 4026"
+  ],
+  "NGC 4027": [
+    "NGC 4027"
+  ],
+  "NGC 4030": [
+    "NGC 4030"
+  ],
+  "NGC 4033": [
+    ""
+  ],
+  "NGC 4036": [
+    ""
+  ],
+  "Antennae": [
+    "触角銀河"
+  ],
+  "NGC 4041": [
+    ""
+  ],
+  "NGC 4045": [
+    ""
+  ],
+  "NGC 4051": [
+    "NGC 4051"
+  ],
+  "NGC 4053": [
+    ""
+  ],
+  "NGC 4055": [
+    ""
+  ],
+  "NGC 4070": [
+    ""
+  ],
+  "NGC 4062": [
+    ""
+  ],
+  "NGC 4065": [
+    ""
+  ],
+  "NGC 4066": [
+    ""
+  ],
+  "NGC 4068": [
+    ""
+  ],
+  "NGC 4076": [
+    ""
+  ],
+  "NGC 4084": [
+    ""
+  ],
+  "NGC 4086": [
+    ""
+  ],
+  "NGC 4088": [
+    ""
+  ],
+  "NGC 4089": [
+    ""
+  ],
+  "NGC 4090": [
+    ""
+  ],
+  "NGC 4092": [
+    ""
+  ],
+  "NGC 4095": [
+    ""
+  ],
+  "NGC 4096": [
+    ""
+  ],
+  "NGC 4098": [
+    ""
+  ],
+  "NGC 4100": [
+    ""
+  ],
+  "NGC 4102": [
+    ""
+  ],
+  "The Longtail": [
+    ""
+  ],
+  "NGC 4111": [
+    ""
+  ],
+  "NGC 4121": [
+    ""
+  ],
+  "NGC 4123": [
+    ""
+  ],
+  "NGC 4125": [
+    ""
+  ],
+  "NGC 4129": [
+    ""
+  ],
+  "NGC 4136": [
+    ""
+  ],
+  "NGC 4138": [
+    ""
+  ],
+  "NGC 4141": [
+    ""
+  ],
+  "NGC 4144": [
+    ""
+  ],
+  "NGC 4145": [
+    ""
+  ],
+  "NGC 4146": [
+    ""
+  ],
+  "Kick the Can Cluster": [
+    ""
+  ],
+  "NGC 4150": [
+    ""
+  ],
+  "NGC 4151": [
+    "NGC 4151"
+  ],
+  "NGC 4156": [
+    ""
+  ],
+  "NGC 4157": [
+    ""
+  ],
+  "NGC 4162": [
+    ""
+  ],
+  "NGC 4163": [
+    ""
+  ],
+  "NGC 4168": [
+    ""
+  ],
+  "NGC 4172": [
+    ""
+  ],
+  "NGC 4178": [
+    ""
+  ],
+  "NGC 4179": [
+    ""
+  ],
+  "NGC 4183": [
+    ""
+  ],
+  "NGC 4185": [
+    ""
+  ],
+  "NGC 4189": [
+    ""
+  ],
+  "Medusa Galaxy": [
+    ""
+  ],
+  "NGC 4197": [
+    ""
+  ],
+  "NGC 4200": [
+    ""
+  ],
+  "NGC 4203": [
+    ""
+  ],
+  "NGC 4206": [
+    ""
+  ],
+  "NGC 4207": [
+    ""
+  ],
+  "NGC 4212": [
+    ""
+  ],
+  "NGC 4211": [
+    ""
+  ],
+  "NGC 4213": [
+    ""
+  ],
+  "NGC 4228": [
+    "NGC 4214"
+  ],
+  "Silver Streak Galaxy": [
+    "NGC 4216"
+  ],
+  "NGC 4217": [
+    ""
+  ],
+  "NGC 4219": [
+    ""
+  ],
+  "NGC 4221": [
+    ""
+  ],
+  "NGC 4222": [
+    ""
+  ],
+  "NGC 4230": [
+    ""
+  ],
+  "NGC 4236": [
+    "NGC 4236"
+  ],
+  "NGC 4237": [
+    ""
+  ],
+  "NGC 4242": [
+    ""
+  ],
+  "NGC 4244": [
+    "NGC 4244"
+  ],
+  "NGC 4245": [
+    ""
+  ],
+  "NGC 4246": [
+    ""
+  ],
+  "NGC 4249": [
+    ""
+  ],
+  "NGC 4253": [
+    ""
+  ],
+  "NGC 4260": [
+    ""
+  ],
+  "NGC 4261": [
+    ""
+  ],
+  "NGC 4262": [
+    ""
+  ],
+  "NGC 4267": [
+    ""
+  ],
+  "NGC 4273": [
+    ""
+  ],
+  "NGC 4274": [
+    ""
+  ],
+  "NGC 4277": [
+    ""
+  ],
+  "NGC 4278": [
+    ""
+  ],
+  "NGC 4293": [
+    ""
+  ],
+  "NGC 4294": [
+    ""
+  ],
+  "NGC 4296": [
+    ""
+  ],
+  "NGC 4298": [
+    ""
+  ],
+  "NGC 4299": [
+    ""
+  ],
+  "NGC 4301": [
+    ""
+  ],
+  "NGC 4302": [
+    ""
+  ],
+  "NGC 4305": [
+    ""
+  ],
+  "NGC 4306": [
+    ""
+  ],
+  "NGC 4307": [
+    ""
+  ],
+  "NGC 4308": [
+    "NGC 4308"
+  ],
+  "NGC 4309": [
+    ""
+  ],
+  "NGC 4310": [
+    ""
+  ],
+  "NGC 4312": [
+    ""
+  ],
+  "NGC 4313": [
+    ""
+  ],
+  "NGC 4314": [
+    "NGC 4314"
+  ],
+  "NGC 4316": [
+    ""
+  ],
+  "NGC 4318": [
+    ""
+  ],
+  "NGC 4319": [
+    "NGC 4319"
+  ],
+  "NGC 4322": [
+    ""
+  ],
+  "NGC 4324": [
+    ""
+  ],
+  "Galaxy Cluster": [
+    "銀河団"
+  ],
+  "NGC 4326": [
+    ""
+  ],
+  "NGC 4328": [
+    ""
+  ],
+  "NGC 4330": [
+    ""
+  ],
+  "NGC 4332": [
+    ""
+  ],
+  "NGC 4333": [
+    ""
+  ],
+  "NGC 4335": [
+    ""
+  ],
+  "NGC 4340": [
+    ""
+  ],
+  "NGC 4343": [
+    ""
+  ],
+  "NGC 4344": [
+    ""
+  ],
+  "NGC 4346": [
+    ""
+  ],
+  "NGC 4349": [
+    ""
+  ],
+  "NGC 4352": [
+    ""
+  ],
+  "NGC 4359": [
+    ""
+  ],
+  "Lawn Sprinkler Nebula": [
+    ""
+  ],
+  "NGC 4365": [
+    ""
+  ],
+  "NGC 4372": [
+    "NGC 4372"
+  ],
+  "NGC 4375": [
+    ""
+  ],
+  "NGC 4378": [
+    ""
+  ],
+  "NGC 4380": [
+    ""
+  ],
+  "NGC 4383": [
+    ""
+  ],
+  "NGC 4388": [
+    ""
+  ],
+  "NGC 4393": [
+    ""
+  ],
+  "NGC 4394": [
+    ""
+  ],
+  "NGC 4395": [
+    "NGC 4395"
+  ],
+  "NGC 4402": [
+    ""
+  ],
+  "NGC 4420": [
+    ""
+  ],
+  "NGC 4414": [
+    "NGC 4414"
+  ],
+  "NGC 4415": [
+    ""
+  ],
+  "NGC 4417": [
+    ""
+  ],
+  "NGC 4419": [
+    ""
+  ],
+  "NGC 4424": [
+    ""
+  ],
+  "NGC 4425": [
+    ""
+  ],
+  "NGC 4429": [
+    ""
+  ],
+  "NGC 4436": [
+    ""
+  ],
+  "NGC 4517": [
+    ""
+  ],
+  "The Eyes": [
+    ""
+  ],
+  "NGC 4440": [
+    ""
+  ],
+  "NGC 4441": [
+    ""
+  ],
+  "NGC 4442": [
+    ""
+  ],
+  "NGC 4461": [
+    ""
+  ],
+  "NGC 4444": [
+    ""
+  ],
+  "NGC 4448": [
+    ""
+  ],
+  "NGC 4449": [
+    "NGC 4449"
+  ],
+  "NGC 4450": [
+    ""
+  ],
+  "NGC 4451": [
+    ""
+  ],
+  "NGC 4452": [
+    ""
+  ],
+  "NGC 4454": [
+    ""
+  ],
+  "NGC 4455": [
+    ""
+  ],
+  "NGC 4457": [
+    ""
+  ],
+  "NGC 4458": [
+    ""
+  ],
+  "NGC 4459": [
+    ""
+  ],
+  "NGC 4463": [
+    ""
+  ],
+  "NGC 4464": [
+    ""
+  ],
+  "NGC 4468": [
+    ""
+  ],
+  "NGC 4469": [
+    ""
+  ],
+  "NGC 4470": [
+    ""
+  ],
+  "NGC 4474": [
+    ""
+  ],
+  "NGC 4475": [
+    ""
+  ],
+  "NGC 4476": [
+    ""
+  ],
+  "NGC 4478": [
+    ""
+  ],
+  "NGC 4479": [
+    ""
+  ],
+  "NGC 4482": [
+    ""
+  ],
+  "NGC 4483": [
+    ""
+  ],
+  "NGC 4485": [
+    ""
+  ],
+  "NGC 4487": [
+    ""
+  ],
+  "NGC 4488": [
+    ""
+  ],
+  "NGC 4489": [
+    ""
+  ],
+  "NGC 4491": [
+    ""
+  ],
+  "NGC 4492": [
+    ""
+  ],
+  "NGC 4493": [
+    ""
+  ],
+  "NGC 4494": [
+    ""
+  ],
+  "NGC 4495": [
+    ""
+  ],
+  "NGC 4496": [
+    ""
+  ],
+  "NGC 4497": [
+    ""
+  ],
+  "NGC 4498": [
+    ""
+  ],
+  "NGC 4500": [
+    ""
+  ],
+  "NGC 4503": [
+    ""
+  ],
+  "NGC 4504": [
+    ""
+  ],
+  "NGC 4506": [
+    ""
+  ],
+  "Shapley-Ames 2": [
+    ""
+  ],
+  "NGC 4511": [
+    ""
+  ],
+  "NGC 4513": [
+    ""
+  ],
+  "NGC 4515": [
+    ""
+  ],
+  "NGC 4516": [
+    ""
+  ],
+  "NGC 4519": [
+    ""
+  ],
+  "NGC 4522": [
+    "NGC 4522"
+  ],
+  "NGC 4525": [
+    ""
+  ],
+  "Lost Galaxy": [
+    ""
+  ],
+  "NGC 4527": [
+    ""
+  ],
+  "NGC 4528": [
+    ""
+  ],
+  "NGC 4531": [
+    ""
+  ],
+  "NGC 4534": [
+    ""
+  ],
+  "The Lost Galaxy of Copeland": [
+    ""
+  ],
+  "NGC 4536": [
+    ""
+  ],
+  "NGC 4540": [
+    ""
+  ],
+  "NGC 4541": [
+    ""
+  ],
+  "NGC 4544": [
+    ""
+  ],
+  "NGC 4545": [
+    ""
+  ],
+  "NGC 4546": [
+    ""
+  ],
+  "NGC 4550": [
+    ""
+  ],
+  "NGC 4551": [
+    ""
+  ],
+  "NGC 4555": [
+    ""
+  ],
+  "Koi Fish Galaxy": [
+    "NGC 4559"
+  ],
+  "NGC 4561": [
+    ""
+  ],
+  "NGC 4564": [
+    ""
+  ],
+  "Needle Galaxy": [
+    "NGC 4565"
+  ],
+  "Siamese Twins": [
+    "結合双生児"
+  ],
+  "NGC 4570": [
+    ""
+  ],
+  "NGC 4571": [
+    ""
+  ],
+  "NGC 4578": [
+    ""
+  ],
+  "NGC 4580": [
+    ""
+  ],
+  "NGC 4583": [
+    ""
+  ],
+  "NGC 4586": [
+    ""
+  ],
+  "NGC 4587": [
+    ""
+  ],
+  "NGC 4589": [
+    ""
+  ],
+  "NGC 4593": [
+    ""
+  ],
+  "NGC 4595": [
+    ""
+  ],
+  "NGC 4596": [
+    ""
+  ],
+  "NGC 4598": [
+    ""
+  ],
+  "NGC 4603": [
+    ""
+  ],
+  "Faberge Egg Galaxy": [
+    ""
+  ],
+  "NGC 4606": [
+    ""
+  ],
+  "NGC 4607": [
+    ""
+  ],
+  "NGC 4608": [
+    ""
+  ],
+  "Coalsack Cluster": [
+    "NGC 4609"
+  ],
+  "NGC 4612": [
+    ""
+  ],
+  "NGC 4614": [
+    ""
+  ],
+  "NGC 4615": [
+    ""
+  ],
+  "NGC 4617": [
+    ""
+  ],
+  "NGC 4618": [
+    "NGC 4618"
+  ],
+  "NGC 4619": [
+    ""
+  ],
+  "NGC 4620": [
+    ""
+  ],
+  "NGC 4623": [
+    ""
+  ],
+  "NGC 4664": [
+    ""
+  ],
+  "NGC 4625": [
+    "NGC 4625"
+  ],
+  "NGC 4626": [
+    ""
+  ],
+  "NGC 4627": [
+    ""
+  ],
+  "NGC 4630": [
+    ""
+  ],
+  "Whale Galaxy": [
+    "NGC 4631"
+  ],
+  "NGC 4632": [
+    ""
+  ],
+  "NGC 4633": [
+    ""
+  ],
+  "NGC 4634": [
+    ""
+  ],
+  "NGC 4636": [
+    ""
+  ],
+  "NGC 4638": [
+    ""
+  ],
+  "NGC 4639": [
+    ""
+  ],
+  "NGC 4643": [
+    ""
+  ],
+  "NGC 4647": [
+    ""
+  ],
+  "Centaurus Chain": [
+    ""
+  ],
+  "Umbrella Galaxy": [
+    ""
+  ],
+  "NGC 4653": [
+    ""
+  ],
+  "NGC 4654": [
+    ""
+  ],
+  "Crowbar Galaxy": [
+    ""
+  ],
+  "NGC 4658": [
+    ""
+  ],
+  "NGC 4659": [
+    ""
+  ],
+  "NGC 4660": [
+    ""
+  ],
+  "Superwind-Galaxy": [
+    "NGC 4666"
+  ],
+  "NGC 4670": [
+    ""
+  ],
+  "NGC 4673": [
+    ""
+  ],
+  "NGC 4674": [
+    ""
+  ],
+  "Mice Galaxies": [
+    "マウス銀河"
+  ],
+  "NGC 4680": [
+    ""
+  ],
+  "NGC 4683": [
+    ""
+  ],
+  "NGC 4689": [
+    ""
+  ],
+  "NGC 4691": [
+    ""
+  ],
+  "NGC 4694": [
+    ""
+  ],
+  "NGC 4696": [
+    ""
+  ],
+  "NGC 4697": [
+    "NGC 4697"
+  ],
+  "NGC 4698": [
+    ""
+  ],
+  "NGC 4699": [
+    ""
+  ],
+  "NGC 4701": [
+    ""
+  ],
+  "NGC 4706": [
+    ""
+  ],
+  "NGC 4709": [
+    ""
+  ],
+  "NGC 4710": [
+    "NGC 4710"
+  ],
+  "NGC 4712": [
+    ""
+  ],
+  "NGC 4713": [
+    ""
+  ],
+  "NGC 4722": [
+    ""
+  ],
+  "NGC 4725": [
+    "NGC 4725"
+  ],
+  "NGC 4729": [
+    ""
+  ],
+  "NGC 4730": [
+    ""
+  ],
+  "NGC 4731": [
+    ""
+  ],
+  "NGC 4733": [
+    ""
+  ],
+  "NGC 4734": [
+    ""
+  ],
+  "NGC 4743": [
+    ""
+  ],
+  "NGC 4744": [
+    ""
+  ],
+  "NGC 4746": [
+    ""
+  ],
+  "NGC 4747": [
+    ""
+  ],
+  "Dust Devil Galaxy": [
+    ""
+  ],
+  "NGC 4754": [
+    ""
+  ],
+  "Jewel Box": [
+    "NGC 4755"
+  ],
+  "Paper-Kite Galaxy": [
+    ""
+  ],
+  "NGC 4772": [
+    ""
+  ],
+  "NGC 4775": [
+    ""
+  ],
+  "NGC 4780": [
+    ""
+  ],
+  "NGC 4781": [
+    ""
+  ],
+  "NGC 4782": [
+    ""
+  ],
+  "NGC 4790": [
+    ""
+  ],
+  "NGC 4800": [
+    ""
+  ],
+  "NGC 4814": [
+    ""
+  ],
+  "NGC 4815": [
+    ""
+  ],
+  "NGC 4818": [
+    ""
+  ],
+  "NGC 4825": [
+    ""
+  ],
+  "The Southern Butterfly": [
+    "NGC 4833"
+  ],
+  "NGC 4835": [
+    ""
+  ],
+  "NGC 4839": [
+    ""
+  ],
+  "NGC 4848": [
+    ""
+  ],
+  "NGC 4856": [
+    ""
+  ],
+  "NGC 4860": [
+    ""
+  ],
+  "NGC 4861": [
+    ""
+  ],
+  "NGC 4866": [
+    ""
+  ],
+  "NGC 4868": [
+    ""
+  ],
+  "NGC 4869": [
+    ""
+  ],
+  "NGC 4871": [
+    ""
+  ],
+  "NGC 4872": [
+    ""
+  ],
+  "NGC 4873": [
+    ""
+  ],
+  "NGC 4874": [
+    ""
+  ],
+  "NGC 4876": [
+    ""
+  ],
+  "NGC 4881": [
+    ""
+  ],
+  "NGC 4886": [
+    ""
+  ],
+  "NGC 4883": [
+    ""
+  ],
+  "Coma B": [
+    "NGC 4889"
+  ],
+  "NGC 4892": [
+    ""
+  ],
+  "NGC 4895": [
+    ""
+  ],
+  "NGC 4900": [
+    ""
+  ],
+  "NGC 4902": [
+    ""
+  ],
+  "NGC 4907": [
+    ""
+  ],
+  "NGC 4909": [
+    ""
+  ],
+  "NGC 4911": [
+    ""
+  ],
+  "NGC 4914": [
+    ""
+  ],
+  "NGC 4919": [
+    ""
+  ],
+  "NGC 4921": [
+    ""
+  ],
+  "NGC 4930": [
+    ""
+  ],
+  "NGC 4939": [
+    ""
+  ],
+  "NGC 4941": [
+    ""
+  ],
+  "NGC 4944": [
+    ""
+  ],
+  "The Tweezers Galaxy": [
+    "NGC 4945"
+  ],
+  "NGC 4958": [
+    ""
+  ],
+  "NGC 4976": [
+    ""
+  ],
+  "NGC 4980": [
+    ""
+  ],
+  "NGC 4981": [
+    ""
+  ],
+  "NGC 4984": [
+    ""
+  ],
+  "Cocoon Galaxy": [
+    ""
+  ],
+  "NGC 4993": [
+    ""
+  ],
+  "NGC 4995": [
+    ""
+  ],
+  "NGC 4999": [
+    ""
+  ],
+  "NGC 5000": [
+    ""
+  ],
+  "NGC 5002": [
+    ""
+  ],
+  "NGC 5003": [
+    ""
+  ],
+  "NGC 5004": [
+    ""
+  ],
+  "NGC 5005": [
+    "NGC 5005"
+  ],
+  "NGC 5008": [
+    ""
+  ],
+  "NGC 5009": [
+    ""
+  ],
+  "NGC 5011": [
+    ""
+  ],
+  "NGC 5012": [
+    ""
+  ],
+  "NGC 5018": [
+    ""
+  ],
+  "NGC 5020": [
+    ""
+  ],
+  "NGC 5023": [
+    ""
+  ],
+  "NGC 5026": [
+    ""
+  ],
+  "NGC 5032": [
+    ""
+  ],
+  "Waterbug Galaxy": [
+    "NGC 5033"
+  ],
+  "NGC 5034": [
+    ""
+  ],
+  "NGC 5042": [
+    ""
+  ],
+  "NGC 5050": [
+    ""
+  ],
+  "NGC 5053": [
+    ""
+  ],
+  "NGC 5054": [
+    ""
+  ],
+  "NGC 5056": [
+    ""
+  ],
+  "NGC 5061": [
+    ""
+  ],
+  "NGC 5064": [
+    ""
+  ],
+  "NGC 5068": [
+    ""
+  ],
+  "NGC 5078": [
+    "NGC 5078"
+  ],
+  "NGC 5082": [
+    ""
+  ],
+  "NGC 5084": [
+    "NGC 5084"
+  ],
+  "NGC 5085": [
+    ""
+  ],
+  "NGC 5087": [
+    ""
+  ],
+  "NGC 5090": [
+    ""
+  ],
+  "NGC 5098": [
+    ""
+  ],
+  "NGC 5101": [
+    ""
+  ],
+  "Iota's Ghost": [
+    ""
+  ],
+  "NGC 5112": [
+    ""
+  ],
+  "NGC 5114": [
+    ""
+  ],
+  "NGC 5121": [
+    ""
+  ],
+  "NGC 5123": [
+    ""
+  ],
+  "NGC 5127": [
+    ""
+  ],
+  "Centaurus A": [
+    "ケンタウルス座A"
+  ],
+  "NGC 5134": [
+    ""
+  ],
+  "NGC 5135": [
+    ""
+  ],
+  "NGC 5144": [
+    ""
+  ],
+  "NGC 5161": [
+    ""
+  ],
+  "NGC 5174": [
+    ""
+  ],
+  "NGC 5164": [
+    ""
+  ],
+  "NGC 5170": [
+    ""
+  ],
+  "NGC 5172": [
+    ""
+  ],
+  "NGC 5173": [
+    ""
+  ],
+  "NGC 5185": [
+    ""
+  ],
+  "Spiral Planetary Nebula": [
+    "NGC 5189"
+  ],
+  "A Justifiable Replacement for M51": [
+    "NGC 5195"
+  ],
+  "NGC 5198": [
+    ""
+  ],
+  "NGC 5201": [
+    ""
+  ],
+  "NGC 5204": [
+    ""
+  ],
+  "NGC 5206": [
+    ""
+  ],
+  "NGC 5217": [
+    ""
+  ],
+  "Keenan's System": [
+    ""
+  ],
+  "NGC 5221": [
+    ""
+  ],
+  "NGC 5223": [
+    ""
+  ],
+  "NGC 5229": [
+    ""
+  ],
+  "NGC 5230": [
+    ""
+  ],
+  "NGC 5238": [
+    ""
+  ],
+  "NGC 5247": [
+    ""
+  ],
+  "NGC 5248": [
+    "NGC 5248"
+  ],
+  "NGC 5251": [
+    ""
+  ],
+  "NGC 5253": [
+    "NGC 5253"
+  ],
+  "NGC 5256": [
+    ""
+  ],
+  "NGC 5257": [
+    ""
+  ],
+  "NGC 5260": [
+    ""
+  ],
+  "NGC 5264": [
+    ""
+  ],
+  "NGC 5266": [
+    ""
+  ],
+  "NGC 5273": [
+    ""
+  ],
+  "NGC 5278": [
+    ""
+  ],
+  "NGC 5279": [
+    ""
+  ],
+  "NGC 5286": [
+    "NGC 5286"
+  ],
+  "NGC 5300": [
+    ""
+  ],
+  "NGC 5307": [
+    ""
+  ],
+  "NGC 5308": [
+    ""
+  ],
+  "NGC 5315": [
+    "NGC 5315"
+  ],
+  "NGC 5316": [
+    ""
+  ],
+  "NGC 5364": [
+    ""
+  ],
+  "NGC 5322": [
+    ""
+  ],
+  "NGC 5334": [
+    ""
+  ],
+  "NGC 5335": [
+    "NGC 5335"
+  ],
+  "NGC 5342": [
+    ""
+  ],
+  "NGC 5343": [
+    ""
+  ],
+  "NGC 5353 group": [
+    ""
+  ],
+  "NGC 5363": [
+    ""
+  ],
+  "NGC 5371": [
+    ""
+  ],
+  "NGC 5374": [
+    ""
+  ],
+  "NGC 5376": [
+    ""
+  ],
+  "NGC 5377": [
+    ""
+  ],
+  "NGC 5378": [
+    ""
+  ],
+  "NGC 5383": [
+    ""
+  ],
+  "NGC 5384": [
+    ""
+  ],
+  "The Heron Galaxy": [
+    ""
+  ],
+  "NGC 5398": [
+    ""
+  ],
+  "NGC 5406": [
+    ""
+  ],
+  "NGC 5408": [
+    ""
+  ],
+  "NGC 5410": [
+    ""
+  ],
+  "NGC 5416 group": [
+    ""
+  ],
+  "NGC 5419": [
+    ""
+  ],
+  "NGC 5422": [
+    ""
+  ],
+  "NGC 5426": [
+    ""
+  ],
+  "NGC 5442": [
+    ""
+  ],
+  "NGC 5443": [
+    ""
+  ],
+  "NGC 5448": [
+    ""
+  ],
+  "NGC 5460": [
+    ""
+  ],
+  "NGC 5461": [
+    ""
+  ],
+  "Snowglobe Cluster": [
+    ""
+  ],
+  "NGC 5468": [
+    ""
+  ],
+  "NGC 5470": [
+    ""
+  ],
+  "NGC 5471": [
+    ""
+  ],
+  "NGC 5473": [
+    ""
+  ],
+  "NGC 5474": [
+    "NGC 5474"
+  ],
+  "NGC 5475": [
+    ""
+  ],
+  "NGC 5477": [
+    ""
+  ],
+  "NGC 5480": [
+    ""
+  ],
+  "NGC 5483": [
+    ""
+  ],
+  "NGC 5485": [
+    ""
+  ],
+  "NGC 5486": [
+    ""
+  ],
+  "NGC 5493": [
+    ""
+  ],
+  "NGC 5495": [
+    ""
+  ],
+  "NGC 5500": [
+    ""
+  ],
+  "NGC 5504": [
+    ""
+  ],
+  "NGC 5508": [
+    ""
+  ],
+  "NGC 5516": [
+    ""
+  ],
+  "NGC 5523": [
+    ""
+  ],
+  "NGC 5529": [
+    ""
+  ],
+  "NGC 5530": [
+    ""
+  ],
+  "NGC 5532": [
+    ""
+  ],
+  "NGC 5533": [
+    ""
+  ],
+  "NGC 5541": [
+    ""
+  ],
+  "NGC 5544": [
+    ""
+  ],
+  "NGC 5545": [
+    ""
+  ],
+  "NGC 5548": [
+    ""
+  ],
+  "NGC 5555": [
+    ""
+  ],
+  "NGC 5557": [
+    ""
+  ],
+  "NGC 5559": [
+    ""
+  ],
+  "NGC 5566": [
+    ""
+  ],
+  "NGC 5575": [
+    ""
+  ],
+  "NGC 5579": [
+    ""
+  ],
+  "NGC 5582": [
+    ""
+  ],
+  "NGC 5584": [
+    "NGC 5584"
+  ],
+  "NGC 5585": [
+    ""
+  ],
+  "NGC 5591": [
+    ""
+  ],
+  "NGC 5597": [
+    ""
+  ],
+  "NGC 5603": [
+    ""
+  ],
+  "NGC 5605": [
+    ""
+  ],
+  "NGC 5606": [
+    ""
+  ],
+  "NGC 5612": [
+    ""
+  ],
+  "NGC 5614": [
+    ""
+  ],
+  "Dracula Cluster": [
+    ""
+  ],
+  "NGC 5619": [
+    ""
+  ],
+  "NGC 5626": [
+    ""
+  ],
+  "NGC 5629 group": [
+    ""
+  ],
+  "NGC 5630": [
+    ""
+  ],
+  "NGC 5631": [
+    ""
+  ],
+  "NGC 5634": [
+    "NGC 5634"
+  ],
+  "NGC 5641": [
+    ""
+  ],
+  "NGC 5642": [
+    ""
+  ],
+  "NGC 5643": [
+    ""
+  ],
+  "NGC 5653": [
+    ""
+  ],
+  "NGC 5658": [
+    ""
+  ],
+  "Gypsy Moth Cluster": [
+    ""
+  ],
+  "NGC 5665": [
+    ""
+  ],
+  "NGC 5668": [
+    ""
+  ],
+  "NGC 5671": [
+    ""
+  ],
+  "NGC 5674": [
+    ""
+  ],
+  "NGC 5676": [
+    ""
+  ],
+  "NGC 5678": [
+    ""
+  ],
+  "NGC 5679": [
+    ""
+  ],
+  "NGC 5681": [
+    ""
+  ],
+  "NGC 5682": [
+    ""
+  ],
+  "NGC 5694": [
+    "NGC 5694"
+  ],
+  "NGC 5698": [
+    ""
+  ],
+  "NGC 5701": [
+    ""
+  ],
+  "NGC 5705": [
+    ""
+  ],
+  "NGC 5713": [
+    "NGC 5713"
+  ],
+  "NGC 5714": [
+    ""
+  ],
+  "NGC 5716": [
+    ""
+  ],
+  "NGC 5722": [
+    ""
+  ],
+  "NGC 5728": [
+    ""
+  ],
+  "NGC 5735": [
+    ""
+  ],
+  "Blade and Pearl Galaxy": [
+    ""
+  ],
+  "NGC 5749": [
+    ""
+  ],
+  "NGC 5754": [
+    ""
+  ],
+  "NGC 5772": [
+    ""
+  ],
+  "NGC 5774": [
+    ""
+  ],
+  "NGC 5775": [
+    ""
+  ],
+  "NGC 5777": [
+    ""
+  ],
+  "NGC 5778": [
+    ""
+  ],
+  "NGC 5784": [
+    ""
+  ],
+  "NGC 5790": [
+    ""
+  ],
+  "NGC 5792": [
+    ""
+  ],
+  "NGC 5793": [
+    ""
+  ],
+  "NGC 5806": [
+    ""
+  ],
+  "NGC 5820": [
+    ""
+  ],
+  "NGC 5821": [
+    ""
+  ],
+  "NGC 5822": [
+    ""
+  ],
+  "NGC 5823": [
+    "NGC 5823"
+  ],
+  "NGC 5824": [
+    ""
+  ],
+  "NGC 5829": [
+    ""
+  ],
+  "NGC 5837": [
+    ""
+  ],
+  "NGC 5838": [
+    ""
+  ],
+  "NGC 5844": [
+    ""
+  ],
+  "NGC 5846": [
+    ""
+  ],
+  "NGC 5850": [
+    ""
+  ],
+  "NGC 5854": [
+    ""
+  ],
+  "NGC 5857": [
+    ""
+  ],
+  "NGC 5861": [
+    ""
+  ],
+  "NGC 5875": [
+    ""
+  ],
+  "NGC 5876": [
+    ""
+  ],
+  "NGC 5879": [
+    ""
+  ],
+  "Ghost of Uranus": [
+    "NGC 5882"
+  ],
+  "NGC 5885": [
+    ""
+  ],
+  "NGC 5886": [
+    ""
+  ],
+  "NGC 5888": [
+    ""
+  ],
+  "NGC 5890": [
+    ""
+  ],
+  "Ghost Globular Cluster": [
+    ""
+  ],
+  "NGC 5898": [
+    ""
+  ],
+  "NGC 5905": [
+    ""
+  ],
+  "Splinter Galaxy": [
+    ""
+  ],
+  "NGC 5910": [
+    ""
+  ],
+  "NGC 5915": [
+    ""
+  ],
+  "NGC 5917": [
+    ""
+  ],
+  "NGC 5920": [
+    ""
+  ],
+  "NGC 5921": [
+    ""
+  ],
+  "NGC 5925": [
+    ""
+  ],
+  "NGC 5927": [
+    ""
+  ],
+  "NGC 5928": [
+    "M102"
+  ],
+  "NGC 5929": [
+    ""
+  ],
+  "NGC 5930": [
+    ""
+  ],
+  "NGC 5936": [
+    ""
+  ],
+  "NGC 5939": [
+    ""
+  ],
+  "NGC 5949": [
+    ""
+  ],
+  "NGC 5953": [
+    ""
+  ],
+  "NGC 5957": [
+    ""
+  ],
+  "NGC 5962": [
+    ""
+  ],
+  "NGC 5963": [
+    ""
+  ],
+  "NGC 5964": [
+    ""
+  ],
+  "NGC 5965": [
+    ""
+  ],
+  "NGC 5966": [
+    ""
+  ],
+  "NGC 5967": [
+    ""
+  ],
+  "NGC 5970": [
+    ""
+  ],
+  "NGC 5979": [
+    ""
+  ],
+  "NGC 5980": [
+    ""
+  ],
+  "NGC 5982": [
+    ""
+  ],
+  "NGC 5985": [
+    ""
+  ],
+  "NGC 5986": [
+    ""
+  ],
+  "NGC 5988": [
+    ""
+  ],
+  "NGC 5996": [
+    ""
+  ],
+  "NGC 5999": [
+    ""
+  ],
+  "NGC 6000": [
+    ""
+  ],
+  "NGC 6005": [
+    ""
+  ],
+  "NGC 6008": [
+    ""
+  ],
+  "NGC 6025": [
+    "NGC 6025"
+  ],
+  "Seyfert's Sextet": [
+    "セイファートの六つ子銀河"
+  ],
+  "NGC 6028": [
+    ""
+  ],
+  "NGC 6031": [
+    ""
+  ],
+  "NGC 6041": [
+    ""
+  ],
+  "NGC 6044": [
+    ""
+  ],
+  "NGC 6045": [
+    ""
+  ],
+  "NGC 6047": [
+    ""
+  ],
+  "NGC 6050": [
+    "Arp 272"
+  ],
+  "NGC 6051": [
+    ""
+  ],
+  "NGC 6052": [
+    ""
+  ],
+  "NGC 6055": [
+    ""
+  ],
+  "NGC 6056": [
+    ""
+  ],
+  "NGC 6067": [
+    "NGC 6087"
+  ],
+  "NGC 6070": [
+    ""
+  ],
+  "NGC 6072": [
+    ""
+  ],
+  "NGC 6078": [
+    ""
+  ],
+  "NGC 6085": [
+    ""
+  ],
+  "NGC 6086": [
+    ""
+  ],
+  "NGC 6090": [
+    ""
+  ],
+  "NGC 6101": [
+    "NGC 6101"
+  ],
+  "NGC 6106": [
+    ""
+  ],
+  "NGC 6109": [
+    ""
+  ],
+  "NGC 6115": [
+    ""
+  ],
+  "NGC 6118": [
+    ""
+  ],
+  "NGC 6120": [
+    ""
+  ],
+  "NGC 6122": [
+    ""
+  ],
+  "NGC 6124": [
+    "NGC 6124"
+  ],
+  "Little Pincushion": [
+    ""
+  ],
+  "NGC 6137": [
+    ""
+  ],
+  "NGC 6139": [
+    ""
+  ],
+  "NGC 6142": [
+    ""
+  ],
+  "NGC 6144": [
+    ""
+  ],
+  "NGC 6145": [
+    ""
+  ],
+  "NGC 6152": [
+    ""
+  ],
+  "NGC 6153": [
+    ""
+  ],
+  "NGC 6158": [
+    ""
+  ],
+  "NGC 6166": [
+    ""
+  ],
+  "NGC 6167": [
+    ""
+  ],
+  "μ Normae Cluster": [
+    ""
+  ],
+  "NGC 6181": [
+    ""
+  ],
+  "NGC 6185": [
+    ""
+  ],
+  "Rim Nebula": [
+    ""
+  ],
+  "NGC 6193": [
+    "NGC 6193"
+  ],
+  "NGC 6195": [
+    ""
+  ],
+  "NGC 6200": [
+    ""
+  ],
+  "NGC 6204": [
+    ""
+  ],
+  "NGC 6207": [
+    ""
+  ],
+  "NGC 6208": [
+    ""
+  ],
+  "NGC 6209": [
+    ""
+  ],
+  "Turtle Nebula": [
+    "NGC 6210"
+  ],
+  "NGC 6212": [
+    ""
+  ],
+  "NGC 6215": [
+    ""
+  ],
+  "NGC 6217": [
+    ""
+  ],
+  "NGC 6221": [
+    ""
+  ],
+  "Prize Comet Globular Cluster": [
+    ""
+  ],
+  "False Comet Nebula": [
+    "NGC 6231"
+  ],
+  "NGC 6248": [
+    ""
+  ],
+  "NGC 6239": [
+    ""
+  ],
+  "NGC 6240": [
+    "NGC 6240"
+  ],
+  "NGC 6242": [
+    ""
+  ],
+  "NGC 6250": [
+    ""
+  ],
+  "NGC 6251": [
+    ""
+  ],
+  "NGC 6256": [
+    ""
+  ],
+  "NGC 6261": [
+    ""
+  ],
+  "NGC 6263": [
+    ""
+  ],
+  "NGC 6264": [
+    ""
+  ],
+  "NGC 6269": [
+    ""
+  ],
+  "Moth Wing Cluster": [
+    ""
+  ],
+  "NGC 6284": [
+    ""
+  ],
+  "NGC 6286": [
+    ""
+  ],
+  "NGC 6287": [
+    ""
+  ],
+  "NGC 6293": [
+    ""
+  ],
+  "NGC 6300": [
+    ""
+  ],
+  "Bug Nebula": [
+    "NGC 6302"
+  ],
+  "NGC 6304": [
+    ""
+  ],
+  "NGC 6308": [
+    ""
+  ],
+  "Box Nebula": [
+    ""
+  ],
+  "NGC 6316": [
+    ""
+  ],
+  "NGC 6324": [
+    ""
+  ],
+  "NGC 6325": [
+    ""
+  ],
+  "NGC 6326": [
+    ""
+  ],
+  "NGC 6328": [
+    ""
+  ],
+  "NGC 6331": [
+    ""
+  ],
+  "Cat's Paw Nebula": [
+    "NGC 6334"
+  ],
+  "Cheerio Nebula": [
+    ""
+  ],
+  "NGC 6338": [
+    ""
+  ],
+  "NGC 6340": [
+    ""
+  ],
+  "NGC 6342": [
+    ""
+  ],
+  "NGC 6352": [
+    "NGC 6352"
+  ],
+  "NGC 6355": [
+    ""
+  ],
+  "NGC 6356": [
+    ""
+  ],
+  "Lobster Nebula": [
+    "NGC 6357"
+  ],
+  "NGC 6362": [
+    ""
+  ],
+  "NGC 6366": [
+    ""
+  ],
+  "Little Ghost Nebula": [
+    "NGC 6369"
+  ],
+  "NGC 6373": [
+    ""
+  ],
+  "NGC 6374": [
+    ""
+  ],
+  "NGC 6375": [
+    ""
+  ],
+  "Tonantzintla 1": [
+    ""
+  ],
+  "NGC 6384": [
+    ""
+  ],
+  "NGC 6388": [
+    ""
+  ],
+  "NGC 6389": [
+    ""
+  ],
+  "NGC 6394": [
+    ""
+  ],
+  "NGC 6397": [
+    "NGC 6397"
+  ],
+  "Phantom Cluster": [
+    ""
+  ],
+  "NGC 6401": [
+    ""
+  ],
+  "NGC 6412": [
+    ""
+  ],
+  "NGC 6426": [
+    ""
+  ],
+  "NGC 6440": [
+    ""
+  ],
+  "Silver Nugget Cluster": [
+    ""
+  ],
+  "NGC 6453": [
+    ""
+  ],
+  "NGC 6492": [
+    ""
+  ],
+  "NGC 6496": [
+    ""
+  ],
+  "Lost in Space Galaxy": [
+    ""
+  ],
+  "NGC 6509": [
+    ""
+  ],
+  "Dead Man's Chest Cluster": [
+    ""
+  ],
+  "NGC 6522": [
+    ""
+  ],
+  "NGC 6526": [
+    ""
+  ],
+  "NGC 6528": [
+    ""
+  ],
+  "Herschel 36": [
+    ""
+  ],
+  "NGC 6535": [
+    ""
+  ],
+  "Red spider Nebula": [
+    "NGC 6537"
+  ],
+  "NGC 6539": [
+    ""
+  ],
+  "NGC 6540": [
+    ""
+  ],
+  "Cacciatore Cluster": [
+    "NGC 6541"
+  ],
+  "Cat's Eye Nebula": [
+    "キャッツアイ星雲"
+  ],
+  "NGC 6553": [
+    ""
+  ],
+  "NGC 6558": [
+    ""
+  ],
+  "NGC 6559": [
+    ""
+  ],
+  "NGC 6560": [
+    ""
+  ],
+  "NGC 6565": [
+    "NGC 6565"
+  ],
+  "NGC 6566": [
+    ""
+  ],
+  "NGC 6569": [
+    ""
+  ],
+  "NGC 6570": [
+    ""
+  ],
+  "Blue Racquetball Nebula": [
+    ""
+  ],
+  "NGC 6578": [
+    ""
+  ],
+  "NGC 6584": [
+    ""
+  ],
+  "NGC 6590": [
+    ""
+  ],
+  "NGC 6603": [
+    ""
+  ],
+  "NGC 6604": [
+    ""
+  ],
+  "NGC 6605": [
+    ""
+  ],
+  "NGC 6606": [
+    ""
+  ],
+  "Edward's Galaxy": [
+    "NGC 6621"
+  ],
+  "NGC 6624": [
+    ""
+  ],
+  "NGC 6627": [
+    ""
+  ],
+  "NGC 6629": [
+    ""
+  ],
+  "Tweedledum Cluster": [
+    ""
+  ],
+  "NGC 6638": [
+    ""
+  ],
+  "Tadpole Cluster": [
+    ""
+  ],
+  "NGC 6644": [
+    ""
+  ],
+  "NGC 6646": [
+    ""
+  ],
+  "NGC 6649": [
+    ""
+  ],
+  "NGC 6652": [
+    ""
+  ],
+  "Santa's Sleigh Cluster": [
+    ""
+  ],
+  "NGC 6670": [
+    ""
+  ],
+  "NGC 6676": [
+    ""
+  ],
+  "NGC 6677": [
+    ""
+  ],
+  "NGC 6685": [
+    ""
+  ],
+  "NGC 6702": [
+    ""
+  ],
+  "NGC 6708": [
+    ""
+  ],
+  "Flying Unicorn Cluster": [
+    ""
+  ],
+  "NGC 6712": [
+    ""
+  ],
+  "NGC 6717": [
+    ""
+  ],
+  "Chandelier Cluster": [
+    ""
+  ],
+  "NGC 6726": [
+    ""
+  ],
+  "R CrA Nebula": [
+    "NGC 6729"
+  ],
+  "NGC 6738": [
+    ""
+  ],
+  "Phantom Streak Nebula": [
+    ""
+  ],
+  "NGC 6742": [
+    ""
+  ],
+  "NGC 6744": [
+    "NGC 6744"
+  ],
+  "Bird's Head": [
+    "ドベライ半島"
+  ],
+  "Dandelion Puffball Nebula": [
+    "NGC 6751"
+  ],
+  "Pavo Globular Cluster": [
+    "NGC 6752"
+  ],
+  "NGC 6753": [
+    ""
+  ],
+  "NGC 6754": [
+    ""
+  ],
+  "Possible Binary Cluster": [
+    ""
+  ],
+  "NGC 6760": [
+    ""
+  ],
+  "NGC 6764": [
+    ""
+  ],
+  "NGC 6884": [
+    ""
+  ],
+  "NGC 6769": [
+    ""
+  ],
+  "NGC 6774": [
+    ""
+  ],
+  "Pentagon": [
+    "五角形"
+  ],
+  "Son of M76": [
+    ""
+  ],
+  "Snowball Nebula": [
+    "NGC 7662"
+  ],
+  "NGC 6782": [
+    ""
+  ],
+  "NGC 6786": [
+    ""
+  ],
+  "NGC 6789": [
+    ""
+  ],
+  "NGC 6790": [
+    ""
+  ],
+  "NGC 6791": [
+    ""
+  ],
+  "NGC 6794": [
+    ""
+  ],
+  "NGC 6800": [
+    ""
+  ],
+  "NGC 6801": [
+    ""
+  ],
+  "NGC 6810": [
+    ""
+  ],
+  "Hole in a Cluster": [
+    ""
+  ],
+  "NGC 6814": [
+    ""
+  ],
+  "Little Gem Nebula": [
+    ""
+  ],
+  "The Foxhead Cluster": [
+    ""
+  ],
+  "NGC 6820": [
+    ""
+  ],
+  "Barnard's Galaxy": [
+    "NGC 6822"
+  ],
+  "Blinking Planetary Nebula": [
+    "NGC 6826"
+  ],
+  "Poodle Cluster": [
+    ""
+  ],
+  "NGC 6834": [
+    ""
+  ],
+  "NGC 6842": [
+    ""
+  ],
+  "Klemola 30": [
+    ""
+  ],
+  "NGC 6850": [
+    ""
+  ],
+  "NGC 6857": [
+    ""
+  ],
+  "NGC 6861": [
+    ""
+  ],
+  "NGC 6862": [
+    ""
+  ],
+  "Kite Cluster": [
+    ""
+  ],
+  "NGC 6871": [
+    ""
+  ],
+  "Condor Galaxy": [
+    ""
+  ],
+  "NGC 6881": [
+    ""
+  ],
+  "20 Vulpeculae Cluster": [
+    "NGC 6885"
+  ],
+  "NGC 6886": [
+    ""
+  ],
+  "Crescent Nebula": [
+    "NGC 6888"
+  ],
+  "NGC 6891": [
+    ""
+  ],
+  "NGC 6902": [
+    ""
+  ],
+  "Blue Flash Nebula": [
+    ""
+  ],
+  "Giant Behemoth Galaxy": [
+    ""
+  ],
+  "The Inchworm Cluster": [
+    ""
+  ],
+  "NGC 6914": [
+    ""
+  ],
+  "NGC 6919": [
+    ""
+  ],
+  "NGC 6925": [
+    ""
+  ],
+  "NGC 6934": [
+    "NGC 6934"
+  ],
+  "Ghost Bush Cluster": [
+    ""
+  ],
+  "Mothra Cluster": [
+    ""
+  ],
+  "NGC 6943": [
+    ""
+  ],
+  "Fireworks Galaxy": [
+    "NGC 6946"
+  ],
+  "NGC 6948": [
+    ""
+  ],
+  "NGC 6951": [
+    ""
+  ],
+  "NGC 6956": [
+    ""
+  ],
+  "Filamentary Nebula": [
+    "網状星雲"
+  ],
+  "NGC 6962": [
+    ""
+  ],
+  "NGC 6970": [
+    ""
+  ],
+  "NGC 6975": [
+    ""
+  ],
+  "NGC 6984": [
+    ""
+  ],
+  "NGC 6999": [
+    ""
+  ],
+  "North America Nebula": [
+    "北アメリカ星雲"
+  ],
+  "NGC 7001": [
+    ""
+  ],
+  "NGC 7002": [
+    ""
+  ],
+  "NGC 7003": [
+    ""
+  ],
+  "NGC 7004": [
+    ""
+  ],
+  "NGC 7006": [
+    "NGC 7006"
+  ],
+  "NGC 7007": [
+    ""
+  ],
+  "Fetus Nebula": [
+    ""
+  ],
+  "Saturn Nebula": [
+    "土星状星雲"
+  ],
+  "NGC 7010": [
+    ""
+  ],
+  "NGC 7011": [
+    ""
+  ],
+  "NGC 7012": [
+    ""
+  ],
+  "NGC 7013": [
+    ""
+  ],
+  "NGC 7014": [
+    ""
+  ],
+  "NGC 7015": [
+    ""
+  ],
+  "NGC 7016": [
+    ""
+  ],
+  "NGC 7017": [
+    ""
+  ],
+  "NGC 7019": [
+    ""
+  ],
+  "NGC 7020": [
+    "NGC 7020"
+  ],
+  "NGC 7022": [
+    ""
+  ],
+  "Iris Nebula": [
+    "アイリス星雲"
+  ],
+  "NGC 7025": [
+    ""
+  ],
+  "Cheeseburger Nebula": [
+    ""
+  ],
+  "Pink Pillow Nebula": [
+    "NGC 7027"
+  ],
+  "NGC 7029": [
+    ""
+  ],
+  "NGC 7030": [
+    ""
+  ],
+  "NGC 7031": [
+    ""
+  ],
+  "NGC 7032": [
+    ""
+  ],
+  "NGC 7033": [
+    ""
+  ],
+  "NGC 7034": [
+    ""
+  ],
+  "NGC 7035": [
+    ""
+  ],
+  "NGC 7037": [
+    ""
+  ],
+  "NGC 7038": [
+    ""
+  ],
+  "NGC 7040": [
+    ""
+  ],
+  "NGC 7041": [
+    ""
+  ],
+  "NGC 7042": [
+    ""
+  ],
+  "NGC 7043": [
+    ""
+  ],
+  "NGC 7044": [
+    ""
+  ],
+  "NGC 7046": [
+    ""
+  ],
+  "NGC 7047": [
+    ""
+  ],
+  "Peek-a-Boo Nebula": [
+    ""
+  ],
+  "NGC 7049": [
+    ""
+  ],
+  "NGC 7050": [
+    ""
+  ],
+  "NGC 7051": [
+    ""
+  ],
+  "NGC 7052": [
+    ""
+  ],
+  "NGC 7053": [
+    ""
+  ],
+  "NGC 7055": [
+    ""
+  ],
+  "NGC 7056": [
+    ""
+  ],
+  "NGC 7057": [
+    ""
+  ],
+  "NGC 7059": [
+    ""
+  ],
+  "NGC 7060": [
+    ""
+  ],
+  "NGC 7061": [
+    ""
+  ],
+  "NGC 7063": [
+    ""
+  ],
+  "NGC 7064": [
+    ""
+  ],
+  "NGC 7065": [
+    ""
+  ],
+  "NGC 7066": [
+    ""
+  ],
+  "NGC 7068": [
+    ""
+  ],
+  "NGC 7069": [
+    ""
+  ],
+  "NGC 7070": [
+    ""
+  ],
+  "NGC 7072": [
+    ""
+  ],
+  "NGC 7073": [
+    ""
+  ],
+  "NGC 7074": [
+    ""
+  ],
+  "NGC 7075": [
+    ""
+  ],
+  "NGC 7077": [
+    ""
+  ],
+  "NGC 7079": [
+    ""
+  ],
+  "NGC 7080": [
+    ""
+  ],
+  "NGC 7081": [
+    ""
+  ],
+  "NGC 7083": [
+    ""
+  ],
+  "NGC 7087": [
+    ""
+  ],
+  "NGC 7090": [
+    ""
+  ],
+  "NGC 7093": [
+    ""
+  ],
+  "NGC 7094": [
+    ""
+  ],
+  "NGC 7095": [
+    ""
+  ],
+  "NGC 7096": [
+    ""
+  ],
+  "NGC 7098": [
+    "NGC 7098"
+  ],
+  "NGC 7101": [
+    ""
+  ],
+  "NGC 7110": [
+    ""
+  ],
+  "NGC 7124": [
+    ""
+  ],
+  "Small Cluster Nebula": [
+    "NGC 7129"
+  ],
+  "NGC 7130": [
+    ""
+  ],
+  "NGC 7139": [
+    ""
+  ],
+  "NGC 7142": [
+    ""
+  ],
+  "NGC 7154": [
+    ""
+  ],
+  "Swimming Alligator Cluster": [
+    ""
+  ],
+  "NGC 7169": [
+    ""
+  ],
+  "NGC 7171": [
+    ""
+  ],
+  "NGC 7172": [
+    ""
+  ],
+  "NGC 7177": [
+    ""
+  ],
+  "NGC 7184": [
+    ""
+  ],
+  "NGC 7190": [
+    ""
+  ],
+  "NGC 7191": [
+    ""
+  ],
+  "NGC 7196": [
+    ""
+  ],
+  "NGC 7199": [
+    ""
+  ],
+  "NGC 7205": [
+    ""
+  ],
+  "Star Lizard Cluster": [
+    ""
+  ],
+  "NGC 7212": [
+    ""
+  ],
+  "NGC 7213": [
+    ""
+  ],
+  "NGC 7214": [
+    ""
+  ],
+  "NGC 7217": [
+    ""
+  ],
+  "NGC 7222": [
+    ""
+  ],
+  "NGC 7236": [
+    ""
+  ],
+  "NGC 7237": [
+    ""
+  ],
+  "NGC 7241": [
+    ""
+  ],
+  "NGC 7243": [
+    "NGC 7243"
+  ],
+  "NGC 7250": [
+    ""
+  ],
+  "Atoms for Peace Galaxy": [
+    ""
+  ],
+  "NGC 7253": [
+    ""
+  ],
+  "NGC 7259": [
+    ""
+  ],
+  "NGC 7280": [
+    ""
+  ],
+  "NGC 7292": [
+    ""
+  ],
+  "Helix Nebula": [
+    "らせん星雲"
+  ],
+  "NGC 7300": [
+    ""
+  ],
+  "NGC 7301": [
+    ""
+  ],
+  "NGC 7302": [
+    ""
+  ],
+  "NGC 7303": [
+    ""
+  ],
+  "NGC 7311": [
+    ""
+  ],
+  "NGC 7312": [
+    ""
+  ],
+  "NGC 7314": [
+    ""
+  ],
+  "NGC 7315": [
+    ""
+  ],
+  "NGC 7316": [
+    ""
+  ],
+  "Stephan's Quintet": [
+    "ステファンの五つ子銀河"
+  ],
+  "NGC 7321": [
+    ""
+  ],
+  "NGC 7329": [
+    ""
+  ],
+  "Deer Lick Group": [
+    "NGC 7331銀河群"
+  ],
+  "NGC 7332": [
+    ""
+  ],
+  "NGC 7337": [
+    ""
+  ],
+  "NGC 7343": [
+    ""
+  ],
+  "NGC 7354": [
+    ""
+  ],
+  "NGC 7363": [
+    ""
+  ],
+  "NGC 7364": [
+    ""
+  ],
+  "NGC 7372": [
+    ""
+  ],
+  "The Wizard Nebula": [
+    ""
+  ],
+  "NGC 7393": [
+    ""
+  ],
+  "NGC 7408": [
+    ""
+  ],
+  "NGC 7410": [
+    ""
+  ],
+  "NGC 7412": [
+    ""
+  ],
+  "NGC 7418": [
+    ""
+  ],
+  "NGC 7419": [
+    ""
+  ],
+  "NGC 7421": [
+    ""
+  ],
+  "Grand Design Galaxy": [
+    ""
+  ],
+  "NGC 7429": [
+    ""
+  ],
+  "NGC 7436": [
+    ""
+  ],
+  "NGC 7448": [
+    ""
+  ],
+  "NGC 7454": [
+    ""
+  ],
+  "NGC 7456": [
+    ""
+  ],
+  "NGC 7457": [
+    ""
+  ],
+  "NGC 7463": [
+    ""
+  ],
+  "NGC 7466": [
+    ""
+  ],
+  "NGC 7469": [
+    ""
+  ],
+  "Superman Galaxy": [
+    "NGC 7479"
+  ],
+  "NGC 7492": [
+    ""
+  ],
+  "NGC 7496": [
+    ""
+  ],
+  "NGC 7499": [
+    ""
+  ],
+  "NGC 7503": [
+    ""
+  ],
+  "NGC 7506": [
+    ""
+  ],
+  "NGC 7507": [
+    ""
+  ],
+  "The Dormouse Cluster": [
+    ""
+  ],
+  "NGC 7513": [
+    ""
+  ],
+  "NGC 7516": [
+    ""
+  ],
+  "NGC 7531": [
+    ""
+  ],
+  "NGC 7537": [
+    ""
+  ],
+  "Northern Lagoon Nebula": [
+    ""
+  ],
+  "NGC 7541": [
+    ""
+  ],
+  "NGC 7547": [
+    ""
+  ],
+  "NGC 7549": [
+    ""
+  ],
+  "NGC 7550": [
+    ""
+  ],
+  "Grus Quartet": [
+    ""
+  ],
+  "NGC 7562": [
+    ""
+  ],
+  "NGC 7572": [
+    ""
+  ],
+  "NGC 7583": [
+    ""
+  ],
+  "NGC 7600": [
+    ""
+  ],
+  "NGC 7603": [
+    ""
+  ],
+  "NGC 7606": [
+    ""
+  ],
+  "NGC 7609": [
+    ""
+  ],
+  "NGC 7610": [
+    ""
+  ],
+  "NGC 7611": [
+    ""
+  ],
+  "NGC 7612": [
+    ""
+  ],
+  "NGC 7617": [
+    ""
+  ],
+  "NGC 7619": [
+    ""
+  ],
+  "NGC 7623": [
+    ""
+  ],
+  "NGC 7625": [
+    ""
+  ],
+  "NGC 7626": [
+    ""
+  ],
+  "NGC 7631": [
+    ""
+  ],
+  "NGC 7634": [
+    ""
+  ],
+  "Bubble Nebula": [
+    "NGC 7635"
+  ],
+  "NGC 7637": [
+    ""
+  ],
+  "NGC 7640": [
+    ""
+  ],
+  "NGC 7645": [
+    ""
+  ],
+  "NGC 7647": [
+    ""
+  ],
+  "NGC 7648": [
+    ""
+  ],
+  "NGC 7659": [
+    ""
+  ],
+  "NGC 7660": [
+    ""
+  ],
+  "NGC 7673": [
+    ""
+  ],
+  "NGC 7674": [
+    ""
+  ],
+  "NGC 7678": [
+    ""
+  ],
+  "NGC 7679": [
+    ""
+  ],
+  "NGC 7680": [
+    ""
+  ],
+  "NGC 7681": [
+    ""
+  ],
+  "NGC 7682": [
+    ""
+  ],
+  "NGC 7686": [
+    ""
+  ],
+  "NGC 7689": [
+    ""
+  ],
+  "NGC 7691": [
+    ""
+  ],
+  "NGC 7701": [
+    ""
+  ],
+  "NGC 7706": [
+    ""
+  ],
+  "NGC 7713": [
+    ""
+  ],
+  "NGC 7714": [
+    ""
+  ],
+  "NGC 7716": [
+    ""
+  ],
+  "NGC 7720": [
+    ""
+  ],
+  "NGC 7721": [
+    ""
+  ],
+  "NGC 7722": [
+    ""
+  ],
+  "NGC 7723": [
+    ""
+  ],
+  "NGC 7725": [
+    ""
+  ],
+  "NGC 7726": [
+    ""
+  ],
+  "NGC 7727": [
+    ""
+  ],
+  "NGC 7734": [
+    ""
+  ],
+  "NGC 7735": [
+    ""
+  ],
+  "NGC 7741": [
+    ""
+  ],
+  "Fried-egg Galaxy": [
+    "NGC 7742"
+  ],
+  "NGC 7752": [
+    ""
+  ],
+  "NGC 7759": [
+    ""
+  ],
+  "NGC 7767": [
+    ""
+  ],
+  "NGC 7768": [
+    ""
+  ],
+  "NGC 7769": [
+    ""
+  ],
+  "NGC 7770": [
+    ""
+  ],
+  "NGC 7771": [
+    ""
+  ],
+  "NGC 7773": [
+    ""
+  ],
+  "NGC 7777": [
+    ""
+  ],
+  "Caroline's Rose Cluster": [
+    ""
+  ],
+  "The Widow's Web Cluster": [
+    "NGC 7790"
+  ],
+  "Bond's Galaxy": [
+    "NGC 7793"
+  ],
+  "NGC 7796": [
+    ""
+  ],
+  "NGC 7797": [
+    ""
+  ],
+  "NGC 7800": [
+    ""
+  ],
+  "NGC 7802": [
+    ""
+  ],
+  "NGC 7806": [
+    ""
+  ],
+  "NGC 7808": [
+    ""
+  ],
+  "NGC 7811": [
+    ""
+  ],
+  "NGC 7812": [
+    ""
+  ],
+  "The Little Sombrero Galaxy": [
+    "NGC 7814"
+  ],
+  "NGC 7816": [
+    ""
+  ],
+  "NGC 7817": [
+    ""
+  ],
+  "NGC 7818": [
+    ""
+  ],
+  "NGC 7822": [
+    ""
+  ],
+  "NGC 7824": [
+    ""
+  ],
+  "NGC 7827": [
+    ""
+  ],
+  "NGC 7828": [
+    ""
+  ],
+  "NGC 7829": [
+    ""
+  ],
+  "NGC 7832": [
+    ""
+  ],
+  "NGC 7836": [
+    ""
+  ],
+  "IC 4": [
+    "ニュージェネラルカタログ"
+  ],
+  "Starburst Galaxy": [
+    "スターバースト銀河"
+  ],
+  "γ Cas Nebula": [
+    ""
+  ],
+  "IC 64": [
+    ""
+  ],
+  "IC 66": [
+    ""
+  ],
+  "IC 121": [
+    ""
+  ],
+  "IC 167": [
+    ""
+  ],
+  "IC 184": [
+    ""
+  ],
+  "IC 226": [
+    ""
+  ],
+  "IC 239": [
+    ""
+  ],
+  "IC 289": [
+    ""
+  ],
+  "IC 298": [
+    ""
+  ],
+  "IC 310": [
+    ""
+  ],
+  "IC 1963": [
+    ""
+  ],
+  "Maffei 1 Group": [
+    "マフェイ銀河群"
+  ],
+  "ο Per Cloud": [
+    ""
+  ],
+  "Barnard's Merope Nebula": [
+    ""
+  ],
+  "IC 361": [
+    ""
+  ],
+  "IC 380": [
+    ""
+  ],
+  "The Tadpoles": [
+    ""
+  ],
+  "Spider Nebula": [
+    ""
+  ],
+  "Spirograph Nebula": [
+    "IC 418"
+  ],
+  "IC 430": [
+    ""
+  ],
+  "IC 434": [
+    ""
+  ],
+  "IC 438": [
+    ""
+  ],
+  "Jellyfish Nebula": [
+    ""
+  ],
+  "IC 444": [
+    ""
+  ],
+  "IC 2169": [
+    ""
+  ],
+  "IC 485": [
+    ""
+  ],
+  "Papillon": [
+    ""
+  ],
+  "IC 711": [
+    ""
+  ],
+  "IC 719": [
+    ""
+  ],
+  "IC 758": [
+    ""
+  ],
+  "IC 860": [
+    ""
+  ],
+  "IC 883": [
+    ""
+  ],
+  "IC 4553": [
+    "Arp 220"
+  ],
+  "IC 1266": [
+    ""
+  ],
+  "IC 1276": [
+    ""
+  ],
+  "IC 1283": [
+    ""
+  ],
+  "IC 1295": [
+    ""
+  ],
+  "IC 1296": [
+    ""
+  ],
+  "IC 1297": [
+    ""
+  ],
+  "γ Cyg Nebula": [
+    ""
+  ],
+  "IC 1327": [
+    ""
+  ],
+  "IC 1337": [
+    ""
+  ],
+  "Elephant's Trunk Nebula": [
+    "象の鼻星雲"
+  ],
+  "IC 1459": [
+    ""
+  ],
+  "IC 1470": [
+    ""
+  ],
+  "IC 1481": [
+    ""
+  ],
+  "IC 1563": [
+    ""
+  ],
+  "IC 1574": [
+    ""
+  ],
+  "IC 1590": [
+    ""
+  ],
+  "IC 1613": [
+    "IC 1613"
+  ],
+  "IC 1623": [
+    ""
+  ],
+  "IC 1657": [
+    ""
+  ],
+  "IC 1689": [
+    ""
+  ],
+  "Fish Head Nebula": [
+    ""
+  ],
+  "IC 1816": [
+    ""
+  ],
+  "Soul Nebula": [
+    ""
+  ],
+  "IC 1913": [
+    ""
+  ],
+  "IC 1919": [
+    ""
+  ],
+  "IC 1953": [
+    ""
+  ],
+  "IC 1954": [
+    ""
+  ],
+  "IC 1993": [
+    ""
+  ],
+  "IC 2000": [
+    "スイス国鉄IC2000客車"
+  ],
+  "IC 2006": [
+    ""
+  ],
+  "IC 2010": [
+    ""
+  ],
+  "IC 2082": [
+    ""
+  ],
+  "IC 2149": [
+    ""
+  ],
+  "IC 2150": [
+    ""
+  ],
+  "Toby Jug Nebula": [
+    ""
+  ],
+  "IC 2233": [
+    ""
+  ],
+  "ο Vel Cluster": [
+    "IC 2391"
+  ],
+  "IC 2395": [
+    ""
+  ],
+  "IC 2402": [
+    ""
+  ],
+  "Browning Galaxy": [
+    ""
+  ],
+  "IC 2448": [
+    ""
+  ],
+  "IC 2486": [
+    ""
+  ],
+  "Strings of Pearl Cluster": [
+    ""
+  ],
+  "IC 2497": [
+    ""
+  ],
+  "IC 2498": [
+    ""
+  ],
+  "IC 2531": [
+    ""
+  ],
+  "IC 2560": [
+    ""
+  ],
+  "Coddington's Nebula": [
+    ""
+  ],
+  "IC 2599": [
+    ""
+  ],
+  "Southern Pleiades": [
+    "IC 2602"
+  ],
+  "IC 2631": [
+    ""
+  ],
+  "The Rip-Torn Cluster": [
+    ""
+  ],
+  "Running Chicken Nebula": [
+    "IC 2944"
+  ],
+  "IC 3370": [
+    ""
+  ],
+  "Lemon slice Nebula": [
+    "IC 3568"
+  ],
+  "IC 4051": [
+    ""
+  ],
+  "IC 4214": [
+    ""
+  ],
+  "IC 4263": [
+    ""
+  ],
+  "IC 4397": [
+    ""
+  ],
+  "Retina Nebula": [
+    "IC 4406"
+  ],
+  "IC 4441": [
+    ""
+  ],
+  "IC 4499": [
+    ""
+  ],
+  "IC 4537": [
+    ""
+  ],
+  "Blue Horsehead Nebula": [
+    "IC 4592"
+  ],
+  "White-eyed Pea Nebula": [
+    ""
+  ],
+  "Antares Nebula": [
+    "へびつかい座ロー分子雲領域"
+  ],
+  "IC 4642": [
+    ""
+  ],
+  "IC 4651": [
+    ""
+  ],
+  "IC 4662": [
+    ""
+  ],
+  "Summer Beehive Cluster": [
+    ""
+  ],
+  "IC 4687": [
+    ""
+  ],
+  "IC 4710": [
+    ""
+  ],
+  "Graff's Cluster": [
+    ""
+  ],
+  "IC 4970": [
+    ""
+  ],
+  "P Cyg Cluster": [
+    ""
+  ],
+  "IC 4997": [
+    ""
+  ],
+  "IC 5052": [
+    ""
+  ],
+  "IC 5063": [
+    ""
+  ],
+  "Pelican Nebula": [
+    "ペリカン星雲"
+  ],
+  "IC 5145": [
+    ""
+  ],
+  "Cocoon Nebula": [
+    "IC 5146"
+  ],
+  "Spare Tyre Nebula": [
+    ""
+  ],
+  "IC 5152": [
+    ""
+  ],
+  "IC 5201": [
+    ""
+  ],
+  "IC 5217": [
+    ""
+  ],
+  "IC 5325": [
+    ""
+  ],
+  "IC 5332": [
+    ""
+  ],
+  "NGC 3115": [
+    "NGC 3115"
+  ],
+  "NGC 5866": [
+    "NGC 5866"
+  ],
+  "NGC 584": [
+    ""
+  ],
+  "Phobos": [
+    "フォボス"
+  ],
+  "Deimos": [
+    "ダイモス"
+  ],
+  "Io": [
+    "イオ"
+  ],
+  "Europa": [
+    "エウロパ"
+  ],
+  "Ganymede": [
+    "ガニメデ"
+  ],
+  "Callisto": [
+    "カリスト"
+  ],
+  "Amalthea": [
+    "アマルテア"
+  ],
+  "Himalia": [
+    "ヒマリア"
+  ],
+  "Elara": [
+    "エララ"
+  ],
+  "Thebe": [
+    "テーベ"
+  ],
+  "Adrastea": [
+    "アドラステア"
+  ],
+  "Mimas": [
+    "ミマス"
+  ],
+  "Enceladus": [
+    "エンケラドゥス"
+  ],
+  "Tethys": [
+    "テティス"
+  ],
+  "Dione": [
+    "ディオネ"
+  ],
+  "Rhea": [
+    "レア"
+  ],
+  "Titan": [
+    "タイタン"
+  ],
+  "Hyperion": [
+    "ヒペリオン"
+  ],
+  "Iapetus": [
+    "イアペトゥス"
+  ],
+  "Phoebe": [
+    "フェーベ"
+  ],
+  "Janus": [
+    "ヤヌス"
+  ],
+  "Epimetheus": [
+    "エピメテウス"
+  ],
+  "Helene": [
+    "ヘレネ"
+  ],
+  "Telesto": [
+    "テレスト"
+  ],
+  "Calypso": [
+    "カリプソ"
+  ],
+  "Prometheus": [
+    "プロメテウス"
+  ],
+  "Pandora": [
+    "パンドラ"
+  ],
+  "Miranda": [
+    "ミランダ"
+  ],
+  "Ariel": [
+    "アリエル"
+  ],
+  "Umbriel": [
+    "ウンブリエル"
+  ],
+  "Titania": [
+    "チタニア"
+  ],
+  "Oberon": [
+    "オベロン"
+  ],
+  "Puck": [
+    "パック"
+  ],
+  "Triton": [
+    "トリトン"
+  ],
+  "Nereid": [
+    "ネレイド"
+  ],
+  "Proteus": [
+    "プロテウス"
+  ],
+  "Larissa": [
+    "ラリッサ"
+  ],
+  "Galatea": [
+    "ガラテア"
+  ],
+  "Despina": [
+    "デスピナ"
+  ],
+  "Thalassa": [
+    "タラッサ"
+  ],
+  "Naiad": [
+    "ナイアド"
+  ],
+  "Charon": [
+    "カロン"
+  ],
+  "136199 Eris": [
+    "エリス"
+  ],
+  "136472 Makemake": [
+    "マケマケ"
+  ],
+  "136108 Haumea": [
+    "ハウメア"
+  ],
+  "90377 Sedna": [
+    "セドナ"
+  ],
+  "225088 2007 OR10": [
+    "Gonggong"
+  ],
+  "90482 Orcus": [
+    "オルクス"
+  ],
+  "50000 Quaoar": [
+    "クワオアー"
+  ],
+  "4 Vesta": [
+    "ベスタ"
+  ],
+  "2013 FY27": [
+    "チミニガグア"
+  ],
+  "55565 2002 AW197": [
+    "アヤ"
+  ],
+  "229762 2007 UK126": [
+    "Gǃkúnǁʼhòmdímà"
+  ],
+  "1 Ceres": [
+    "ケレス"
+  ],
+  "55636 2002 TX300": [
+    "2002 TX300"
+  ],
+  "174567 Varda": [
+    "ヴァルダ"
+  ],
+  "202421 2005 UQ513": [
+    "2005 UQ513"
+  ],
+  "2014 UZ224": [
+    "2014 UZ224"
+  ],
+  "20000 Varuna": [
+    "ヴァルナ"
+  ],
+  "28978 Ixion": [
+    "イクシオン"
+  ],
+  "55637 2002 UX25": [
+    "ウニ"
+  ],
+  "208996 2003 AZ84": [
+    "アクリュース"
+  ],
+  "303775 2005 QU182": [
+    "2005 QU182"
+  ],
+  "307261 2002 MS4": [
+    "マーニ"
+  ],
+  "2018 VG18": [
+    "2018 VG18"
+  ],
+  "145452 2005 RN43": [
+    "リトナ"
+  ],
+  "90568 2004 GV9": [
+    "ゴヴニュ"
+  ],
+  "523692 2014 EZ51": [
+    "2014 EZ51"
+  ],
+  "523794 2015 RR245": [
+    "2015 RR245"
+  ],
+  "84522 2002 TC302": [
+    "2002 TC302"
+  ],
+  "120178 2003 OP32": [
+    ""
+  ],
+  "471143 Dziewanna": [
+    "Dziewanna"
+  ],
+  "2010 RF43": [
+    "2010 RF43"
+  ],
+  "120347 Salacia": [
+    "サラキア"
+  ],
+  "145453 2005 RR43": [
+    ""
+  ],
+  "2010 JO179": [
+    "2010 JO179"
+  ],
+  "2012 VP113": [
+    "2012 VP113"
+  ],
+  "42301 2001 UR163": [
+    ""
+  ],
+  "2015 KH162": [
+    ""
+  ],
+  "2 Pallas": [
+    "パラス"
+  ],
+  "84922 2003 VS2": [
+    "2003 VS2"
+  ],
+  "230965 2004 XA192": [
+    ""
+  ],
+  "120348 2004 TY364": [
+    "2004 TY364"
+  ],
+  "175113 2004 PF115": [
+    ""
+  ],
+  "455502 2003 UZ413": [
+    ""
+  ],
+  "2004 XR190": [
+    "2004 XR190"
+  ],
+  "144897 2004 UX10": [
+    ""
+  ],
+  "145451 2005 RM43": [
+    "Rumina"
+  ],
+  "145480 2005 TB190": [
+    ""
+  ],
+  "523671 2013 FZ27": [
+    ""
+  ],
+  "2008 ST291": [
+    ""
+  ],
+  "2015 BP519": [
+    ""
+  ],
+  "82075 2000 YW134": [
+    ""
+  ],
+  "278361 2007 JJ43": [
+    "2007 JJ43"
+  ],
+  "308193 2005 CB79": [
+    ""
+  ],
+  "386723 2009 YE7": [
+    ""
+  ],
+  "470308 2007 JH43": [
+    ""
+  ],
+  "24835 1995 SM55": [
+    ""
+  ],
+  "120132 2003 FY128": [
+    ""
+  ],
+  "2017 OF69": [
+    ""
+  ],
+  "47171 Lempo": [
+    "レンポ"
+  ],
+  "119951 2002 KX14": [
+    ""
+  ],
+  "119979 2002 WC19": [
+    "2002 WC19"
+  ],
+  "315530 2008 AP129": [
+    ""
+  ],
+  "470599 2008 OG19": [
+    ""
+  ],
+  "2003 QX113": [
+    ""
+  ],
+  "2014 FC72": [
+    ""
+  ],
+  "19308 1996 TO66": [
+    ""
+  ],
+  "19521 Chaos": [
+    "カオス"
+  ],
+  "38628 Huya": [
+    "フヤ"
+  ],
+  "48639 1995 TL8": [
+    ""
+  ],
+  "444030 2004 NT33": [
+    "2004 NT33"
+  ],
+  "445473 2010 VZ98": [
+    "2010 VZ98"
+  ],
+  "2014 OE394": [
+    ""
+  ],
+  "26375 1999 DE9": [
+    ""
+  ],
+  "84719 2002 VR128": [
+    ""
+  ],
+  "2013 FS28": [
+    ""
+  ],
+  "469306 1999 CD158": [
+    "1999 CD158"
+  ],
+  "470316 2007 OC10": [
+    ""
+  ],
+  "2002 XV93": [
+    "2002 XV93"
+  ],
+  "2015 AJ281": [
+    ""
+  ],
+  "416400 2003 UZ117": [
+    ""
+  ],
+  "469372 2001 QF298": [
+    "2001 QF298"
+  ],
+  "471288 2011 GM27": [
+    ""
+  ],
+  "15 Eunomia": [
+    "エウノミア"
+  ],
+  "15874 1996 TL66": [
+    "1996 TL66"
+  ],
+  "55638 2002 VE95": [
+    ""
+  ],
+  "79360 Sila-Nunam": [
+    ""
+  ],
+  "3 Juno": [
+    "ジュノー"
+  ],
+  "10 Hygiea": [
+    "ヒギエア"
+  ],
+  "35671 1998 SN165": [
+    ""
+  ],
+  "40314 1999 KR16": [
+    ""
+  ],
+  "78799 2002 XW93": [
+    "Xewioso"
+  ],
+  "2015 TG387": [
+    "Leleākūhonua"
+  ],
+  "7 Iris": [
+    "イリス"
+  ],
+  "26308 1998 SM165": [
+    "1998 SM165"
+  ],
+  "148780 Altjira": [
+    ""
+  ],
+  "420356 Praamzius": [
+    ""
+  ],
+  "508869 2002 VT130": [
+    ""
+  ],
+  "6 Hebe": [
+    "ヘーベ"
+  ],
+  "2060 Chiron": [
+    "キロン"
+  ],
+  "79983 1999 DF9": [
+    ""
+  ],
+  "88611 Teharonhiawako": [
+    "テハロンヒアワコ"
+  ],
+  "532 Herculina": [
+    "エルクリーナ"
+  ],
+  "29 Amphitrite": [
+    "アンフィトリテ"
+  ],
+  "16 Psyche": [
+    "プシケ"
+  ],
+  "66652 Borasisi": [
+    "ボラシシ"
+  ],
+  "307463 2002 VU130": [
+    ""
+  ],
+  "469987 2006 HJ123": [
+    ""
+  ],
+  "2001 XR254": [
+    ""
+  ],
+  "349 Dembowska": [
+    "デンボウスカ"
+  ],
+  "704 Interamnia": [
+    "インテラムニア"
+  ],
+  "39 Laetitia": [
+    "ラエティティア"
+  ],
+  "2013 FQ28": [
+    ""
+  ],
+  "1995 SN55": [
+    "2014 OK394"
+  ],
+  "2014 FE72": [
+    "2014 FE72"
+  ],
+  "82158 2001 FP185": [
+    ""
+  ],
+  "505478 2013 UT15": [
+    ""
+  ],
+  "2015 RX245": [
+    ""
+  ],
+  "511 Davida": [
+    "ダビダ"
+  ],
+  "9 Metis": [
+    "メティス"
+  ],
+  "14 Irene": [
+    "イレーネ"
+  ],
+  "120216 2004 EW95": [
+    ""
+  ],
+  "148209 2000 CR105": [
+    ""
+  ],
+  "C/1995 O1 (Hale-Bopp)": [
+    "ヘール・ボップ彗星"
+  ],
+  "P/1997 B1 (Kobayashi)": [
+    "小林彗星"
+  ],
+  "C/2002 VQ94 (LINEAR)": [
+    ""
+  ],
+  "P/2003 T12 (SOHO)": [
+    ""
+  ],
+  "P/2004 A1 (LONEOS)": [
+    ""
+  ],
+  "P/2004 DO29 (Spacewatch-LINEAR)": [
+    ""
+  ],
+  "P/2006 HR30 (Siding Spring)": [
+    ""
+  ],
+  "P/2009 Q4 (Boattini)": [
+    ""
+  ],
+  "P/2010 B2 (WISE)": [
+    ""
+  ],
+  "P/2010 H2 (Vales)": [
+    ""
+  ],
+  "C/2010 U3 (Boattini)": [
+    ""
+  ],
+  "C/2011 KP36 (Spacewatch)": [
+    ""
+  ],
+  "P/2011 NO1 (Elenin)": [
+    ""
+  ],
+  "P/2011 P1 (McNaught)": [
+    ""
+  ],
+  "P/2011 S1 (Gibbs)": [
+    ""
+  ],
+  "P/2013 R3 (Catalina-PANSTARRS)": [
+    ""
+  ],
+  "C/2013 US10 (Catalina)": [
+    ""
+  ],
+  "C/2013 X1 (PANSTARRS)": [
+    ""
+  ],
+  "C/2014 B1 (Schwartz)": [
+    ""
+  ],
+  "C/2014 N3 (NEOWISE)": [
+    ""
+  ],
+  "C/2014 Q1 (PANSTARRS)": [
+    ""
+  ],
+  "C/2014 Q2 (Lovejoy)": [
+    ""
+  ],
+  "C/2015 ER61 (PANSTARRS)": [
+    ""
+  ],
+  "C/2015 G2 (MASTER)": [
+    ""
+  ],
+  "P/2015 PD229 (Cameron-ISON)": [
+    ""
+  ],
+  "C/2015 V2 (Johnson)": [
+    ""
+  ],
+  "P/2016 BA14 (PANSTARRS)": [
+    ""
+  ],
+  "P/2016 G1 (PANSTARRS)": [
+    ""
+  ],
+  "C/2016 R2 (PANSTARRS)": [
+    ""
+  ],
+  "C/2016 U1 (NEOWISE)": [
+    ""
+  ],
+  "C/2017 K2 (PANSTARRS)": [
+    ""
+  ],
+  "C/2017 O1 (ASASSN)": [
+    ""
+  ],
+  "P/2017 S5 (ATLAS)": [
+    ""
+  ],
+  "P/2017 S9 (PANSTARRS)": [
+    ""
+  ],
+  "C/2017 T1 (Heinze)": [
+    ""
+  ],
+  "C/2017 T2 (PANSTARRS)": [
+    ""
+  ],
+  "A/2017 U7": [
+    ""
+  ],
+  "C/2018 C2 (Lemmon)": [
+    ""
+  ],
+  "C/2018 F4 (PANSTARRS)": [
+    ""
+  ],
+  "C/2018 N1 (NEOWISE)": [
+    "TESS"
+  ],
+  "C/2018 N2 (ASASSN)": [
+    ""
+  ],
+  "C/2018 V1 (Machholz-Fujikawa-Iwamoto)": [
+    "マックホルツ・藤川・岩本彗星"
+  ],
+  "A/2018 V3": [
+    "ダモクレス族"
+  ],
+  "C/2018 Y1 (Iwamoto)": [
+    "岩本彗星"
+  ],
+  "C/2019 E3 (ATLAS)": [
+    ""
+  ],
+  "A/2019 G4": [
+    ""
+  ],
+  "C/2019 J2 (Palomar)": [
+    ""
+  ],
+  "C/2019 L3 (ATLAS)": [
+    ""
+  ],
+  "A/2019 O3": [
+    ""
+  ],
+  "A/2019 U5": [
+    ""
+  ],
+  "C/2019 Y1 (ATLAS)": [
+    ""
+  ],
+  "C/2019 Y4 (ATLAS)": [
+    "ATLAS彗星"
+  ],
+  "C/2020 A2 (Iwamoto)": [
+    "岩本彗星"
+  ],
+  "1P/Halley": [
+    "ハレー彗星"
+  ],
+  "2P/Encke": [
+    "エンケ彗星"
+  ],
+  "4P/Faye": [
+    "フェイ彗星"
+  ],
+  "6P/d'Arrest": [
+    "ダレスト彗星"
+  ],
+  "7P/Pons-Winnecke": [
+    "ポンス・ヴィネッケ彗星"
+  ],
+  "8P/Tuttle": [
+    "タットル彗星"
+  ],
+  "9P/Tempel": [
+    "テンペル第1彗星"
+  ],
+  "10P/Tempel": [
+    "テンペル第2彗星"
+  ],
+  "11P/Tempel-Swift-LINEAR": [
+    "テンペル・スイフト・LINEAR彗星"
+  ],
+  "12P/Pons-Brooks": [
+    "ポンス・ブルックス彗星"
+  ],
+  "13P/Olbers": [
+    "オルバース彗星"
+  ],
+  "14P/Wolf": [
+    "ヴォルフ彗星"
+  ],
+  "15P/Finlay": [
+    "フィンレー彗星"
+  ],
+  "16P/Brooks": [
+    "ブルックス第2彗星"
+  ],
+  "17P/Holmes": [
+    "ホームズ彗星"
+  ],
+  "19P/Borrelly": [
+    "ボレリー彗星"
+  ],
+  "21P/Giacobini-Zinner": [
+    "ジャコビニ・ツィナー彗星"
+  ],
+  "22P/Kopff": [
+    "コプフ彗星"
+  ],
+  "23P/Brorsen-Metcalf": [
+    "ブローセン・メトカーフ彗星"
+  ],
+  "24P/Schaumasse": [
+    "ショーマス彗星"
+  ],
+  "26P/Grigg-Skjellerup": [
+    "グリッグ・シェレルップ彗星"
+  ],
+  "27P/Crommelin": [
+    "クロンメリン彗星"
+  ],
+  "28P/Neujmin": [
+    "ネウイミン第1彗星"
+  ],
+  "29P/Schwassmann-Wachmann": [
+    "シュワスマン・ワハマン第1彗星"
+  ],
+  "30P/Reinmuth": [
+    "ラインムート第1彗星"
+  ],
+  "31P/Schwassmann-Wachmann": [
+    "シュワスマン・ワハマン第2彗星"
+  ],
+  "32P/Comas Sola": [
+    "コマス・ソラ彗星"
+  ],
+  "33P/Daniel": [
+    "ダニエル彗星"
+  ],
+  "35P/Herschel-Rigollet": [
+    "ハーシェル・リゴレー彗星"
+  ],
+  "36P/Whipple": [
+    "ホイップル彗星"
+  ],
+  "37P/Forbes": [
+    "フォーブズ彗星"
+  ],
+  "38P/Stephan-Oterma": [
+    "ステファン・オテルマ彗星"
+  ],
+  "39P/Oterma": [
+    "オテルマ彗星"
+  ],
+  "41P/Tuttle-Giacobini-Kresak": [
+    "タットル・ジャコビニ・クレサーク彗星"
+  ],
+  "42P/Neujmin": [
+    "ネウイミン第3彗星"
+  ],
+  "43P/Wolf-Harrington": [
+    "ヴォルフ・ハリントン彗星"
+  ],
+  "44P/Reinmuth": [
+    ""
+  ],
+  "45P/Honda-Mrkos-Pajdusakova": [
+    "本田・ムルコス・パイドゥシャーコヴァー彗星"
+  ],
+  "46P/Wirtanen": [
+    "ワータネン彗星"
+  ],
+  "47P/Ashbrook-Jackson": [
+    "アシュブルック・ジャクソン彗星"
+  ],
+  "48P/Johnson": [
+    "ジョンソン彗星"
+  ],
+  "49P/Arend-Rigaux": [
+    "アラン・リゴー彗星"
+  ],
+  "50P/Arend": [
+    ""
+  ],
+  "52P/Harrington-Abell": [
+    "ハリントン・エイベル彗星"
+  ],
+  "53P/Van Biesbroeck": [
+    "ファン・ビースブルック彗星"
+  ],
+  "54P/de Vico-Swift-NEAT": [
+    ""
+  ],
+  "55P/Tempel-Tuttle": [
+    "テンペル・タットル彗星"
+  ],
+  "56P/Slaughter-Burnham": [
+    "スローター・バーナム彗星"
+  ],
+  "57P/du Toit-Neujmin-Delporte": [
+    "デュトワ・ネウイミン・デルポルト彗星"
+  ],
+  "58P/Jackson-Neujmin": [
+    ""
+  ],
+  "59P/Kearns-Kwee": [
+    ""
+  ],
+  "60P/Tsuchinshan": [
+    "紫金山第2彗星"
+  ],
+  "61P/Shajn-Schaldach": [
+    ""
+  ],
+  "62P/Tsuchinshan": [
+    ""
+  ],
+  "63P/Wild": [
+    ""
+  ],
+  "64P/Swift-Gehrels": [
+    ""
+  ],
+  "65P/Gunn": [
+    ""
+  ],
+  "66P/du Toit": [
+    ""
+  ],
+  "67P/Churyumov-Gerasimenko": [
+    "チュリュモフ・ゲラシメンコ彗星"
+  ],
+  "68P/Klemola": [
+    "クレモラ彗星"
+  ],
+  "69P/Taylor": [
+    "テイラー彗星"
+  ],
+  "70P/Kojima": [
+    "小島彗星"
+  ],
+  "71P/Clark": [
+    ""
+  ],
+  "72P/Denning-Fujikawa": [
+    "デニング・藤川彗星"
+  ],
+  "73P/Schwassmann-Wachmann": [
+    "シュワスマン・ワハマン第3彗星"
+  ],
+  "74P/Smirnova-Chernykh": [
+    "スミルノワ・チェルヌイフ彗星"
+  ],
+  "76P/West-Kohoutek-Ikemura": [
+    "ウェスト・コホーテク・池村彗星"
+  ],
+  "77P/Longmore": [
+    "ロングモア彗星"
+  ],
+  "78P/Gehrels": [
+    ""
+  ],
+  "79P/du Toit-Hartley": [
+    ""
+  ],
+  "80P/Peters-Hartley": [
+    ""
+  ],
+  "81P/Wild": [
+    "ヴィルト第2彗星"
+  ],
+  "82P/Gehrels": [
+    ""
+  ],
+  "84P/Giclas": [
+    ""
+  ],
+  "86P/Wild": [
+    ""
+  ],
+  "87P/Bus": [
+    "バス彗星"
+  ],
+  "88P/Howell": [
+    "ハウエル彗星"
+  ],
+  "89P/Russell": [
+    ""
+  ],
+  "90P/Gehrels": [
+    ""
+  ],
+  "91P/Russell": [
+    "ラッセル第3彗星"
+  ],
+  "92P/Sanguin": [
+    ""
+  ],
+  "93P/Lovas": [
+    ""
+  ],
+  "94P/Russell": [
+    "ラッセル第4彗星"
+  ],
+  "96P/Machholz": [
+    ""
+  ],
+  "97P/Metcalf-Brewington": [
+    ""
+  ],
+  "98P/Takamizawa": [
+    "高見澤彗星"
+  ],
+  "99P/Kowal": [
+    ""
+  ],
+  "100P/Hartley": [
+    "ハートレー第1彗星"
+  ],
+  "101P/Chernykh": [
+    "チェルヌイフ彗星"
+  ],
+  "102P/Shoemaker": [
+    ""
+  ],
+  "103P/Hartley": [
+    "ハートレー第2彗星"
+  ],
+  "104P/Kowal": [
+    ""
+  ],
+  "105P/Singer Brewster": [
+    ""
+  ],
+  "107P/Wilson-Harrington": [
+    "ウィルソン・ハリントン彗星"
+  ],
+  "108P/Ciffreo": [
+    "シフレオ彗星"
+  ],
+  "109P/Swift-Tuttle": [
+    "スイフト・タットル彗星"
+  ],
+  "110P/Hartley": [
+    ""
+  ],
+  "111P/Helin-Roman-Crockett": [
+    "ヘリン・ローマン・クロケット彗星"
+  ],
+  "112P/Urata-Niijima": [
+    "浦田・新島彗星"
+  ],
+  "113P/Spitaler": [
+    ""
+  ],
+  "114P/Wiseman-Skiff": [
+    ""
+  ],
+  "115P/Maury": [
+    ""
+  ],
+  "116P/Wild": [
+    ""
+  ],
+  "117P/Helin-Roman-Alu": [
+    ""
+  ],
+  "118P/Shoemaker-Levy": [
+    ""
+  ],
+  "119P/Parker-Hartley": [
+    ""
+  ],
+  "120P/Mueller": [
+    ""
+  ],
+  "121P/Shoemaker-Holt": [
+    ""
+  ],
+  "122P/de Vico": [
+    ""
+  ],
+  "123P/West-Hartley": [
+    ""
+  ],
+  "125P/Spacewatch": [
+    ""
+  ],
+  "126P/IRAS": [
+    "IRAS彗星"
+  ],
+  "128P/Shoemaker-Holt": [
+    "シューメーカー・ホルト第1彗星"
+  ],
+  "129P/Shoemaker-Levy": [
+    ""
+  ],
+  "130P/McNaught-Hughes": [
+    ""
+  ],
+  "132P/Helin-Roman-Alu": [
+    ""
+  ],
+  "133P/Elst-Pizarro": [
+    "エルスト・ピサロ彗星"
+  ],
+  "136P/Mueller": [
+    ""
+  ],
+  "138P/Shoemaker-Levy": [
+    ""
+  ],
+  "139P/Vaisala-Oterma": [
+    ""
+  ],
+  "141P/Machholz": [
+    ""
+  ],
+  "143P/Kowal-Mrkos": [
+    ""
+  ],
+  "144P/Kushida": [
+    "串田彗星"
+  ],
+  "147P/Kushida-Muramatsu": [
+    "串田・村松彗星"
+  ],
+  "152P/Helin-Lawrence": [
+    ""
+  ],
+  "153P/Ikeya-Zhang": [
+    "池谷・張彗星"
+  ],
+  "155P/Shoemaker": [
+    ""
+  ],
+  "156P/Russell-LINEAR": [
+    ""
+  ],
+  "157P/Tritton": [
+    ""
+  ],
+  "158P/Kowal-LINEAR": [
+    "コワル・LINEAR彗星"
+  ],
+  "159P/LONEOS": [
+    ""
+  ],
+  "160P/LINEAR": [
+    ""
+  ],
+  "161P/Hartley-IRAS": [
+    ""
+  ],
+  "162P/Siding Spring": [
+    ""
+  ],
+  "163P/NEAT": [
+    ""
+  ],
+  "164P/Christensen": [
+    ""
+  ],
+  "165P/LINEAR": [
+    "LINEAR彗星"
+  ],
+  "166P/NEAT": [
+    ""
+  ],
+  "167P/CINEOS": [
+    ""
+  ],
+  "168P/Hergenrother": [
+    "ハーゲンローザー彗星"
+  ],
+  "169P/NEAT": [
+    ""
+  ],
+  "170P/Christensen": [
+    ""
+  ],
+  "171P/Spahr": [
+    ""
+  ],
+  "172P/Yeung": [
+    ""
+  ],
+  "173P/Mueller": [
+    ""
+  ],
+  "174P/Echeclus": [
+    "エケクルス"
+  ],
+  "176P/LINEAR": [
+    "LINEAR彗星"
+  ],
+  "177P/Barnard": [
+    "バーナード彗星"
+  ],
+  "178P/Hug-Bell": [
+    ""
+  ],
+  "185P/Petriew": [
+    ""
+  ],
+  "205P/Giacobini": [
+    "ジャコビニ彗星"
+  ],
+  "206P/Barnard-Boattini": [
+    "バーナード・ボアッティーニ彗星"
+  ],
+  "207P/NEAT": [
+    ""
+  ],
+  "209P/LINEAR": [
+    ""
+  ],
+  "210P/Christensen": [
+    ""
+  ],
+  "217P/LINEAR": [
+    ""
+  ],
+  "220P/McNaught": [
+    ""
+  ],
+  "226P/Pigott-LINEAR-Kowalski": [
+    ""
+  ],
+  "238P/Read": [
+    ""
+  ],
+  "240P/NEAT": [
+    ""
+  ],
+  "243P/NEAT": [
+    ""
+  ],
+  "246P/NEAT": [
+    ""
+  ],
+  "249P/LINEAR": [
+    ""
+  ],
+  "252P/LINEAR": [
+    ""
+  ],
+  "255P/Levy": [
+    ""
+  ],
+  "259P/Garradd": [
+    ""
+  ],
+  "260P/McNaught": [
+    ""
+  ],
+  "266P/Christensen": [
+    ""
+  ],
+  "271P/van Houten-Lemmon": [
+    ""
+  ],
+  "273P/Pons-Gambart": [
+    ""
+  ],
+  "276P/Vorobjov": [
+    "ヴォロビヨフ彗星"
+  ],
+  "289P/Blanpain": [
+    "ブランペイン彗星"
+  ],
+  "300P/Catalina": [
+    ""
+  ],
+  "308P/Lagerkvist-Carsenty": [
+    ""
+  ],
+  "311P/PANSTARRS": [
+    "パンスターズ彗星"
+  ],
+  "313P/Gibbs": [
+    ""
+  ],
+  "322P/SOHO": [
+    "SOHO彗星"
+  ],
+  "323P/SOHO": [
+    ""
+  ],
+  "324P/La Sagra": [
+    ""
+  ],
+  "325P/Yang-Gao": [
+    ""
+  ],
+  "331P/Gibbs": [
+    ""
+  ],
+  "332P/Ikeya-Murakami": [
+    "池谷・村上彗星"
+  ],
+  "333P/LINEAR": [
+    ""
+  ],
+  "335P/Gibbs": [
+    ""
+  ],
+  "354P/LINEAR": [
+    "LINEAR彗星"
+  ],
+  "373P/Rinner": [
+    ""
+  ],
+  "2I/Borisov": [
+    "ボリソフ彗星"
+  ],
+  "Metis": [
+    "メティス"
+  ]
+}

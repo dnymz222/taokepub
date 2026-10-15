@@ -10,7 +10,7 @@ from app.appconfig import appconfig
 import sys
 from app.banner import banner
 import urllib
-
+from urllib.parse import urlencode
 
 main = Blueprint('main', __name__)
 
@@ -162,4 +162,24 @@ def contact():
 
 
 
+
+
+
+@main.route("xingtu")
+def skymapindex():
+    LANGS = ("en", "zhs", "zht", "ja")
+    args = request.args
+    lat = args.get("lat", type=float)
+    lon = args.get("lon", type=float)
+    lang = args.get("lang", "zhs")
+    query = []
+    if lat is not None and lon is not None and \
+            -90 <= lat <= 90 and -180 <= lon <= 180:
+        query += [("lat", lat), ("lon", lon)]
+    if lang in LANGS:
+        query.append(("lang", lang))
+    url = "/skymap/apps/simple-html/stellarium-web-engine.html"
+    if query:
+        url += "?" + urlencode(query)
+    return redirect(url)
 

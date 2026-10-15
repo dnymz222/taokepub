@@ -1,0 +1,512 @@
+{
+  "Sun": [
+    "Sun"
+  ],
+  "Moon": [
+    "Moon"
+  ],
+  "Mercury": [
+    "Mercury"
+  ],
+  "Venus": [
+    "Venus"
+  ],
+  "Mars": [
+    "Mars"
+  ],
+  "Jupiter": [
+    "Jupiter"
+  ],
+  "Saturn": [
+    "Saturn"
+  ],
+  "Uranus": [
+    "Uranus"
+  ],
+  "Neptune": [
+    "Neptune"
+  ],
+  "Pluto": [
+    "Pluto"
+  ],
+  "Andromeda": [
+    "Andromeda"
+  ],
+  "Antlia": [
+    "Antlia"
+  ],
+  "Apus": [
+    "Apus"
+  ],
+  "Aquarius": [
+    "Aquarius"
+  ],
+  "Aquila": [
+    "Aquila"
+  ],
+  "Ara": [
+    "Ara"
+  ],
+  "Aries": [
+    "Aries"
+  ],
+  "Auriga": [
+    "Auriga"
+  ],
+  "Bootes": [
+    "Boötes"
+  ],
+  "Caelum": [
+    "Caelum"
+  ],
+  "Camelopardalis": [
+    "Camelopardalis"
+  ],
+  "Cancer": [
+    "Cancer"
+  ],
+  "Canes Venatici": [
+    "Canes Venatici"
+  ],
+  "Canis Major": [
+    "Canis Major"
+  ],
+  "Canis Minor": [
+    "Canis Minor"
+  ],
+  "Capricornus": [
+    "Capricornus"
+  ],
+  "Carina": [
+    "Carina"
+  ],
+  "Cassiopeia": [
+    "Cassiopeia"
+  ],
+  "Centaurus": [
+    "Centaurus"
+  ],
+  "Cepheus": [
+    "Cepheus"
+  ],
+  "Cetus": [
+    "Cetus"
+  ],
+  "Chamaeleon": [
+    "Chamaeleon"
+  ],
+  "Circinus": [
+    "Circinus"
+  ],
+  "Columba": [
+    "Columba"
+  ],
+  "Coma Berenices": [
+    "Coma Berenices"
+  ],
+  "Corona Australis": [
+    "Corona Australis"
+  ],
+  "Corona Borealis": [
+    "Corona Borealis"
+  ],
+  "Corvus": [
+    "Corvus"
+  ],
+  "Crater": [
+    "Crater"
+  ],
+  "Crux": [
+    "Crux"
+  ],
+  "Cygnus": [
+    "Cygnus"
+  ],
+  "Delphinus": [
+    "Delphinus"
+  ],
+  "Dorado": [
+    "Dorado"
+  ],
+  "Draco": [
+    "Draco"
+  ],
+  "Equuleus": [
+    "Equuleus"
+  ],
+  "Eridanus": [
+    "Eridanus"
+  ],
+  "Fornax": [
+    "Fornax"
+  ],
+  "Gemini": [
+    "Gemini"
+  ],
+  "Grus": [
+    "Grus"
+  ],
+  "Hercules": [
+    "Hercules"
+  ],
+  "Horologium": [
+    "Horologium"
+  ],
+  "Hydra": [
+    "Hydra"
+  ],
+  "Hydrus": [
+    "Hydrus"
+  ],
+  "Indus": [
+    "Indus"
+  ],
+  "Lacerta": [
+    "Lacerta"
+  ],
+  "Leo": [
+    "Leo"
+  ],
+  "Leo Minor": [
+    "Leo Minor"
+  ],
+  "Lepus": [
+    "Lepus"
+  ],
+  "Libra": [
+    "Libra"
+  ],
+  "Lupus": [
+    "Lupus"
+  ],
+  "Lynx": [
+    "Lynx"
+  ],
+  "Lyra": [
+    "Lyra"
+  ],
+  "Mensa": [
+    "Mensa"
+  ],
+  "Microscopium": [
+    "Microscopium"
+  ],
+  "Monoceros": [
+    "Monoceros"
+  ],
+  "Musca": [
+    "Musca"
+  ],
+  "Norma": [
+    "Norma"
+  ],
+  "Octans": [
+    "Octans"
+  ],
+  "Ophiuchus": [
+    "Ophiuchus"
+  ],
+  "Orion": [
+    "Orion"
+  ],
+  "Pavo": [
+    "Pavo"
+  ],
+  "Pegasus": [
+    "Pegasus"
+  ],
+  "Perseus": [
+    "Perseus"
+  ],
+  "Phoenix": [
+    "Phoenix"
+  ],
+  "Pictor": [
+    "Pictor"
+  ],
+  "Pisces": [
+    "Pisces"
+  ],
+  "Piscis Austrinus": [
+    "Piscis Austrinus"
+  ],
+  "Puppis": [
+    "Puppis"
+  ],
+  "Pyxis": [
+    "Pyxis"
+  ],
+  "Reticulum": [
+    "Reticulum"
+  ],
+  "Sagitta": [
+    "Sagitta"
+  ],
+  "Sagittarius": [
+    "Sagittarius"
+  ],
+  "Scorpius": [
+    "Scorpius"
+  ],
+  "Sculptor": [
+    "Sculptor"
+  ],
+  "Scutum": [
+    "Scutum"
+  ],
+  "Serpens": [
+    "Serpens"
+  ],
+  "Sextans": [
+    "Sextans"
+  ],
+  "Taurus": [
+    "Taurus"
+  ],
+  "Telescopium": [
+    "Telescopium"
+  ],
+  "Triangulum": [
+    "Triangulum"
+  ],
+  "Triangulum Australe": [
+    "Triangulum Australe"
+  ],
+  "Tucana": [
+    "Tucana"
+  ],
+  "Ursa Major": [
+    "Ursa Major"
+  ],
+  "Ursa Minor": [
+    "Ursa Minor"
+  ],
+  "Vela": [
+    "Vela"
+  ],
+  "Virgo": [
+    "Virgo"
+  ],
+  "Volans": [
+    "Volans"
+  ],
+  "Vulpecula": [
+    "Vulpecula"
+  ],
+  "Sirius": [
+    "Sirius"
+  ],
+  "Canopus": [
+    "Canopus"
+  ],
+  "Arcturus": [
+    "Arcturus"
+  ],
+  "Rigel Kentaurus": [
+    "Rigel Kentaurus",
+    "Alpha Centauri"
+  ],
+  "Vega": [
+    "Vega"
+  ],
+  "Capella": [
+    "Capella"
+  ],
+  "Rigel": [
+    "Rigel"
+  ],
+  "Procyon": [
+    "Procyon"
+  ],
+  "Betelgeuse": [
+    "Betelgeuse"
+  ],
+  "Achernar": [
+    "Achernar"
+  ],
+  "Hamal": [
+    "Hamal"
+  ],
+  "Altair": [
+    "Altair"
+  ],
+  "Aldebaran": [
+    "Aldebaran"
+  ],
+  "Antares": [
+    "Antares"
+  ],
+  "Spica": [
+    "Spica"
+  ],
+  "Pollux": [
+    "Pollux"
+  ],
+  "Fomalhaut": [
+    "Fomalhaut"
+  ],
+  "Deneb": [
+    "Deneb"
+  ],
+  "Mimosa": [
+    "Mimosa"
+  ],
+  "Regulus": [
+    "Regulus"
+  ],
+  "Adhara": [
+    "Adhara"
+  ],
+  "Castor": [
+    "Castor"
+  ],
+  "Shaula": [
+    "Shaula"
+  ],
+  "Bellatrix": [
+    "Bellatrix"
+  ],
+  "Elnath": [
+    "Elnath"
+  ],
+  "Miaplacidus": [
+    "Miaplacidus"
+  ],
+  "Alnilam": [
+    "Alnilam"
+  ],
+  "Alnitak": [
+    "Alnitak"
+  ],
+  "Wezen": [
+    "Wezen"
+  ],
+  "Avior": [
+    "Avior"
+  ],
+  "Dubhe": [
+    "Dubhe"
+  ],
+  "Mirfak": [
+    "Mirfak"
+  ],
+  "Alkaid": [
+    "Alkaid"
+  ],
+  "Sargas": [
+    "Sargas"
+  ],
+  "Menkalinan": [
+    "Menkalinan"
+  ],
+  "Atria": [
+    "Atria"
+  ],
+  "Alhena": [
+    "Alhena"
+  ],
+  "Peacock": [
+    "Peacock"
+  ],
+  "Mirzam": [
+    "Mirzam"
+  ],
+  "Alphard": [
+    "Alphard"
+  ],
+  "Polaris": [
+    "Polaris"
+  ],
+  "Diphda": [
+    "Diphda"
+  ],
+  "Rasalhague": [
+    "Rasalhague"
+  ],
+  "Kochab": [
+    "Kochab"
+  ],
+  "Saiph": [
+    "Saiph"
+  ],
+  "Denebola": [
+    "Denebola"
+  ],
+  "Algol": [
+    "Algol"
+  ],
+  "Mintaka": [
+    "Mintaka"
+  ],
+  "Almach": [
+    "Almach"
+  ],
+  "Menkar": [
+    "Menkar"
+  ],
+  "Atlas": [
+    "Atlas"
+  ],
+  "Schedar": [
+    "Schedar"
+  ],
+  "Caph": [
+    "Caph"
+  ],
+  "Alioth": [
+    "Alioth"
+  ],
+  "Merak": [
+    "Merak"
+  ],
+  "Phecda": [
+    "Phecda"
+  ],
+  "Izar": [
+    "Izar"
+  ],
+  "Alphecca": [
+    "Alphecca"
+  ],
+  "Algieba": [
+    "Algieba"
+  ],
+  "Markab": [
+    "Markab"
+  ],
+  "Scheat": [
+    "Scheat"
+  ],
+  "Enif": [
+    "Enif"
+  ],
+  "Andromeda Nebula": [
+    "Andromeda Nebula"
+  ],
+  "Great Orion Nebula": [
+    "Great Orion Nebula",
+    "Orion Nebula"
+  ],
+  "Pleiades": [
+    "Pleiades"
+  ],
+  "Beehive Cluster": [
+    "Beehive Cluster"
+  ],
+  "Ring Nebula": [
+    "Ring Nebula"
+  ],
+  "Dumbbell Nebula": [
+    "Dumbbell Nebula"
+  ],
+  "Whirlpool Galaxy": [
+    "Whirlpool Galaxy"
+  ],
+  "Sombrero Galaxy": [
+    "Sombrero Galaxy"
+  ],
+  "ω Cen Cluster": [
+    "ω Cen Cluster",
+    "Omega Centauri"
+  ]
+}
