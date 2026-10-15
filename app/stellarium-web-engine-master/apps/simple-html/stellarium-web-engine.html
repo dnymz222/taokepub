@@ -13,9 +13,9 @@
 <title>观星图</title>
 <meta charset="utf-8">
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+<link href="static/vendor/roboto.css" rel="stylesheet">
+<link href="static/vendor/mdi/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="static/vendor/vuetify.min.css" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
@@ -363,7 +363,7 @@
 
     <v-app-bar class="xsemi-transparent">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-<!--      <v-toolbar-title class="hidden-sm-and-down">观星图<sup>Web</sup></v-toolbar-title>-->
+      <v-toolbar-title class="hidden-sm-and-down">观星图<sup>Web</sup></v-toolbar-title>
       <v-menu v-model="searchMenu" :close-on-content-click="false"
               offset-y bottom left max-height="320">
         <template v-slot:activator="{ on }">
@@ -650,8 +650,8 @@
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script src="static/vendor/vue.js"></script>
+<script src="static/vendor/vuetify.js"></script>
 <script src="../../build/stellarium-web-engine.js"></script>
 
 <!-- Button component -->
