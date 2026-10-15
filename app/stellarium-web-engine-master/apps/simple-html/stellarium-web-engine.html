@@ -1363,6 +1363,9 @@
           STEL = stel;
           that.stelReady = true;
           that.simMjd = stel.core.observer.utc;
+          // The engine boots with time_speed 0; apply the selected preset
+          // (x1 by default) or the clock stays frozen on first load.
+          stel.core.time_speed = that.paused ? 0 : SPEEDS[that.speedIdx].v;
           var urlLoc = urlLocation();
           if (urlLoc) that.setLocation('', urlLoc.lon, urlLoc.lat);
           setInterval(function() {
