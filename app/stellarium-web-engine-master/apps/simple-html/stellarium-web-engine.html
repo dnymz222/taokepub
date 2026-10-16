@@ -28,6 +28,29 @@
   .w-100 {width: 100%;}
   .h-100 {height: 100%;}
 
+  /* iOS Safari resolves 100vh (used by Vuetify's .v-application--wrap
+     min-height) to the toolbar-collapsed viewport, so the document ends up
+     one toolbar row taller than the visible area: the whole page — including
+     the in-flow app bar — becomes scrollable, and the engine's touch mapping
+     (pageX minus the canvas rect) goes off by that scroll offset. Lock the
+     document to the real viewport so nothing can scroll. */
+  html, body {
+    height: 100%;
+    /* iOS resolves the percentage against the toolbar-collapsed viewport;
+       dvh is the currently visible one. */
+    height: 100dvh;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+  .v-application,
+  .v-application--wrap {
+    height: 100%;
+    min-height: 0;
+  }
+  /* #app stays in the DOM as the mount container, so it must carry the
+     definite height down to .v-application as well. */
+  #app { height: 100%; }
+
   .radecVal {
     display: inline-block;
     font-family: monospace;
@@ -211,13 +234,14 @@
     top: 64px;
     width: 430px;
     max-height: calc(100vh - 160px);
+    max-height: calc(100dvh - 160px);
     overflow-y: auto;
   }
   /* Dark but see-through so the sky behind the card shows; the blur keeps
      light text readable over bright star fields. The extra class specificity
      is needed to beat Vuetify's opaque .theme--dark.v-sheet background. */
   .v-card.sel-card.theme--dark {
-    background: rgba(20, 20, 20, 0.5);
+    background: rgba(15, 20, 26, 0.7);
 
   }
   /* On phones keep blank sky around the card so a tap outside closes it.
@@ -231,6 +255,8 @@
       width: 80%;
       max-height: calc(100vh - var(--chrome-top, 56px)
                              - var(--chrome-bottom, 92px) - 30px);
+      max-height: calc(100dvh - var(--chrome-top, 56px)
+                              - var(--chrome-bottom, 92px) - 30px);
     }
   }
   .fov-readout {
@@ -338,9 +364,13 @@
   #nightmode {
     background: #ff2200;
     pointer-events: none;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
+    /* fixed inset instead of 100vh/100vw: iOS vh includes the area behind the
+       browser toolbar. */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 1000;
     mix-blend-mode: multiply;
     visibility: hidden;
