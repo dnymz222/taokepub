@@ -1,0 +1,368 @@
+/* Mountain peak viewer additions, layered on top of style.css. */
+
+.masthead a {
+  pointer-events: auto;
+}
+
+.crumb {
+  margin-left: 10px;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  border-bottom: 1px dotted rgba(158, 205, 220, 0.28);
+  transition: color 0.16s ease, border-color 0.16s ease;
+}
+
+.crumb:hover {
+  color: var(--accent);
+  border-color: rgba(111, 227, 200, 0.5);
+}
+
+.peak-link {
+  display: inline-flex;
+  margin-top: 9px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.16s ease;
+}
+
+.peak-link:hover { color: var(--accent); }
+
+/* ------------------------------------------------------------------ */
+/* Summit marker                                                       */
+/* ------------------------------------------------------------------ */
+
+.peak-marker {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4px;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  will-change: transform;
+}
+
+.peak-marker.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.peak-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 12px 7px;
+  border: 1px solid rgba(111, 227, 200, 0.32);
+  border-radius: 10px;
+  background: rgba(6, 16, 20, 0.76);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.42), 0 0 24px rgba(111, 227, 200, 0.07);
+  white-space: nowrap;
+}
+
+.peak-kicker {
+  font-family: var(--mono);
+  font-size: 7.5px;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+}
+
+.peak-card strong {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: rgba(235, 248, 249, 0.95);
+}
+
+.peak-alt {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.peak-stem {
+  width: 1px;
+  height: 26px;
+  background: linear-gradient(to bottom, rgba(111, 227, 200, 0.65), rgba(111, 227, 200, 0.12));
+}
+
+.peak-ring {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background: rgba(111, 227, 200, 0.18);
+  box-shadow: 0 0 0 4px rgba(111, 227, 200, 0.1), 0 0 20px rgba(111, 227, 200, 0.4);
+  margin-bottom: 5px;
+}
+
+.peak-ring::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 1px solid rgba(111, 227, 200, 0.32);
+  border-radius: 50%;
+  animation: peak-pulse 2.6s ease-out infinite;
+}
+
+@keyframes peak-pulse {
+  0% { transform: scale(0.55); opacity: 0.9; }
+  70% { transform: scale(1.35); opacity: 0; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+/* ------------------------------------------------------------------ */
+/* Fatal extras                                                        */
+/* ------------------------------------------------------------------ */
+
+.fatal-code {
+  margin: 10px 0 4px;
+  padding: 10px 12px;
+  border: 1px solid rgba(158, 205, 220, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.6;
+  color: rgba(225, 240, 243, 0.78);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.fatal-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.fatal-link:hover { text-decoration: underline; }
+
+/* ------------------------------------------------------------------ */
+/* Mountain catalog                                                    */
+/* ------------------------------------------------------------------ */
+
+body.catalog-body {
+  overflow: auto;
+  min-height: 100%;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(32, 62, 74, 0.55), transparent 55%),
+    #050a0e;
+}
+
+.catalog {
+  width: min(1020px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 54px 0 90px;
+}
+
+.catalog-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 54px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  color: var(--faint);
+}
+
+.catalog-top a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(158, 205, 220, 0.3);
+}
+
+.catalog-top a:hover { color: var(--accent); }
+
+.catalog-head .eyebrow { margin-bottom: 12px; }
+
+.catalog-head h1 {
+  margin: 0;
+  font-size: clamp(30px, 4.5vw, 48px);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.catalog-head p {
+  max-width: 620px;
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.catalog-search {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.catalog-search input {
+  width: min(380px, 100%);
+  height: 38px;
+  padding: 0 13px;
+  border: 1px solid var(--stroke-strong);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 11px;
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.catalog-search input::placeholder { color: var(--faint); }
+
+.catalog-search input:focus {
+  border-color: rgba(111, 227, 200, 0.5);
+  box-shadow: 0 0 0 3px rgba(111, 227, 200, 0.1);
+}
+
+.catalog-count {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+  white-space: nowrap;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.mountain-card[hidden] { display: none; }
+
+.mountain-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 150px;
+  padding: 20px;
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  background: linear-gradient(150deg, rgba(18, 38, 45, 0.7), rgba(7, 15, 20, 0.75));
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mountain-card::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: -60px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(111, 227, 200, 0.13), transparent 65%);
+  pointer-events: none;
+}
+
+.mountain-card:hover {
+  border-color: rgba(111, 227, 200, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.mountain-card .card-id {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+}
+
+.mountain-card strong {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.mountain-card .card-meta {
+  margin-top: auto;
+  font-family: var(--mono);
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.mountain-card .card-arrow {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  font-size: 13px;
+  color: var(--faint);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.mountain-card:hover .card-arrow {
+  transform: translate(2px, -2px);
+  color: var(--accent);
+}
+
+.catalog-empty {
+  margin-top: 34px;
+  padding: 28px;
+  border: 1px dashed rgba(158, 205, 220, 0.18);
+  border-radius: 16px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.catalog-howto {
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(158, 205, 220, 0.1);
+}
+
+.catalog-howto h2 {
+  margin: 0 0 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--faint);
+}
+
+.catalog-howto code {
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid rgba(158, 205, 220, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.7;
+  color: rgba(225, 240, 243, 0.78);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .crumb { margin-left: 0; display: block; margin-top: 7px; width: fit-content; }
+  .peak-marker { transform-origin: center bottom; }
+  .peak-card strong { font-size: 11.5px; }
+  .peak-card { padding: 6px 10px; }
+  .peak-stem { height: 18px; }
+  .catalog { width: calc(100% - 32px); padding-top: 32px; }
+  .catalog-top { margin-bottom: 36px; }
+}

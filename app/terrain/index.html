@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050a0e">
+  <title>N30E120 · WebGL 三维地形</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="scene" aria-label="三维地形视图"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <div class="eyebrow"><span class="pulse"></span>WEBGL 2 · DIGITAL ELEVATION MODEL</div>
+    <h1 id="tile-title">N30E120</h1>
+    <p class="subtitle" id="tile-sub">30°00′N · 120°00′E</p>
+    <dl class="facts">
+      <div><dt>高程</dt><dd id="fact-elev">—</dd></div>
+      <div><dt>采样</dt><dd id="fact-size">—</dd></div>
+      <div><dt>覆盖</dt><dd id="fact-extent">—</dd></div>
+    </dl>
+  </header>
+
+  <button class="panel-toggle" id="panel-toggle" aria-label="打开控制面板" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <aside class="panel" id="panel">
+    <div class="panel-head">
+      <h2>场景控制</h2>
+      <button class="panel-close" id="panel-close" aria-label="关闭控制面板">×</button>
+    </div>
+    <div class="panel-body">
+      <section>
+        <div class="field">
+          <label for="tile-select">地形瓦片</label>
+          <select id="tile-select"></select>
+        </div>
+        <div class="field">
+          <div class="field-head"><span>网格精度</span><span class="mono" id="lod-out">513 × 513</span></div>
+          <div class="segmented" id="lod-group" role="group" aria-label="网格精度">
+            <button type="button" data-lod="256">256</button>
+            <button type="button" data-lod="512" class="active">512</button>
+            <button type="button" data-lod="1024">1024</button>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-head"><label for="exag">垂直夸张</label><output class="mono" id="exag-out">× 12.0</output></div>
+          <input type="range" id="exag" min="1" max="24" step="0.5" value="12">
+        </div>
+      </section>
+
+      <section>
+        <h3>光照</h3>
+        <div class="field">
+          <div class="field-head"><label for="sun-az">太阳方位</label><output class="mono" id="sun-az-out">240°</output></div>
+          <input type="range" id="sun-az" min="0" max="360" step="1" value="240">
+        </div>
+        <div class="field">
+          <div class="field-head"><label for="sun-alt">太阳高度</label><output class="mono" id="sun-alt-out">32°</output></div>
+          <input type="range" id="sun-alt" min="5" max="85" step="1" value="32">
+        </div>
+      </section>
+
+      <section>
+        <h3>显示</h3>
+        <label class="switch-row"><span>水域</span><input type="checkbox" id="toggle-water" checked><i class="switch"></i></label>
+        <label class="switch-row"><span>地形阴影</span><input type="checkbox" id="toggle-shadows" checked><i class="switch"></i></label>
+        <label class="switch-row"><span>等高线</span><input type="checkbox" id="toggle-contours"><i class="switch"></i></label>
+        <div class="field inline" id="contour-field">
+          <label for="contour-step">等高距</label>
+          <select id="contour-step" disabled>
+            <option value="25">25 m</option>
+            <option value="50">50 m</option>
+            <option value="100" selected>100 m</option>
+          </select>
+        </div>
+        <label class="switch-row"><span>网格线框</span><input type="checkbox" id="toggle-wire"><i class="switch"></i></label>
+        <label class="switch-row"><span>自动旋转</span><input type="checkbox" id="toggle-rotate"><i class="switch"></i></label>
+        <button class="reset" id="reset" type="button">复位视角 <kbd>R</kbd></button>
+      </section>
+
+      <div class="stats">
+        <span><i id="fps">—</i> FPS</span>
+        <span><i id="triangles">—</i> 三角面</span>
+      </div>
+    </div>
+  </aside>
+
+  <div class="compass" id="compass" role="button" tabindex="0"
+       aria-label="点击恢复上北下南" title="恢复上北下南">
+    <div class="compass-dial" id="compass-dial" aria-hidden="true">
+      <span class="c n">N</span><span class="c e">E</span><span class="c s">S</span><span class="c w">W</span>
+      <span class="tick tick-n"></span><span class="tick tick-e"></span>
+      <span class="tick tick-s"></span><span class="tick tick-w"></span>
+      <span class="needle"></span>
+    </div>
+  </div>
+
+  <div class="legend" aria-hidden="true">
+    <div class="legend-bar"></div>
+    <div class="legend-labels">
+      <span id="legend-min">—</span>
+      <span class="legend-title">高程</span>
+      <span id="legend-max">—</span>
+    </div>
+  </div>
+
+  <div class="readout" id="readout">
+    <div class="readout-main">
+      <span class="readout-label">光标</span>
+      <strong id="readout-coord">移动光标读取地形</strong>
+    </div>
+    <div class="readout-sub" id="readout-elev">经度 · 纬度 · 海拔</div>
+  </div>
+
+  <div class="hint">拖拽旋转 · 滚轮缩放 · Shift + 拖拽平移 · 双击复位</div>
+
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-kicker">LOADING TERRAIN</div>
+      <div class="loader-title" id="loader-title">N30E120</div>
+      <div class="loader-bar"><i id="loader-progress"></i></div>
+      <div class="loader-status" id="loader-status">正在读取高程数据…</div>
+    </div>
+  </div>
+
+  <div class="fatal" id="fatal" hidden>
+    <div class="fatal-inner">
+      <div class="kicker">RENDERER OFFLINE</div>
+      <h2>无法启动三维地形</h2>
+      <p id="fatal-message"></p>
+      <p class="fatal-hint">请使用支持 WebGL 2 的浏览器，并通过本地 HTTP 服务打开页面，例如：<code>python3 -m http.server 8000</code></p>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
