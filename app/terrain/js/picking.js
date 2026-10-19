@@ -45,8 +45,10 @@ function unproject(inv, x, y, z) {
 /**
  * March a view ray against the DEM and return the first surface hit.
  * `ndc` values are in [-1, 1] with +y up.
+ * `eye` is the camera position in scene space (Y already exaggerated); when
+ * provided, `distance` is the real-world distance from the eye to the hit.
  */
-export function pickTerrain(vp, ndcX, ndcY, terrain, exag) {
+export function pickTerrain(vp, ndcX, ndcY, terrain, exag, eye = null) {
   if (!terrain) return null;
   const inv = mat4Invert(mat4Create(), vp);
   if (!inv) return null;
@@ -109,12 +111,17 @@ export function pickTerrain(vp, ndcX, ndcY, terrain, exag) {
   if (!s) return null;
   const lon = meta.bounds.west + s.u * (meta.bounds.east - meta.bounds.west);
   const lat = meta.bounds.north - s.v * (meta.bounds.north - meta.bounds.south);
+  // Measure from the actual eye, not the near plane, and undo the vertical
+  // exaggeration so the readout is a real-world distance.
+  const distance = eye
+    ? Math.hypot(eye[0] - s.x, eye[1] / exag - s.h, eye[2] - s.z)
+    : hitT;
   return {
     lon,
     lat,
     elevation: s.h,
     world: [s.x, s.h * exag, s.z],
-    distance: hitT,
+    distance,
     u: s.u,
     v: s.v,
   };

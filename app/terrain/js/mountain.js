@@ -527,7 +527,7 @@ function pickCursor(now) {
   lastPick = now;
   const aspect = canvas.width / Math.max(1, canvas.height);
   const vp = camera.getViewProj(aspect);
-  updateReadout(pickTerrain(vp, pointerNdc[0], pointerNdc[1], terrain, state.exag));
+  updateReadout(pickTerrain(vp, pointerNdc[0], pointerNdc[1], terrain, state.exag, camera.getEye()));
 }
 
 function updateMarker() {
