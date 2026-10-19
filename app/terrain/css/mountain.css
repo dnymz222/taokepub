@@ -32,6 +32,42 @@
 .peak-link:hover { color: var(--accent); }
 
 /* ------------------------------------------------------------------ */
+/* Touch probe                                                          */
+/* ------------------------------------------------------------------ */
+
+.probe {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(111, 227, 200, 0.08);
+  box-shadow: 0 0 0 5px rgba(111, 227, 200, 0.1), 0 0 18px rgba(111, 227, 200, 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+.probe.visible { opacity: 1; }
+
+.probe::before,
+.probe::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: var(--accent);
+  transform: translate(-50%, -50%);
+}
+
+.probe::before { width: 1px; height: 24px; }
+.probe::after { width: 24px; height: 1px; }
+
+/* ------------------------------------------------------------------ */
 /* Summit marker                                                       */
 /* ------------------------------------------------------------------ */
 

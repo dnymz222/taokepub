@@ -6,6 +6,8 @@ import { transformPoint } from './mat4.js';
 
 const DEG = Math.PI / 180;
 const PEAK_SNAP_PX = 14;
+const TOUCH_FIRST = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+const READ_HINT = TOUCH_FIRST ? '轻触地形读取' : '移动光标读取地形';
 const $ = (id) => document.getElementById(id);
 
 const canvas = $('scene');
@@ -38,10 +40,12 @@ const els = {
   legendMax: $('legend-max'),
   readoutCoord: $('readout-coord'),
   readoutElev: $('readout-elev'),
+  readoutLabel: $('readout-label'),
   marker: $('peak-marker'),
   markerId: $('marker-id'),
   markerName: $('marker-name'),
   markerAlt: $('marker-alt'),
+  probe: $('probe'),
   loader: $('loader'),
   loaderTitle: $('loader-title'),
   loaderProgress: $('loader-progress'),
@@ -88,6 +92,9 @@ let pinch = null;
 let pointerNdc = null;
 let pointerInside = false;
 let lastPick = 0;
+let tapStart = null;
+let probeTimer = 0;
+let lastPointerType = 'mouse';
 
 let fpsFrames = 0;
 let fpsLast = performance.now();
@@ -307,6 +314,11 @@ function setToggle(input, value) {
 }
 
 function setupUI() {
+  if (TOUCH_FIRST) {
+    els.readoutLabel.textContent = '触点';
+    const hint = document.querySelector('.hint');
+    if (hint) hint.textContent = '单指旋转 · 双指缩放/平移 · 轻触读取 · 面板可复位';
+  }
   els.exag.value = String(state.exag);
   els.exagOut.textContent = `× ${state.exag.toFixed(1)}`;
   els.sunAz.value = String(state.sunAzimuth);
@@ -427,6 +439,7 @@ function setupInput() {
   canvas.addEventListener('contextmenu', (event) => event.preventDefault());
 
   canvas.addEventListener('pointerdown', (event) => {
+    lastPointerType = event.pointerType || 'mouse';
     canvas.setPointerCapture(event.pointerId);
     pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
     canvas.classList.add('dragging');
@@ -438,10 +451,18 @@ function setupInput() {
     }
 
     if (pointers.size === 1) {
+      tapStart = {
+        id: event.pointerId,
+        x: event.clientX,
+        y: event.clientY,
+        moved: false,
+      };
       dragMode = (event.button === 2 || event.button === 1 || event.shiftKey)
         ? 'pan' : 'rotate';
       pinch = null;
     } else if (pointers.size === 2) {
+      tapStart = null;
+      clearReadout();
       const [a, b] = [...pointers.values()];
       dragMode = 'pinch';
       pinch = {
@@ -453,6 +474,12 @@ function setupInput() {
 
   canvas.addEventListener('pointermove', (event) => {
     updatePointerNdc(event);
+    if (tapStart && tapStart.id === event.pointerId && !tapStart.moved) {
+      if (Math.hypot(event.clientX - tapStart.x, event.clientY - tapStart.y) > 8) {
+        tapStart.moved = true;
+        clearReadout();
+      }
+    }
     const previous = pointers.get(event.pointerId);
     if (!previous) return;
     const dx = event.clientX - previous.x;
@@ -477,6 +504,10 @@ function setupInput() {
   });
 
   const release = (event) => {
+    const isTap = event.type === 'pointerup'
+      && tapStart
+      && tapStart.id === event.pointerId
+      && !tapStart.moved;
     pointers.delete(event.pointerId);
     if (pointers.size < 2) pinch = null;
     if (pointers.size === 0) {
@@ -485,6 +516,8 @@ function setupInput() {
     } else if (pointers.size === 1) {
       dragMode = 'rotate';
     }
+    if (isTap) probeAt(event);
+    tapStart = null;
   };
 
   canvas.addEventListener('pointerup', release);
@@ -499,7 +532,11 @@ function setupInput() {
     camera.zoom(Math.exp(delta * 0.0012));
   }, { passive: false });
 
-  canvas.addEventListener('dblclick', () => defaultView(false));
+  canvas.addEventListener('dblclick', () => {
+    if (lastPointerType !== 'mouse') return;
+    clearReadout();
+    defaultView(false);
+  });
 
   canvas.addEventListener('webglcontextlost', (event) => {
     event.preventDefault();
@@ -512,8 +549,9 @@ function setupInput() {
 /* ------------------------------------------------------------------ */
 
 function clearReadout() {
-  els.readoutCoord.textContent = '移动光标读取地形';
+  els.readoutCoord.textContent = READ_HINT;
   els.readoutElev.textContent = '经度 · 纬度 · 海拔';
+  els.probe.classList.remove('visible');
 }
 
 function updateReadout(hit) {
@@ -537,10 +575,8 @@ function nearPeak(vp) {
   return Math.hypot(dx, dy) <= PEAK_SNAP_PX;
 }
 
-function pickCursor(now) {
-  if (!pointerInside || !pointerNdc || !terrain || dragMode) return;
-  if (now - lastPick < 55) return;
-  lastPick = now;
+function readAtPointer() {
+  if (!pointerNdc || !terrain) return;
   const aspect = canvas.width / Math.max(1, canvas.height);
   const vp = camera.getViewProj(aspect);
   // At this scale the summit is almost tangent to the view ray, so the ray
@@ -556,6 +592,32 @@ function pickCursor(now) {
     return;
   }
   updateReadout(pickTerrain(vp, pointerNdc[0], pointerNdc[1], terrain, state.exag));
+}
+
+function showProbe(x, y) {
+  els.probe.style.left = `${x}px`;
+  els.probe.style.top = `${y}px`;
+  els.probe.classList.add('visible');
+  clearTimeout(probeTimer);
+  probeTimer = setTimeout(() => els.probe.classList.remove('visible'), 1800);
+}
+
+function probeAt(event) {
+  updatePointerNdc(event);
+  pointerInside = true;
+  readAtPointer();
+  if (event.pointerType !== 'mouse') {
+    // Touch has no hover: keep the tapped reading until the next interaction.
+    pointerInside = false;
+    showProbe(event.clientX, event.clientY);
+  }
+}
+
+function pickCursor(now) {
+  if (!pointerInside || !pointerNdc || !terrain || dragMode) return;
+  if (now - lastPick < 55) return;
+  lastPick = now;
+  readAtPointer();
 }
 
 function updateMarker() {
