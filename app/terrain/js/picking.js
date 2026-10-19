@@ -111,8 +111,11 @@ export function pickTerrain(vp, ndcX, ndcY, terrain, exag, eye = null) {
   if (!s) return null;
   const lon = meta.bounds.west + s.u * (meta.bounds.east - meta.bounds.west);
   const lat = meta.bounds.north - s.v * (meta.bounds.north - meta.bounds.south);
-  // Measure from the actual eye, not the near plane, and undo the vertical
-  // exaggeration so the readout is a real-world distance.
+  // The summit sits at the centre of the crop; x/z are already in metres.
+  const peakElevation = Number(meta.peakElevation ?? meta.peak?.elevation) || 0;
+  const peakDistance = Math.hypot(s.x, s.z, s.h - peakElevation);
+  // Generic readout distance: from the eye (not the near plane), with the
+  // vertical exaggeration undone.
   const distance = eye
     ? Math.hypot(eye[0] - s.x, eye[1] / exag - s.h, eye[2] - s.z)
     : hitT;
@@ -122,6 +125,7 @@ export function pickTerrain(vp, ndcX, ndcY, terrain, exag, eye = null) {
     elevation: s.h,
     world: [s.x, s.h * exag, s.z],
     distance,
+    peakDistance,
     u: s.u,
     v: s.v,
   };

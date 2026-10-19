@@ -5,6 +5,7 @@ import { pickTerrain } from './picking.js';
 import { transformPoint } from './mat4.js';
 
 const DEG = Math.PI / 180;
+const PEAK_SNAP_PX = 14;
 const $ = (id) => document.getElementById(id);
 
 const canvas = $('scene');
@@ -119,6 +120,12 @@ function formatDms(value, axis) {
 
 function meters(value) {
   return `${Math.round(value).toLocaleString('en-US')} m`;
+}
+
+function formatDistance(value) {
+  return value < 1000
+    ? `${Math.round(value)} m`
+    : `${(value / 1000).toFixed(1)} km`;
 }
 
 /* ------------------------------------------------------------------ */
@@ -518,7 +525,16 @@ function updateReadout(hit) {
   els.readoutCoord.textContent = `${formatLon(hit.lon)} · ${formatLat(hit.lat)}`;
   const elevation = Math.round(hit.elevation);
   els.readoutElev.textContent =
-    `海拔 ${elevation > 0 ? '+' : ''}${elevation} m · 距视点 ${(hit.distance / 1000).toFixed(1)} km`;
+    `海拔 ${elevation > 0 ? '+' : ''}${elevation} m · 距山顶 ${formatDistance(hit.peakDistance)}`;
+}
+
+function nearPeak(vp) {
+  if (!meta || !pointerNdc) return false;
+  const clip = transformPoint(vp, 0, peakWorldY, 0);
+  if (clip[3] <= 0) return false;
+  const dx = (pointerNdc[0] - clip[0] / clip[3]) * canvas.clientWidth / 2;
+  const dy = (pointerNdc[1] - clip[1] / clip[3]) * canvas.clientHeight / 2;
+  return Math.hypot(dx, dy) <= PEAK_SNAP_PX;
 }
 
 function pickCursor(now) {
@@ -527,7 +543,19 @@ function pickCursor(now) {
   lastPick = now;
   const aspect = canvas.width / Math.max(1, canvas.height);
   const vp = camera.getViewProj(aspect);
-  updateReadout(pickTerrain(vp, pointerNdc[0], pointerNdc[1], terrain, state.exag, camera.getEye()));
+  // At this scale the summit is almost tangent to the view ray, so the ray
+  // can slip past it and hit the slope behind. Snap the marker area to the
+  // summit so hovering the marker reads 0 m instead of a few kilometres.
+  if (nearPeak(vp)) {
+    updateReadout({
+      lon: meta.center[0],
+      lat: meta.center[1],
+      elevation: peakElevation,
+      peakDistance: 0,
+    });
+    return;
+  }
+  updateReadout(pickTerrain(vp, pointerNdc[0], pointerNdc[1], terrain, state.exag));
 }
 
 function updateMarker() {

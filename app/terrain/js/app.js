@@ -109,6 +109,12 @@ function metersLabel(value) {
   return `${rounded < 0 ? MINUS : ''}${Math.abs(rounded)} m`;
 }
 
+function formatDistance(value) {
+  return value < 1000
+    ? `${Math.round(value)} m`
+    : `${(value / 1000).toFixed(1)} km`;
+}
+
 /* ------------------------------------------------------------------ */
 /* Fatal / loader                                                      */
 /* ------------------------------------------------------------------ */
@@ -478,7 +484,7 @@ function updateReadout(hit) {
   const elevation = Math.round(hit.elevation);
   const sign = elevation > 0 ? '+' : '';
   els.readoutElev.textContent =
-    `海拔 ${sign}${elevation} m · 距视点 ${(hit.distance / 1000).toFixed(1)} km`;
+    `海拔 ${sign}${elevation} m · 距视点 ${formatDistance(hit.distance)}`;
 }
 
 function pickCursor(now) {
