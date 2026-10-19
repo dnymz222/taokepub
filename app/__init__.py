@@ -84,6 +84,9 @@ def create_app(config_name):
     app.register_blueprint(h5_blueprint,url_prefix='/h5')
 
 
+    from .terrain import terrain as terrain_blueprint
+
+    app.register_blueprint(terrain_blueprint, url_prefix='/terrain')
 
     from .solunar import solunar as solunar_blueprint
     app.register_blueprint(solunar_blueprint,url_prefix = "/api/v3.0/solunar")
