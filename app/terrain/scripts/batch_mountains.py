@@ -18,12 +18,12 @@ Usage (from the project root):
 
     python3 scripts/batch_mountains.py \
         --json /path/to/mountainlist_china02.json \
-        --size 513
+        --size 1025
 
     # resume an interrupted run
     python3 scripts/batch_mountains.py \
         --json /path/to/mountainlist_china02.json \
-        --size 513 --skip-existing
+        --size 1025 --skip-existing
 
 The source tiles are cached in a small LRU (default 6 tiles ≈ 400 MB) and
 peaks are processed in spatial order so neighbouring peaks reuse tiles.
@@ -125,8 +125,8 @@ def main() -> int:
     parser.add_argument(
         "--size",
         type=int,
-        default=513,
-        help="输出采样数（奇数）。513 ≈ 0.5 MB/峰；1025 ≈ 2.1 MB/峰",
+        default=1025,
+        help="输出采样数（奇数）。1025 ≈ 2.0 MB/峰；513 ≈ 0.5 MB/峰",
     )
     parser.add_argument("--smooth", type=int, default=2, help="平滑次数，默认 2")
     parser.add_argument("--tile-cache", type=int, default=6, help="缓存源瓦片数，默认 6")

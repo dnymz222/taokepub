@@ -5,7 +5,7 @@
 - **瓦片地形**：`/`，以 `tif/N30E120.tif` 为例，展示完整 1° 瓦片。
 - **山峰地形**：`/mountain/terrain/<ID>`，以给定经纬度为中心裁剪 10 km 半径的三维地形块。
   例：太子尖 `C327` → **`/mountain/terrain/C327`**。
-- **批量山峰**：读取 `mountainlist_china02.json` 中全部 **1322** 座山峰，一次生成 664 MB 地形资产。
+- **批量山峰**：读取 `mountainlist_china02.json` 中全部 **1322** 座山峰，一次生成约 2.6 GB（1025 × 1025）地形资产。
 
 ![山峰地形预览](docs/preview-mountain.png)
 
@@ -43,7 +43,7 @@ python3 scripts/make_mountain.py \
   --lon 118.89967 \
   --lat 30.17559 \
   --radius 10 \
-  --size 513
+  --size 1025
 ```
 
 参数：
@@ -63,7 +63,7 @@ python3 scripts/make_mountain.py \
 
 ```
 data/mountains/C327/
-├── heightmap.f16   # 513 × 513 float16，行序从北到南（约 0.5 MB）
+├── heightmap.f16   # 1025 × 1025 float16，行序从北到南（约 2.0 MB）
 └── meta.json       # 中心点、边界、峰值、最高点、源瓦片、生成时间…
 data/mountains/catalog.json   # 自动更新，仅供数据维护（页面不再读取）
 ```
@@ -79,15 +79,15 @@ data/mountains/catalog.json   # 自动更新，仅供数据维护（页面不再
 
 ### 批量生成 JSON 中的所有山峰
 
-仓库已按 `mountainlist_china02.json` 生成全部 **1322** 座山峰（470 块 1° 瓦片，约 **664 MB**）：
+仓库已按 `mountainlist_china02.json` 生成全部 **1322** 座山峰（470 块 1° 瓦片，约 **2.6 GB**）：
 
 ```bash
 python3 scripts/batch_mountains.py \
   --json /Users/xueping/Workspace/wenduji_16/app/src/main/assets/mountainlist_china02.json \
-  --size 513
+  --size 1025
 ```
 
-- 默认 `--size 513`：约 0.5 MB/峰；`--size 1025`：约 2.1 MB/峰（总约 2.8 GB）；
+- 默认 `--size 1025`：约 2.0 MB/峰（总计约 2.6 GB）；低精度可用 `--size 513`（约 0.5 MB/峰，总计约 664 MB）；
   若要打进 Android assets，可用 `--size 257`（约 170 MB）。
 - 源瓦片使用小型 LRU 缓存，峰值按空间顺序处理；1322 座在本机约 2 分钟。
 - `--skip-existing` 可断点续跑；`--limit N` 只跑前 N 座；`--dry-run` 只检查瓦片覆盖。
@@ -213,5 +213,6 @@ tif/                       原始 GeoTIFF 瓦片（未改动）
 默认 512 网格 + 28 步地形阴影：
 
 - 集成显卡或高分屏掉帧时，可切换到 256 网格、关闭阴影/等高线；
-- 单座山峰资产约 0.5 MB（513²），加载和上传比整块 1° 瓦片轻很多；全部 1322 座约 664 MB；
+- 单座山峰资产约 2.0 MB（1025²），全部 1322 座约 2.6 GB；如需更小体积可生成 513²（约 0.5 MB/峰，总计约 664 MB）；
+- 默认 512 网格只影响几何网格；高程纹理仍按 1025² 采样，阴影、等高线、光标拾取都会受益。切到 1024 网格会生成约 210 万三角面，桌面 GPU 可用，移动端建议保持 512；
 - 无头 Chrome 的 SwiftShader 软件渲染截图只有 1–3 fps，这是软件光栅化限制，不代表真实 GPU 表现。
