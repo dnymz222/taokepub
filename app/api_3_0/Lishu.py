@@ -608,19 +608,31 @@ def workingdaygyearconfigtotalinfo(year):
                 print (wcobject.default_configuration)
 
                 for config in list:
-                    if wcobject.default_configuration == config:
-                        pass
+
+                    print (config)
+
+                    try:
+                        workingdaygconfigyearinfo(year, code, config)
+                    except Exception as e:
+                        print(e)
 
 
-                    else:
-                        count = db.session.query(WorkingDaysModel).filter_by(year=year, code=wcobject.code,configuration=config).count()
-                        if count < 30:
-                            workingdaygconfigyearinfo(year, code, config)
-                            print(code)
-                            print("less")
-                        else:
-                            if count < 365:
-                                workingdaygconfigcheckyearinfo(year, code, config)
+                    # if wcobject.default_configuration == config:
+                    #     workingdaygconfigcheckyearinfo(year, code, config)
+                    #
+                    #
+                    # else:
+                    #
+                    #     # pass
+                    #
+                    #     count = db.session.query(WorkingDaysModel).filter_by(year=year, code=wcobject.code,configuration=config).count()
+                    #     if count < 30:
+                    #         workingdaygconfigyearinfo(year, code, config)
+                    #         print(code)
+                    #         print("less")
+                    #     else:
+                    #         if count < 365:
+                    #             workingdaygconfigcheckyearinfo(year, code, config)
 
                         # if has_ls:
                         #     print(config)
@@ -772,7 +784,7 @@ def workingdaygconfigyearinfo(year,code,config):
     for i in  range(0,365):
         date = dayTime.strftime('%Y-%m-%d')
 
-        if date == "2027-01-01":
+        if date == "2028-01-01":
             return "done"
 
         print (date + "_" + code + "_" + config)
@@ -837,7 +849,7 @@ def workingdaygconfigcheckyearinfo(year,code,config):
     for i in  range(0,365):
         date = dayTime.strftime('%Y-%m-%d')
 
-        if date == "2027-01-01":
+        if date == "2028-01-01":
             return "done"
 
 

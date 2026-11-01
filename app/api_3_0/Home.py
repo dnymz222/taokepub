@@ -35,7 +35,7 @@ def soluanrconfig():
 
     appversion = request.args.get("appVersion", "5.0")
 
-    outtime = datetime.datetime(2026, 1, 12, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 11, 2, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -43,14 +43,12 @@ def soluanrconfig():
         dict["isOpen"] = True
     else:
         dict["isOpen"] = False
-    if appversion == "7.5":
 
-        dict["isOpen"] = False
 
-    dict["homeText"] = "双十一特惠终身会员原98元现28元"
-    dict["amount"] = "28.00"
+    dict["homeText"] = "双十一特惠终身会员原98元现58元"
+    dict["amount"] = "58.00"
     dict["mineText"] = "双十一特惠"
-    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥28"
+    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥58"
     dict["tipText"] = "双十一来临之际，特推出特惠"
     dict["orderName"] = "日出日落月相双十一特惠(终身会员)"
 
