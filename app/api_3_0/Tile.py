@@ -352,6 +352,29 @@ def lpmyearwepbimage(year,z, x, y):
        return "%s"%e
 
 
+@api3.route("/bathy/<z>/<x>/<y>")
+def bathywepbimage(z, x, y):
+   path =  os.path.join(basedir,"static/bathywepb")
+   filename = z +"_" + x + "_"  + y + ".wepb"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
+@api3.route("/bathy/china/<z>/<x>/<y>")
+def bathychinawepbimage(z, x, y):
+   path =  os.path.join(basedir,"static/bathychinawebp")
+   filename = z +"_" + x + "_"  + y + ".webp"
+   try:
+       fpath = os.path.join(path, filename)
+       return send_file(fpath,as_attachment=True)
+
+   except Exception as e:
+       return "%s"%e
+
+
 @api3.route("/mountain/<mountain_id>/<z>/<x>/<y>")
 def  mountainwepbimage(mountain_id,z, x, y):
    path =  os.path.join(basedir,"static/mountain")

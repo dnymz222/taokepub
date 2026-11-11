@@ -35,7 +35,7 @@ def soluanrconfig():
 
     appversion = request.args.get("appVersion", "5.0")
 
-    outtime = datetime.datetime(2026, 11, 12, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 11, 16, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -102,7 +102,7 @@ def fishconfig():
 
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026,   11, 12, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,   11, 16, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -143,7 +143,7 @@ def solunartidesconfig():
     appversion = request.args.get("appVersion", "5.0")
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026, 9, 8, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 1, 12, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -157,12 +157,12 @@ def solunartidesconfig():
     else:
         dict["isOpen"] = False
 
-    dict["homeText"] = "双节特惠终身会员原198元现58元"
-    dict["amount"] = "58.00"
-    dict["mineText"] = "双节特惠"
+    dict["homeText"] = "双十一特惠终身会员原198元现88元"
+    dict["amount"] = "88.00"
+    dict["mineText"] = "双十一特惠"
     dict["freeDays"] = 2
     dict["harbourDays"] = 30  # 港口的天数
-    dict["buttonText"] = "双节特惠(终身会员:原价￥198):￥58"
+    dict["buttonText"] = "双节特惠(终身会员:原价￥198):￥88"
     dict["tipText"] = "中秋节和国庆节来临之际，特推出特惠。"
     dict["orderName"] = "月相潮汐表双节特惠(终身会员)"
     result[x_data] = dict
@@ -176,7 +176,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2026,11, 12, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,11, 16, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
