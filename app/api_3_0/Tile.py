@@ -288,16 +288,7 @@ def lpmmove():
 
 
 
-@api3.route("/bathy/<z>/<x>/<y>")
-def bathywepbimage(z, x, y):
-   path =  os.path.join(basedir,"static/bathywepb")
-   filename = z +"_" + x + "_"  + y + ".wepb"
-   try:
-       fpath = os.path.join(path, filename)
-       return send_file(fpath,as_attachment=True)
 
-   except Exception as e:
-       return "%s"%e
 @api3.route("/elevation/<z>/<x>/<y>")
 def elevationwepbimage(z, x, y):
 
