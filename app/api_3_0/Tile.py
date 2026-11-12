@@ -345,7 +345,7 @@ def lpmyearwepbimage(year,z, x, y):
 
 @api3.route("/bathy/<z>/<x>/<y>")
 def bathywepbimage(z, x, y):
-   path =  os.path.join(basedir,"static/bathywepb")
+   path =  os.path.join(basedir,"static/bathywebp")
    filename = z +"_" + x + "_"  + y + ".webp"
    try:
        fpath = os.path.join(path, filename)
