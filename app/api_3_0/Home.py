@@ -102,7 +102,7 @@ def fishconfig():
 
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026,   11, 16, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,   12, 14, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -111,12 +111,12 @@ def fishconfig():
     else:
             dict["isOpen"] = False
 
-    dict["homeText"] = "双十一特惠终身会员原98现28元"
+    dict["homeText"] = "双十二特惠终身会员原98现28元"
     dict["amount"] = "28.00"
-    dict["mineText"] = "双十一特惠"
-    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥28"
-    dict["tipText"] = "双十一来临之际，特推出特惠。"
-    dict["orderName"] = "钓鱼天气双十一特惠(终身会员)"
+    dict["mineText"] = "双十二特惠"
+    dict["buttonText"] = "双十二特惠(终身会员:原价￥98):￥28"
+    dict["tipText"] = "双十二来临之际，特推出特惠。"
+    dict["orderName"] = "钓鱼天气双十二特惠(终身会员)"
     dict["lifeprice"] = "98"
     dict["monthprice"] = "6"
     dict["yearprice"] = "36"
