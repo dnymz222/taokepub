@@ -35,7 +35,7 @@ def soluanrconfig():
 
     appversion = request.args.get("appVersion", "5.0")
 
-    outtime = datetime.datetime(2026, 11, 16, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026, 12, 18, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -45,12 +45,12 @@ def soluanrconfig():
         dict["isOpen"] = False
 
 
-    dict["homeText"] = "双十一特惠终身会员原98元现58元"
+    dict["homeText"] = "流星雨特惠终身会员原98元现58元"
     dict["amount"] = "58.00"
-    dict["mineText"] = "双十一特惠"
-    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥58"
-    dict["tipText"] = "双十一来临之际，特推出特惠"
-    dict["orderName"] = "日出日落月相双十一特惠(终身会员)"
+    dict["mineText"] = "流星雨特惠"
+    dict["buttonText"] = "流星雨特惠(终身会员:原价￥98):￥58"
+    dict["tipText"] = "年度最大流星雨，双子座流星雨(ZHR150)来临之际,特推出特惠"
+    dict["orderName"] = "日出日落月相流星雨特惠(终身会员)"
 
     dict["lifeprice"] = "98"
     dict["monthprice"] = "6"
@@ -102,7 +102,7 @@ def fishconfig():
 
 
     dict["isUpgrade"] = False
-    outtime = datetime.datetime(2026,   11, 14, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,   12, 14, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -176,7 +176,7 @@ def astroconfig():
     result[x_code] = 200
     dict = {}
 
-    outtime = datetime.datetime(2026,11, 16, hour=0, minute=0, second=0, microsecond=0)
+    outtime = datetime.datetime(2026,11, 18, hour=0, minute=0, second=0, microsecond=0)
 
     nowtime = datetime.datetime.now()
 
@@ -192,12 +192,12 @@ def astroconfig():
     # else:
     #     dict["isOpen"] = False
 
-    dict["homeText"] = "双十一特惠终身会员原98元现28元"
-    dict["amount"] = "28.00"
-    dict["mineText"] = "双十一特惠"
-    dict["buttonText"] = "双十一特惠(终身会员:原价￥98):￥28"
-    dict["tipText"] = "双十一来临之际，特推出特惠"
-    dict["orderName"] = "天文观星指南双十一特惠(终身会员)"
+    dict["homeText"] = "流星雨特惠终身会员原98元现58元"
+    dict["amount"] = "58.00"
+    dict["mineText"] = "流星雨特惠"
+    dict["buttonText"] = "流星雨特惠(终身会员:原价￥98):￥58"
+    dict["tipText"] = "年度最大流星雨，双子座流星雨(ZHR150)来临之际,特推出特惠"
+    dict["orderName"] = "天文观星指南流星雨特惠(终身会员)"
     dict["lifeprice"] = "98"
     dict["monthprice"] = "6"
     dict["yearprice"] = "36"

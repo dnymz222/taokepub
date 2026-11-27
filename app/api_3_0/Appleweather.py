@@ -217,6 +217,61 @@ def weatherjsonLoc(latitude, longitude):
     return json.dumps(result)
 
 
+@api3.route('/weather/json/v2/<latitude>/<longitude>', methods=['GET'])
+def weatherjsonLocv2(latitude, longitude):
+
+    lat = latitude
+    lng = longitude
+    timestamp = request.args.get('time', '1550069439')
+    total = request.args.get('total', '1599918717')
+    result = {}
+
+    code = checklatandlon(lat=lat, lng=lng, timestamp=timestamp, total=total)
+    if 200 == code:
+        pass
+    elif 201 == code:
+        result[x_code] = 201
+        result[x_meesage] = "time out ,no data"
+        return json.dumps(result)
+    elif 202 == code:
+        result[x_code] = 202
+        result[x_meesage] = "error,no data!"
+        return json.dumps(result)
+
+    url = "https://weatherkit.apple.com/api/v1/weather/en/"+latitude+"/"+longitude
+    param = {}
+    tz = pytz.timezone("Asia/Shanghai")
+
+    now = datetime.datetime.now(tz)
+
+
+
+
+
+    zero_today = now - datetime.timedelta(hours=now.hour, minutes=now.minute, seconds=now.second,
+                                          microseconds=now.microsecond)
+
+
+
+    timezone = request.args.get("timezone", "Asia/Shanghai")
+    osname = request.args.get("os","iOS")
+
+    start = zero_today - datetime.timedelta(days=3)
+    end = zero_today + datetime.timedelta(days=9)
+    hourstart = start - datetime.timedelta(hours=8)
+    hourend = end - datetime.timedelta(hours=8)
+    param["hourlyStart"] = appleDateToString(hourstart)
+    param["hourlyEnd"] = appleDateToString(hourend)
+
+    param["dailyStart"] = appleDateToString(start)
+    param["dailyEnd"] = appleDateToString(end)
+    param["dataSets"] = "forecastHourly,forecastDaily"
+    param["timezone"] = timezone
+
+    result =  __requestAndLoadNoGzipJson(url, param)
+    return json.dumps(result)
+
+
 @api3.route('/weather/forecast/<latitude>/<longitude>', methods=['GET'])
 def weatherforecastLoc(latitude, longitude):
 
